@@ -2,68 +2,6 @@
   "itemId" : "_AQXCgFyCEeq8HKEkpBUS_g",
   "contextList" : [ {
     "contextName" : "Default",
-    "repoId" : "_1bwl8IX1Eem4I64wW9I-Og",
-    "parameterList" : [ {
-      "id" : "_J-CMAMjnEeuIfOIcBN-Pjw",
-      "name" : "globalContext_DB__AdditionalParams"
-    }, {
-      "id" : "_J-CMAcjnEeuIfOIcBN-Pjw",
-      "name" : "globalContext_DB_Database_Schema"
-    }, {
-      "id" : "_J-CMAsjnEeuIfOIcBN-Pjw",
-      "name" : "globalContext_DB_Host"
-    }, {
-      "id" : "_J-CMA8jnEeuIfOIcBN-Pjw",
-      "name" : "globalContext_DB_Password"
-    }, {
-      "id" : "_J-CMBMjnEeuIfOIcBN-Pjw",
-      "name" : "globalContext_DB_Port"
-    }, {
-      "id" : "_J-CMBcjnEeuIfOIcBN-Pjw",
-      "name" : "globalContext_DB_Username"
-    } ]
-  }, {
-    "contextName" : "Default",
-    "repoId" : "_KWbrgIL1EemhiP054CDFZw",
-    "parameterList" : [ {
-      "id" : "_J-CMBsjnEeuIfOIcBN-Pjw",
-      "name" : "contextStorageType"
-    }, {
-      "id" : "_J-CMB8jnEeuIfOIcBN-Pjw",
-      "name" : "enableJobLevelContextFileLoad"
-    }, {
-      "id" : "_J-CMCMjnEeuIfOIcBN-Pjw",
-      "name" : "enableProjectLevelContextFileLoad"
-    }, {
-      "id" : "_J-CMCcjnEeuIfOIcBN-Pjw",
-      "name" : "enableTaskLevelContextFileLoad"
-    }, {
-      "id" : "_J-CMCsjnEeuIfOIcBN-Pjw",
-      "name" : "environment"
-    }, {
-      "id" : "_J-CMC8jnEeuIfOIcBN-Pjw",
-      "name" : "loadContextInJob"
-    }, {
-      "id" : "_J-CMDMjnEeuIfOIcBN-Pjw",
-      "name" : "printContextVariableValues"
-    }, {
-      "id" : "_J-CMDcjnEeuIfOIcBN-Pjw",
-      "name" : "resource_directory_contextFiles"
-    }, {
-      "id" : "_J-CMDsjnEeuIfOIcBN-Pjw",
-      "name" : "taskName"
-    }, {
-      "id" : "_J-CMD8jnEeuIfOIcBN-Pjw",
-      "name" : "temp_dir_path"
-    }, {
-      "id" : "_UizLQMjnEeuIfOIcBN-Pjw",
-      "name" : "crytographic_PWD"
-    }, {
-      "id" : "_UizLQcjnEeuIfOIcBN-Pjw",
-      "name" : "crytographicFilePath"
-    } ]
-  }, {
-    "contextName" : "Default",
     "repoId" : "_DdpMgFC-EeqCV7bNGVwNIw",
     "parameterList" : [ {
       "id" : "_Mic42XETEeqIk5-FS8Y9kA",
@@ -116,68 +54,6 @@
     }, {
       "id" : "_Mic41XETEeqIk5-FS8Y9kA",
       "name" : "snowflake_password"
-    } ]
-  }, {
-    "contextName" : "Test",
-    "repoId" : "_1bwl8IX1Eem4I64wW9I-Og",
-    "parameterList" : [ {
-      "id" : "_J-CMI8jnEeuIfOIcBN-Pjw",
-      "name" : "globalContext_DB__AdditionalParams"
-    }, {
-      "id" : "_J-CMJMjnEeuIfOIcBN-Pjw",
-      "name" : "globalContext_DB_Database_Schema"
-    }, {
-      "id" : "_J-CMJcjnEeuIfOIcBN-Pjw",
-      "name" : "globalContext_DB_Host"
-    }, {
-      "id" : "_J-CMJsjnEeuIfOIcBN-Pjw",
-      "name" : "globalContext_DB_Password"
-    }, {
-      "id" : "_J-CMJ8jnEeuIfOIcBN-Pjw",
-      "name" : "globalContext_DB_Port"
-    }, {
-      "id" : "_J-CMKMjnEeuIfOIcBN-Pjw",
-      "name" : "globalContext_DB_Username"
-    } ]
-  }, {
-    "contextName" : "Test",
-    "repoId" : "_KWbrgIL1EemhiP054CDFZw",
-    "parameterList" : [ {
-      "id" : "_J-CMKcjnEeuIfOIcBN-Pjw",
-      "name" : "contextStorageType"
-    }, {
-      "id" : "_J-CMKsjnEeuIfOIcBN-Pjw",
-      "name" : "enableJobLevelContextFileLoad"
-    }, {
-      "id" : "_J-CMK8jnEeuIfOIcBN-Pjw",
-      "name" : "enableProjectLevelContextFileLoad"
-    }, {
-      "id" : "_J-CMLMjnEeuIfOIcBN-Pjw",
-      "name" : "enableTaskLevelContextFileLoad"
-    }, {
-      "id" : "_J-CMLcjnEeuIfOIcBN-Pjw",
-      "name" : "environment"
-    }, {
-      "id" : "_J-CMLsjnEeuIfOIcBN-Pjw",
-      "name" : "loadContextInJob"
-    }, {
-      "id" : "_J-CML8jnEeuIfOIcBN-Pjw",
-      "name" : "printContextVariableValues"
-    }, {
-      "id" : "_J-CMMMjnEeuIfOIcBN-Pjw",
-      "name" : "resource_directory_contextFiles"
-    }, {
-      "id" : "_J-CMMcjnEeuIfOIcBN-Pjw",
-      "name" : "taskName"
-    }, {
-      "id" : "_J-CMMsjnEeuIfOIcBN-Pjw",
-      "name" : "temp_dir_path"
-    }, {
-      "id" : "_UizLQsjnEeuIfOIcBN-Pjw",
-      "name" : "crytographic_PWD"
-    }, {
-      "id" : "_UizLQ8jnEeuIfOIcBN-Pjw",
-      "name" : "crytographicFilePath"
     } ]
   }, {
     "contextName" : "Test",
