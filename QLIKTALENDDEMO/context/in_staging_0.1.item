@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="dev" xmi:id="_TOQZQHaQEe-cI9IAex1ZpA">
+    <contextParameter comment="" name="in_staging_AdditionalParams" prompt="in_staging_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" xmi:id="_TOQZQXaQEe-cI9IAex1ZpA"/>
+    <contextParameter comment="" name="in_staging_Login" prompt="in_staging_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="root" xmi:id="_TOQZQnaQEe-cI9IAex1ZpA"/>
+    <contextParameter comment="" name="in_staging_Database" prompt="in_staging_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="in_staging" xmi:id="_TOQZQ3aQEe-cI9IAex1ZpA"/>
+    <contextParameter comment="" name="in_staging_Port" prompt="in_staging_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="3306" xmi:id="_TOQZRHaQEe-cI9IAex1ZpA"/>
+    <contextParameter comment="" name="in_staging_Password" prompt="in_staging_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:EKlChK/++kOaOKBopkWGJBzt68Hp4uxyWHIHKh1wxTs=" xmi:id="_TOQZRXaQEe-cI9IAex1ZpA"/>
+    <contextParameter comment="" name="in_staging_Server" prompt="in_staging_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="localhost" xmi:id="_TOQZRnaQEe-cI9IAex1ZpA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="hmg" xmi:id="_TOQZR3aQEe-cI9IAex1ZpA">
+    <contextParameter comment="" name="in_staging_AdditionalParams" prompt="in_staging_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" xmi:id="_TOQZSHaQEe-cI9IAex1ZpA"/>
+    <contextParameter comment="" name="in_staging_Login" prompt="in_staging_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="root" xmi:id="_TOQZSXaQEe-cI9IAex1ZpA"/>
+    <contextParameter comment="" name="in_staging_Database" prompt="in_staging_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="in_staging" xmi:id="_TOQZSnaQEe-cI9IAex1ZpA"/>
+    <contextParameter comment="" name="in_staging_Port" prompt="in_staging_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="3306" xmi:id="_TOQZS3aQEe-cI9IAex1ZpA"/>
+    <contextParameter comment="" name="in_staging_Password" prompt="in_staging_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:dE4Lv5AwxGrldUsFb96UNJx3mwkofNAB4pcle+4d3ck=" xmi:id="_TOQZTHaQEe-cI9IAex1ZpA"/>
+    <contextParameter comment="" name="in_staging_Server" prompt="in_staging_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="localhost" xmi:id="_TOQZTXaQEe-cI9IAex1ZpA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="prd" xmi:id="_TOQZTnaQEe-cI9IAex1ZpA">
+    <contextParameter comment="" name="in_staging_AdditionalParams" prompt="in_staging_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" xmi:id="_TOQZT3aQEe-cI9IAex1ZpA"/>
+    <contextParameter comment="" name="in_staging_Login" prompt="in_staging_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="root" xmi:id="_TOQZUHaQEe-cI9IAex1ZpA"/>
+    <contextParameter comment="" name="in_staging_Database" prompt="in_staging_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="in_staging" xmi:id="_TOQZUXaQEe-cI9IAex1ZpA"/>
+    <contextParameter comment="" name="in_staging_Port" prompt="in_staging_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="3306" xmi:id="_TOQZUnaQEe-cI9IAex1ZpA"/>
+    <contextParameter comment="" name="in_staging_Password" prompt="in_staging_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:/QhuHGxQYvSDkp25W92+lZotrhwAOxdY/iPBe4V5vuQ=" xmi:id="_TOQZU3aQEe-cI9IAex1ZpA"/>
+    <contextParameter comment="" name="in_staging_Server" prompt="in_staging_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="localhost" xmi:id="_TOQZVHaQEe-cI9IAex1ZpA"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_75aaef4c-e6ec-4582-940e-c8e9ff6acac6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qRir24069kciEqtZk/z5WmWpdYvlZqbNGFBU9TiObyUS3Z0JGPxILDZMoG2Q54bIQsI+JSLI1GsX&#13;
+gG/oKIjMAg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3983cb0e-2b15-4b6a-a9ec-293ff92acc3b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>BehOvBm1VOFv5ve3rE13F8mHSXf/Y2YQMtjFPtCnmr21dmKlV05Ql/74qAaviISdr1eXVujFUM2f&#13;
+f2cU2S8EeQ==</DigestValue></Reference></SignedInfo><SignatureValue>Q1uP0S3Oeku7mJ49u1OuM+OXRPYjJmQmyleL+GsFzbq2m96FHAbFTRv0j6zuBEE9fGexIgeEiNeG&#13;
+uPfgIt8GQ5NZkSx/2oq1AfbUe03IP5i+IuYZLfF1yZB5bMBWJHDF+TabUet+DN85v6aR4V25FMtV&#13;
+dOJ7gLqN9I77ClzSntWNr/mz6KQflukcgEjz9LyL8GDdcolIpT9bmE471B9WQmNJev6S/po2dHVP&#13;
+1ByPqNCUImxiVw9grVtZAN7F/d1JTPcx95S/LIPlTGLVh0qOXDz8GVO23cbCq6+h/nlFJwwnwRwW&#13;
+JOlQgqVkYaZDiyEDhzW7g8TqCxpM0pyCt9RGrQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3983cb0e-2b15-4b6a-a9ec-293ff92acc3b" Target="#_75aaef4c-e6ec-4582-940e-c8e9ff6acac6"><Timestamp>2024-09-19 14:06:00</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
