@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Test" jobType="Standard" xmi:version="2.0">
-  <context confirmationNeeded="false" name="Test">
+  <context confirmationNeeded="false" hide="false" name="Test">
     <contextParameter comment="Additional JDBC Paramaters for Redshift Connection" internalId="_-k7yAM8WEeuvBMKVOYwYeg" name="Redshift_Connection_AdditionalParams" prompt="Redshift_Connection_AdditionalParams?" promptNeeded="false" repositoryContextId="_HYjnwGzqEeqCAYEIKTIT4g" type="id_String" value=""/>
     <contextParameter comment="Redshift database name" internalId="_-k7yAc8WEeuvBMKVOYwYeg" name="Redshift_Connection_Database" prompt="Redshift_Connection_Database?" promptNeeded="false" repositoryContextId="_HYjnwGzqEeqCAYEIKTIT4g" type="id_String" value=""/>
     <contextParameter comment="FilePath to store the Redshift Connection logs" internalId="_-k7yAs8WEeuvBMKVOYwYeg" name="Redshift_Connection_logfile" prompt="Redshift_Connection_logfile?" promptNeeded="false" repositoryContextId="_HYjnwGzqEeqCAYEIKTIT4g" type="id_String" value=""/>
@@ -19,26 +19,26 @@
     <contextParameter comment="SAP Password" internalId="_-k7yEM8WEeuvBMKVOYwYeg" name="sap_password" prompt="sap_password?" promptNeeded="false" repositoryContextId="_HYjnwGzqEeqCAYEIKTIT4g" type="id_Password" value=""/>
     <contextParameter comment="SAP system number" internalId="_-k7yEc8WEeuvBMKVOYwYeg" name="sap_system_number" prompt="sap_system_number?" promptNeeded="false" repositoryContextId="_HYjnwGzqEeqCAYEIKTIT4g" type="id_String" value=""/>
     <contextParameter comment="SAP user id" internalId="_-k7yEs8WEeuvBMKVOYwYeg" name="sap_userid" prompt="sap_userid?" promptNeeded="false" repositoryContextId="_HYjnwGzqEeqCAYEIKTIT4g" type="id_String" value=""/>
-    <contextParameter comment="String to specify any additional JDBC Connection parameters" internalId="_-k7yE88WEeuvBMKVOYwYeg" name="globalContext_DB__AdditionalParams" prompt="globalContext_DB__AdditionalParams?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value=""/>
-    <contextParameter comment="Database schema" internalId="_-k7yFM8WEeuvBMKVOYwYeg" name="globalContext_DB_Database_Schema" prompt="globalContext_DB_Database_Schema?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value=""/>
-    <contextParameter comment="Database Hostname" internalId="_-k7yFc8WEeuvBMKVOYwYeg" name="globalContext_DB_Host" prompt="globalContext_DB_Host?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value=""/>
-    <contextParameter comment="Database Password" internalId="_-k7yFs8WEeuvBMKVOYwYeg" name="globalContext_DB_Password" prompt="globalContext_DB_Password?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_Password" value=""/>
-    <contextParameter comment="Port for connecting Database " internalId="_-k7yF88WEeuvBMKVOYwYeg" name="globalContext_DB_Port" prompt="globalContext_DB_Port?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value="3306"/>
-    <contextParameter comment="Database username" internalId="_-k7yGM8WEeuvBMKVOYwYeg" name="globalContext_DB_Username" prompt="globalContext_DB_Username?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value=""/>
-    <contextParameter comment="Context Storage Type to read from (File or DB)." internalId="_-k7yGc8WEeuvBMKVOYwYeg" name="contextStorageType" prompt="contextStorageType?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;File&quot;"/>
-    <contextParameter comment="password for cryptographic file" internalId="_-k7yGs8WEeuvBMKVOYwYeg" name="crytographic_PWD" prompt="crytographic_PWD?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Password" value="enc:system.encryption.key.v1:RY0kZVcoCSlSXp/BM86w4qzf/cCOsT03Wr+8AzSy6HRNR0dN"/>
-    <contextParameter comment="file path for crytographic" internalId="_-k7yG88WEeuvBMKVOYwYeg" name="crytographicFilePath" prompt="crytographicFilePath?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;C:/Temp/password&quot;"/>
-    <contextParameter comment="Load Job Level Context File" internalId="_-k7yHM8WEeuvBMKVOYwYeg" name="enableJobLevelContextFileLoad" prompt="enableJobLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false"/>
-    <contextParameter comment="Load Project Level Context File" internalId="_-k7yHc8WEeuvBMKVOYwYeg" name="enableProjectLevelContextFileLoad" prompt="enableProjectLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false"/>
-    <contextParameter comment="Load Task Level Context File" internalId="_-k7yHs8WEeuvBMKVOYwYeg" name="enableTaskLevelContextFileLoad" prompt="enableTaskLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false"/>
-    <contextParameter comment="Environment parameter that can be leveraged to drive different logic based on execution environment" internalId="_-k7yH88WEeuvBMKVOYwYeg" name="environment" prompt="environment?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;test&quot;"/>
-    <contextParameter comment="Flag to set to load context variables in Job.  This is handy if there are child jobs and we do not want child jobs to load the context values again, but instead use the values from the parent job. Default Value is true and then overridden to false at the end of the first context load" internalId="_-k7yIM8WEeuvBMKVOYwYeg" name="loadContextInJob" prompt="loadContextInJob?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="true"/>
-    <contextParameter comment="Print Context Variable Values (Password always hidden by default)" internalId="_-k7yIc8WEeuvBMKVOYwYeg" name="printContextVariableValues" prompt="printContextVariableValues?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="true"/>
-    <contextParameter comment="Location of Context Files (Local or Cloud Engine or Remote Engine)" internalId="_-k7yIs8WEeuvBMKVOYwYeg" name="resource_directory_contextFiles" prompt="resource_directory_contextFiles?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;C:/Temp/contextmanagement&quot;"/>
-    <contextParameter comment="Task Name or Id for loading Context File" internalId="_-k7yI88WEeuvBMKVOYwYeg" name="taskName" prompt="taskName?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value=""/>
-    <contextParameter comment="Allocate the directory path to hold temporary file for tMap disk mode" internalId="_-k7yJM8WEeuvBMKVOYwYeg" name="temp_dir_path" prompt="temp_dir_path?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;C:/Temp/&quot;"/>
+    <contextParameter comment="String to specify any additional JDBC Connection parameters" internalId="_-k7yE88WEeuvBMKVOYwYeg" name="globalContext_DB__AdditionalParams" prompt="globalContext_DB__AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="Database schema" internalId="_-k7yFM8WEeuvBMKVOYwYeg" name="globalContext_DB_Database_Schema" prompt="globalContext_DB_Database_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="Database Hostname" internalId="_-k7yFc8WEeuvBMKVOYwYeg" name="globalContext_DB_Host" prompt="globalContext_DB_Host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="Database Password" internalId="_-k7yFs8WEeuvBMKVOYwYeg" name="globalContext_DB_Password" prompt="globalContext_DB_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+    <contextParameter comment="Port for connecting Database " internalId="_-k7yF88WEeuvBMKVOYwYeg" name="globalContext_DB_Port" prompt="globalContext_DB_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3306"/>
+    <contextParameter comment="Database username" internalId="_-k7yGM8WEeuvBMKVOYwYeg" name="globalContext_DB_Username" prompt="globalContext_DB_Username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="Context Storage Type to read from (File or DB)." internalId="_-k7yGc8WEeuvBMKVOYwYeg" name="contextStorageType" prompt="contextStorageType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;File&quot;"/>
+    <contextParameter comment="password for cryptographic file" internalId="_-k7yGs8WEeuvBMKVOYwYeg" name="crytographic_PWD" prompt="crytographic_PWD?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:RY0kZVcoCSlSXp/BM86w4qzf/cCOsT03Wr+8AzSy6HRNR0dN"/>
+    <contextParameter comment="file path for crytographic" internalId="_-k7yG88WEeuvBMKVOYwYeg" name="crytographicFilePath" prompt="crytographicFilePath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;C:/Temp/password&quot;"/>
+    <contextParameter comment="Load Job Level Context File" internalId="_-k7yHM8WEeuvBMKVOYwYeg" name="enableJobLevelContextFileLoad" prompt="enableJobLevelContextFileLoad?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false"/>
+    <contextParameter comment="Load Project Level Context File" internalId="_-k7yHc8WEeuvBMKVOYwYeg" name="enableProjectLevelContextFileLoad" prompt="enableProjectLevelContextFileLoad?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false"/>
+    <contextParameter comment="Load Task Level Context File" internalId="_-k7yHs8WEeuvBMKVOYwYeg" name="enableTaskLevelContextFileLoad" prompt="enableTaskLevelContextFileLoad?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false"/>
+    <contextParameter comment="Environment parameter that can be leveraged to drive different logic based on execution environment" internalId="_-k7yH88WEeuvBMKVOYwYeg" name="environment" prompt="environment?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;test&quot;"/>
+    <contextParameter comment="Flag to set to load context variables in Job.  This is handy if there are child jobs and we do not want child jobs to load the context values again, but instead use the values from the parent job. Default Value is true and then overridden to false at the end of the first context load" internalId="_-k7yIM8WEeuvBMKVOYwYeg" name="loadContextInJob" prompt="loadContextInJob?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="true"/>
+    <contextParameter comment="Print Context Variable Values (Password always hidden by default)" internalId="_-k7yIc8WEeuvBMKVOYwYeg" name="printContextVariableValues" prompt="printContextVariableValues?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="true"/>
+    <contextParameter comment="Location of Context Files (Local or Cloud Engine or Remote Engine)" internalId="_-k7yIs8WEeuvBMKVOYwYeg" name="resource_directory_contextFiles" prompt="resource_directory_contextFiles?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;C:/Temp/contextmanagement&quot;"/>
+    <contextParameter comment="Task Name or Id for loading Context File" internalId="_-k7yI88WEeuvBMKVOYwYeg" name="taskName" prompt="taskName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="Allocate the directory path to hold temporary file for tMap disk mode" internalId="_-k7yJM8WEeuvBMKVOYwYeg" name="temp_dir_path" prompt="temp_dir_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;C:/Temp/&quot;"/>
   </context>
-  <context confirmationNeeded="false" name="Default">
+  <context confirmationNeeded="false" hide="false" name="Default">
     <contextParameter comment="Additional JDBC Paramaters for Redshift Connection" internalId="_-k7yJc8WEeuvBMKVOYwYeg" name="Redshift_Connection_AdditionalParams" prompt="Redshift_Connection_AdditionalParams?" promptNeeded="false" repositoryContextId="_HYjnwGzqEeqCAYEIKTIT4g" type="id_String" value=""/>
     <contextParameter comment="Redshift database name" internalId="_-k7yJs8WEeuvBMKVOYwYeg" name="Redshift_Connection_Database" prompt="Redshift_Connection_Database?" promptNeeded="false" repositoryContextId="_HYjnwGzqEeqCAYEIKTIT4g" type="id_String" value=""/>
     <contextParameter comment="FilePath to store the Redshift Connection logs" internalId="_-k7yJ88WEeuvBMKVOYwYeg" name="Redshift_Connection_logfile" prompt="Redshift_Connection_logfile?" promptNeeded="false" repositoryContextId="_HYjnwGzqEeqCAYEIKTIT4g" type="id_String" value=""/>
@@ -58,26 +58,26 @@
     <contextParameter comment="SAP Password" internalId="_-k7yNc8WEeuvBMKVOYwYeg" name="sap_password" prompt="sap_password?" promptNeeded="false" repositoryContextId="_HYjnwGzqEeqCAYEIKTIT4g" type="id_Password" value=""/>
     <contextParameter comment="SAP system number" internalId="_-k7yNs8WEeuvBMKVOYwYeg" name="sap_system_number" prompt="sap_system_number?" promptNeeded="false" repositoryContextId="_HYjnwGzqEeqCAYEIKTIT4g" type="id_String" value=""/>
     <contextParameter comment="SAP user id" internalId="_-k7yN88WEeuvBMKVOYwYeg" name="sap_userid" prompt="sap_userid?" promptNeeded="false" repositoryContextId="_HYjnwGzqEeqCAYEIKTIT4g" type="id_String" value=""/>
-    <contextParameter comment="String to specify any additional JDBC Connection parameters" internalId="_-k7yOM8WEeuvBMKVOYwYeg" name="globalContext_DB__AdditionalParams" prompt="globalContext_DB__AdditionalParams?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value=""/>
-    <contextParameter comment="Database schema" internalId="_-k7yOc8WEeuvBMKVOYwYeg" name="globalContext_DB_Database_Schema" prompt="globalContext_DB_Database_Schema?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value=""/>
-    <contextParameter comment="Database Hostname" internalId="_-k7yOs8WEeuvBMKVOYwYeg" name="globalContext_DB_Host" prompt="globalContext_DB_Host?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value=""/>
-    <contextParameter comment="Database Password" internalId="_-k7yO88WEeuvBMKVOYwYeg" name="globalContext_DB_Password" prompt="globalContext_DB_Password?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_Password" value=""/>
-    <contextParameter comment="Port for connecting Database " internalId="_-k7yPM8WEeuvBMKVOYwYeg" name="globalContext_DB_Port" prompt="globalContext_DB_Port?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value="3306"/>
-    <contextParameter comment="Database username" internalId="_-k7yPc8WEeuvBMKVOYwYeg" name="globalContext_DB_Username" prompt="globalContext_DB_Username?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value=""/>
-    <contextParameter comment="Context Storage Type to read from (File or DB)." internalId="_-k7yPs8WEeuvBMKVOYwYeg" name="contextStorageType" prompt="contextStorageType?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;File&quot;"/>
-    <contextParameter comment="password for cryptographic file" internalId="_-k7yP88WEeuvBMKVOYwYeg" name="crytographic_PWD" prompt="crytographic_PWD?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Password" value="enc:system.encryption.key.v1:S99iyanzVFlq73ZHkZ2BHx69XUHdJFcouggC0KLgJX1jMnmS"/>
-    <contextParameter comment="file path for crytographic" internalId="_-k7yQM8WEeuvBMKVOYwYeg" name="crytographicFilePath" prompt="crytographicFilePath?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;C:/Users/vmehra.TALEND/Documents/Project/MBO\MBO-DataPrivacy/password&quot;"/>
-    <contextParameter comment="Load Job Level Context File" internalId="_-k7yQc8WEeuvBMKVOYwYeg" name="enableJobLevelContextFileLoad" prompt="enableJobLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false"/>
-    <contextParameter comment="Load Project Level Context File" internalId="_-k7yQs8WEeuvBMKVOYwYeg" name="enableProjectLevelContextFileLoad" prompt="enableProjectLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false"/>
-    <contextParameter comment="Load Task Level Context File" internalId="_-k7yQ88WEeuvBMKVOYwYeg" name="enableTaskLevelContextFileLoad" prompt="enableTaskLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false"/>
-    <contextParameter comment="Environment parameter that can be leveraged to drive different logic based on execution environment" internalId="_-k7yRM8WEeuvBMKVOYwYeg" name="environment" prompt="environment?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value=""/>
-    <contextParameter comment="Flag to set to load context variables in Job.  This is handy if there are child jobs and we do not want child jobs to load the context values again, but instead use the values from the parent job. Default Value is true and then overridden to false at the end of the first context load" internalId="_-k7yRc8WEeuvBMKVOYwYeg" name="loadContextInJob" prompt="loadContextInJob?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="true"/>
-    <contextParameter comment="Print Context Variable Values (Password always hidden by default)" internalId="_-k7yRs8WEeuvBMKVOYwYeg" name="printContextVariableValues" prompt="printContextVariableValues?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false"/>
-    <contextParameter comment="Location of Context Files (Local or Cloud Engine or Remote Engine)" internalId="_-k7yR88WEeuvBMKVOYwYeg" name="resource_directory_contextFiles" prompt="resource_directory_contextFiles?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="/opt/talend/contextmanagement"/>
-    <contextParameter comment="Task Name or Id for loading Context File" internalId="_-k7ySM8WEeuvBMKVOYwYeg" name="taskName" prompt="taskName?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value=""/>
-    <contextParameter comment="Allocate the directory path to hold temporary file for tMap disk mode" internalId="_-k7ySc8WEeuvBMKVOYwYeg" name="temp_dir_path" prompt="temp_dir_path?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value=""/>
+    <contextParameter comment="String to specify any additional JDBC Connection parameters" internalId="_-k7yOM8WEeuvBMKVOYwYeg" name="globalContext_DB__AdditionalParams" prompt="globalContext_DB__AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="Database schema" internalId="_-k7yOc8WEeuvBMKVOYwYeg" name="globalContext_DB_Database_Schema" prompt="globalContext_DB_Database_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="Database Hostname" internalId="_-k7yOs8WEeuvBMKVOYwYeg" name="globalContext_DB_Host" prompt="globalContext_DB_Host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="Database Password" internalId="_-k7yO88WEeuvBMKVOYwYeg" name="globalContext_DB_Password" prompt="globalContext_DB_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+    <contextParameter comment="Port for connecting Database " internalId="_-k7yPM8WEeuvBMKVOYwYeg" name="globalContext_DB_Port" prompt="globalContext_DB_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3306"/>
+    <contextParameter comment="Database username" internalId="_-k7yPc8WEeuvBMKVOYwYeg" name="globalContext_DB_Username" prompt="globalContext_DB_Username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="Context Storage Type to read from (File or DB)." internalId="_-k7yPs8WEeuvBMKVOYwYeg" name="contextStorageType" prompt="contextStorageType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;File&quot;"/>
+    <contextParameter comment="password for cryptographic file" internalId="_-k7yP88WEeuvBMKVOYwYeg" name="crytographic_PWD" prompt="crytographic_PWD?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:S99iyanzVFlq73ZHkZ2BHx69XUHdJFcouggC0KLgJX1jMnmS"/>
+    <contextParameter comment="file path for crytographic" internalId="_-k7yQM8WEeuvBMKVOYwYeg" name="crytographicFilePath" prompt="crytographicFilePath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;C:/Users/vmehra.TALEND/Documents/Project/MBO\MBO-DataPrivacy/password&quot;"/>
+    <contextParameter comment="Load Job Level Context File" internalId="_-k7yQc8WEeuvBMKVOYwYeg" name="enableJobLevelContextFileLoad" prompt="enableJobLevelContextFileLoad?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false"/>
+    <contextParameter comment="Load Project Level Context File" internalId="_-k7yQs8WEeuvBMKVOYwYeg" name="enableProjectLevelContextFileLoad" prompt="enableProjectLevelContextFileLoad?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false"/>
+    <contextParameter comment="Load Task Level Context File" internalId="_-k7yQ88WEeuvBMKVOYwYeg" name="enableTaskLevelContextFileLoad" prompt="enableTaskLevelContextFileLoad?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false"/>
+    <contextParameter comment="Environment parameter that can be leveraged to drive different logic based on execution environment" internalId="_-k7yRM8WEeuvBMKVOYwYeg" name="environment" prompt="environment?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="Flag to set to load context variables in Job.  This is handy if there are child jobs and we do not want child jobs to load the context values again, but instead use the values from the parent job. Default Value is true and then overridden to false at the end of the first context load" internalId="_-k7yRc8WEeuvBMKVOYwYeg" name="loadContextInJob" prompt="loadContextInJob?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="true"/>
+    <contextParameter comment="Print Context Variable Values (Password always hidden by default)" internalId="_-k7yRs8WEeuvBMKVOYwYeg" name="printContextVariableValues" prompt="printContextVariableValues?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false"/>
+    <contextParameter comment="Location of Context Files (Local or Cloud Engine or Remote Engine)" internalId="_-k7yR88WEeuvBMKVOYwYeg" name="resource_directory_contextFiles" prompt="resource_directory_contextFiles?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/opt/talend/contextmanagement"/>
+    <contextParameter comment="Task Name or Id for loading Context File" internalId="_-k7ySM8WEeuvBMKVOYwYeg" name="taskName" prompt="taskName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="Allocate the directory path to hold temporary file for tMap disk mode" internalId="_-k7ySc8WEeuvBMKVOYwYeg" name="temp_dir_path" prompt="temp_dir_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
   </context>
-  <context confirmationNeeded="false" name="Dev">
+  <context confirmationNeeded="false" hide="false" name="Dev">
     <contextParameter comment="Additional JDBC Paramaters for Redshift Connection" internalId="_-k7ySs8WEeuvBMKVOYwYeg" name="Redshift_Connection_AdditionalParams" prompt="Redshift_Connection_AdditionalParams?" promptNeeded="false" repositoryContextId="_HYjnwGzqEeqCAYEIKTIT4g" type="id_String" value=""/>
     <contextParameter comment="Redshift database name" internalId="_-k7yS88WEeuvBMKVOYwYeg" name="Redshift_Connection_Database" prompt="Redshift_Connection_Database?" promptNeeded="false" repositoryContextId="_HYjnwGzqEeqCAYEIKTIT4g" type="id_String" value=""/>
     <contextParameter comment="FilePath to store the Redshift Connection logs" internalId="_-k7yTM8WEeuvBMKVOYwYeg" name="Redshift_Connection_logfile" prompt="Redshift_Connection_logfile?" promptNeeded="false" repositoryContextId="_HYjnwGzqEeqCAYEIKTIT4g" type="id_String" value=""/>
@@ -97,29 +97,29 @@
     <contextParameter comment="SAP Password" internalId="_-k7yWs8WEeuvBMKVOYwYeg" name="sap_password" prompt="sap_password?" promptNeeded="false" repositoryContextId="_HYjnwGzqEeqCAYEIKTIT4g" type="id_Password" value=""/>
     <contextParameter comment="SAP system number" internalId="_-k7yW88WEeuvBMKVOYwYeg" name="sap_system_number" prompt="sap_system_number?" promptNeeded="false" repositoryContextId="_HYjnwGzqEeqCAYEIKTIT4g" type="id_String" value=""/>
     <contextParameter comment="SAP user id" internalId="_-k7yXM8WEeuvBMKVOYwYeg" name="sap_userid" prompt="sap_userid?" promptNeeded="false" repositoryContextId="_HYjnwGzqEeqCAYEIKTIT4g" type="id_String" value=""/>
-    <contextParameter comment="String to specify any additional JDBC Connection parameters" internalId="_-k7yXc8WEeuvBMKVOYwYeg" name="globalContext_DB__AdditionalParams" prompt="globalContext_DB__AdditionalParams?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value=""/>
-    <contextParameter comment="Database schema" internalId="_-k7yXs8WEeuvBMKVOYwYeg" name="globalContext_DB_Database_Schema" prompt="globalContext_DB_Database_Schema?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value="dev"/>
-    <contextParameter comment="Database Hostname" internalId="_-k7yX88WEeuvBMKVOYwYeg" name="globalContext_DB_Host" prompt="globalContext_DB_Host?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value="dev"/>
-    <contextParameter comment="Database Password" internalId="_-k7yYM8WEeuvBMKVOYwYeg" name="globalContext_DB_Password" prompt="globalContext_DB_Password?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_Password" value=""/>
-    <contextParameter comment="Port for connecting Database " internalId="_-k7yYc8WEeuvBMKVOYwYeg" name="globalContext_DB_Port" prompt="globalContext_DB_Port?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value="3306"/>
-    <contextParameter comment="Database username" internalId="_-k7yYs8WEeuvBMKVOYwYeg" name="globalContext_DB_Username" prompt="globalContext_DB_Username?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value="root"/>
-    <contextParameter comment="Context Storage Type to read from (File or DB)." internalId="_-k7yY88WEeuvBMKVOYwYeg" name="contextStorageType" prompt="contextStorageType?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;File&quot;"/>
-    <contextParameter comment="password for cryptographic file" internalId="_-k7yZM8WEeuvBMKVOYwYeg" name="crytographic_PWD" prompt="crytographic_PWD?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Password" value="enc:system.encryption.key.v1:8VPXDqT+AaxVlDXj9sxJ+Z0VzNekWVYWPe30sW+vHp/fYF3v"/>
-    <contextParameter comment="file path for crytographic" internalId="_-k7yZc8WEeuvBMKVOYwYeg" name="crytographicFilePath" prompt="crytographicFilePath?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;C:/Temp/password&quot;"/>
-    <contextParameter comment="Load Job Level Context File" internalId="_-k7yZs8WEeuvBMKVOYwYeg" name="enableJobLevelContextFileLoad" prompt="enableJobLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false"/>
-    <contextParameter comment="Load Project Level Context File" internalId="_-k7yZ88WEeuvBMKVOYwYeg" name="enableProjectLevelContextFileLoad" prompt="enableProjectLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false"/>
-    <contextParameter comment="Load Task Level Context File" internalId="_-k7yaM8WEeuvBMKVOYwYeg" name="enableTaskLevelContextFileLoad" prompt="enableTaskLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false"/>
-    <contextParameter comment="Environment parameter that can be leveraged to drive different logic based on execution environment" internalId="_-k7yac8WEeuvBMKVOYwYeg" name="environment" prompt="environment?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;dev&quot;"/>
-    <contextParameter comment="Flag to set to load context variables in Job.  This is handy if there are child jobs and we do not want child jobs to load the context values again, but instead use the values from the parent job. Default Value is true and then overridden to false at the end of the first context load" internalId="_-k7yas8WEeuvBMKVOYwYeg" name="loadContextInJob" prompt="loadContextInJob?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="true"/>
-    <contextParameter comment="Print Context Variable Values (Password always hidden by default)" internalId="_-k7ya88WEeuvBMKVOYwYeg" name="printContextVariableValues" prompt="printContextVariableValues?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false"/>
-    <contextParameter comment="Location of Context Files (Local or Cloud Engine or Remote Engine)" internalId="_-k7ybM8WEeuvBMKVOYwYeg" name="resource_directory_contextFiles" prompt="resource_directory_contextFiles?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;C:/Temp/contextmanagement&quot;"/>
-    <contextParameter comment="Task Name or Id for loading Context File" internalId="_-k7ybc8WEeuvBMKVOYwYeg" name="taskName" prompt="taskName?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value=""/>
-    <contextParameter comment="Allocate the directory path to hold temporary file for tMap disk mode" internalId="_-k7ybs8WEeuvBMKVOYwYeg" name="temp_dir_path" prompt="temp_dir_path?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;C:/Temp/&quot;"/>
+    <contextParameter comment="String to specify any additional JDBC Connection parameters" internalId="_-k7yXc8WEeuvBMKVOYwYeg" name="globalContext_DB__AdditionalParams" prompt="globalContext_DB__AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="Database schema" internalId="_-k7yXs8WEeuvBMKVOYwYeg" name="globalContext_DB_Database_Schema" prompt="globalContext_DB_Database_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dev"/>
+    <contextParameter comment="Database Hostname" internalId="_-k7yX88WEeuvBMKVOYwYeg" name="globalContext_DB_Host" prompt="globalContext_DB_Host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dev"/>
+    <contextParameter comment="Database Password" internalId="_-k7yYM8WEeuvBMKVOYwYeg" name="globalContext_DB_Password" prompt="globalContext_DB_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+    <contextParameter comment="Port for connecting Database " internalId="_-k7yYc8WEeuvBMKVOYwYeg" name="globalContext_DB_Port" prompt="globalContext_DB_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3306"/>
+    <contextParameter comment="Database username" internalId="_-k7yYs8WEeuvBMKVOYwYeg" name="globalContext_DB_Username" prompt="globalContext_DB_Username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="root"/>
+    <contextParameter comment="Context Storage Type to read from (File or DB)." internalId="_-k7yY88WEeuvBMKVOYwYeg" name="contextStorageType" prompt="contextStorageType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;File&quot;"/>
+    <contextParameter comment="password for cryptographic file" internalId="_-k7yZM8WEeuvBMKVOYwYeg" name="crytographic_PWD" prompt="crytographic_PWD?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:8VPXDqT+AaxVlDXj9sxJ+Z0VzNekWVYWPe30sW+vHp/fYF3v"/>
+    <contextParameter comment="file path for crytographic" internalId="_-k7yZc8WEeuvBMKVOYwYeg" name="crytographicFilePath" prompt="crytographicFilePath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;C:/Temp/password&quot;"/>
+    <contextParameter comment="Load Job Level Context File" internalId="_-k7yZs8WEeuvBMKVOYwYeg" name="enableJobLevelContextFileLoad" prompt="enableJobLevelContextFileLoad?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false"/>
+    <contextParameter comment="Load Project Level Context File" internalId="_-k7yZ88WEeuvBMKVOYwYeg" name="enableProjectLevelContextFileLoad" prompt="enableProjectLevelContextFileLoad?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false"/>
+    <contextParameter comment="Load Task Level Context File" internalId="_-k7yaM8WEeuvBMKVOYwYeg" name="enableTaskLevelContextFileLoad" prompt="enableTaskLevelContextFileLoad?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false"/>
+    <contextParameter comment="Environment parameter that can be leveraged to drive different logic based on execution environment" internalId="_-k7yac8WEeuvBMKVOYwYeg" name="environment" prompt="environment?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;dev&quot;"/>
+    <contextParameter comment="Flag to set to load context variables in Job.  This is handy if there are child jobs and we do not want child jobs to load the context values again, but instead use the values from the parent job. Default Value is true and then overridden to false at the end of the first context load" internalId="_-k7yas8WEeuvBMKVOYwYeg" name="loadContextInJob" prompt="loadContextInJob?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="true"/>
+    <contextParameter comment="Print Context Variable Values (Password always hidden by default)" internalId="_-k7ya88WEeuvBMKVOYwYeg" name="printContextVariableValues" prompt="printContextVariableValues?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false"/>
+    <contextParameter comment="Location of Context Files (Local or Cloud Engine or Remote Engine)" internalId="_-k7ybM8WEeuvBMKVOYwYeg" name="resource_directory_contextFiles" prompt="resource_directory_contextFiles?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;C:/Temp/contextmanagement&quot;"/>
+    <contextParameter comment="Task Name or Id for loading Context File" internalId="_-k7ybc8WEeuvBMKVOYwYeg" name="taskName" prompt="taskName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="Allocate the directory path to hold temporary file for tMap disk mode" internalId="_-k7ybs8WEeuvBMKVOYwYeg" name="temp_dir_path" prompt="temp_dir_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;C:/Temp/&quot;"/>
   </context>
   <parameters>
     <elementParameter field="CHECK" name="LOG4J_RUN_ACTIVATE" show="false" value="true"/>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="39"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="320"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
@@ -160,7 +160,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:w9ULQavHC0WCJNvP7MASCDMOXK/uK6Fe28VBuBd3"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:OJge+70+wDlZeFfEV3pJLNIAS4nY1oJPia2uz5MC"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -175,7 +175,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/kdnre/psmbo_workspace/.metadata&quot;"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend/Talend-Studio-20240527_1700-V8.0.1/workspace/.metadata&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
@@ -195,7 +195,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:0Mum3k7pHtGQoxv1Ot+Mi1JC63tSk6Q7dY9k+J5x"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:gA12g7vyf957rrAiQqWuwmoXUJzUVrQa9HjAMysM"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -214,22 +214,6 @@
     <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
-    <routinesParameter id="_VpEi8Fx2Eeq8HKEkpBUS_g" name="DataOperation"/>
-    <routinesParameter id="_VpnVgFx2Eeq8HKEkpBUS_g" name="Mathematical"/>
-    <routinesParameter id="_Vprm8Fx2Eeq8HKEkpBUS_g" name="Numeric"/>
-    <routinesParameter id="_Vpv4YFx2Eeq8HKEkpBUS_g" name="Relational"/>
-    <routinesParameter id="_VqI58Fx2Eeq8HKEkpBUS_g" name="SQLike"/>
-    <routinesParameter id="_Vp0J0Fx2Eeq8HKEkpBUS_g" name="StringHandling"/>
-    <routinesParameter id="_Vp4bQFx2Eeq8HKEkpBUS_g" name="TalendDataGenerator"/>
-    <routinesParameter id="_Vp8ssFx2Eeq8HKEkpBUS_g" name="TalendDate"/>
-    <routinesParameter id="_VqEogFx2Eeq8HKEkpBUS_g" name="TalendStringUtil"/>
-    <routinesParameter id="_VqA-IFx2Eeq8HKEkpBUS_g" name="TalendString"/>
-    <routinesParameter id="_oGip0IyvEemuGIWPULx7VA" name="TalendEncryption"/>
-    <routinesParameter id="_TpjpoMNWEeuBDqjprnBJMA" name="DataMasking"/>
-    <routinesParameter id="_TrZcsMNWEeuBDqjprnBJMA" name="DqStringHandling"/>
-    <routinesParameter id="_TrQ50MNWEeuBDqjprnBJMA" name="DataQuality"/>
-    <routinesParameter id="_TrcgAMNWEeuBDqjprnBJMA" name="DQTechnical"/>
-    <routinesParameter id="_TrVLQMNWEeuBDqjprnBJMA" name="DataQualityDependencies"/>
   </parameters>
   <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="-96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
@@ -314,6 +298,7 @@
     <elementParameter field="COMPONENT_LIST" name="CONNECTION_ACCESS" show="false" value=""/>
     <elementParameter field="FILE" name="DBFILE_ACCESS" show="false" value="&quot;/home/mverrilli/workspace/7.1.1-new/in.mdb&quot;"/>
     <elementParameter field="CLOSED_LIST" name="DB_AS400_VERSION" show="false" value="jt400_V6R1.jar"/>
+    <elementParameter field="CLOSED_LIST" name="REDSHIFT_DRIVER_VERSION" show="false" value="DRIVER_V1"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION_AS400" show="false" value=""/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION_DB2" show="false" value=""/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION_FIREBIRD" show="false" value=""/>
@@ -326,8 +311,6 @@
     <elementParameter field="COMPONENT_LIST" name="CONNECTION_INFORMIX" show="false" value=""/>
     <elementParameter field="TEXT" name="DBSERVER" show="false" value="&quot;&quot;"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION_INGRES" show="false" value=""/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION_INTERBASE" show="false" value=""/>
-    <elementParameter field="TEXT" name="DBFILE_INTERBASE" show="false" value="&quot;/home/mverrilli/workspace/7.1.1-new/in.gdb&quot;"/>
     <elementParameter field="CLOSED_LIST" name="FRAMEWORK_TYPE" show="false" value="EMBEDED"/>
     <elementParameter field="CHECK" name="CONNECTION_FLAG" show="false" value="false"/>
     <elementParameter field="TEXT" name="DBNAME_JAVADB" show="false" value="&quot;&quot;"/>
@@ -345,7 +328,6 @@
     <elementParameter field="COMPONENT_LIST" name="CONNECTION_POSTGRE" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="DB_POSTGRE_VERSION" show="false" value="V9_X"/>
     <elementParameter field="CHECK" name="UNLOGGED" show="false" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION_POSTGREPLUS" show="false" value=""/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION_SQLITE" show="false" value=""/>
     <elementParameter field="FILE" name="DBFILE_SQLITE" show="false" value="&quot;/home/mverrilli/workspace/7.1.1-new/talend.db&quot;"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION_SYBASE" show="false" value=""/>
@@ -354,7 +336,6 @@
     <elementParameter field="TEXT" name="ODBCNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION_GREENPLUM" show="false" value=""/>
     <elementParameter field="CHECK" name="VERTICA_USE_CASCADE" show="false" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERTICA_VERSION" show="false" value="vertica_3.0_jdk_5.jar"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION_VERTICA" show="false" value=""/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION_EXASOL" show="false" value=""/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION_REDSHIFT" value="tDBConnection_2"/>
@@ -365,6 +346,8 @@
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="redshift_id"/>
     <elementParameter field="CLOSED_LIST" name="CREATE_TABLE_TYPE" show="false" value="SET"/>
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_STRING_PROPERTIES" show="false" value="false"/>
+    <elementParameter field="TABLE" name="ENTRY_PROPERTIES" show="false"/>
     <elementParameter field="CHECK" name="MSSQL_ACTIVE_DIR_AUTH" show="false" value="false"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
     <elementParameter field="CHECK" name="ENFORCE_DELIMITED_IDENTIFIERS" show="false" value="false"/>
@@ -373,7 +356,6 @@
     <elementParameter field="CHECK" name="VERTICA_CREATE_PROJECTION" show="false" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Create __TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <elementParameter field="CLOSED_LIST" name="REDSHIFT_DRIVER_VERSION" value="DRIVER_V1"/>
     <metadata connector="FLOW" label="Account" name="tCreateTable_1">
       <column comment="Indicator: Cancel Data Record" key="false" length="1" name="ROCANCEL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="Sales and Distribution Document Number" key="false" length="10" name="VBELN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -495,6 +477,7 @@
   </node>
   <node componentName="tRedshiftConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_2"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER_VERSION" value="DRIVER_V1"/>
     <elementParameter field="TEXT" name="HOST" value="context.Redshift_Connection_Server"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="REDSHIFT"/>
     <elementParameter field="TEXT" name="PORT" value="context.Redshift_Connection_Port"/>
@@ -502,7 +485,9 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Redshift_Connection_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.Redshift_Connection_Login"/>
     <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:jVLgCfv0ZetDaTdQ5PXJb/WpY4/wxfH+zRD+ibartcv+hOT5xE77IvRlzyE0P5sB2Hv4VqwXUCY9RoYOw0HWjw=="/>
+    <elementParameter field="CHECK" name="USE_STRING_PROPERTIES" show="false" value="false"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="context.Redshift_Connection_AdditionalParams"/>
+    <elementParameter field="TABLE" name="ENTRY_PROPERTIES" show="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
@@ -514,25 +499,10 @@
     <elementParameter field="CLOSED_LIST" name="JDBC_URL" value="STANDARD"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Connect to Redshift Target"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER_VERSION" value="DRIVER_V1"/>
   </node>
-  <node componentName="DK_Ref:LoadContext" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="-96">
+  <node componentName="DK_Ref:LoadContext" offsetLabelX="0" offsetLabelY="0" posX="288" posY="-96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="LoadContext_1"/>
-    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
-    <elementParameter field="CHECK" name="DUMMY" show="false" value="false"/>
     <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
-    <elementParameter field="CHECK" name="START" show="false" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
-    <elementParameter field="CLOSED_LIST" name="TRIGGER_INPUT_1" value="COMPONENT_OK"/>
-    <elementParameter field="COMPONENT_LIST" name="TRIGGER_INPUT_1:COMPONENT_LIST" value="tPrejob_1"/>
-    <elementParameter field="CLOSED_LIST" name="TRIGGER_INPUT_2" value="SUBJOB_OK"/>
-    <elementParameter field="COMPONENT_LIST" name="TRIGGER_INPUT_2:COMPONENT_LIST" value=""/>
-    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;CommonFramework:LoadContext"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
-    <elementParameter field="MEMO" name="COMMENT" value=""/>
   </node>
   <node componentName="tSAPODPInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPODPInput_2"/>
@@ -563,8 +533,10 @@
     <elementParameter field="TEXT" name="FTP_PORT" show="false" value="21"/>
     <elementParameter field="TEXT" name="FTP_USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="FTP_PASS" show="false" value="enc:system.encryption.key.v1:ToCU3JmxuZwZE2Jqposb7bwdzvadwKhFUUgWgY4N"/>
+    <elementParameter field="CHECK" name="USE_SERVER_LOGICAL_PATH" show="false" value="false"/>
     <elementParameter field="TEXT" name="FTP_DIR" show="false" value="&quot;/usr/sap/talend/ftp/&quot;"/>
     <elementParameter field="TEXT" name="GENERATED_FILENAME_PREFIX" show="false" value="&quot;current_data_file&quot;"/>
+    <elementParameter field="TEXT" name="START_TIMEOUT" show="false" value="8000"/>
     <elementParameter field="TEXT" name="FETCH_SIZE" value="-1"/>
     <elementParameter field="TABLE" name="SAP_PROPERTIES" show="false">
       <elementValue elementRef="PROPERTY" value="&quot;jco.client.saprouter&quot;"/>
@@ -898,6 +870,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutputBulkExec_1"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER_VERSION" show="false" value="DRIVER_V1"/>
     <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5439&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
@@ -906,6 +879,8 @@
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:FmhCZNgl0fE0zNXzwW3hf0VrK4kpan252dXvfIv/"/>
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_STRING_PROPERTIES" show="false" value="false"/>
+    <elementParameter field="TABLE" name="ENTRY_PROPERTIES" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;SAP_V_ITM&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="redshift_id"/>
@@ -914,6 +889,7 @@
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION_S3" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION_S3" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="CREDENTIAL_PROVIDER" value="STATIC_CREDENTIALS"/>
     <elementParameter field="TEXT" name="ACCESS_KEY" value="context.Redshift_S3_Access_Key"/>
     <elementParameter field="PASSWORD" name="SECRET_KEY" value="enc:system.encryption.key.v1:tPmpY0r4sipQEHtwLMEMxDYTFDGWc/t081dksSEWHlhPjDLQnodotjIBYWQRqn1Sro4+TqVEFvj4tA=="/>
     <elementParameter field="CHECK" name="ASSUME_ROLE_S3" value="false"/>
@@ -938,6 +914,9 @@
     <elementParameter field="CLOSED_LIST" name="TIMEFORMAT" value="NONE"/>
     <elementParameter field="TEXT" name="TIME_PATTERN" show="false" value="&quot;YYYY-MM-DD HH:MI:SS&quot;"/>
     <elementParameter field="TABLE" name="OTHER_CONFIGURATION"/>
+    <elementParameter field="FILE" name="WEB_IDENTITY_TOKEN_FILE" show="false" value=""/>
+    <elementParameter field="TEXT" name="WEB_TOKEN_ARN" show="false" value=""/>
+    <elementParameter field="TEXT" name="WEB_TOKEN_ROLE_SESSION_NAME" show="false" value=""/>
     <elementParameter field="CHECK" name="CONFIG_CLIENT" value="false"/>
     <elementParameter field="TABLE" name="CLIENT_CONFIGURATION" show="false"/>
     <elementParameter field="CHECK" name="SET_STS_ENDPOINT" show="false" value="false"/>
@@ -952,8 +931,6 @@
     <elementParameter field="CLOSED_LIST" name="JDBC_URL" show="false" value="STANDARD"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;SAP_V_ITM"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <elementParameter field="CLOSED_LIST" name="CREDENTIAL_PROVIDER" value="STATIC_CREDENTIALS"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER_VERSION" value="DRIVER_V1"/>
     <metadata connector="FLOW" name="tDBOutputBulkExec_1">
       <column comment="Indicator: Cancel Data Record" key="false" length="1" name="ROCANCEL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="Sales and Distribution Document Number" key="false" length="10" name="VBELN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -1059,7 +1036,7 @@
   <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tDBConnection_2" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_2" target="tDie_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError4"/>
   </connection>
-  <connection connectorName="TRIGGER_OUTPUT_1" label="OnSubjobOk (&lt;b&gt;TRIGGER_OUTPUT_1&lt;/b&gt;&lt;br&gt;OnSubjobOk(TRIGGER_OUTPUT_1))" lineStyle="1" metaname="LoadContext_1" offsetLabelX="0" offsetLabelY="0" source="LoadContext_1" target="tSAPConnection_1">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk (&lt;b&gt;TRIGGER_OUTPUT_1&lt;/b&gt;&lt;br&gt;OnSubjobOk(TRIGGER_OUTPUT_1))" lineStyle="1" metaname="LoadContext_1" offsetLabelX="0" offsetLabelY="0" source="LoadContext_1" target="tSAPConnection_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
   </connection>
   <connection connectorName="FLOW" label="input_rows" lineStyle="0" metaname="tSAPODPInput_2" offsetLabelX="0" offsetLabelY="0" source="tSAPODPInput_2" target="tMap_1">
@@ -1120,95 +1097,95 @@
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPConnection_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_2"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tCreateTable_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_2"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_2"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_3"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_4"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_3"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_2"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
   <subjob>
     <elementParameter field="CHECK" name="COLLAPSED" show="false" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="LoadContext_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPODPInput_2"/>
     <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Load data from SAP ODP to Redshift"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_88a0bd92-aad4-47d7-8675-fe409b0a4d50"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1jarvKFG4WTxekjE5hr57Iy3376t1SJt0m8K14knj+PfETVgniLTDk9a7+ih4ofxRNWE7NG5Ujyp&#13;
-dTL9uRKQmg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_bf4ff781-f95c-4b5d-a4a4-58473b8d74f4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7XjoYTWOVqlBIv1RcFZWb5VU/V6XPVg4FHdCJ4cc4JWDWJRpDJneS3X+juy7LAWIm/ANna5TxfRs&#13;
-zK2PJ0qvng==</DigestValue></Reference></SignedInfo><SignatureValue>nVRJuk2XPAm+wZF+b23z9jzEYztYWiaykP6DiBglupB3Rhy2YZ8KUQRXLXIrUL7Yw9erUE+Xuosq&#13;
-+4IUSiLR7PpGtIk2Uhmzd6PTA+GLqA//JSL5KsYLW06yu2fBZGJeKasMACMTm0Ris3G9Tbr2H5Yy&#13;
-cW5c1F9b3J8zANRs/7WLkEOr6glWvz0m8YviOGRmEGwfOPfs5+9oiKRtMqrgMgPGR38HhPUjXMBU&#13;
-hN0Ugr0Os273Ngl3daTcnYI7YG9PBjva8yd6BN+VIGz1a7f4daaN1KcFaneSDaIaAEUZwxDa0A/+&#13;
-MSyYxdIAxdifdrLShrsXYykITBseXakhusRiVw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ca3c4fc2-7e97-4cc9-ae88-8aea0c5522a7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9oCRlhuw2iVkQ+M6MWtit3pFaz8YlR0kzCOiX+pvXhKeV96ZD3iHLbqZzWCOrS+DRubgKzgsjJDu&#13;
+ukxlUQAWew==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_30c224a4-07e0-4f16-bdaf-1fc94a65fa5b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NzXzQcqkEVakBQugLueX4Jit5vQMJrn14aWblv2tOZx5728PctIXhrbq2swFLYBHPCqBakez/pch&#13;
+KOVt5ITcQA==</DigestValue></Reference></SignedInfo><SignatureValue>PViPBD8f8AtkeyrvcYjaftyDIBtSnUOILBXoKFNHhQbXpnLy9dRQbCNofZy41AVPJeCDunl+A2W6&#13;
+/t+g4rl/tlxQb7xq2tnvV0uFJiFtIhgsnUuCFYQ/1uAA0We8GUdn88wEYzc57beBmrrZq9bQjgfI&#13;
+5VO+ZEsKbbWulvsB+YYEVcJWNzcKkKMGmpE9A4302QP7iDGul+GpzaI7HjJngLX3/B3ga+i/A3rt&#13;
+PZMe2QEbcPNNEp9A6RDGOpxhOXxzin+cqyPyROtepST+hOWmGlh2xPm2bVPf2eTH9aGliWfej9oC&#13;
+E7fFyw1GFbpY3f4szlcFpPCtapWkYu/chcD9Sg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1230,4 +1207,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_bf4ff781-f95c-4b5d-a4a4-58473b8d74f4" Target="#_88a0bd92-aad4-47d7-8675-fe409b0a4d50"><Timestamp>2024-09-25 14:32:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_30c224a4-07e0-4f16-bdaf-1fc94a65fa5b" Target="#_ca3c4fc2-7e97-4cc9-ae88-8aea0c5522a7"><Timestamp>2024-09-25 14:40:59</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
