@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_rREUEOtBEemV5p5Dpqr24g" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_rREUEetBEemV5p5Dpqr24g" comment="" name="inputPath" prompt="inputPath?" promptNeeded="false" type="id_String" value="&quot;/home/xqliu/AAA/INPUT_PATH/&quot;"/>
+    <contextParameter xmi:id="_rREUEutBEemV5p5Dpqr24g" comment="" name="outputPath" prompt="outputPath?" promptNeeded="false" type="id_String" value="&quot;/home/xqliu/AAA/OUTPUT_PATH/&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_rREUE-tBEemV5p5Dpqr24g" confirmationNeeded="false" name="Production">
+    <contextParameter xmi:id="_rREUFOtBEemV5p5Dpqr24g" comment="" name="inputPath" prompt="inputPath?" promptNeeded="false" type="id_String" value="&quot;/tmp/prod/input/&quot;"/>
+    <contextParameter xmi:id="_rREUFetBEemV5p5Dpqr24g" comment="" name="outputPath" prompt="outputPath?" promptNeeded="false" type="id_String" value="&quot;/tmp/prod/out/&quot;"/>
+  </talendfile:ContextType>
+</xmi:XMI>

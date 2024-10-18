@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_MicRwHETEeqIk5-FS8Y9kA" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_Mic40HETEeqIk5-FS8Y9kA" comment="SAP user id" name="sap_userid" prompt="sap_userid?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Mic40XETEeqIk5-FS8Y9kA" comment="SAP Password" name="sap_password" prompt="sap_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+    <contextParameter xmi:id="_Mic40nETEeqIk5-FS8Y9kA" comment="SAP Client id" name="sap_client" prompt="sap_client?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Mic403ETEeqIk5-FS8Y9kA" comment="SnowFlake Account" name="snowflake_account" prompt="snowflake_account?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Mic41HETEeqIk5-FS8Y9kA" comment="Snowflake User Id" name="snowflake_userid" prompt="snowflake_userid?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Mic41XETEeqIk5-FS8Y9kA" comment="Snowflake Password" name="snowflake_password" prompt="snowflake_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+    <contextParameter xmi:id="_Mic41nETEeqIk5-FS8Y9kA" comment="Snowflake target data warehouse name" name="snowflake_target_warehouse" prompt="snowflake_target_warehouse?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Mic413ETEeqIk5-FS8Y9kA" comment="Snowflake Target schema name" name="snowflake_target_schema" prompt="snowflake_target_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Mic42HETEeqIk5-FS8Y9kA" comment="Snowflake Target Database name" name="snowflake_target_database" prompt="snowflake_target_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Mic42XETEeqIk5-FS8Y9kA" comment="Snowflake stage Folder" name="snowflake_stage_folder" prompt="snowflake_stage_folder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Mic42nETEeqIk5-FS8Y9kA" comment="Folder where Snowflake data rejection records are stored" name="snowflake_reject_folder" prompt="snowflake_reject_folder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Mic423ETEeqIk5-FS8Y9kA" comment="sap host name" name="sap_host_name" prompt="sap_host_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Mic43HETEeqIk5-FS8Y9kA" comment="sap system number" name="sap_system_number" prompt="sap_system_number?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Mic43XETEeqIk5-FS8Y9kA" comment="language" name="sap_lang" prompt="sap_lang?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Mic44HETEeqIk5-FS8Y9kA" comment="service name for SAP ODP extraction" name="sap_odp_service_name" prompt="sap_odp_service_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Mic44XETEeqIk5-FS8Y9kA" comment="subscriber name for SAP ODP extraction" name="sap_odp_subscriber_name" prompt="sap_odp_subscriber_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Mic44nETEeqIk5-FS8Y9kA" comment="subscriber process name for SAP ODP extraction" name="sap_odp_subscriber_process_name" prompt="sap_odp_subscriber_process_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_Mic443ETEeqIk5-FS8Y9kA" confirmationNeeded="false" name="Test">
+    <contextParameter xmi:id="_Mic45HETEeqIk5-FS8Y9kA" comment="SAP user id" name="sap_userid" prompt="sap_userid?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Mic45XETEeqIk5-FS8Y9kA" comment="SAP Password" name="sap_password" prompt="sap_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+    <contextParameter xmi:id="_Mic45nETEeqIk5-FS8Y9kA" comment="SAP Client id" name="sap_client" prompt="sap_client?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Mic453ETEeqIk5-FS8Y9kA" comment="SnowFlake Account" name="snowflake_account" prompt="snowflake_account?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Mic46HETEeqIk5-FS8Y9kA" comment="Snowflake User Id" name="snowflake_userid" prompt="snowflake_userid?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Mic46XETEeqIk5-FS8Y9kA" comment="Snowflake Password" name="snowflake_password" prompt="snowflake_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+    <contextParameter xmi:id="_Mic46nETEeqIk5-FS8Y9kA" comment="Snowflake target data warehouse name" name="snowflake_target_warehouse" prompt="snowflake_target_warehouse?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Mic463ETEeqIk5-FS8Y9kA" comment="Snowflake Target schema name" name="snowflake_target_schema" prompt="snowflake_target_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Mic47HETEeqIk5-FS8Y9kA" comment="Snowflake Target Database name" name="snowflake_target_database" prompt="snowflake_target_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Mic47XETEeqIk5-FS8Y9kA" comment="Snowflake stage Folder" name="snowflake_stage_folder" prompt="snowflake_stage_folder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/Talend/SolutionTemplates/Templates/stage/"/>
+    <contextParameter xmi:id="_Mic47nETEeqIk5-FS8Y9kA" comment="Folder where Snowflake data rejection records are stored" name="snowflake_reject_folder" prompt="snowflake_reject_folder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/Talend/SolutionTemplates/Templates/rejects/"/>
+    <contextParameter xmi:id="_Mic473ETEeqIk5-FS8Y9kA" comment="sap host name" name="sap_host_name" prompt="sap_host_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Mic48HETEeqIk5-FS8Y9kA" comment="sap system number" name="sap_system_number" prompt="sap_system_number?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Mic48XETEeqIk5-FS8Y9kA" comment="language" name="sap_lang" prompt="sap_lang?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Mic49HETEeqIk5-FS8Y9kA" comment="service name for SAP ODP extraction" name="sap_odp_service_name" prompt="sap_odp_service_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Mic49XETEeqIk5-FS8Y9kA" comment="subscriber name for SAP ODP extraction" name="sap_odp_subscriber_name" prompt="sap_odp_subscriber_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Mic49nETEeqIk5-FS8Y9kA" comment="subscriber process name for SAP ODP extraction" name="sap_odp_subscriber_process_name" prompt="sap_odp_subscriber_process_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

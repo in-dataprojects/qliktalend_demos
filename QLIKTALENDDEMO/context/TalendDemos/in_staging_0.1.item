@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_TOQZQHaQEe-cI9IAex1ZpA" confirmationNeeded="false" hide="false" name="dev">
+    <contextParameter xmi:id="_TOQZQXaQEe-cI9IAex1ZpA" comment="" name="in_staging_AdditionalParams" prompt="in_staging_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1"/>
+    <contextParameter xmi:id="_TOQZQnaQEe-cI9IAex1ZpA" comment="" name="in_staging_Login" prompt="in_staging_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="root"/>
+    <contextParameter xmi:id="_TOQZQ3aQEe-cI9IAex1ZpA" comment="" name="in_staging_Database" prompt="in_staging_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="in_staging"/>
+    <contextParameter xmi:id="_TOQZRHaQEe-cI9IAex1ZpA" comment="" name="in_staging_Port" prompt="in_staging_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_TOQZRXaQEe-cI9IAex1ZpA" comment="" name="in_staging_Password" prompt="in_staging_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:EKlChK/++kOaOKBopkWGJBzt68Hp4uxyWHIHKh1wxTs="/>
+    <contextParameter xmi:id="_TOQZRnaQEe-cI9IAex1ZpA" comment="" name="in_staging_Server" prompt="in_staging_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="localhost"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_TOQZR3aQEe-cI9IAex1ZpA" confirmationNeeded="false" hide="false" name="hmg">
+    <contextParameter xmi:id="_TOQZSHaQEe-cI9IAex1ZpA" comment="" name="in_staging_AdditionalParams" prompt="in_staging_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1"/>
+    <contextParameter xmi:id="_TOQZSXaQEe-cI9IAex1ZpA" comment="" name="in_staging_Login" prompt="in_staging_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="root"/>
+    <contextParameter xmi:id="_TOQZSnaQEe-cI9IAex1ZpA" comment="" name="in_staging_Database" prompt="in_staging_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="in_staging"/>
+    <contextParameter xmi:id="_TOQZS3aQEe-cI9IAex1ZpA" comment="" name="in_staging_Port" prompt="in_staging_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_TOQZTHaQEe-cI9IAex1ZpA" comment="" name="in_staging_Password" prompt="in_staging_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:dE4Lv5AwxGrldUsFb96UNJx3mwkofNAB4pcle+4d3ck="/>
+    <contextParameter xmi:id="_TOQZTXaQEe-cI9IAex1ZpA" comment="" name="in_staging_Server" prompt="in_staging_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="localhost"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_TOQZTnaQEe-cI9IAex1ZpA" confirmationNeeded="false" hide="false" name="prd">
+    <contextParameter xmi:id="_TOQZT3aQEe-cI9IAex1ZpA" comment="" name="in_staging_AdditionalParams" prompt="in_staging_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1"/>
+    <contextParameter xmi:id="_TOQZUHaQEe-cI9IAex1ZpA" comment="" name="in_staging_Login" prompt="in_staging_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="root"/>
+    <contextParameter xmi:id="_TOQZUXaQEe-cI9IAex1ZpA" comment="" name="in_staging_Database" prompt="in_staging_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="in_staging"/>
+    <contextParameter xmi:id="_TOQZUnaQEe-cI9IAex1ZpA" comment="" name="in_staging_Port" prompt="in_staging_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_TOQZU3aQEe-cI9IAex1ZpA" comment="" name="in_staging_Password" prompt="in_staging_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:/QhuHGxQYvSDkp25W92+lZotrhwAOxdY/iPBe4V5vuQ="/>
+    <contextParameter xmi:id="_TOQZVHaQEe-cI9IAex1ZpA" comment="" name="in_staging_Server" prompt="in_staging_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="localhost"/>
+  </talendfile:ContextType>
+</xmi:XMI>

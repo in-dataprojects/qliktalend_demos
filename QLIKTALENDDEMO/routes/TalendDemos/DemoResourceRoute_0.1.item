@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_7P6M4I1QEe-P95gFpWdVDQ" defaultContext="Default" jobType="Standard">
+  <context xmi:id="_7P6M4Y1QEe-P95gFpWdVDQ" confirmationNeeded="false" name="Default"/>
+  <parameters xmi:id="_7P6M4o1QEe-P95gFpWdVDQ">
+    <elementParameter xmi:id="_7P6M441QEe-P95gFpWdVDQ" field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter xmi:id="_7P6M5I1QEe-P95gFpWdVDQ" field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter xmi:id="_7P6M5Y1QEe-P95gFpWdVDQ" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_7P6M5o1QEe-P95gFpWdVDQ" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_7P6M541QEe-P95gFpWdVDQ" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_7P6M6I1QEe-P95gFpWdVDQ" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_7P6M6Y1QEe-P95gFpWdVDQ" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_7P6M6o1QEe-P95gFpWdVDQ" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_7P6M641QEe-P95gFpWdVDQ" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_7P6M7I1QEe-P95gFpWdVDQ" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_7P6M7Y1QEe-P95gFpWdVDQ" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_7P6M7o1QEe-P95gFpWdVDQ" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_7P6M741QEe-P95gFpWdVDQ" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_7P6M8I1QEe-P95gFpWdVDQ" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_7P6M8Y1QEe-P95gFpWdVDQ" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_7P6M8o1QEe-P95gFpWdVDQ" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_7P6M841QEe-P95gFpWdVDQ" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <routinesParameter xmi:id="_7P6M9I1QEe-P95gFpWdVDQ" id="__utwwARrEeGb2dr9_uAKEQ" name="DataOperation"/>
+    <routinesParameter xmi:id="_7P6M9Y1QEe-P95gFpWdVDQ" id="__v3AQARrEeGb2dr9_uAKEQ" name="Mathematical"/>
+    <routinesParameter xmi:id="_7P6M9o1QEe-P95gFpWdVDQ" id="__wCmcARrEeGb2dr9_uAKEQ" name="Numeric"/>
+    <routinesParameter xmi:id="_7P6M941QEe-P95gFpWdVDQ" id="__wWIcARrEeGb2dr9_uAKEQ" name="Relational"/>
+    <routinesParameter xmi:id="_7P6M-I1QEe-P95gFpWdVDQ" id="__wstwARrEeGb2dr9_uAKEQ" name="StringHandling"/>
+    <routinesParameter xmi:id="_7P6M-Y1QEe-P95gFpWdVDQ" id="__xEhMARrEeGb2dr9_uAKEQ" name="TalendDataGenerator"/>
+    <routinesParameter xmi:id="_7P6M-o1QEe-P95gFpWdVDQ" id="__xR8kARrEeGb2dr9_uAKEQ" name="TalendDate"/>
+    <routinesParameter xmi:id="_7P6M-41QEe-P95gFpWdVDQ" id="__xibQARrEeGb2dr9_uAKEQ" name="TalendString"/>
+    <routinesParameter xmi:id="_7P6M_I1QEe-P95gFpWdVDQ" id="_96cSy--pEeOr84XQJqQxwg" name="SQLike"/>
+    <routinesParameter xmi:id="_7P6M_Y1QEe-P95gFpWdVDQ" id="_hUg6wHNBEeWFx6Nrk949xw" name="DQTechnical"/>
+    <routinesParameter xmi:id="_7P6M_o1QEe-P95gFpWdVDQ" id="_hUXJwHNBEeWFx6Nrk949xw" name="DataQualityDependencies"/>
+    <routinesParameter xmi:id="_7P6M_41QEe-P95gFpWdVDQ" id="_hRQycHNBEeWFx6Nrk949xw" name="DataQuality"/>
+    <routinesParameter xmi:id="_7P6NAI1QEe-P95gFpWdVDQ" id="_hUcCQHNBEeWFx6Nrk949xw" name="DqStringHandling"/>
+    <routinesParameter xmi:id="_7P6NAY1QEe-P95gFpWdVDQ" id="__HobtjJVEeiYFf1bJ7c1ww" name="TalendStringUtil"/>
+  </parameters>
+  <node xmi:id="_7P6NAo1QEe-P95gFpWdVDQ" componentName="cSOAP" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="128">
+    <elementParameter xmi:id="_7P6NA41QEe-P95gFpWdVDQ" field="TEXT" name="UNIQUE_NAME" value="cSOAP_1" show="false"/>
+    <elementParameter xmi:id="_7P6NBI1QEe-P95gFpWdVDQ" field="TEXT" name="SERVICE_NS" value="" show="false"/>
+    <elementParameter xmi:id="_7P6NBY1QEe-P95gFpWdVDQ" field="TEXT" name="ADDRESS" value="&quot;http://localhost:8030/service/ResourceAsService&quot;"/>
+    <elementParameter xmi:id="_7P6NBo1QEe-P95gFpWdVDQ" field="CLOSED_LIST" name="SERVICE_TYPE" value="wsdlURL"/>
+    <elementParameter xmi:id="_7P6NB41QEe-P95gFpWdVDQ" field="CLOSED_LIST" name="WSDL_TYPE" value="repo"/>
+    <elementParameter xmi:id="_7P6NCI1QEe-P95gFpWdVDQ" field="FILE" name="WSDL_FILE" value="&quot;H:/tempWorkspace4Talend/workspace_ESB2/EE/route_resources/DemoWsdl_0.1.wsdl&quot;" show="false"/>
+    <elementParameter xmi:id="_7P6NCY1QEe-P95gFpWdVDQ" field="ROUTE_RESOURCE_TYPE" name="WSDL_FILE_REPO" value="_SdiGANxlEeGDzfUABxc8-w"/>
+    <elementParameter xmi:id="_7P6NCo1QEe-P95gFpWdVDQ" field="TECHNICAL" name="WSDL_FILE_REPO:ROUTE_RESOURCE_TYPE_VERSION" value="Latest"/>
+    <elementParameter xmi:id="_7P6NC41QEe-P95gFpWdVDQ" field="TEXT" name="SERVICE_CLASS" value="&quot;beans.ServiceClass&quot;" show="false"/>
+    <elementParameter xmi:id="_7P6NDI1QEe-P95gFpWdVDQ" field="EXTERNAL" name="SERVICE_CONFIGURATION" value=""/>
+    <elementParameter xmi:id="_7P6NDY1QEe-P95gFpWdVDQ" field="CLOSED_LIST" name="DATAFORMAT" value="PAYLOAD"/>
+    <elementParameter xmi:id="_7P6NDo1QEe-P95gFpWdVDQ" field="CHECK" name="ALLOW_STREAMING" value="false"/>
+    <elementParameter xmi:id="_7P6ND41QEe-P95gFpWdVDQ" field="LABEL" name="RAW_TOOLTIP" value=" (MESSAGE dataFormat without SAM Support)" show="false"/>
+    <elementParameter xmi:id="_7P6NEI1QEe-P95gFpWdVDQ" field="LABEL" name="CXF_MESSAGE_TOOLTIP" value=" (MESSAGE dataFormat plus SAM Support)" show="false"/>
+    <elementParameter xmi:id="_7P6NEY1QEe-P95gFpWdVDQ" field="CHECK" name="ENABLE_CXF_MESSAGE_GZIP" value="false"/>
+    <elementParameter xmi:id="_7P6NEo1QEe-P95gFpWdVDQ" field="TEXT" name="SERVICE_NAME" value="&quot;{http://www.talend.org/service/}RouteResourceDemo&quot;"/>
+    <elementParameter xmi:id="_7P6NE41QEe-P95gFpWdVDQ" field="TEXT" name="PORT_NAME" value="&quot;{http://www.talend.org/service/}RouteResourceDemoPort&quot;"/>
+    <elementParameter xmi:id="_7P6NFI1QEe-P95gFpWdVDQ" field="TEXT" name="OPERATION_NAME" value="&quot;{http://www.talend.org/service/}RouteResourceDemoOperation&quot;" show="false"/>
+    <elementParameter xmi:id="_7P6NFY1QEe-P95gFpWdVDQ" field="CHECK" name="ENABLE_REGISTRY" value="false"/>
+    <elementParameter xmi:id="_7P6NFo1QEe-P95gFpWdVDQ" field="CHECK" name="ENABLE_SL" value="false"/>
+    <elementParameter xmi:id="_7P6NF41QEe-P95gFpWdVDQ" field="CHECK" name="ENABLE_SAM" value="false"/>
+    <elementParameter xmi:id="_7P6NGI1QEe-P95gFpWdVDQ" field="CHECK" name="ENABLE_SAM_MESSAGE" value="false" show="false"/>
+    <elementParameter xmi:id="_7P6NGY1QEe-P95gFpWdVDQ" field="CHECK" name="ENABLE_SECURITY" value="false"/>
+    <elementParameter xmi:id="_7P6NGo1QEe-P95gFpWdVDQ" field="CLOSED_LIST" name="SECURITY_TYPE" value="USER" show="false"/>
+    <elementParameter xmi:id="_7P6NG41QEe-P95gFpWdVDQ" field="LABEL" name="AUTHENTICATION_LABEL" value="Authentication:" show="false"/>
+    <elementParameter xmi:id="_7P6NHI1QEe-P95gFpWdVDQ" field="CLOSED_LIST" name="SAML_SECURITY_TYPES" value="NO_PROPAGATE" show="false"/>
+    <elementParameter xmi:id="_7P6NHY1QEe-P95gFpWdVDQ" field="LABEL" name="PROPAGATE_UP_LABEL" value="" show="false"/>
+    <elementParameter xmi:id="_7P6NHo1QEe-P95gFpWdVDQ" field="LABEL" name="PROPAGATE_AP_LABEL" value="" show="false"/>
+    <elementParameter xmi:id="_7P6NH41QEe-P95gFpWdVDQ" field="CHECK" name="USE_PROPAGATE_CREDENTIAL" value="false" show="false"/>
+    <elementParameter xmi:id="_7P6NII1QEe-P95gFpWdVDQ" field="TEXT" name="ALIASNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_7P6NIY1QEe-P95gFpWdVDQ" field="TEXT" name="USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_7P6NIo1QEe-P95gFpWdVDQ" field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:v2dbR2mSMeAdXsvi01kOuomfiERXJwI/Om/92ZK5" show="false"/>
+    <elementParameter xmi:id="_7P6NI41QEe-P95gFpWdVDQ" field="CHECK" name="USE_AUTHORIZATION" value="false" show="false"/>
+    <elementParameter xmi:id="_7P6NJI1QEe-P95gFpWdVDQ" field="LABEL" name="AUTHORIZATION_LABEL" value="Authorization:" show="false"/>
+    <elementParameter xmi:id="_7P6NJY1QEe-P95gFpWdVDQ" field="TEXT" name="ROLE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_7P6NJo1QEe-P95gFpWdVDQ" field="CHECK" name="ENABLE_CORRELATION" value="false"/>
+    <elementParameter xmi:id="_7P6NJ41QEe-P95gFpWdVDQ" field="TEXT" name="CORRELATION_VALUE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_7P6NKI1QEe-P95gFpWdVDQ" field="LABEL" name="CORRELATION_VALUE_TOOLTIP" value="(Simple Expression is Available)" show="false"/>
+    <elementParameter xmi:id="_7P6NKY1QEe-P95gFpWdVDQ" field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter xmi:id="_7P6NKo1QEe-P95gFpWdVDQ" field="TABLE" name="ADVARGUMENTS"/>
+    <elementParameter xmi:id="_7P6NK41QEe-P95gFpWdVDQ" field="TABLE" name="SL_META_DATA" show="false"/>
+    <elementParameter xmi:id="_7P6NLI1QEe-P95gFpWdVDQ" field="TEXT" name="LABEL" value="ResourceAsServiceCXF"/>
+    <elementParameter xmi:id="_7P6NLY1QEe-P95gFpWdVDQ" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_7P6NLo1QEe-P95gFpWdVDQ" componentName="cSetBody" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="128">
+    <elementParameter xmi:id="_7P6NL41QEe-P95gFpWdVDQ" field="TEXT" name="UNIQUE_NAME" value="cSetBody_1" show="false"/>
+    <elementParameter xmi:id="_7P6NMI1QEe-P95gFpWdVDQ" field="CLOSED_LIST" name="LANGUAGES" value="simple"/>
+    <elementParameter xmi:id="_7P6NMY1QEe-P95gFpWdVDQ" field="TEXT" name="EXPRESSION" value="&quot;&lt;response>Resource Handled Successfully: ${body}&lt;/response>&quot;"/>
+    <elementParameter xmi:id="_7P6NMo1QEe-P95gFpWdVDQ" field="CHECK" name="USE_NAMESPACES" value="false" show="false"/>
+    <elementParameter xmi:id="_7P6NM41QEe-P95gFpWdVDQ" field="TABLE" name="NAMESPACES" show="false"/>
+    <elementParameter xmi:id="_7P6NNI1QEe-P95gFpWdVDQ" field="LABEL" name="WARNING" value="*Note: For Bean Language, the Expression should be a qualified class name without quotes.&#xA;*Note: For None Language, the Value should be a full expression, instead of a plain text.&#xA;*Note: For XPath Language, the Namespaces will be used automatically if it's checked." show="false"/>
+    <elementParameter xmi:id="_7P6NNY1QEe-P95gFpWdVDQ" field="TEXT" name="LABEL" value="Response"/>
+    <elementParameter xmi:id="_7P6NNo1QEe-P95gFpWdVDQ" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_7P6NN41QEe-P95gFpWdVDQ" componentName="cSetBody" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="128">
+    <elementParameter xmi:id="_7P6NOI1QEe-P95gFpWdVDQ" field="TEXT" name="UNIQUE_NAME" value="cSetBody_2" show="false"/>
+    <elementParameter xmi:id="_7P6NOY1QEe-P95gFpWdVDQ" field="CLOSED_LIST" name="LANGUAGES" value="xpath"/>
+    <elementParameter xmi:id="_7P6NOo1QEe-P95gFpWdVDQ" field="TEXT" name="EXPRESSION" value="&quot;/ser:RouteResourceDemoOperationRequest/in/text()&quot;"/>
+    <elementParameter xmi:id="_7P6NO41QEe-P95gFpWdVDQ" field="CHECK" name="USE_NAMESPACES" value="true"/>
+    <elementParameter xmi:id="_7P6NPI1QEe-P95gFpWdVDQ" field="TABLE" name="NAMESPACES">
+      <elementValue xmi:id="_7P6NPY1QEe-P95gFpWdVDQ" elementRef="PREFIX" value="&quot;ser&quot;"/>
+      <elementValue xmi:id="_7P6NPo1QEe-P95gFpWdVDQ" elementRef="URI" value="&quot;http://www.talend.org/service/&quot;"/>
+    </elementParameter>
+    <elementParameter xmi:id="_7P6NP41QEe-P95gFpWdVDQ" field="LABEL" name="WARNING" value="*Note: For Bean Language, the Expression should be a qualified class name without quotes.&#xA;*Note: For None Language, the Value should be a full expression, instead of a plain text.&#xA;*Note: For XPath Language, the Namespaces will be used automatically if it's checked."/>
+    <elementParameter xmi:id="_7P6NQI1QEe-P95gFpWdVDQ" field="TEXT" name="LABEL" value="Request"/>
+    <elementParameter xmi:id="_7P6NQY1QEe-P95gFpWdVDQ" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <connection xmi:id="_7P6NQo1QEe-P95gFpWdVDQ" connectorName="ROUTE" label="route1" lineStyle="14" metaname="cSOAP_1" offsetLabelX="0" offsetLabelY="0" source="cSOAP_1" target="cSetBody_2">
+    <elementParameter xmi:id="_7P6NQ41QEe-P95gFpWdVDQ" field="TEXT" name="UNIQUE_NAME" value="route1" show="false"/>
+  </connection>
+  <connection xmi:id="_7P6NRI1QEe-P95gFpWdVDQ" connectorName="ROUTE" label="route2" lineStyle="14" metaname="cSetBody_2" offsetLabelX="0" offsetLabelY="0" source="cSetBody_2" target="cSetBody_1">
+    <elementParameter xmi:id="_7P6NRY1QEe-P95gFpWdVDQ" field="TEXT" name="UNIQUE_NAME" value="route2" show="false"/>
+  </connection>
+  <note xmi:id="_7P6NRo1QEe-P95gFpWdVDQ" opaque="true" posX="32" posY="32" sizeHeight="64" sizeWidth="705" text="This Route demonstrates how to use Route Resources.">
+    <elementParameter xmi:id="_7P6NR41QEe-P95gFpWdVDQ" field="TEXT" name="FONT_SIZE" value="11"/>
+  </note>
+  <note xmi:id="_7P6NSI1QEe-P95gFpWdVDQ" opaque="true" posX="32" posY="192" sizeHeight="97" sizeWidth="705" text="To execute the Route, run it in the Studio or from Talend ESB Runtime.&#xD;&#xA;Result:&#xD;&#xA;The WSDL is generated at http://localhost:8030/service/ResourceAsService?WSDL.&#xD;&#xA;You can call the process method of the service with any parameter.">
+    <elementParameter xmi:id="_7P6NSY1QEe-P95gFpWdVDQ" field="RADIO" name="NOTELABEL_CENTER" value="false"/>
+    <elementParameter xmi:id="_7P6NSo1QEe-P95gFpWdVDQ" field="RADIO" name="NOTETXT_TOP" value="true"/>
+    <elementParameter xmi:id="_7P6NS41QEe-P95gFpWdVDQ" field="TEXT" name="FONT_SIZE" value="11"/>
+  </note>
+  <subjob xmi:id="_7P6NTI1QEe-P95gFpWdVDQ">
+    <elementParameter xmi:id="_7P6NTY1QEe-P95gFpWdVDQ" field="TEXT" name="UNIQUE_NAME" value="cSOAP_1" show="false"/>
+    <elementParameter xmi:id="_7P6NTo1QEe-P95gFpWdVDQ" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240" show="false"/>
+    <elementParameter xmi:id="_7P6NT41QEe-P95gFpWdVDQ" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob xmi:id="_7P6NUI1QEe-P95gFpWdVDQ">
+    <elementParameter xmi:id="_7P6NUY1QEe-P95gFpWdVDQ" field="TEXT" name="UNIQUE_NAME" value="cSetBody_1" show="false"/>
+    <elementParameter xmi:id="_7P6NUo1QEe-P95gFpWdVDQ" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240" show="false"/>
+    <elementParameter xmi:id="_7P6NU41QEe-P95gFpWdVDQ" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob xmi:id="_7P6NVI1QEe-P95gFpWdVDQ">
+    <elementParameter xmi:id="_7P6NVY1QEe-P95gFpWdVDQ" field="TEXT" name="UNIQUE_NAME" value="cSetBody_2" show="false"/>
+    <elementParameter xmi:id="_7P6NVo1QEe-P95gFpWdVDQ" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240" show="false"/>
+    <elementParameter xmi:id="_7P6NV41QEe-P95gFpWdVDQ" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+</talendfile:ProcessType>
