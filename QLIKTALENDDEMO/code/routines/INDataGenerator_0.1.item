@@ -2,6 +2,8 @@ package routines;
 
 import java.util.InputMismatchException;
 
+import routines.system.RandomUtils;
+
 /*
  * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
  * it must be before the "{talendTypes}" key.
@@ -35,6 +37,49 @@ public class INDataGenerator {
 		}
 
 		
+		
+		/**
+		 * 
+		 * getSobrenome()
+		 * 
+	     * {talendTypes} String
+	     * 
+	     * {Category} User Defined
+	     * 
+	     * {example} getNome() # Davi.
+	     */
+	    public static String getNome() {
+	        String[] list = {"Miguel","Davi","Arthur","Pedro","Gabriel","Bernardo","Lucas","Matheus","Rafael","Heitor","Enzo","Guilherme","Nicolas","Lorenzo","Gustavo",
+	        				 "Sophia","Alice","Julia","Isabella","Manuela","Laura","Luiza","Valentina","Giovanna","Maria Eduarda","Helena","Beatriz","Maria Luiza"
+	        				}; //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$ //$NON-NLS-5$ //$NON-NLS-6$ //$NON-NLS-7$ //$NON-NLS-8$
+	        Integer random = 0 + ((Long) Math.round(RandomUtils.random() * (list.length - 1 - 0))).intValue();
+	        return list[random];
+	    }
+
+	    
+	    
+	    /**
+	     * getSobrenome()
+	     * 
+	     * {talendTypes} String
+	     * 
+	     * {Category} User Defined
+	     * 
+	     * {example} getSobrenome() # Silva.
+	     */
+	    public static String getSobrenome() {
+	        String[] list = {"Silva","Costa","Santos","Ribeiro","Oliveira","Martins","Souza","Carvalho","Rodrigues","Almeida","Ferreira","Lopes","Alves","Soares","Pereira","Fernandes","Lima","Vieira","Gomes","Barbosa"}; 
+	        //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+	        Integer random = 0 + ((Long) Math.round(RandomUtils.random() * (list.length - 1 - 0))).intValue();
+	        return list[random];
+	    }
+		
+		
+		
+		
+		
+		
+			
 	    /**
 	     * gerarCpf: generates Brazilian CPF
 	     * 
