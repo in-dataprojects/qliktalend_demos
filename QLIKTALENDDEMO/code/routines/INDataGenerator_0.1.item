@@ -75,8 +75,61 @@ public class INDataGenerator {
 	    }
 		
 		
+	    
+	    
+	    /**
+	     * getBRStreet()
+	     * 
+	     * {talendTypes} String
+	     * 
+	     * {Category} User Defined
+	     * 
+	     * {example} getBRStreet() # Silva.
+	     */
+	    public static String getEndereco() {
+	        String[] list = { "Rodovia Raposo Tavares, Lageadinho, Cotia, SP, 06709015",
+	        		"Rua Barão de Vitória, Casa Grande, Diadema, SP, 09961660",
+	        		"Avenida Afonso Pena, Boa Viagem, Belo Horizonte, MG, 30130005",
+	        		"Rua dos Carijós, Centro, Belo Horizonte, MG, 30120060",
+	        		"Avenida São João, Vila Joana, Jundiaí, SP, 13216000",
+	        		"Travessa da CDL, Centro, Ji-Paraná, RO, 76900032",
+	        		"Rua Cristiano Olsen, Jardim Sumaré, Araçatuba, SP, 16015244",
+	        		"Rua da Imprensa, Monte Castelo, Campo Grande, MS, 79002290",
+	        		"Rua Arlindo Nogueira, Centro, Teresina, PI, 64000290",
+	        		"Travessa da CDL, Centro, Ji-Paraná, RO, 76900032",
+	        		"Avenida Rio Branco, Centro, Rio de Janeiro, RJ, 20040002",
+	        		"Rua Domingos Olímpio, Centro, Sobral, CE, 62011140",
+	        		"Travessa Antônio Ferreira, Igrejinha, Capanema, PA, 68700216",
+	        		"Rua Carlos Augusto Cornelsen, Bom Retiro, Curitiba, PR, 80520560",
+	        		"Avenida Tocantins, Vila Jardim Rio Claro, Jataí, GO, 75802095",
+	        		"Quadra QE 11 Área Especial C, Guará I, Brasília, DF, 71020631",
+	        		"Avenida Tocantins, Vila Jardim Rio Claro, Jataí, GO, 75802095",
+	        		"Rua Cândido Portinari, Ipiranga, São José, SC, 88113350",
+	        		"Rua Cristiano Olsen, Jardim Sumaré, Araçatuba, SP, 16015244"}; 
+	        //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$ //$NON-NLS-5$
+	        Integer random = 0 + ((Long) Math.round(RandomUtils.random() * (list.length - 1 - 0))).intValue();
+	        return list[random];
+	    }
 		
 		
+	    
+		/**
+		 * 
+		 * getEmailDomain()
+		 * 
+	     * {talendTypes} String
+	     * 
+	     * {Category} User Defined
+	     * 
+	     * {example} getEmailDomain() # @gmail.com.
+	     */
+	    public static String getEmailDomain() {
+	        String[] list = {"@gmail.com","@yahoo.com","@hotmail.com","@live.com","@outlook.com"
+	        				}; //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$ //$NON-NLS-5$ //$NON-NLS-6$ //$NON-NLS-7$ //$NON-NLS-8$
+	        Integer random = 0 + ((Long) Math.round(RandomUtils.random() * (list.length - 1 - 0))).intValue();
+	        return list[random];
+	    }
+
 		
 		
 			
