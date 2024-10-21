@@ -192,7 +192,8 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" contextMode="false"/>
     <elementParameter field="CHECK" name="INFORMATION" value="false" contextMode="false"/>
     <elementParameter field="MEMO" name="COMMENT" value="" contextMode="false"/>
-    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="100"/>
     <metadata connector="FLOW" name="tMysqlOutput_2">
       <column comment="" key="true" length="2" name="id" nullable="true" pattern="" sourceType="" type="id_Integer"/>
       <column comment="" key="false" length="20" name="firstname" nullable="true" pattern="" sourceType="" type="id_String"/>

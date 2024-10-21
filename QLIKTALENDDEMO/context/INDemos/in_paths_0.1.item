@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_RsbsMI1wEe-P95gFpWdVDQ" confirmationNeeded="false" hide="false" name="Dev">
+    <contextParameter xmi:id="_RsbsMY1wEe-P95gFpWdVDQ" comment="" name="inDataPrivacy" prompt="inDataPrivacy?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:\Datasets\DataPrivacy\"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_RsbsMo1wEe-P95gFpWdVDQ" confirmationNeeded="false" hide="false" name="Hmg">
+    <contextParameter xmi:id="_RsbsM41wEe-P95gFpWdVDQ" comment="" name="inDataPrivacy" prompt="inDataPrivacy?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_RsbsNI1wEe-P95gFpWdVDQ" confirmationNeeded="false" hide="false" name="Prd">
+    <contextParameter xmi:id="_RsbsNY1wEe-P95gFpWdVDQ" comment="" name="inDataPrivacy" prompt="inDataPrivacy?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>
