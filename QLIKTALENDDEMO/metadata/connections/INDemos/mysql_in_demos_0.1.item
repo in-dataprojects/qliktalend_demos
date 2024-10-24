@@ -42,5 +42,37 @@
         <sqlDataType xmi:id="_KhjNLY_REe-JI_Oezxj24A" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
       </feature>
     </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_DvNfAJI0Ee-Yt50ZGBfTMw" name="estados_regioes" id="_DvM38JI0Ee-Yt50ZGBfTMw" label="estados_regioes" tableType="TABLE">
+      <feature xsi:type="relational:TdColumn" xmi:id="_DvNfAZI0Ee-Yt50ZGBfTMw" name="estado_id" label="estado_id" length="5" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_DvNfApI0Ee-Yt50ZGBfTMw" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_DvNfA5I0Ee-Yt50ZGBfTMw" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_DvNfBJI0Ee-Yt50ZGBfTMw" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_DvNfBZI0Ee-Yt50ZGBfTMw" name="estado_sigla" label="estado_sigla" length="5" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_DvNfBpI0Ee-Yt50ZGBfTMw" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_DvNfB5I0Ee-Yt50ZGBfTMw" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_DvNfCJI0Ee-Yt50ZGBfTMw" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_DvNfCZI0Ee-Yt50ZGBfTMw" name="estado_nome" label="estado_nome" length="50" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_DvNfCpI0Ee-Yt50ZGBfTMw" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_DvNfC5I0Ee-Yt50ZGBfTMw" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_DvNfDJI0Ee-Yt50ZGBfTMw" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_DvNfDZI0Ee-Yt50ZGBfTMw" name="regiao_id" label="regiao_id" length="5" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_DvNfDpI0Ee-Yt50ZGBfTMw" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_DvNfD5I0Ee-Yt50ZGBfTMw" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_DvNfEJI0Ee-Yt50ZGBfTMw" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_DvNfEZI0Ee-Yt50ZGBfTMw" name="regiao_sigla" label="regiao_sigla" length="5" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_DvNfEpI0Ee-Yt50ZGBfTMw" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_DvNfE5I0Ee-Yt50ZGBfTMw" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_DvNfFJI0Ee-Yt50ZGBfTMw" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_DvNfFZI0Ee-Yt50ZGBfTMw" name="regiao_nome" label="regiao_nome" length="50" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_DvNfFpI0Ee-Yt50ZGBfTMw" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_DvNfF5I0Ee-Yt50ZGBfTMw" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_DvNfGJI0Ee-Yt50ZGBfTMw" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+    </ownedElement>
   </orgomg.cwm.resource.relational:Catalog>
 </xmi:XMI>

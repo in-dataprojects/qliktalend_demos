@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_J_74MJIeEe-Yt50ZGBfTMw" name="repository.metadataGenericSchema" dataPackage="_J_74MZIeEe-Yt50ZGBfTMw"/>
+  <TalendMetadata:GenericPackage xmi:id="_J_74MZIeEe-Yt50ZGBfTMw" name="repository.metadataGenericSchema" dataManager="_J_74MJIeEe-Yt50ZGBfTMw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_J_74MpIeEe-Yt50ZGBfTMw" id="_DfPyYJIeEe-Yt50ZGBfTMw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J_74M5IeEe-Yt50ZGBfTMw" name="id_estado" label="id_estado" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J_74NJIeEe-Yt50ZGBfTMw" name="sigla_estado" label="sigla_estado" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J_74NZIeEe-Yt50ZGBfTMw" name="nome_estado" label="nome_estado" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J_74NpIeEe-Yt50ZGBfTMw" name="id_regiao" label="id_regiao" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J_74N5IeEe-Yt50ZGBfTMw" name="sigla_regiao" label="sigla_regiao" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J_74OJIeEe-Yt50ZGBfTMw" name="nome_regiao" label="nome_regiao" talendType="id_String"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

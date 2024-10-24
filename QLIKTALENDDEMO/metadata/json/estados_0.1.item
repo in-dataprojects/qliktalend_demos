@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_sZ6joJIfEe-Yt50ZGBfTMw" name="estados" dataPackage="_sZ6jo5IfEe-Yt50ZGBfTMw" JSONFilePath="C:/Datasets/entrada/estados.json" Encoding="UTF-8" readbyMode="JSONPATH">
+    <schema xmi:id="_sZ6joZIfEe-Yt50ZGBfTMw" LimitBoucle="50" AbsoluteXPathQuery="$.estado[*]">
+      <schemaTargets xmi:id="_sZ6jopIfEe-Yt50ZGBfTMw" RelativeXPathQuery="string" TagName="string"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_sZ6jo5IfEe-Yt50ZGBfTMw" name="default" dataManager="_sZ6joJIfEe-Yt50ZGBfTMw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_sZ6jpJIfEe-Yt50ZGBfTMw" id="_kUX_4JIfEe-Yt50ZGBfTMw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sZ6jpZIfEe-Yt50ZGBfTMw" label="string" length="2435" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
