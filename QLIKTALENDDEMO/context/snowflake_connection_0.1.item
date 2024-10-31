@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_myb68LopEeqT1oQMOGtV9w" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_myb68bopEeqT1oQMOGtV9w" comment="" name="Snowflake_loginTimeout" prompt="Snowflake_loginTimeout?" promptNeeded="false" type="id_Integer" value="15"/>
+    <contextParameter xmi:id="_myb68ropEeqT1oQMOGtV9w" comment="" name="Snowflake_keyAlias" prompt="Snowflake_keyAlias?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_myb687opEeqT1oQMOGtV9w" comment="" name="Snowflake_role" prompt="Snowflake_role?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_myb69LopEeqT1oQMOGtV9w" comment="Target database in snowflake" name="Snowflake_db" prompt="Snowflake_db?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_myb69bopEeqT1oQMOGtV9w" comment="Snowflake Password" name="Snowflake_userPassword" prompt="Snowflake_userPassword?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_myb69ropEeqT1oQMOGtV9w" comment="" name="Snowflake_authenticationType" prompt="Snowflake_authenticationType?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_myb697opEeqT1oQMOGtV9w" comment="" name="Snowflake_jdbcParameters" prompt="Snowflake_jdbcParameters?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_myb6-LopEeqT1oQMOGtV9w" comment="Snowflake Target Warehouse" name="Snowflake_warehouse" prompt="Snowflake_warehouse?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_myb6-bopEeqT1oQMOGtV9w" comment="Snowflake Account Name" name="Snowflake_account" prompt="Snowflake_account?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_myb6-ropEeqT1oQMOGtV9w" comment="Snowflake User ID" name="Snowflake_userId" prompt="Snowflake_userId?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_myb6-7opEeqT1oQMOGtV9w" comment="Snowflake region" name="Snowflake_region" prompt="Snowflake_region?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_myb6_LopEeqT1oQMOGtV9w" comment="Snowflake Target Schema" name="Snowflake_schemaName" prompt="Snowflake_schemaName?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_myb6_bopEeqT1oQMOGtV9w" comment="" name="Snowflake_customRegionID" prompt="Snowflake_customRegionID?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_myb6_ropEeqT1oQMOGtV9w" comment="Snowflake Target Stage folder" name="Snowflake_stage_folder" prompt="Snowflake_stage_folder?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_myb6_7opEeqT1oQMOGtV9w" confirmationNeeded="false" name="Dev">
+    <contextParameter xmi:id="_myb7ALopEeqT1oQMOGtV9w" comment="" name="Snowflake_loginTimeout" prompt="Snowflake_loginTimeout?" promptNeeded="false" type="id_Integer" value="15"/>
+    <contextParameter xmi:id="_myb7AbopEeqT1oQMOGtV9w" comment="" name="Snowflake_keyAlias" prompt="Snowflake_keyAlias?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_myb7AropEeqT1oQMOGtV9w" comment="" name="Snowflake_role" prompt="Snowflake_role?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_myb7A7opEeqT1oQMOGtV9w" comment="Target database in snowflake" name="Snowflake_db" prompt="Snowflake_db?" promptNeeded="false" type="id_String" value="DPHRDEV_DB"/>
+    <contextParameter xmi:id="_myb7BLopEeqT1oQMOGtV9w" comment="Snowflake Password" name="Snowflake_userPassword" prompt="Snowflake_userPassword?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_myb7BbopEeqT1oQMOGtV9w" comment="" name="Snowflake_authenticationType" prompt="Snowflake_authenticationType?" promptNeeded="false" type="id_String" value="BASIC"/>
+    <contextParameter xmi:id="_myb7BropEeqT1oQMOGtV9w" comment="" name="Snowflake_jdbcParameters" prompt="Snowflake_jdbcParameters?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_myb7B7opEeqT1oQMOGtV9w" comment="Snowflake Target Warehouse" name="Snowflake_warehouse" prompt="Snowflake_warehouse?" promptNeeded="false" type="id_String" value="DP_HR_DEV"/>
+    <contextParameter xmi:id="_myb7CLopEeqT1oQMOGtV9w" comment="Snowflake Account Name" name="Snowflake_account" prompt="Snowflake_account?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_myb7CbopEeqT1oQMOGtV9w" comment="Snowflake User ID" name="Snowflake_userId" prompt="Snowflake_userId?" promptNeeded="false" type="id_String" value="username"/>
+    <contextParameter xmi:id="_myb7CropEeqT1oQMOGtV9w" comment="Snowflake region" name="Snowflake_region" prompt="Snowflake_region?" promptNeeded="false" type="id_String" value="AWS_US_WEST"/>
+    <contextParameter xmi:id="_myb7C7opEeqT1oQMOGtV9w" comment="Snowflake Target Schema" name="Snowflake_schemaName" prompt="Snowflake_schemaName?" promptNeeded="false" type="id_String" value="DP"/>
+    <contextParameter xmi:id="_myb7DLopEeqT1oQMOGtV9w" comment="" name="Snowflake_customRegionID" prompt="Snowflake_customRegionID?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_myb7DbopEeqT1oQMOGtV9w" comment="Snowflake Target Stage folder" name="Snowflake_stage_folder" prompt="Snowflake_stage_folder?" promptNeeded="false" type="id_String" value="DP_STAGE"/>
+  </talendfile:ContextType>
+</xmi:XMI>

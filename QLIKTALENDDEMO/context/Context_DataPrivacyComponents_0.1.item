@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_BoMysLsKEeqUDZLCS5ndIA" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_BoMysbsKEeqUDZLCS5ndIA" comment="" name="encryption_password" prompt="encryption_password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_BoMysrsKEeqUDZLCS5ndIA" comment="" name="encryption_CryptographicFilePath" prompt="encryption_CryptographicFilePath?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_BoMys7sKEeqUDZLCS5ndIA" confirmationNeeded="false" name="Dev">
+    <contextParameter xmi:id="_BoMytLsKEeqUDZLCS5ndIA" comment="" name="encryption_password" prompt="encryption_password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:Pcoex22qI//zmYxTzPAptw+3wKn4yCOAM3BXh85DlSWPsQ=="/>
+    <contextParameter xmi:id="_BoMytbsKEeqUDZLCS5ndIA" comment="" name="encryption_CryptographicFilePath" prompt="encryption_CryptographicFilePath?" promptNeeded="false" type="id_String" value="&quot;C:/StudentFiles/dev/encrypt/encrypt.txt&quot;"/>
+  </talendfile:ContextType>
+</xmi:XMI>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_6cfesbGtEeqW3oMiA7a9tg" name="repository.metadataGenericSchema" dataPackage="_6cfesrGtEeqW3oMiA7a9tg"/>
+  <TalendMetadata:GenericPackage xmi:id="_6cfesrGtEeqW3oMiA7a9tg" name="repository.metadataGenericSchema" dataManager="_6cfesbGtEeqW3oMiA7a9tg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_6cfes7GtEeqW3oMiA7a9tg" id="_Wuq3sLGqEeqW3oMiA7a9tg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfetLGtEeqW3oMiA7a9tg" name="Age" label="Age" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfetbGtEeqW3oMiA7a9tg" name="Attrition" label="Attrition" length="-1" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfetrGtEeqW3oMiA7a9tg" name="BusinessTravel" label="BusinessTravel" length="-1" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfet7GtEeqW3oMiA7a9tg" name="DailyRate" label="DailyRate" length="-1" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfeuLGtEeqW3oMiA7a9tg" name="Department" label="Department" length="-1" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfeubGtEeqW3oMiA7a9tg" name="DistanceFromHome" label="DistanceFromHome" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfeurGtEeqW3oMiA7a9tg" name="Education" label="Education" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfeu7GtEeqW3oMiA7a9tg" name="EducationField" label="EducationField" length="-1" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfevLGtEeqW3oMiA7a9tg" name="EmployeeCount" label="EmployeeCount" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfevbGtEeqW3oMiA7a9tg" name="EmployeeNumber" label="EmployeeNumber" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfevrGtEeqW3oMiA7a9tg" name="EnvironmentSatisfaction" label="EnvironmentSatisfaction" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfev7GtEeqW3oMiA7a9tg" name="Gender" label="Gender" length="-1" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfewLGtEeqW3oMiA7a9tg" name="HourlyRate" label="HourlyRate" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfewbGtEeqW3oMiA7a9tg" name="JobInvolvement" label="JobInvolvement" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfewrGtEeqW3oMiA7a9tg" name="JobLevel" label="JobLevel" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfew7GtEeqW3oMiA7a9tg" name="JobRole" label="JobRole" length="-1" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfexLGtEeqW3oMiA7a9tg" name="JobSatisfaction" label="JobSatisfaction" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfexbGtEeqW3oMiA7a9tg" name="MaritalStatus" label="MaritalStatus" length="-1" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfexrGtEeqW3oMiA7a9tg" name="MonthlyIncome" label="MonthlyIncome" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfex7GtEeqW3oMiA7a9tg" name="MonthlyRate" label="MonthlyRate" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfeyLGtEeqW3oMiA7a9tg" name="NumCompaniesWorked" label="NumCompaniesWorked" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfeybGtEeqW3oMiA7a9tg" name="Over18" label="Over18" length="-1" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfeyrGtEeqW3oMiA7a9tg" name="OverTime" label="OverTime" length="-1" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfey7GtEeqW3oMiA7a9tg" name="PercentSalaryHike" label="PercentSalaryHike" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfezLGtEeqW3oMiA7a9tg" name="PerformanceRating" label="PerformanceRating" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfezbGtEeqW3oMiA7a9tg" name="RelationshipSatisfaction" label="RelationshipSatisfaction" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfezrGtEeqW3oMiA7a9tg" name="StandardHours" label="StandardHours" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfez7GtEeqW3oMiA7a9tg" name="StockOptionLevel" label="StockOptionLevel" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfe0LGtEeqW3oMiA7a9tg" name="TotalWorkingYears" label="TotalWorkingYears" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfe0bGtEeqW3oMiA7a9tg" name="TrainingTimesLastYear" label="TrainingTimesLastYear" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfe0rGtEeqW3oMiA7a9tg" name="WorkLifeBalance" label="WorkLifeBalance" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfe07GtEeqW3oMiA7a9tg" name="YearsAtCompany" label="YearsAtCompany" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfe1LGtEeqW3oMiA7a9tg" name="YearsInCurrentRole" label="YearsInCurrentRole" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfe1bGtEeqW3oMiA7a9tg" name="YearsSinceLastPromotion" label="YearsSinceLastPromotion" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6cfe1rGtEeqW3oMiA7a9tg" name="YearsWithCurrManager" label="YearsWithCurrManager" length="-1" talendType="id_Integer"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

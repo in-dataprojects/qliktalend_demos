@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_r4crYLccEeqT1oQMOGtV9w" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_r4crYbccEeqT1oQMOGtV9w" comment="Port for connecting Database " name="globalContext_DB_Port" prompt="globalContext_DB_Port?" promptNeeded="false" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_r4crYrccEeqT1oQMOGtV9w" comment="String to specify any additional JDBC Connection parameters" name="globalContext_DB__AdditionalParams" prompt="globalContext_DB__AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_r4crY7ccEeqT1oQMOGtV9w" comment="Database username" name="globalContext_DB_Username" prompt="globalContext_DB_Username?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_r4crZLccEeqT1oQMOGtV9w" comment="Database Password" name="globalContext_DB_Password" prompt="globalContext_DB_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_r4crZbccEeqT1oQMOGtV9w" comment="Database Hostname" name="globalContext_DB_Host" prompt="globalContext_DB_Host?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_r4crZrccEeqT1oQMOGtV9w" comment="Database schema" name="globalContext_DB_Database_Schema" prompt="globalContext_DB_Database_Schema?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_r4crZ7ccEeqT1oQMOGtV9w" confirmationNeeded="false" name="Dev">
+    <contextParameter xmi:id="_r4craLccEeqT1oQMOGtV9w" comment="Port for connecting Database " name="globalContext_DB_Port" prompt="globalContext_DB_Port?" promptNeeded="false" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_r4crabccEeqT1oQMOGtV9w" comment="String to specify any additional JDBC Connection parameters" name="globalContext_DB__AdditionalParams" prompt="globalContext_DB__AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_r4crarccEeqT1oQMOGtV9w" comment="Database username" name="globalContext_DB_Username" prompt="globalContext_DB_Username?" promptNeeded="false" type="id_String" value="root"/>
+    <contextParameter xmi:id="_r4cra7ccEeqT1oQMOGtV9w" comment="Database Password" name="globalContext_DB_Password" prompt="globalContext_DB_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_r4crbLccEeqT1oQMOGtV9w" comment="Database Hostname" name="globalContext_DB_Host" prompt="globalContext_DB_Host?" promptNeeded="false" type="id_String" value="dev"/>
+    <contextParameter xmi:id="_r4crbbccEeqT1oQMOGtV9w" comment="Database schema" name="globalContext_DB_Database_Schema" prompt="globalContext_DB_Database_Schema?" promptNeeded="false" type="id_String" value="dev"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_r4crbrccEeqT1oQMOGtV9w" confirmationNeeded="false" name="Test">
+    <contextParameter xmi:id="_r4crb7ccEeqT1oQMOGtV9w" comment="Port for connecting Database " name="globalContext_DB_Port" prompt="globalContext_DB_Port?" promptNeeded="false" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_r4crcLccEeqT1oQMOGtV9w" comment="String to specify any additional JDBC Connection parameters" name="globalContext_DB__AdditionalParams" prompt="globalContext_DB__AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_r4crcbccEeqT1oQMOGtV9w" comment="Database username" name="globalContext_DB_Username" prompt="globalContext_DB_Username?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_r4crcrccEeqT1oQMOGtV9w" comment="Database Password" name="globalContext_DB_Password" prompt="globalContext_DB_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_r4crc7ccEeqT1oQMOGtV9w" comment="Database Hostname" name="globalContext_DB_Host" prompt="globalContext_DB_Host?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_r4crdLccEeqT1oQMOGtV9w" comment="Database schema" name="globalContext_DB_Database_Schema" prompt="globalContext_DB_Database_Schema?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>
