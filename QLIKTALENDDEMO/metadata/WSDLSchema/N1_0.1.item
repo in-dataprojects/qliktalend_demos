@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:WSDLSchemaConnection xmi:id="_cTu0kKBUEe-eEaIgXfvckA" name="repository.metadataWSDLSchema" dataPackage="_cTvbp6BUEe-eEaIgXfvckA" WSDL="&quot;https://api.portaldbs.com.br/ords/dbs/rm/v1/tbc/WsConsultaSQL/wsdl&quot;" methodName="RealizarConsultaSQL(parameters):string" timeOut="20" isInputModel="false" serverNameSpace="http://www.totvs.com/" serverName="wsConsultaSQL" portNameSpace="http://www.totvs.com/" portName="RM_IwsConsultaSQL">
+    <parameterValue xmi:id="_cTu0kaBUEe-eEaIgXfvckA" Element="parameters"/>
+    <parameterValue xmi:id="_cTu0kqBUEe-eEaIgXfvckA" ParameterInfo="parameters" ParameterInfoParent=""/>
+    <parameterValue xmi:id="_cTvboKBUEe-eEaIgXfvckA" ParameterInfo="codSentenca" ParameterInfoParent="parameters"/>
+    <parameterValue xmi:id="_cTvboaBUEe-eEaIgXfvckA" ParameterInfo="codColigada" ParameterInfoParent="parameters"/>
+    <parameterValue xmi:id="_cTvboqBUEe-eEaIgXfvckA" ParameterInfo="codSistema" ParameterInfoParent="parameters"/>
+    <parameterValue xmi:id="_cTvbo6BUEe-eEaIgXfvckA" ParameterInfo="parameters" ParameterInfoParent="parameters"/>
+    <outputParameter xmi:id="_cTvbpKBUEe-eEaIgXfvckA" Element="parameters"/>
+    <outputParameter xmi:id="_cTvbpaBUEe-eEaIgXfvckA" ParameterInfo="parameters" ParameterInfoParent=""/>
+    <outputParameter xmi:id="_cTvbpqBUEe-eEaIgXfvckA" ParameterInfo="RealizarConsultaSQLResult" ParameterInfoParent="parameters"/>
+  </TalendMetadata:WSDLSchemaConnection>
+  <TalendMetadata:GenericPackage xmi:id="_cTvbp6BUEe-eEaIgXfvckA" name="repository.metadataWSDLSchema" dataManager="_cTu0kKBUEe-eEaIgXfvckA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_cTvbqKBUEe-eEaIgXfvckA" id="_RtEX4KBUEe-eEaIgXfvckA" label="Output">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cTvbqaBUEe-eEaIgXfvckA" name="newColumn" label="newColumn" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_cTvbqqBUEe-eEaIgXfvckA" id="_Sy_eIKBUEe-eEaIgXfvckA" label="Input"/>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

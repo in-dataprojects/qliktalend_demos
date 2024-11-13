@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmi:id="_IrseAJtyEe-iZMHW5z1h2g" name="Analise_Clientes_Duplicados" creationDate="2024-11-05T09:33:18.206-0300" defaultContext="Default">
+  <clientDependency href="../../metadata/connections/INDemos/mysql_in_demos_0.1.item#_KDv2EJtyEe-iZMHW5z1h2g"/>
+  <taggedValue xmi:id="_IrseAZtyEe-iZMHW5z1h2g" tag="PREVIEW_ROW_NUMBER" value="10000"/>
+  <taggedValue xmi:id="_IrseAptyEe-iZMHW5z1h2g" tag="Status" value="development"/>
+  <taggedValue xmi:id="_IrseA5tyEe-iZMHW5z1h2g" tag="Author" value="washington.nascimento@inteligenciadenegocios_nfr"/>
+  <taggedValue xmi:id="_IrseBJtyEe-iZMHW5z1h2g" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_IrseBZtyEe-iZMHW5z1h2g" tag="Description" value=""/>
+  <taggedValue xmi:id="_IrseBptyEe-iZMHW5z1h2g" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_KAV8wJtyEe-iZMHW5z1h2g" tag="TEMP_DATA_DIR" value=""/>
+  <taggedValue xmi:id="_KAV8wZtyEe-iZMHW5z1h2g" tag="MAX_BUFFER_SIZE" value="200000"/>
+  <taggedValue xmi:id="_KAV8wptyEe-iZMHW5z1h2g" tag="STORE_ON_DISK" value="false"/>
+  <taggedValue xmi:id="_KAdRgJtyEe-iZMHW5z1h2g" tag="DRILL_DOWN" value="true"/>
+  <taggedValue xmi:id="_KDun8ZtyEe-iZMHW5z1h2g" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+  <context xmi:id="_IrseB5tyEe-iZMHW5z1h2g">
+    <connection href="../../metadata/connections/INDemos/mysql_in_demos_0.1.item#_sLPLcI1eEe-P95gFpWdVDQ"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/INDemos/mysql_in_demos_0.1.item#_-S2a4ZtxEe-iZMHW5z1h2g"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/INDemos/mysql_in_demos_0.1.item#_-S2a5ZtxEe-iZMHW5z1h2g"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/INDemos/mysql_in_demos_0.1.item#_-S2a6ZtxEe-iZMHW5z1h2g"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/INDemos/mysql_in_demos_0.1.item#_-S2a7ZtxEe-iZMHW5z1h2g"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/INDemos/mysql_in_demos_0.1.item#_-S2a8ZtxEe-iZMHW5z1h2g"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/INDemos/mysql_in_demos_0.1.item#_-S2a9ZtxEe-iZMHW5z1h2g"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/INDemos/mysql_in_demos_0.1.item#_-S2a-ZtxEe-iZMHW5z1h2g"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/INDemos/mysql_in_demos_0.1.item#_-S2a_ZtxEe-iZMHW5z1h2g"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/INDemos/mysql_in_demos_0.1.item#_-S2bAZtxEe-iZMHW5z1h2g"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/INDemos/mysql_in_demos_0.1.item#_-S2bBZtxEe-iZMHW5z1h2g"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/INDemos/mysql_in_demos_0.1.item#_-S2bCZtxEe-iZMHW5z1h2g"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/INDemos/mysql_in_demos_0.1.item#_-S2bDZtxEe-iZMHW5z1h2g"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/INDemos/mysql_in_demos_0.1.item#_-S2bEZtxEe-iZMHW5z1h2g"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/INDemos/mysql_in_demos_0.1.item#_-S2bFZtxEe-iZMHW5z1h2g"/>
+  </context>
+  <results xmi:id="_IrseCJtyEe-iZMHW5z1h2g">
+    <resultMetadata xmi:id="_IrseCZtyEe-iZMHW5z1h2g"/>
+    <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_IrwvcJtyEe-iZMHW5z1h2g"/>
+    <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_IrwvcZtyEe-iZMHW5z1h2g">
+      <builtInMatchRuleDefinition xmi:id="_IrwvcptyEe-iZMHW5z1h2g">
+        <blockKeys xmi:id="_0Fy7kJtyEe-iZMHW5z1h2g" name="Id" column="Id">
+          <preAlgorithm xmi:id="_0Fy7kZtyEe-iZMHW5z1h2g" algorithmType="NON_ALGO" algorithmParameters=""/>
+          <algorithm xmi:id="_0Fy7kptyEe-iZMHW5z1h2g" algorithmType="soundex" algorithmParameters=""/>
+          <postAlgorithm xmi:id="_0Fy7k5tyEe-iZMHW5z1h2g" algorithmType="useDefault" algorithmParameters=""/>
+        </blockKeys>
+        <matchRules xmi:id="_J9tfgJtyEe-iZMHW5z1h2g" name="Match Rule 1">
+          <matchKeys xmi:id="_9IcAwJtyEe-iZMHW5z1h2g" name="Id" column="Id" confidenceWeight="1" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
+            <algorithm xmi:id="_9IcAwZtyEe-iZMHW5z1h2g" algorithmType="EXACT" algorithmParameters=""/>
+          </matchKeys>
+        </matchRules>
+      </builtInMatchRuleDefinition>
+    </indicators>
+  </results>
+  <parameters xmi:id="_Irwvc5tyEe-iZMHW5z1h2g" analysisType="Match Analysis"/>
+  <contextType xmi:id="_KDun8JtyEe-iZMHW5z1h2g" confirmationNeeded="false" hide="false" name="Default"/>
+</dataquality.analysis:Analysis>
