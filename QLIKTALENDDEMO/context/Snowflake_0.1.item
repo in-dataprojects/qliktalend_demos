@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_xm6toAkGEe6xUoG4uEM7NA" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_xnUWQAkGEe6xUoG4uEM7NA" comment="" name="snowflake_user" prompt="snowflake_user?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&lt;USER>"/>
+  <contextParameter xmi:id="_xnUWQQkGEe6xUoG4uEM7NA" comment="" name="snowflake_password" prompt="snowflake_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:VEd4/4iQrFeApXPVfxsCstKClTXyh+/Lakoak6oIvw=="/>
+  <contextParameter xmi:id="_xnUWQgkGEe6xUoG4uEM7NA" comment="" name="snowflake_account" prompt="snowflake_account?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&lt;ACCOUNT>"/>
+  <contextParameter xmi:id="_xnU9UAkGEe6xUoG4uEM7NA" comment="" name="snowflake_database" prompt="snowflake_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&lt;DATABSES_NAME>"/>
+  <contextParameter xmi:id="_xnU9UQkGEe6xUoG4uEM7NA" comment="" name="snowflake_role" prompt="snowflake_role?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_xnU9UgkGEe6xUoG4uEM7NA" comment="" name="snowflake_warehouse" prompt="snowflake_warehouse?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&lt;WAREHOUSE_NAME>"/>
+  <contextParameter xmi:id="_xnU9UwkGEe6xUoG4uEM7NA" comment="" name="snowflake_schema" prompt="snowflake_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="UDF"/>
+  <contextParameter xmi:id="_u808kAkfEe6xUoG4uEM7NA" comment="" name="snowflake_stage" prompt="snowflake_stage?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="TALEND_JARS"/>
+</talendfile:ContextType>

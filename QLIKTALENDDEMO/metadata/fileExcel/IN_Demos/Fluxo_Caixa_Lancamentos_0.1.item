@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_b0yX0KtiEe-O1-TrSI6DtQ" name="Fluxo_Caixa_Lancamentos" id="_b0xJsKtiEe-O1-TrSI6DtQ" dataPackage="_b0yX0atiEe-O1-TrSI6DtQ" Server="Localhost 127.0.0.1" FilePath="G:/Drives compartilhados/BI Innovation/12.Arquivos e Instaladores/Bases de Dados/0. Fluxo de Caixa/FluxoCaixa.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="Lancamentos" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" sheetList="Lancamentos:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_b0yX0atiEe-O1-TrSI6DtQ" name="default" dataManager="_b0yX0KtiEe-O1-TrSI6DtQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_b0yX0qtiEe-O1-TrSI6DtQ" id="_BifvwKtiEe-O1-TrSI6DtQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b0yX06tiEe-O1-TrSI6DtQ" label="Data" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b0yX1KtiEe-O1-TrSI6DtQ" label="Categoria" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b0yX1atiEe-O1-TrSI6DtQ" label="Cod_Mov" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b0yX1qtiEe-O1-TrSI6DtQ" label="Valor" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

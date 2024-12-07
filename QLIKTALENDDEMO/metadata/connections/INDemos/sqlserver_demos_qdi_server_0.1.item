@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_MKWCwKtjEe-O1-TrSI6DtQ" name="sqlserver_demos_qdi_server" id="_imcR0KtiEe-O1-TrSI6DtQ" label="sqlserver_demos_qdi_server" dataPackage="_OZy84KtjEe-O1-TrSI6DtQ" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://119.8.85.214:1433;DatabaseName=in_demos;" dbVersionString="MSSQL_PROP" Port="1433" Username="qlik_rpl" Password="enc:system.encryption.key.v1:NvXZMYFe5hBbIXaHHFcGRlbjUtSYI/6qsixHLw1Aca37NtUFzQueXZQ=" ServerName="119.8.85.214" DatasourceName="" FileFieldName="" SID="in_demos" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="dbo" supportNLS="false">
+    <taggedValue xmi:id="_MKWCwatjEe-O1-TrSI6DtQ" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_MKmhcKtjEe-O1-TrSI6DtQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_MKo9sKtjEe-O1-TrSI6DtQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_MKo9satjEe-O1-TrSI6DtQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_MKo9sqtjEe-O1-TrSI6DtQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_MKo9s6tjEe-O1-TrSI6DtQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_MKo9tKtjEe-O1-TrSI6DtQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_MKo9tatjEe-O1-TrSI6DtQ" tag="otherParameter"/>
+    <taggedValue xmi:id="_MMDS8KtjEe-O1-TrSI6DtQ" tag="DB ProductName" value="Microsoft SQL Server"/>
+    <taggedValue xmi:id="_MMD6AKtjEe-O1-TrSI6DtQ" tag="DB ProductVersion" value="16.00.1000"/>
+    <taggedValue xmi:id="_MMD6AatjEe-O1-TrSI6DtQ" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_MKWCwqtjEe-O1-TrSI6DtQ" key="CONN_PARA_KEY_USERNAME" value="qlik_rpl"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_OZy84KtjEe-O1-TrSI6DtQ" name="in_demos" dataManager="_MKWCwKtjEe-O1-TrSI6DtQ">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_OZy84atjEe-O1-TrSI6DtQ" name="dbo"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

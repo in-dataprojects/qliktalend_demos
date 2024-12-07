@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_fwnwcJGAEemoq8iAst1ACA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_fwnwcZGAEemoq8iAst1ACA" comment="Salesforce user id" name="sf_userid" prompt="sf_userid?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_fwnwcpGAEemoq8iAst1ACA" comment="Salesforce Password" name="sf_password" prompt="sf_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+  <contextParameter xmi:id="_fwnwc5GAEemoq8iAst1ACA" comment="SalesForce Security Token" name="sf_security_token" prompt="sf_security_token?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_fwnwdJGAEemoq8iAst1ACA" comment="SnowFlake Account" name="snowflake_account" prompt="snowflake_account?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_fwnwdZGAEemoq8iAst1ACA" comment="Snowflake User Id" name="snowflake_userid" prompt="snowflake_userid?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_fwnwdpGAEemoq8iAst1ACA" comment="Snowflake Password" name="snowflake_password" prompt="snowflake_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+  <contextParameter xmi:id="_fwnwd5GAEemoq8iAst1ACA" comment="Snowflake target data warehouse name" name="snowflake_target_warehouse" prompt="snowflake_target_warehouse?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_fwnweJGAEemoq8iAst1ACA" comment="Snowflake Target schema name" name="snowflake_target_schema" prompt="snowflake_target_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_fwnweZGAEemoq8iAst1ACA" comment="Snowflake Target Database name" name="snowflake_target_database" prompt="snowflake_target_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_fwnwepGAEemoq8iAst1ACA" comment="Snowflake stage Folder" name="snowflake_stage_folder" prompt="snowflake_stage_folder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_HQG6UJHIEem3vuPBqxw7MQ" comment="Folder where Snowflake data rejection records are stored" name="snowflake_reject_folder" prompt="snowflake_reject_folder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_Kkh8IKQWEemlJp3ZFjEn5g" comment="Salesforce URL" name="sf_url" prompt="sf_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+</talendfile:ContextType>

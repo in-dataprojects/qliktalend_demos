@@ -1,0 +1,196 @@
+{
+  "itemId" : "_vJXLgJQyEemZJdM5hOpP-A",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_fwZuAJGAEemoq8iAst1ACA",
+    "parameterList" : [ {
+      "id" : "_fwnwcpGAEemoq8iAst1ACA",
+      "name" : "sf_password"
+    }, {
+      "id" : "_fwnwc5GAEemoq8iAst1ACA",
+      "name" : "sf_security_token"
+    }, {
+      "id" : "_Kkh8IKQWEemlJp3ZFjEn5g",
+      "name" : "sf_url"
+    }, {
+      "id" : "_fwnwcZGAEemoq8iAst1ACA",
+      "name" : "sf_userid"
+    }, {
+      "id" : "_fwnwdJGAEemoq8iAst1ACA",
+      "name" : "snowflake_account"
+    }, {
+      "id" : "_fwnwdpGAEemoq8iAst1ACA",
+      "name" : "snowflake_password"
+    }, {
+      "id" : "_HQG6UJHIEem3vuPBqxw7MQ",
+      "name" : "snowflake_reject_folder"
+    }, {
+      "id" : "_fwnwepGAEemoq8iAst1ACA",
+      "name" : "snowflake_stage_folder"
+    }, {
+      "id" : "_fwnweZGAEemoq8iAst1ACA",
+      "name" : "snowflake_target_database"
+    }, {
+      "id" : "_fwnweJGAEemoq8iAst1ACA",
+      "name" : "snowflake_target_schema"
+    }, {
+      "id" : "_fwnwd5GAEemoq8iAst1ACA",
+      "name" : "snowflake_target_warehouse"
+    }, {
+      "id" : "_fwnwdZGAEemoq8iAst1ACA",
+      "name" : "snowflake_userid"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_1bwl8IX1Eem4I64wW9I-Og",
+    "parameterList" : [ {
+      "id" : "_r4crYrccEeqT1oQMOGtV9w",
+      "name" : "globalContext_DB__AdditionalParams"
+    }, {
+      "id" : "_r4crZrccEeqT1oQMOGtV9w",
+      "name" : "globalContext_DB_Database_Schema"
+    }, {
+      "id" : "_r4crZbccEeqT1oQMOGtV9w",
+      "name" : "globalContext_DB_Host"
+    }, {
+      "id" : "_r4crZLccEeqT1oQMOGtV9w",
+      "name" : "globalContext_DB_Password"
+    }, {
+      "id" : "_r4crYbccEeqT1oQMOGtV9w",
+      "name" : "globalContext_DB_Port"
+    }, {
+      "id" : "_r4crY7ccEeqT1oQMOGtV9w",
+      "name" : "globalContext_DB_Username"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_KWbrgIL1EemhiP054CDFZw",
+    "parameterList" : [ {
+      "id" : "_1CmpYrVREeqTKJkRPR5NrQ",
+      "name" : "contextStorageType"
+    }, {
+      "id" : "_1CmpZbVREeqTKJkRPR5NrQ",
+      "name" : "enableJobLevelContextFileLoad"
+    }, {
+      "id" : "_1CmpZLVREeqTKJkRPR5NrQ",
+      "name" : "enableProjectLevelContextFileLoad"
+    }, {
+      "id" : "_1CmpZrVREeqTKJkRPR5NrQ",
+      "name" : "enableTaskLevelContextFileLoad"
+    }, {
+      "id" : "_1CmpY7VREeqTKJkRPR5NrQ",
+      "name" : "environment"
+    }, {
+      "id" : "_1CmpabVREeqTKJkRPR5NrQ",
+      "name" : "loadContextInJob"
+    }, {
+      "id" : "_1CmpaLVREeqTKJkRPR5NrQ",
+      "name" : "printContextVariableValues"
+    }, {
+      "id" : "_1CmpYbVREeqTKJkRPR5NrQ",
+      "name" : "resource_directory_contextFiles"
+    }, {
+      "id" : "_1CmpZ7VREeqTKJkRPR5NrQ",
+      "name" : "taskName"
+    }, {
+      "id" : "_1CmparVREeqTKJkRPR5NrQ",
+      "name" : "temp_dir_path"
+    } ]
+  }, {
+    "contextName" : "Test",
+    "repoId" : "_fwZuAJGAEemoq8iAst1ACA",
+    "parameterList" : [ {
+      "id" : "_fwnwcpGAEemoq8iAst1ACA",
+      "name" : "sf_password"
+    }, {
+      "id" : "_fwnwc5GAEemoq8iAst1ACA",
+      "name" : "sf_security_token"
+    }, {
+      "id" : "_Kkh8IKQWEemlJp3ZFjEn5g",
+      "name" : "sf_url"
+    }, {
+      "id" : "_fwnwcZGAEemoq8iAst1ACA",
+      "name" : "sf_userid"
+    }, {
+      "id" : "_fwnwdJGAEemoq8iAst1ACA",
+      "name" : "snowflake_account"
+    }, {
+      "id" : "_fwnwdpGAEemoq8iAst1ACA",
+      "name" : "snowflake_password"
+    }, {
+      "id" : "_HQG6UJHIEem3vuPBqxw7MQ",
+      "name" : "snowflake_reject_folder"
+    }, {
+      "id" : "_fwnwepGAEemoq8iAst1ACA",
+      "name" : "snowflake_stage_folder"
+    }, {
+      "id" : "_fwnweZGAEemoq8iAst1ACA",
+      "name" : "snowflake_target_database"
+    }, {
+      "id" : "_fwnweJGAEemoq8iAst1ACA",
+      "name" : "snowflake_target_schema"
+    }, {
+      "id" : "_fwnwd5GAEemoq8iAst1ACA",
+      "name" : "snowflake_target_warehouse"
+    }, {
+      "id" : "_fwnwdZGAEemoq8iAst1ACA",
+      "name" : "snowflake_userid"
+    } ]
+  }, {
+    "contextName" : "Test",
+    "repoId" : "_1bwl8IX1Eem4I64wW9I-Og",
+    "parameterList" : [ {
+      "id" : "_r4crcLccEeqT1oQMOGtV9w",
+      "name" : "globalContext_DB__AdditionalParams"
+    }, {
+      "id" : "_r4crdLccEeqT1oQMOGtV9w",
+      "name" : "globalContext_DB_Database_Schema"
+    }, {
+      "id" : "_r4crc7ccEeqT1oQMOGtV9w",
+      "name" : "globalContext_DB_Host"
+    }, {
+      "id" : "_r4crcrccEeqT1oQMOGtV9w",
+      "name" : "globalContext_DB_Password"
+    }, {
+      "id" : "_r4crb7ccEeqT1oQMOGtV9w",
+      "name" : "globalContext_DB_Port"
+    }, {
+      "id" : "_r4crcbccEeqT1oQMOGtV9w",
+      "name" : "globalContext_DB_Username"
+    } ]
+  }, {
+    "contextName" : "Test",
+    "repoId" : "_KWbrgIL1EemhiP054CDFZw",
+    "parameterList" : [ {
+      "id" : "_1CmpbbVREeqTKJkRPR5NrQ",
+      "name" : "contextStorageType"
+    }, {
+      "id" : "_1CmpcLVREeqTKJkRPR5NrQ",
+      "name" : "enableJobLevelContextFileLoad"
+    }, {
+      "id" : "_1Cmpb7VREeqTKJkRPR5NrQ",
+      "name" : "enableProjectLevelContextFileLoad"
+    }, {
+      "id" : "_1CmpcbVREeqTKJkRPR5NrQ",
+      "name" : "enableTaskLevelContextFileLoad"
+    }, {
+      "id" : "_1CmpbrVREeqTKJkRPR5NrQ",
+      "name" : "environment"
+    }, {
+      "id" : "_1CmpdLVREeqTKJkRPR5NrQ",
+      "name" : "loadContextInJob"
+    }, {
+      "id" : "_1Cmpc7VREeqTKJkRPR5NrQ",
+      "name" : "printContextVariableValues"
+    }, {
+      "id" : "_1CmpbLVREeqTKJkRPR5NrQ",
+      "name" : "resource_directory_contextFiles"
+    }, {
+      "id" : "_1CmpcrVREeqTKJkRPR5NrQ",
+      "name" : "taskName"
+    }, {
+      "id" : "_1CmpdbVREeqTKJkRPR5NrQ",
+      "name" : "temp_dir_path"
+    } ]
+  } ]
+}

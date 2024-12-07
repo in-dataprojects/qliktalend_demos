@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_FSIbMItREeqf6LnOTK3zVQ" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_FSIbMYtREeqf6LnOTK3zVQ" comment="" name="Connection_SnowFlake_schemaName" prompt="Connection_SnowFlake_schemaName?" promptNeeded="false" type="id_String" value="CUSTOMER"/>
+  <contextParameter xmi:id="_FSIbMotREeqf6LnOTK3zVQ" comment="" name="Connection_SnowFlake_account" prompt="Connection_SnowFlake_account?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_FSIbM4tREeqf6LnOTK3zVQ" comment="" name="Connection_SnowFlake_warehouse" prompt="Connection_SnowFlake_warehouse?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_FSIbNItREeqf6LnOTK3zVQ" comment="" name="Connection_SnowFlake_role" prompt="Connection_SnowFlake_role?" promptNeeded="false" type="id_String" value="SYSADMIN"/>
+  <contextParameter xmi:id="_FSIbNYtREeqf6LnOTK3zVQ" comment="" name="Connection_SnowFlake_region" prompt="Connection_SnowFlake_region?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_FSIbNotREeqf6LnOTK3zVQ" comment="" name="Connection_SnowFlake_jdbcParameters" prompt="Connection_SnowFlake_jdbcParameters?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_FSIbN4tREeqf6LnOTK3zVQ" comment="" name="Connection_SnowFlake_customRegionID" prompt="Connection_SnowFlake_customRegionID?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_FSIbOItREeqf6LnOTK3zVQ" comment="" name="Connection_SnowFlake_userPassword_password" prompt="Connection_SnowFlake_userPassword_password?" promptNeeded="false" type="id_Password" value=""/>
+  <contextParameter xmi:id="_FSIbOYtREeqf6LnOTK3zVQ" comment="" name="Connection_SnowFlake_loginTimeout" prompt="Connection_SnowFlake_loginTimeout?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_FSIbOotREeqf6LnOTK3zVQ" comment="" name="Connection_SnowFlake_db" prompt="Connection_SnowFlake_db?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_FSIbO4tREeqf6LnOTK3zVQ" comment="" name="Connection_SnowFlake_userPassword_userId" prompt="Connection_SnowFlake_userPassword_userId?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>
