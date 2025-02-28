@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <TalendMetadata:DatabaseConnection xmi:id="_ZZZL8JISEe-Yt50ZGBfTMw" name="sqlserver_demos" id="_CF9-MJIREe-Yt50ZGBfTMw" label="sqlserver_demos" dataPackage="_Zadi8JISEe-Yt50ZGBfTMw" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://wash:1433;DatabaseName=in;" dbVersionString="MSSQL_PROP" Port="1433" Username="wash" Password="enc:system.encryption.key.v1:/TbjiXqEZQLBT8EXrNXaUv+/PM/epFS6QHn59V4XQLT2qHQ=" ServerName="wash" DatasourceName="" FileFieldName="" SID="in" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
+  <TalendMetadata:DatabaseConnection xmi:id="_ZZZL8JISEe-Yt50ZGBfTMw" name="sqlserver_demos" id="_CF9-MJIREe-Yt50ZGBfTMw" label="sqlserver_demos" dataPackage="_Zadi8JISEe-Yt50ZGBfTMw" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://wash:1433;DatabaseName=in;" dbVersionString="MSSQL_PROP" Port="1433" Username="wash" Password="enc:system.encryption.key.v1:aKroord1WyR7xPOLP1jiQAv8rnpfzLZDa25+MhXA2wQ=" ServerName="wash" DatasourceName="" FileFieldName="" SID="in" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
     <taggedValue xmi:id="_ZZZL8ZISEe-Yt50ZGBfTMw" tag="Is Conn Need Reload" value="false"/>
     <taggedValue xmi:id="_ZZst8JISEe-Yt50ZGBfTMw" tag="package filter" value=""/>
     <taggedValue xmi:id="_ZZwYUJISEe-Yt50ZGBfTMw" tag="Status" value=""/>
@@ -13,17 +13,9 @@
     <taggedValue xmi:id="_ZZ6wYZISEe-Yt50ZGBfTMw" tag="DB ProductVersion" value="16.00.1000"/>
     <taggedValue xmi:id="_ZZ6wYpISEe-Yt50ZGBfTMw" tag="DB IdentifierQuoteString" value="&quot;"/>
     <parameters xmi:id="_ZZZL8pISEe-Yt50ZGBfTMw" key="CONN_PARA_KEY_USERNAME" value="wash"/>
+    <parameters xmi:id="_Lkt8sOfpEe-oxblMBY_m7A" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_Zadi8JISEe-Yt50ZGBfTMw" name="in" dataManager="_ZZZL8JISEe-Yt50ZGBfTMw">
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Zadi8ZISEe-Yt50ZGBfTMw" name="db_accessadmin"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Zadi8pISEe-Yt50ZGBfTMw" name="db_backupoperator"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Zadi85ISEe-Yt50ZGBfTMw" name="db_datareader"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Zadi9JISEe-Yt50ZGBfTMw" name="db_datawriter"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Zadi9ZISEe-Yt50ZGBfTMw" name="db_ddladmin"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Zadi9pISEe-Yt50ZGBfTMw" name="db_denydatareader"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Zadi95ISEe-Yt50ZGBfTMw" name="db_denydatawriter"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Zadi-JISEe-Yt50ZGBfTMw" name="db_owner"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Zadi-ZISEe-Yt50ZGBfTMw" name="db_securityadmin"/>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Zadi-pISEe-Yt50ZGBfTMw" name="dbo">
       <ownedElement xsi:type="relational:TdTable" xmi:id="_3wwL8JISEe-Yt50ZGBfTMw" name="clientes" id="_3wtvsJISEe-Yt50ZGBfTMw" label="clientes" tableType="TABLE">
         <feature xsi:type="relational:TdColumn" xmi:id="_3wwL8ZISEe-Yt50ZGBfTMw" name="Nome" label="Nome" length="100" sourceType="VARCHAR" talendType="id_String">
@@ -179,8 +171,17 @@
         </feature>
       </ownedElement>
     </ownedElement>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Zadi-5ISEe-Yt50ZGBfTMw" name="guest"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Zadi_JISEe-Yt50ZGBfTMw" name="INFORMATION_SCHEMA"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Zadi_ZISEe-Yt50ZGBfTMw" name="sys"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Nao8gOfpEe-oxblMBY_m7A" name="db_accessadmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Nao8gefpEe-oxblMBY_m7A" name="db_backupoperator"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Nao8gufpEe-oxblMBY_m7A" name="db_datareader"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Nao8g-fpEe-oxblMBY_m7A" name="db_datawriter"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Nao8hOfpEe-oxblMBY_m7A" name="db_ddladmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Nao8hefpEe-oxblMBY_m7A" name="db_denydatareader"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Nao8hufpEe-oxblMBY_m7A" name="db_denydatawriter"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Nao8h-fpEe-oxblMBY_m7A" name="db_owner"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Nao8iOfpEe-oxblMBY_m7A" name="db_securityadmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Nao8iefpEe-oxblMBY_m7A" name="guest"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Nao8iufpEe-oxblMBY_m7A" name="INFORMATION_SCHEMA"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Nao8i-fpEe-oxblMBY_m7A" name="sys"/>
   </orgomg.cwm.resource.relational:Catalog>
 </xmi:XMI>

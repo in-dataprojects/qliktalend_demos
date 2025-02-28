@@ -1,0 +1,1041 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Test" jobType="Standard">
+  <context confirmationNeeded="false" name="Test">
+    <contextParameter comment="Location of Context Files (Local or Cloud Engine or Remote Engine)" name="resource_directory_contextFiles" prompt="resource_directory_contextFiles?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;C:/Temp/contextmanagement&quot;" internalId="_TuuDAM0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Context Storage Type to read from (File or DB)." name="contextStorageType" prompt="contextStorageType?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;File&quot;" internalId="_TuuDAc0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Environment parameter that can be leveraged to drive different logic based on execution environment" name="environment" prompt="environment?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;test&quot;" internalId="_TuuDAs0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Load Project Level Context File" name="enableProjectLevelContextFileLoad" prompt="enableProjectLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false" internalId="_TuuDA80FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Load Job Level Context File" name="enableJobLevelContextFileLoad" prompt="enableJobLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false" internalId="_TuuDBM0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Load Task Level Context File" name="enableTaskLevelContextFileLoad" prompt="enableTaskLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false" internalId="_TuuDBc0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Task Name or Id for loading Context File" name="taskName" prompt="taskName?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="" internalId="_TuuDBs0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Print Context Variable Values (Password always hidden by default)" name="printContextVariableValues" prompt="printContextVariableValues?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="true" internalId="_TuuDB80FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Flag to set to load context variables in Job.  This is handy if there are child jobs and we do not want child jobs to load the context values again, but instead use the values from the parent job. Default Value is true and then overridden to false at the end of the first context load" name="loadContextInJob" prompt="loadContextInJob?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="true" internalId="_TuuDCM0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Allocate the directory path to hold temporary file for tMap disk mode" name="temp_dir_path" prompt="temp_dir_path?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;C:/Temp/&quot;" internalId="_TuuDCc0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Database Hostname" name="globalContext_DB_Host" prompt="globalContext_DB_Host?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value="" internalId="_TuuDCs0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Database Password" name="globalContext_DB_Password" prompt="globalContext_DB_Password?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_Password" value="" internalId="_TuuDC80FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Port for connecting Database " name="globalContext_DB_Port" prompt="globalContext_DB_Port?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value="3306" internalId="_TuuDDM0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Database username" name="globalContext_DB_Username" prompt="globalContext_DB_Username?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value="" internalId="_TuuDDc0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Database schema" name="globalContext_DB_Database_Schema" prompt="globalContext_DB_Database_Schema?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value="" internalId="_TuuDDs0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="String to specify any additional JDBC Connection parameters" name="globalContext_DB__AdditionalParams" prompt="globalContext_DB__AdditionalParams?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value="" internalId="_TuuDD80FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Google Big Query Access Key" name="GoogleBigQuery_AccessKey" prompt="GoogleBigQuery_AccessKey?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" internalId="_TuuDEM0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="File Path in Google Storage" name="GoogleBigQuery_GS_Filepath" prompt="GoogleBigQuery_GS_Filepath?" promptNeeded="false" repositoryContextId="_sSoXgLlBEeqKrNt7c6yZbg" type="id_String" value="" internalId="_TuuDEc0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="SAP system number" name="sap_system_number" prompt="sap_system_number?" promptNeeded="false" repositoryContextId="_sSoXgLlBEeqKrNt7c6yZbg" type="id_String" value="" internalId="_TuuDEs0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Name of Google Storage Bucket" name="GoogleBigQuery_Bucket" prompt="GoogleBigQuery_Bucket?" promptNeeded="false" repositoryContextId="_sSoXgLlBEeqKrNt7c6yZbg" type="id_String" value="" internalId="_TuuDE80FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Language" name="sap_lang" prompt="sap_lang?" promptNeeded="false" repositoryContextId="_sSoXgLlBEeqKrNt7c6yZbg" type="id_String" value="" internalId="_TuuDFM0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="SAP user id" name="sap_userid" prompt="sap_userid?" promptNeeded="false" repositoryContextId="_sSoXgLlBEeqKrNt7c6yZbg" type="id_String" value="" internalId="_TuuDFs0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="SAP host name" name="sap_host_name" prompt="sap_host_name?" promptNeeded="false" repositoryContextId="_sSoXgLlBEeqKrNt7c6yZbg" type="id_String" value="" internalId="_TuuDGc0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="File Path of Bulk data output which will be loaded to Google Big Query" name="GoogleBigQuery_Bulk_Filepath" prompt="GoogleBigQuery_Bulk_Filepath?" promptNeeded="false" repositoryContextId="_sSoXgLlBEeqKrNt7c6yZbg" type="id_String" value="" internalId="_TuuDGs0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="SAP subscriber name" name="sap_odp_subscriber_name" prompt="sap_odp_subscriber_name?" promptNeeded="false" repositoryContextId="_sSoXgLlBEeqKrNt7c6yZbg" type="id_String" value="" internalId="_TuuDG80FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Dataset name of Google BigQuery" name="GoogleBigQuery_Dataset" prompt="GoogleBigQuery_Dataset?" promptNeeded="false" repositoryContextId="_sSoXgLlBEeqKrNt7c6yZbg" type="id_String" value="" internalId="_TuuDHM0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="SAP Client id" name="sap_client" prompt="sap_client?" promptNeeded="false" repositoryContextId="_sSoXgLlBEeqKrNt7c6yZbg" type="id_String" value="" internalId="_TuuDHc0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Path of Google BigQuery Service Account Credentials file" name="GoogleBigQuery_SA_Credentials_file" prompt="GoogleBigQuery_SA_Credentials_file?" promptNeeded="false" repositoryContextId="_sSoXgLlBEeqKrNt7c6yZbg" type="id_String" value="" internalId="_TuuDHs0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Id of Google BigQuery Project" name="GoogleBigQuery_Project_id" prompt="GoogleBigQuery_Project_id?" promptNeeded="false" repositoryContextId="_sSoXgLlBEeqKrNt7c6yZbg" type="id_String" value="" internalId="_TuuDH80FEeuHjv33IpxnQw"/>
+    <contextParameter comment="SAP Password" name="sap_password" prompt="sap_password?" promptNeeded="false" repositoryContextId="_sSoXgLlBEeqKrNt7c6yZbg" type="id_Password" value="" internalId="_TuuDIM0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="password for cryptographic file" name="crytographic_PWD" prompt="crytographic_PWD?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Password" value="enc:system.encryption.key.v1:m2cLv4cWqRMH8Rpk7hsQW6ebVR4VNOfxz34RujOKHXv9FM4g" internalId="_TuuDIc0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="file path for crytographic" name="crytographicFilePath" prompt="crytographicFilePath?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;C:/Temp/password&quot;" internalId="_TuuDIs0FEeuHjv33IpxnQw"/>
+  </context>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="Location of Context Files (Local or Cloud Engine or Remote Engine)" name="resource_directory_contextFiles" prompt="resource_directory_contextFiles?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="/opt/talend/contextmanagement" internalId="_TuuDI80FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Context Storage Type to read from (File or DB)." name="contextStorageType" prompt="contextStorageType?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;File&quot;" internalId="_TuuDJM0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Environment parameter that can be leveraged to drive different logic based on execution environment" name="environment" prompt="environment?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="" internalId="_TuuDJc0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Load Project Level Context File" name="enableProjectLevelContextFileLoad" prompt="enableProjectLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false" internalId="_TuuDJs0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Load Job Level Context File" name="enableJobLevelContextFileLoad" prompt="enableJobLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false" internalId="_TuuDJ80FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Load Task Level Context File" name="enableTaskLevelContextFileLoad" prompt="enableTaskLevelContextFileLoad?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false" internalId="_TuuDKM0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Task Name or Id for loading Context File" name="taskName" prompt="taskName?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="" internalId="_TuuDKc0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Print Context Variable Values (Password always hidden by default)" name="printContextVariableValues" prompt="printContextVariableValues?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="false" internalId="_TuuDKs0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Flag to set to load context variables in Job.  This is handy if there are child jobs and we do not want child jobs to load the context values again, but instead use the values from the parent job. Default Value is true and then overridden to false at the end of the first context load" name="loadContextInJob" prompt="loadContextInJob?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Boolean" value="true" internalId="_TuuDK80FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Allocate the directory path to hold temporary file for tMap disk mode" name="temp_dir_path" prompt="temp_dir_path?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="" internalId="_TuuDLM0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Database Hostname" name="globalContext_DB_Host" prompt="globalContext_DB_Host?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value="" internalId="_TuuDLc0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Database Password" name="globalContext_DB_Password" prompt="globalContext_DB_Password?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_Password" value="" internalId="_TuuDLs0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Port for connecting Database " name="globalContext_DB_Port" prompt="globalContext_DB_Port?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value="3306" internalId="_TuuDL80FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Database username" name="globalContext_DB_Username" prompt="globalContext_DB_Username?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value="" internalId="_TuuDMM0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Database schema" name="globalContext_DB_Database_Schema" prompt="globalContext_DB_Database_Schema?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value="" internalId="_TuuDMc0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="String to specify any additional JDBC Connection parameters" name="globalContext_DB__AdditionalParams" prompt="globalContext_DB__AdditionalParams?" promptNeeded="false" repositoryContextId="_1bwl8IX1Eem4I64wW9I-Og" type="id_String" value="" internalId="_TuuDMs0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Google Big Query Access Key" name="GoogleBigQuery_AccessKey" prompt="GoogleBigQuery_AccessKey?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" internalId="_TuuDM80FEeuHjv33IpxnQw"/>
+    <contextParameter comment="File Path in Google Storage" name="GoogleBigQuery_GS_Filepath" prompt="GoogleBigQuery_GS_Filepath?" promptNeeded="false" repositoryContextId="_sSoXgLlBEeqKrNt7c6yZbg" type="id_String" value="" internalId="_TuuDNM0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="SAP system number" name="sap_system_number" prompt="sap_system_number?" promptNeeded="false" repositoryContextId="_sSoXgLlBEeqKrNt7c6yZbg" type="id_String" value="" internalId="_TuuDNc0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Name of Google Storage Bucket" name="GoogleBigQuery_Bucket" prompt="GoogleBigQuery_Bucket?" promptNeeded="false" repositoryContextId="_sSoXgLlBEeqKrNt7c6yZbg" type="id_String" value="" internalId="_TuuDNs0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Language" name="sap_lang" prompt="sap_lang?" promptNeeded="false" repositoryContextId="_sSoXgLlBEeqKrNt7c6yZbg" type="id_String" value="" internalId="_TuuDN80FEeuHjv33IpxnQw"/>
+    <contextParameter comment="SAP user id" name="sap_userid" prompt="sap_userid?" promptNeeded="false" repositoryContextId="_sSoXgLlBEeqKrNt7c6yZbg" type="id_String" value="" internalId="_TuuDOc0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="SAP host name" name="sap_host_name" prompt="sap_host_name?" promptNeeded="false" repositoryContextId="_sSoXgLlBEeqKrNt7c6yZbg" type="id_String" value="" internalId="_TuuDPM0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="File Path of Bulk data output which will be loaded to Google Big Query" name="GoogleBigQuery_Bulk_Filepath" prompt="GoogleBigQuery_Bulk_Filepath?" promptNeeded="false" repositoryContextId="_sSoXgLlBEeqKrNt7c6yZbg" type="id_String" value="" internalId="_TuuDPc0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="SAP subscriber name" name="sap_odp_subscriber_name" prompt="sap_odp_subscriber_name?" promptNeeded="false" repositoryContextId="_sSoXgLlBEeqKrNt7c6yZbg" type="id_String" value="" internalId="_TuuDPs0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Dataset name of Google BigQuery" name="GoogleBigQuery_Dataset" prompt="GoogleBigQuery_Dataset?" promptNeeded="false" repositoryContextId="_sSoXgLlBEeqKrNt7c6yZbg" type="id_String" value="" internalId="_TuuDP80FEeuHjv33IpxnQw"/>
+    <contextParameter comment="SAP Client id" name="sap_client" prompt="sap_client?" promptNeeded="false" repositoryContextId="_sSoXgLlBEeqKrNt7c6yZbg" type="id_String" value="" internalId="_TuuDQM0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Path of Google BigQuery Service Account Credentials file" name="GoogleBigQuery_SA_Credentials_file" prompt="GoogleBigQuery_SA_Credentials_file?" promptNeeded="false" repositoryContextId="_sSoXgLlBEeqKrNt7c6yZbg" type="id_String" value="" internalId="_TuuDQc0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="Id of Google BigQuery Project" name="GoogleBigQuery_Project_id" prompt="GoogleBigQuery_Project_id?" promptNeeded="false" repositoryContextId="_sSoXgLlBEeqKrNt7c6yZbg" type="id_String" value="" internalId="_TuuDQs0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="SAP Password" name="sap_password" prompt="sap_password?" promptNeeded="false" repositoryContextId="_sSoXgLlBEeqKrNt7c6yZbg" type="id_Password" value="" internalId="_TuuDQ80FEeuHjv33IpxnQw"/>
+    <contextParameter comment="password for cryptographic file" name="crytographic_PWD" prompt="crytographic_PWD?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_Password" value="enc:system.encryption.key.v1:isJUAG4CrrtEEK6QFFQhHhOv6Dco+mZM3g6IO8rcSjAxE/xB" internalId="_TuuDRM0FEeuHjv33IpxnQw"/>
+    <contextParameter comment="file path for crytographic" name="crytographicFilePath" prompt="crytographicFilePath?" promptNeeded="false" repositoryContextId="_KWbrgIL1EemhiP054CDFZw" type="id_String" value="&quot;C:/Users/vmehra.TALEND/Documents/Project/MBO\MBO-DataPrivacy/password&quot;" internalId="_TuuDRc0FEeuHjv33IpxnQw"/>
+  </context>
+  <parameters>
+    <elementParameter field="CHECK" name="LOG4J_RUN_ACTIVATE" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="39" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="320" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:7+dQEuykhvpwETiZ7g7bgsKMkwr63351Sk9AtkG9" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/kdnre/psmbo_workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:TE1R3HffM6NbpJZS4qkYSJxRzpj/HNBNHvvzJifx" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_VpEi8Fx2Eeq8HKEkpBUS_g" name="DataOperation"/>
+    <routinesParameter id="_VpnVgFx2Eeq8HKEkpBUS_g" name="Mathematical"/>
+    <routinesParameter id="_Vprm8Fx2Eeq8HKEkpBUS_g" name="Numeric"/>
+    <routinesParameter id="_Vpv4YFx2Eeq8HKEkpBUS_g" name="Relational"/>
+    <routinesParameter id="_VqI58Fx2Eeq8HKEkpBUS_g" name="SQLike"/>
+    <routinesParameter id="_Vp0J0Fx2Eeq8HKEkpBUS_g" name="StringHandling"/>
+    <routinesParameter id="_Vp4bQFx2Eeq8HKEkpBUS_g" name="TalendDataGenerator"/>
+    <routinesParameter id="_Vp8ssFx2Eeq8HKEkpBUS_g" name="TalendDate"/>
+    <routinesParameter id="_VqEogFx2Eeq8HKEkpBUS_g" name="TalendStringUtil"/>
+    <routinesParameter id="_VqA-IFx2Eeq8HKEkpBUS_g" name="TalendString"/>
+    <routinesParameter id="_oGip0IyvEemuGIWPULx7VA" name="TalendEncryption"/>
+    <routinesParameter id="_-FY9kLk4EeqKrNt7c6yZbg" name="DataQualityDependencies"/>
+    <routinesParameter id="_-FTeALk4EeqKrNt7c6yZbg" name="DataQuality"/>
+    <routinesParameter id="_-FfEMLk4EeqKrNt7c6yZbg" name="DqStringHandling"/>
+    <routinesParameter id="_-FkjwLk4EeqKrNt7c6yZbg" name="DQTechnical"/>
+    <routinesParameter id="_-FN-cLk4EeqKrNt7c6yZbg" name="DataMasking"/>
+  </parameters>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>Prejob"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="864">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>PostJob"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tSAPConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSAPConnection_1" show="false"/>
+    <elementParameter field="LABEL" name="NOTE3" value="The selected SAP JCO version allows you to share this SAP connection only with tSAPInput and tSAPOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="TALENDSAP"/>
+    <elementParameter field="CLOSED_LIST" name="SERVERTYPE" value="ApplicationServer"/>
+    <elementParameter field="TEXT" name="CLIENT" value="context.sap_client"/>
+    <elementParameter field="TEXT" name="USERID" value="context.sap_userid"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:wvmKIhCBJmYyLlILsP6ZXvIjw1OewA8ClWp1ZM4jgCeBC4/gxx6Lp7UKkPX9rQgU"/>
+    <elementParameter field="TEXT" name="LANGUAGE" value="context.sap_lang"/>
+    <elementParameter field="TEXT" name="HOSTNAME" value="context.sap_host_name"/>
+    <elementParameter field="TEXT" name="SYSTEMNUMBER" value="context.sap_system_number"/>
+    <elementParameter field="TEXT" name="SYSTEMID" value="&quot;PRD&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GROUPNAME" value="&quot;tGroup&quot;" show="false"/>
+    <elementParameter field="LABEL" name="NOTE_DATASOURCE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="SAP_DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="SAP_PROPERTIES"/>
+    <elementParameter field="CHECK" name="FTP_HTTP_FUNCTION" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>Connect to Source"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Connection to SAP Source system Failed!&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="6902"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>Source connect error"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_1"/>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_1" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;SAP to BigQuery data load for Sales Document : Conditions Module completed&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="3721"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>Data load complete"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_1"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_4" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;SAP to BigQuery data load for Sales Document : Conditions Module failed!&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="6721"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>Data load error"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_4"/>
+  </node>
+  <node componentName="DK_Ref:LoadContext" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="LoadContext_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="CLOSED_LIST" name="TRIGGER_INPUT_1" value="COMPONENT_OK"/>
+    <elementParameter field="COMPONENT_LIST" name="TRIGGER_INPUT_1:COMPONENT_LIST" value="tPrejob_1"/>
+    <elementParameter field="CLOSED_LIST" name="TRIGGER_INPUT_2" value="SUBJOB_OK"/>
+    <elementParameter field="COMPONENT_LIST" name="TRIGGER_INPUT_2:COMPONENT_LIST" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>CommonFramework:LoadContext"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="tSAPODPInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSAPODPInput_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tSAPConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="SERVERTYPE" value="ApplicationServer" show="false"/>
+    <elementParameter field="TEXT" name="CLIENT" value="&quot;800&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USERID" value="&quot;aband&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:2BRTpxTvNjArjFi6a8OAJQe3kvODmRdaOBfIfccm+StWjpC7TbjJYUA=" show="false"/>
+    <elementParameter field="TEXT" name="LANGUAGE" value="&quot;en&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOSTNAME" value="&quot;192.168.200.101&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SYSTEMNUMBER" value="&quot;00&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SYSTEMID" value="&quot;PRD&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GROUPNAME" value="&quot;tGroup&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="sap_id" show="false"/>
+    <elementParameter field="TABLE" name="SELECTION_TABLE"/>
+    <elementParameter field="LABEL" name="NOTE_DATASOURCE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SAP_DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;2LIS_11_VAKON&quot;"/>
+    <elementParameter field="TEXT" name="SUBSCRIBER_NAME" value="context.sap_odp_subscriber_name"/>
+    <elementParameter field="TEXT" name="SUBSCRIBER_PROCESS_NAME" value="context.sap_odp_subscriber_name+&quot;2LIS_11_VAKON&quot;"/>
+    <elementParameter field="CHECK" name="EXTRACTION_FULL" value="false"/>
+    <elementParameter field="CHECK" name="RESET_SUBSCRIBER" value="false"/>
+    <elementParameter field="CHECK" name="USE_FTP_BATCH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="FILE_PROTOCOL" value="FTP" show="false"/>
+    <elementParameter field="TEXT" name="FTP_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FTP_PORT" value="21" show="false"/>
+    <elementParameter field="TEXT" name="FTP_USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="FTP_PASS" value="enc:system.encryption.key.v1:ewXtGlGEJs0kslqhaHg7Rs6mYpiukUti0X+IJHo5" show="false"/>
+    <elementParameter field="TEXT" name="FTP_DIR" value="&quot;/usr/sap/talend/ftp/&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GENERATED_FILENAME_PREFIX" value="&quot;current_data_file&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FETCH_SIZE" value="-1"/>
+    <elementParameter field="TABLE" name="SAP_PROPERTIES" show="false">
+      <elementValue elementRef="PROPERTY" value="&quot;jco.client.saprouter&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;/H/sr2.cimt.de/S/3299/W/Talshsuiwnn3836!L6/H/&quot;"/>
+      <elementValue elementRef="PROPERTY" value="&quot;api.use_z_talend_read_table&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;true&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="EXTRACT_REMOTE_PATH" value="false" show="false"/>
+    <elementParameter field="TEXT" name="REMOTE_DIR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>2LIS_11_VAKON"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="_2LIS_11_VAKON" name="tSAPODPInput_1">
+      <column comment="Indicator: Cancel Data Record" key="false" length="1" name="ROCANCEL" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales and Distribution Document Number" key="false" length="10" name="VBELN" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Rejection status for SD item" key="false" length="1" name="ABSTA" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Item number of the SD document" key="false" length="6" name="POSNR" nullable="true" pattern="" precision="0" sourceType="BIG_INTEGER" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Pricing for item is incomplete" key="false" length="1" name="UVPRS" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales Document Type" key="false" length="4" name="AUART" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Order reason (reason for the business transaction)" key="false" length="3" name="AUGRU" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Company Code" key="false" length="4" name="BUKRS" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Billing block in SD document" key="false" length="2" name="FAKSK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Local Currency" key="false" length="5" name="HWAER" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sold-to party" key="false" length="10" name="KUNNR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Exchange Rate Type" key="false" length="4" name="KURST" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Customer group 1" key="false" length="3" name="KVGR1" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Customer group 2" key="false" length="3" name="KVGR2" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Customer group 3" key="false" length="3" name="KVGR3" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Customer group 4" key="false" length="3" name="KVGR4" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Customer group 5" key="false" length="3" name="KVGR5" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Statistics currency" key="false" length="5" name="STWAE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="SD document category" key="false" length="1" name="VBTYP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales Office" key="false" length="4" name="VKBUR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales Group" key="false" length="3" name="VKGRP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales Organization" key="false" length="4" name="VKORG" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Distribution Channel" key="false" length="2" name="VTWEG" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Reason for rejection of quotations and sales orders" key="false" length="2" name="ABGRU" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Changed On" key="false" length="8" name="AEDAT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Application Component" key="false" length="30" name="BWAPPLNM" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="SAP BW transaction key" key="false" length="3" name="BWVORG" nullable="true" pattern="" precision="0" sourceType="BIG_INTEGER" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="International Article Number (EAN/UPC)" key="false" length="18" name="EAN11" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Date on Which Record Was Created" key="false" length="8" name="ERDAT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Name of Person who Created the Object" key="false" length="12" name="ERNAM" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Entry time" key="false" length="6" name="ERZET" nullable="true" pattern="&quot;HH:mm:ss&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true"/>
+      <column comment="Billing block for item" key="false" length="2" name="FAKSP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Cumulative Order Quantity in Sales Units" key="false" length="15" name="KWMENG" nullable="true" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Material Group" key="false" length="9" name="MATKL" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material Number" key="false" length="18" name="MATNR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material entered" key="false" length="18" name="MATWA" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material group 1" key="false" length="3" name="MVGR1" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material group 2" key="false" length="3" name="MVGR2" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material group 3" key="false" length="3" name="MVGR3" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material group 4" key="false" length="3" name="MVGR4" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material group 5" key="false" length="3" name="MVGR5" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Bill-to party" key="false" length="10" name="PKUNRE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Payer" key="false" length="10" name="PKUNRG" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Ship-to party" key="false" length="10" name="PKUNWE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Product hierarchy" key="false" length="18" name="PRODH" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales document item category" key="false" length="4" name="PSTYV" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales employee" key="false" length="8" name="PVRTNR" nullable="true" pattern="" precision="0" sourceType="BIG_INTEGER" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Division" key="false" length="2" name="SPART" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Statistics date" key="false" length="8" name="STADAT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Exchange rate for statistics (Exch.rate at time of creation)" key="false" length="9" name="STCUR" nullable="true" pattern="" precision="5" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Sales unit" key="false" length="3" name="VRKME" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="SD Document Currency" key="false" length="5" name="WAERK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Target quantity UoM" key="false" length="3" name="ZIEME" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Target quantity in sales units" key="false" length="13" name="ZMENG" nullable="true" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Sales district" key="false" length="6" name="BZIRK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Date on which services rendered" key="false" length="8" name="FBUDA" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Billing date for billing index and printout" key="false" length="8" name="FKDAT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Incoterms (Part 1)" key="false" length="3" name="INCO1" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Incoterms (Part 2)" key="false" length="28" name="INCO2" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Customer group" key="false" length="2" name="KDGRP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Account assignment group for this customer" key="false" length="2" name="KTGRD" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Exchange Rate for Price Determination" key="false" length="9" name="KURSK" nullable="true" pattern="" precision="5" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Translation Date" key="false" length="8" name="KURSK_DAT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Date for pricing and exchange rate" key="false" length="8" name="PRSDT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Promotion" key="false" length="10" name="WAKTION" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Application" key="false" length="2" name="KAPPL" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Origin of the condition" key="false" length="1" name="KHERK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition is inactive" key="false" length="1" name="KINAK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition category (examples: tax, freight, price, cost)" key="false" length="1" name="KNTYP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition class" key="false" length="1" name="KOAID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition type" key="false" length="4" name="KSCHL" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition is used for statistics" key="false" length="1" name="KSTAT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition for configuration" key="false" length="1" name="KVARC" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Step number" key="false" length="3" name="STUNR" nullable="true" pattern="" precision="0" sourceType="BIG_INTEGER" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Variant condition" key="false" length="26" name="VARCOND" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition value" key="false" length="13" name="KWERT" nullable="true" pattern="" precision="2" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition counter" key="false" length="2" name="ZAEHK" nullable="true" pattern="" precision="0" sourceType="BIG_INTEGER" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="SD Document Currency" key="false" length="5" name="WAERK_VBAK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Division for order header" key="false" length="2" name="SPARA" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales Document Category of Reference Doc. in Order Header" key="false" length="1" name="VGTYP_AK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Work Breakdown Structure Element (WBS Element)" key="false" length="24" name="PS_POSID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Fiscal Year Variant" key="false" length="2" name="PERIV" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Change Mode for a Data Record in the Delta" key="false" length="1" name="ODQ_CHANGEMODE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Number of Data Units (Data Records for Example)" key="false" length="19" name="ODQ_ENTITYCNTR" nullable="true" pattern="" precision="0" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <additionalProperties key="CONTENT_TYPE" value="METADATA_SAP_CONTENT_EXTRACTOR"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value="context.temp_dir_path"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_z734sG9yEeqvH7ZkPnFLmQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>Map Data"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="target_rows">
+      <column comment="Indicator: Cancel Data Record" key="false" length="1" name="ROCANCEL" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales and Distribution Document Number" key="false" length="10" name="VBELN" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Rejection status for SD item" key="false" length="1" name="ABSTA" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Item number of the SD document" key="false" length="6" name="POSNR" nullable="true" pattern="" precision="0" sourceType="BIG_INTEGER" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Pricing for item is incomplete" key="false" length="1" name="UVPRS" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales Document Type" key="false" length="4" name="AUART" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Order reason (reason for the business transaction)" key="false" length="3" name="AUGRU" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Company Code" key="false" length="4" name="BUKRS" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Billing block in SD document" key="false" length="2" name="FAKSK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Local Currency" key="false" length="5" name="HWAER" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sold-to party" key="false" length="10" name="KUNNR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Exchange Rate Type" key="false" length="4" name="KURST" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Customer group 1" key="false" length="3" name="KVGR1" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Customer group 2" key="false" length="3" name="KVGR2" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Customer group 3" key="false" length="3" name="KVGR3" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Customer group 4" key="false" length="3" name="KVGR4" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Customer group 5" key="false" length="3" name="KVGR5" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Statistics currency" key="false" length="5" name="STWAE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="SD document category" key="false" length="1" name="VBTYP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales Office" key="false" length="4" name="VKBUR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales Group" key="false" length="3" name="VKGRP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales Organization" key="false" length="4" name="VKORG" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Distribution Channel" key="false" length="2" name="VTWEG" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Reason for rejection of quotations and sales orders" key="false" length="2" name="ABGRU" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Changed On" key="false" length="8" name="AEDAT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Application Component" key="false" length="30" name="BWAPPLNM" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="SAP BW transaction key" key="false" length="3" name="BWVORG" nullable="true" pattern="" precision="0" sourceType="BIG_INTEGER" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="International Article Number (EAN/UPC)" key="false" length="18" name="EAN11" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Date on Which Record Was Created" key="false" length="8" name="ERDAT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Name of Person who Created the Object" key="false" length="12" name="ERNAM" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Entry time" key="false" length="8" name="ERZET" nullable="true" pattern="&quot;HH:mm:ss&quot;" precision="0" sourceType="TIME" type="id_String" usefulColumn="true"/>
+      <column comment="Billing block for item" key="false" length="2" name="FAKSP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Cumulative Order Quantity in Sales Units" key="false" length="15" name="KWMENG" nullable="true" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Material Group" key="false" length="9" name="MATKL" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material Number" key="false" length="18" name="MATNR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material entered" key="false" length="18" name="MATWA" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material group 1" key="false" length="3" name="MVGR1" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material group 2" key="false" length="3" name="MVGR2" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material group 3" key="false" length="3" name="MVGR3" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material group 4" key="false" length="3" name="MVGR4" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material group 5" key="false" length="3" name="MVGR5" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Bill-to party" key="false" length="10" name="PKUNRE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Payer" key="false" length="10" name="PKUNRG" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Ship-to party" key="false" length="10" name="PKUNWE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Product hierarchy" key="false" length="18" name="PRODH" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales document item category" key="false" length="4" name="PSTYV" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales employee" key="false" length="8" name="PVRTNR" nullable="true" pattern="" precision="0" sourceType="BIG_INTEGER" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Division" key="false" length="2" name="SPART" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Statistics date" key="false" length="8" name="STADAT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Exchange rate for statistics (Exch.rate at time of creation)" key="false" length="9" name="STCUR" nullable="true" pattern="" precision="5" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Sales unit" key="false" length="3" name="VRKME" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="SD Document Currency" key="false" length="5" name="WAERK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Target quantity UoM" key="false" length="3" name="ZIEME" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Target quantity in sales units" key="false" length="13" name="ZMENG" nullable="true" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Sales district" key="false" length="6" name="BZIRK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Date on which services rendered" key="false" length="8" name="FBUDA" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Billing date for billing index and printout" key="false" length="8" name="FKDAT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Incoterms (Part 1)" key="false" length="3" name="INCO1" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Incoterms (Part 2)" key="false" length="28" name="INCO2" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Customer group" key="false" length="2" name="KDGRP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Account assignment group for this customer" key="false" length="2" name="KTGRD" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Exchange Rate for Price Determination" key="false" length="9" name="KURSK" nullable="true" pattern="" precision="5" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Translation Date" key="false" length="8" name="KURSK_DAT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Date for pricing and exchange rate" key="false" length="8" name="PRSDT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Promotion" key="false" length="10" name="WAKTION" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Application" key="false" length="2" name="KAPPL" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Origin of the condition" key="false" length="1" name="KHERK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition is inactive" key="false" length="1" name="KINAK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition category (examples: tax, freight, price, cost)" key="false" length="1" name="KNTYP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition class" key="false" length="1" name="KOAID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition type" key="false" length="4" name="KSCHL" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition is used for statistics" key="false" length="1" name="KSTAT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition for configuration" key="false" length="1" name="KVARC" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Step number" key="false" length="3" name="STUNR" nullable="true" pattern="" precision="0" sourceType="BIG_INTEGER" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Variant condition" key="false" length="26" name="VARCOND" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition value" key="false" length="13" name="KWERT" nullable="true" pattern="" precision="2" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition counter" key="false" length="2" name="ZAEHK" nullable="true" pattern="" precision="0" sourceType="BIG_INTEGER" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="SD Document Currency" key="false" length="5" name="WAERK_VBAK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Division for order header" key="false" length="2" name="SPARA" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales Document Category of Reference Doc. in Order Header" key="false" length="1" name="VGTYP_AK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Work Breakdown Structure Element (WBS Element)" key="false" length="24" name="PS_POSID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Fiscal Year Variant" key="false" length="2" name="PERIV" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Change Mode for a Data Record in the Delta" key="false" length="1" name="ODQ_CHANGEMODE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Number of Data Units (Data Records for Example)" key="false" length="19" name="ODQ_ENTITYCNTR" nullable="true" pattern="" precision="0" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="target_rows">
+        <mapperTableEntries name="ROCANCEL" expression="input_rows.ROCANCEL " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VBELN" expression="input_rows.VBELN " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ABSTA" expression="input_rows.ABSTA " type="id_String" nullable="true"/>
+        <mapperTableEntries name="POSNR" expression="input_rows.POSNR " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="UVPRS" expression="input_rows.UVPRS " type="id_String" nullable="true"/>
+        <mapperTableEntries name="AUART" expression="input_rows.AUART " type="id_String" nullable="true"/>
+        <mapperTableEntries name="AUGRU" expression="input_rows.AUGRU " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BUKRS" expression="input_rows.BUKRS " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FAKSK" expression="input_rows.FAKSK " type="id_String" nullable="true"/>
+        <mapperTableEntries name="HWAER" expression="input_rows.HWAER " type="id_String" nullable="true"/>
+        <mapperTableEntries name="KUNNR" expression="input_rows.KUNNR " type="id_String" nullable="true"/>
+        <mapperTableEntries name="KURST" expression="input_rows.KURST " type="id_String" nullable="true"/>
+        <mapperTableEntries name="KVGR1" expression="input_rows.KVGR1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="KVGR2" expression="input_rows.KVGR2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="KVGR3" expression="input_rows.KVGR3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="KVGR4" expression="input_rows.KVGR4 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="KVGR5" expression="input_rows.KVGR5 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="STWAE" expression="input_rows.STWAE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VBTYP" expression="input_rows.VBTYP " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKBUR" expression="input_rows.VKBUR " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKGRP" expression="input_rows.VKGRP " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKORG" expression="input_rows.VKORG " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VTWEG" expression="input_rows.VTWEG " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ABGRU" expression="input_rows.ABGRU " type="id_String" nullable="true"/>
+        <mapperTableEntries name="AEDAT" expression="input_rows.AEDAT " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="BWAPPLNM" expression="input_rows.BWAPPLNM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BWVORG" expression="input_rows.BWVORG " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="EAN11" expression="input_rows.EAN11 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ERDAT" expression="input_rows.ERDAT " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ERNAM" expression="input_rows.ERNAM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ERZET" expression="TalendDate.formatDate(&quot;HH:mm:ss&quot;, input_rows.ERZET ) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FAKSP" expression="input_rows.FAKSP " type="id_String" nullable="true"/>
+        <mapperTableEntries name="KWMENG" expression="input_rows.KWMENG " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MATKL" expression="input_rows.MATKL " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MATNR" expression="input_rows.MATNR " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MATWA" expression="input_rows.MATWA " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MVGR1" expression="input_rows.MVGR1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MVGR2" expression="input_rows.MVGR2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MVGR3" expression="input_rows.MVGR3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MVGR4" expression="input_rows.MVGR4 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MVGR5" expression="input_rows.MVGR5 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PKUNRE" expression="input_rows.PKUNRE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PKUNRG" expression="input_rows.PKUNRG " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PKUNWE" expression="input_rows.PKUNWE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PRODH" expression="input_rows.PRODH " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PSTYV" expression="input_rows.PSTYV " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PVRTNR" expression="input_rows.PVRTNR " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="SPART" expression="input_rows.SPART " type="id_String" nullable="true"/>
+        <mapperTableEntries name="STADAT" expression="input_rows.STADAT " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STCUR" expression="input_rows.STCUR " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="VRKME" expression="input_rows.VRKME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="WAERK" expression="input_rows.WAERK " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZIEME" expression="input_rows.ZIEME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZMENG" expression="input_rows.ZMENG " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="BZIRK" expression="input_rows.BZIRK " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FBUDA" expression="input_rows.FBUDA " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="FKDAT" expression="input_rows.FKDAT " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INCO1" expression="input_rows.INCO1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INCO2" expression="input_rows.INCO2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="KDGRP" expression="input_rows.KDGRP " type="id_String" nullable="true"/>
+        <mapperTableEntries name="KTGRD" expression="input_rows.KTGRD " type="id_String" nullable="true"/>
+        <mapperTableEntries name="KURSK" expression="input_rows.KURSK " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="KURSK_DAT" expression="input_rows.KURSK_DAT " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="PRSDT" expression="input_rows.PRSDT " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="WAKTION" expression="input_rows.WAKTION " type="id_String" nullable="true"/>
+        <mapperTableEntries name="KAPPL" expression="input_rows.KAPPL " type="id_String" nullable="true"/>
+        <mapperTableEntries name="KHERK" expression="input_rows.KHERK " type="id_String" nullable="true"/>
+        <mapperTableEntries name="KINAK" expression="input_rows.KINAK " type="id_String" nullable="true"/>
+        <mapperTableEntries name="KNTYP" expression="input_rows.KNTYP " type="id_String" nullable="true"/>
+        <mapperTableEntries name="KOAID" expression="input_rows.KOAID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="KSCHL" expression="input_rows.KSCHL " type="id_String" nullable="true"/>
+        <mapperTableEntries name="KSTAT" expression="input_rows.KSTAT " type="id_String" nullable="true"/>
+        <mapperTableEntries name="KVARC" expression="input_rows.KVARC " type="id_String" nullable="true"/>
+        <mapperTableEntries name="STUNR" expression="input_rows.STUNR " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="VARCOND" expression="input_rows.VARCOND " type="id_String" nullable="true"/>
+        <mapperTableEntries name="KWERT" expression="input_rows.KWERT " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZAEHK" expression="input_rows.ZAEHK " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="WAERK_VBAK" expression="input_rows.WAERK_VBAK " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SPARA" expression="input_rows.SPARA " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VGTYP_AK" expression="input_rows.VGTYP_AK " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PS_POSID" expression="input_rows.PS_POSID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PERIV" expression="input_rows.PERIV " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ODQ_CHANGEMODE" expression="input_rows.ODQ_CHANGEMODE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ODQ_ENTITYCNTR" expression="input_rows.ODQ_ENTITYCNTR " type="id_BigDecimal" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="input_rows" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="ROCANCEL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VBELN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ABSTA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="POSNR" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="UVPRS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AUART" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AUGRU" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BUKRS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FAKSK" type="id_String" nullable="true"/>
+        <mapperTableEntries name="HWAER" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KUNNR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KURST" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KVGR1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KVGR2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KVGR3" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KVGR4" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KVGR5" type="id_String" nullable="true"/>
+        <mapperTableEntries name="STWAE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VBTYP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKBUR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKGRP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VKORG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VTWEG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ABGRU" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AEDAT" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="BWAPPLNM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BWVORG" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="EAN11" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ERDAT" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ERNAM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ERZET" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="FAKSP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KWMENG" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MATKL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MATNR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MATWA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MVGR1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MVGR2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MVGR3" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MVGR4" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MVGR5" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PKUNRE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PKUNRG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PKUNWE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PRODH" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PSTYV" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PVRTNR" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="SPART" type="id_String" nullable="true"/>
+        <mapperTableEntries name="STADAT" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STCUR" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="VRKME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="WAERK" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZIEME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZMENG" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="BZIRK" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FBUDA" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="FKDAT" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INCO1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INCO2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KDGRP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KTGRD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KURSK" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="KURSK_DAT" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="PRSDT" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="WAKTION" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KAPPL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KHERK" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KINAK" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KNTYP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KOAID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KSCHL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KSTAT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KVARC" type="id_String" nullable="true"/>
+        <mapperTableEntries name="STUNR" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="VARCOND" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KWERT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZAEHK" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="WAERK_VBAK" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SPARA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VGTYP_AK" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PS_POSID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PERIV" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ODQ_CHANGEMODE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ODQ_ENTITYCNTR" type="id_BigDecimal" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tBigQueryOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryOutputBulk_1" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.GoogleBigQuery_Bulk_Filepath+&quot;/SAP_VAKON_bulk.txt&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;\\&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;\&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_CUSTOM_NULL_MARKER" value="false"/>
+    <elementParameter field="TEXT" name="CUSTOM_NULL_MARKER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="RECORDS_CONTAIN_NULL_VALUE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CHECK_DISK_SPACE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>Bulk File Creation"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryOutputBulk_1">
+      <column comment="Indicator: Cancel Data Record" key="false" length="1" name="ROCANCEL" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales and Distribution Document Number" key="false" length="10" name="VBELN" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Rejection status for SD item" key="false" length="1" name="ABSTA" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Item number of the SD document" key="false" length="6" name="POSNR" nullable="true" pattern="" precision="0" sourceType="BIG_INTEGER" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Pricing for item is incomplete" key="false" length="1" name="UVPRS" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales Document Type" key="false" length="4" name="AUART" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Order reason (reason for the business transaction)" key="false" length="3" name="AUGRU" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Company Code" key="false" length="4" name="BUKRS" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Billing block in SD document" key="false" length="2" name="FAKSK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Local Currency" key="false" length="5" name="HWAER" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sold-to party" key="false" length="10" name="KUNNR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Exchange Rate Type" key="false" length="4" name="KURST" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Customer group 1" key="false" length="3" name="KVGR1" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Customer group 2" key="false" length="3" name="KVGR2" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Customer group 3" key="false" length="3" name="KVGR3" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Customer group 4" key="false" length="3" name="KVGR4" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Customer group 5" key="false" length="3" name="KVGR5" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Statistics currency" key="false" length="5" name="STWAE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="SD document category" key="false" length="1" name="VBTYP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales Office" key="false" length="4" name="VKBUR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales Group" key="false" length="3" name="VKGRP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales Organization" key="false" length="4" name="VKORG" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Distribution Channel" key="false" length="2" name="VTWEG" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Reason for rejection of quotations and sales orders" key="false" length="2" name="ABGRU" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Changed On" key="false" length="8" name="AEDAT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Application Component" key="false" length="30" name="BWAPPLNM" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="SAP BW transaction key" key="false" length="3" name="BWVORG" nullable="true" pattern="" precision="0" sourceType="BIG_INTEGER" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="International Article Number (EAN/UPC)" key="false" length="18" name="EAN11" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Date on Which Record Was Created" key="false" length="8" name="ERDAT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Name of Person who Created the Object" key="false" length="12" name="ERNAM" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Entry time" key="false" length="8" name="ERZET" nullable="true" pattern="&quot;HH:mm:ss&quot;" precision="0" sourceType="TIME" type="id_String" usefulColumn="true"/>
+      <column comment="Billing block for item" key="false" length="2" name="FAKSP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Cumulative Order Quantity in Sales Units" key="false" length="15" name="KWMENG" nullable="true" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Material Group" key="false" length="9" name="MATKL" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material Number" key="false" length="18" name="MATNR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material entered" key="false" length="18" name="MATWA" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material group 1" key="false" length="3" name="MVGR1" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material group 2" key="false" length="3" name="MVGR2" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material group 3" key="false" length="3" name="MVGR3" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material group 4" key="false" length="3" name="MVGR4" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material group 5" key="false" length="3" name="MVGR5" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Bill-to party" key="false" length="10" name="PKUNRE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Payer" key="false" length="10" name="PKUNRG" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Ship-to party" key="false" length="10" name="PKUNWE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Product hierarchy" key="false" length="18" name="PRODH" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales document item category" key="false" length="4" name="PSTYV" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales employee" key="false" length="8" name="PVRTNR" nullable="true" pattern="" precision="0" sourceType="BIG_INTEGER" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Division" key="false" length="2" name="SPART" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Statistics date" key="false" length="8" name="STADAT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Exchange rate for statistics (Exch.rate at time of creation)" key="false" length="9" name="STCUR" nullable="true" pattern="" precision="5" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Sales unit" key="false" length="3" name="VRKME" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="SD Document Currency" key="false" length="5" name="WAERK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Target quantity UoM" key="false" length="3" name="ZIEME" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Target quantity in sales units" key="false" length="13" name="ZMENG" nullable="true" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Sales district" key="false" length="6" name="BZIRK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Date on which services rendered" key="false" length="8" name="FBUDA" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Billing date for billing index and printout" key="false" length="8" name="FKDAT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Incoterms (Part 1)" key="false" length="3" name="INCO1" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Incoterms (Part 2)" key="false" length="28" name="INCO2" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Customer group" key="false" length="2" name="KDGRP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Account assignment group for this customer" key="false" length="2" name="KTGRD" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Exchange Rate for Price Determination" key="false" length="9" name="KURSK" nullable="true" pattern="" precision="5" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Translation Date" key="false" length="8" name="KURSK_DAT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Date for pricing and exchange rate" key="false" length="8" name="PRSDT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Promotion" key="false" length="10" name="WAKTION" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Application" key="false" length="2" name="KAPPL" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Origin of the condition" key="false" length="1" name="KHERK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition is inactive" key="false" length="1" name="KINAK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition category (examples: tax, freight, price, cost)" key="false" length="1" name="KNTYP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition class" key="false" length="1" name="KOAID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition type" key="false" length="4" name="KSCHL" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition is used for statistics" key="false" length="1" name="KSTAT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition for configuration" key="false" length="1" name="KVARC" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Step number" key="false" length="3" name="STUNR" nullable="true" pattern="" precision="0" sourceType="BIG_INTEGER" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Variant condition" key="false" length="26" name="VARCOND" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition value" key="false" length="13" name="KWERT" nullable="true" pattern="" precision="2" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition counter" key="false" length="2" name="ZAEHK" nullable="true" pattern="" precision="0" sourceType="BIG_INTEGER" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="SD Document Currency" key="false" length="5" name="WAERK_VBAK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Division for order header" key="false" length="2" name="SPARA" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales Document Category of Reference Doc. in Order Header" key="false" length="1" name="VGTYP_AK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Work Breakdown Structure Element (WBS Element)" key="false" length="24" name="PS_POSID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Fiscal Year Variant" key="false" length="2" name="PERIV" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Change Mode for a Data Record in the Delta" key="false" length="1" name="ODQ_CHANGEMODE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Number of Data Units (Data Records for Example)" key="false" length="19" name="ODQ_ENTITYCNTR" nullable="true" pattern="" precision="0" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_2" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;SAP ODP Connection established&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="3709"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>Connection Success"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_2"/>
+  </node>
+  <node componentName="tBigQueryBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryBulkExec_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
+    <elementParameter field="PASSWORD" name="ACCESS_TOKEN" value="enc:system.encryption.key.v1:c2ByEEkFzWlcOE4gYoBtAlSqB5lueX0DsnJH2RR9" show="false"/>
+    <elementParameter field="LABEL" name="ACCESS_TOKEN_WARNING" value="*Note: If the Access Token Expire we won't be able to refresh it!&quot;" show="false"/>
+    <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="context.GoogleBigQuery_SA_Credentials_file"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="enc:system.encryption.key.v1:bVV/nOeyt+/raEhjFBPMxDVg6xKv/yrdsT/Gag6s" show="false"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.GoogleBigQuery_Project_id"/>
+    <elementParameter field="TEXT" name="DATASET" value="context.GoogleBigQuery_Dataset"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;SAP_VAKON&quot;"/>
+    <elementParameter field="CHECK" name="CREATE_TABLE_IF_NOT_EXIST" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="TRUNCATE"/>
+    <elementParameter field="CHECK" name="BULK_FILE_ALREADY_EXIST" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="GS_SERVICE_ACCOUNT"/>
+    <elementParameter field="TEXT" name="GS_ACCESS_KEY" value="context.GoogleBigQuery_AccessKey" show="false"/>
+    <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="enc:system.encryption.key.v1:kXMv8b1EIcLVPg0hNFyDgB/Mcuk1ALr/qMY6eXfs4DuGgKuYDpyuCe0Qmiz5vweO2r8Q+JhrTcpjq/JN" show="false"/>
+    <elementParameter field="FILE" name="GS_SERVICE_ACCOUNT_KEY" value="context.GoogleBigQuery_SA_Credentials_file"/>
+    <elementParameter field="PASSWORD" name="GS_ACCESS_TOKEN" value="enc:system.encryption.key.v1:U5oqkEd7b4A3GRC+d/iUoih3MP3yhkK2VUD/PtOf" show="false"/>
+    <elementParameter field="LABEL" name="GS_ACCESS_TOKEN_WARNING" value="*Note: If the Access Token Expire we won't be able to refresh it!&quot;" show="false"/>
+    <elementParameter field="FILE" name="GS_LOCAL_FILE" value="context.GoogleBigQuery_Bulk_Filepath+&quot;/SAP_VAKON_bulk.txt&quot;"/>
+    <elementParameter field="TEXT" name="BUCKET_NAME" value="context.GoogleBigQuery_Bucket"/>
+    <elementParameter field="TEXT" name="GS_FILE" value="context.GoogleBigQuery_GS_Filepath+context.GoogleBigQuery_Bucket+&quot;/SAP_VAKON_bulk.txt&quot;"/>
+    <elementParameter field="TEXT" name="GS_FILE_HEADER" value="0"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="&quot;C:/Talend/7.1.1_DI/Talend-Studio-20181026_1147-V7.1.1/workspace/token.properties&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_FIELD_DELIMITER" value="true"/>
+    <elementParameter field="TEXT" name="FIELD_DELIMITER" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="USE_CUSTOM_NULL_MARKER" value="false"/>
+    <elementParameter field="TEXT" name="CUSTOM_NULL_MARKER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DROP" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br> SAP_VAKON"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryBulkExec_1">
+      <column comment="Indicator: Cancel Data Record" key="false" length="1" name="ROCANCEL" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales and Distribution Document Number" key="false" length="10" name="VBELN" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Rejection status for SD item" key="false" length="1" name="ABSTA" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Item number of the SD document" key="false" length="6" name="POSNR" nullable="true" pattern="" precision="0" sourceType="BIG_INTEGER" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Pricing for item is incomplete" key="false" length="1" name="UVPRS" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales Document Type" key="false" length="4" name="AUART" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Order reason (reason for the business transaction)" key="false" length="3" name="AUGRU" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Company Code" key="false" length="4" name="BUKRS" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Billing block in SD document" key="false" length="2" name="FAKSK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Local Currency" key="false" length="5" name="HWAER" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sold-to party" key="false" length="10" name="KUNNR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Exchange Rate Type" key="false" length="4" name="KURST" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Customer group 1" key="false" length="3" name="KVGR1" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Customer group 2" key="false" length="3" name="KVGR2" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Customer group 3" key="false" length="3" name="KVGR3" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Customer group 4" key="false" length="3" name="KVGR4" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Customer group 5" key="false" length="3" name="KVGR5" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Statistics currency" key="false" length="5" name="STWAE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="SD document category" key="false" length="1" name="VBTYP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales Office" key="false" length="4" name="VKBUR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales Group" key="false" length="3" name="VKGRP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales Organization" key="false" length="4" name="VKORG" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Distribution Channel" key="false" length="2" name="VTWEG" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Reason for rejection of quotations and sales orders" key="false" length="2" name="ABGRU" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Changed On" key="false" length="8" name="AEDAT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Application Component" key="false" length="30" name="BWAPPLNM" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="SAP BW transaction key" key="false" length="3" name="BWVORG" nullable="true" pattern="" precision="0" sourceType="BIG_INTEGER" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="International Article Number (EAN/UPC)" key="false" length="18" name="EAN11" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Date on Which Record Was Created" key="false" length="8" name="ERDAT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Name of Person who Created the Object" key="false" length="12" name="ERNAM" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Entry time" key="false" length="8" name="ERZET" nullable="true" pattern="&quot;HH:mm:ss&quot;" precision="0" sourceType="TIME" type="id_String" usefulColumn="true"/>
+      <column comment="Billing block for item" key="false" length="2" name="FAKSP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Cumulative Order Quantity in Sales Units" key="false" length="15" name="KWMENG" nullable="true" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Material Group" key="false" length="9" name="MATKL" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material Number" key="false" length="18" name="MATNR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material entered" key="false" length="18" name="MATWA" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material group 1" key="false" length="3" name="MVGR1" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material group 2" key="false" length="3" name="MVGR2" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material group 3" key="false" length="3" name="MVGR3" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material group 4" key="false" length="3" name="MVGR4" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material group 5" key="false" length="3" name="MVGR5" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Bill-to party" key="false" length="10" name="PKUNRE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Payer" key="false" length="10" name="PKUNRG" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Ship-to party" key="false" length="10" name="PKUNWE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Product hierarchy" key="false" length="18" name="PRODH" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales document item category" key="false" length="4" name="PSTYV" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales employee" key="false" length="8" name="PVRTNR" nullable="true" pattern="" precision="0" sourceType="BIG_INTEGER" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Division" key="false" length="2" name="SPART" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Statistics date" key="false" length="8" name="STADAT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Exchange rate for statistics (Exch.rate at time of creation)" key="false" length="9" name="STCUR" nullable="true" pattern="" precision="5" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Sales unit" key="false" length="3" name="VRKME" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="SD Document Currency" key="false" length="5" name="WAERK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Target quantity UoM" key="false" length="3" name="ZIEME" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Target quantity in sales units" key="false" length="13" name="ZMENG" nullable="true" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Sales district" key="false" length="6" name="BZIRK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Date on which services rendered" key="false" length="8" name="FBUDA" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Billing date for billing index and printout" key="false" length="8" name="FKDAT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Incoterms (Part 1)" key="false" length="3" name="INCO1" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Incoterms (Part 2)" key="false" length="28" name="INCO2" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Customer group" key="false" length="2" name="KDGRP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Account assignment group for this customer" key="false" length="2" name="KTGRD" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Exchange Rate for Price Determination" key="false" length="9" name="KURSK" nullable="true" pattern="" precision="5" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Translation Date" key="false" length="8" name="KURSK_DAT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Date for pricing and exchange rate" key="false" length="8" name="PRSDT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Promotion" key="false" length="10" name="WAKTION" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Application" key="false" length="2" name="KAPPL" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Origin of the condition" key="false" length="1" name="KHERK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition is inactive" key="false" length="1" name="KINAK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition category (examples: tax, freight, price, cost)" key="false" length="1" name="KNTYP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition class" key="false" length="1" name="KOAID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition type" key="false" length="4" name="KSCHL" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition is used for statistics" key="false" length="1" name="KSTAT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition for configuration" key="false" length="1" name="KVARC" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Step number" key="false" length="3" name="STUNR" nullable="true" pattern="" precision="0" sourceType="BIG_INTEGER" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Variant condition" key="false" length="26" name="VARCOND" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition value" key="false" length="13" name="KWERT" nullable="true" pattern="" precision="2" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Condition counter" key="false" length="2" name="ZAEHK" nullable="true" pattern="" precision="0" sourceType="BIG_INTEGER" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="SD Document Currency" key="false" length="5" name="WAERK_VBAK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Division for order header" key="false" length="2" name="SPARA" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Sales Document Category of Reference Doc. in Order Header" key="false" length="1" name="VGTYP_AK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Work Breakdown Structure Element (WBS Element)" key="false" length="24" name="PS_POSID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Fiscal Year Variant" key="false" length="2" name="PERIV" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Change Mode for a Data Record in the Delta" key="false" length="1" name="ODQ_CHANGEMODE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Number of Data Units (Data Records for Example)" key="false" length="19" name="ODQ_ENTITYCNTR" nullable="true" pattern="" precision="0" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_2" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;SAP to Google Big Query bulk file creation for Sales Document : Conditions  Module failed!&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="6721"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>File load error"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_2"/>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="864">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_4" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Job Completed&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="3706"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>Job complete"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_4"/>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="LoadContext_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tWarn_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tSAPConnection_1" offsetLabelX="0" offsetLabelY="0" source="tSAPConnection_1" target="tDie_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError2" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSAPConnection_1" offsetLabelX="0" offsetLabelY="0" source="tSAPConnection_1" target="tWarn_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="TRIGGER_OUTPUT_1" label="OnSubjobOk (&lt;b>TRIGGER_OUTPUT_1&lt;/b>&lt;br>OnSubjobOk(TRIGGER_OUTPUT_1))" lineStyle="1" metaname="LoadContext_1" offsetLabelX="0" offsetLabelY="0" source="LoadContext_1" target="tSAPConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="input_rows" lineStyle="0" metaname="tSAPODPInput_1" offsetLabelX="0" offsetLabelY="0" source="tSAPODPInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="input_rows" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSAPODPInput_1" offsetLabelX="0" offsetLabelY="0" source="tSAPODPInput_1" target="tBigQueryBulkExec_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tSAPODPInput_1" offsetLabelX="0" offsetLabelY="0" source="tSAPODPInput_1" target="tDie_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="target_rows" lineStyle="0" metaname="target_rows" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tBigQueryOutputBulk_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="target_rows" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryBulkExec_1" offsetLabelX="0" offsetLabelY="0" source="tBigQueryBulkExec_1" target="tWarn_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tBigQueryBulkExec_1" offsetLabelX="0" offsetLabelY="0" source="tBigQueryBulkExec_1" target="tDie_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError3" show="false"/>
+  </connection>
+  <note opaque="true" posX="64" posY="-320" sizeHeight="129" sizeWidth="673" text="Version: 1.0&#xD;&#xA;Description:&#xD;&#xA;&#xD;&#xA;This job is used to load data from Sales Document : Conditions module of SAP &#xD;&#xA;to target BigQuery table">
+    <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
+    <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
+    <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
+    <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
+    <elementParameter field="CHECK" name="FONT_BOLD" value="true"/>
+  </note>
+  <note opaque="true" posX="64" posY="992" sizeHeight="64" sizeWidth="897" text="&lt;&lt;&lt;&lt; EOJ >>>>">
+    <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
+    <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
+    <elementParameter field="CHECK" name="FONT_BOLD" value="true"/>
+  </note>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSAPConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_4" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="COLLAPSED" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="LoadContext_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSAPODPInput_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Load data from SAP ODP to BigQuery"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryBulkExec_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_4" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

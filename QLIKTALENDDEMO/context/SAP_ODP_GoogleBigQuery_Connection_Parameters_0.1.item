@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_Qhy8kLk7EeqKrNt7c6yZbg" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_Qhy8lbk7EeqKrNt7c6yZbg" comment="File Path of Bulk data output which will be loaded to Google Big Query" name="GoogleBigQuery_Bulk_Filepath" prompt="GoogleBigQuery_Bulk_Filepath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_Qhy8lrk7EeqKrNt7c6yZbg" comment="Path of Google BigQuery Service Account Credentials file" name="GoogleBigQuery_SA_Credentials_file" prompt="GoogleBigQuery_SA_Credentials_file?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_Qhy8l7k7EeqKrNt7c6yZbg" comment="Id of Google BigQuery Project" name="GoogleBigQuery_Project_id" prompt="GoogleBigQuery_Project_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_Qhy8mLk7EeqKrNt7c6yZbg" comment="Dataset name of Google BigQuery" name="GoogleBigQuery_Dataset" prompt="GoogleBigQuery_Dataset?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_Qhy8m7k7EeqKrNt7c6yZbg" comment="Name of Google Storage Bucket" name="GoogleBigQuery_Bucket" prompt="GoogleBigQuery_Bucket?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_Qhy8nLk7EeqKrNt7c6yZbg" comment="File Path in Google Storage" name="GoogleBigQuery_GS_Filepath" prompt="GoogleBigQuery_GS_Filepath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_otVEwLlBEeqKrNt7c6yZbg" comment="SAP user id" name="sap_userid" prompt="sap_userid?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_Jg1XELlCEeqKrNt7c6yZbg" comment="SAP Password" name="sap_password" prompt="sap_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+  <contextParameter xmi:id="_Jg1XEblCEeqKrNt7c6yZbg" comment="SAP Client id" name="sap_client" prompt="sap_client?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_Jg1XErlCEeqKrNt7c6yZbg" comment="SAP host name" name="sap_host_name" prompt="sap_host_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_Jg1XE7lCEeqKrNt7c6yZbg" comment="SAP system number" name="sap_system_number" prompt="sap_system_number?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_Jg1XFLlCEeqKrNt7c6yZbg" comment="Language" name="sap_lang" prompt="sap_lang?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_Jg1XF7lCEeqKrNt7c6yZbg" comment="SAP subscriber name" name="sap_odp_subscriber_name" prompt="sap_odp_subscriber_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+</talendfile:ContextType>
