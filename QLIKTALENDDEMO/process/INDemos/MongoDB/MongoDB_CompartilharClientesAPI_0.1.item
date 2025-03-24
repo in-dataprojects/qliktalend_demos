@@ -99,23 +99,23 @@
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
   </parameters>
-  <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="240" posY="120">
+  <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="240" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
     <elementParameter field="TEXT" name="API_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;http://localhost:8088/LGPD/Clientes&quot;"/>
     <elementParameter field="TABLE" name="SCHEMAS">
-      <elementValue elementRef="SCHEMA" value="getClientes"/>
-      <elementValue elementRef="HTTP_VERB" value="GET"/>
-      <elementValue elementRef="URI_PATTERN" value="&quot;/clientes&quot;"/>
-      <elementValue elementRef="CONSUMES" value="NONE"/>
-      <elementValue elementRef="PRODUCES" value="XML-JSON"/>
-      <elementValue elementRef="STREAMING" value="false"/>
-      <elementValue elementRef="SCHEMA" value="Clientes"/>
-      <elementValue elementRef="HTTP_VERB" value="GET"/>
-      <elementValue elementRef="URI_PATTERN" value="&quot;/&quot;"/>
-      <elementValue elementRef="CONSUMES" value="NONE"/>
-      <elementValue elementRef="PRODUCES" value="XML-JSON"/>
-      <elementValue elementRef="STREAMING" value="false"/>
+      <elementValue elementRef="SCHEMA" value="getClientes" id="0"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" id="1"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/clientes&quot;" id="2"/>
+      <elementValue elementRef="CONSUMES" value="NONE" id="3"/>
+      <elementValue elementRef="PRODUCES" value="XML-JSON" id="4"/>
+      <elementValue elementRef="STREAMING" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA" value="Clientes" id="6"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" id="7"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/&quot;" id="8"/>
+      <elementValue elementRef="CONSUMES" value="NONE" id="9"/>
+      <elementValue elementRef="PRODUCES" value="XML-JSON" id="10"/>
+      <elementValue elementRef="STREAMING" value="false" id="11"/>
     </elementParameter>
     <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC" show="false"/>
@@ -146,19 +146,19 @@
       <column defaultValue="" key="false" length="0" name="status" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="1024" name="error" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-    <metadata label="getClientes" name="getClientes">
+    <metadata connector="FLOW" label="getClientes" name="getClientes">
       <column comment="" key="true" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" label="Clientes" name="Clientes"/>
   </node>
-  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="440" posY="120">
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="440" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_1" show="false"/>
     <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
     <elementParameter field="TABLE" name="MAP" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFlowToIterate_1"/>
   </node>
-  <node componentName="tMongoDBInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="120">
+  <node componentName="tMongoDBInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMongoDBInput_1" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMongoDBConnection_1"/>
@@ -192,20 +192,20 @@
     <elementParameter field="CHECK" name="SPECIFY_FIELDS" value="false" show="false"/>
     <elementParameter field="TABLE" name="FIELDS_TO_RETURN" show="false"/>
     <elementParameter field="TABLE" name="MAPPING">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nome"/>
-      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Sobrenome"/>
-      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Endereco"/>
-      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CPF"/>
-      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Email"/>
-      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nome" id="0"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sobrenome" id="2"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Endereco" id="4"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CPF" id="6"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Email" id="8"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="" id="9"/>
     </elementParameter>
     <elementParameter field="TABLE" name="SORT">
-      <elementValue elementRef="COLNAME" value="&quot;Nome&quot;"/>
-      <elementValue elementRef="ORDER" value="asc"/>
+      <elementValue elementRef="COLNAME" value="&quot;Nome&quot;" id="0"/>
+      <elementValue elementRef="ORDER" value="asc" id="1"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LIMIT" value=""/>
     <elementParameter field="TEXT" name="SKIP" value=""/>
@@ -227,7 +227,7 @@
       <column comment="" key="false" length="100" name="Email" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="840" posY="120">
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="840" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
@@ -263,7 +263,7 @@
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.4" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.3"/>
     </nodeData>
   </node>
-  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1040" posY="120">
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1040" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_1" show="false"/>
     <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
     <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
