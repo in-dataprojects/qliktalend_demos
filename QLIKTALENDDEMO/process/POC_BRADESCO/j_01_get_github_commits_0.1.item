@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Default"/>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:OJge+70+wDlZeFfEV3pJLNIAS4nY1oJPia2uz5MC" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/Talend-Studio-20240527_1700-V8.0.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:gA12g7vyf957rrAiQqWuwmoXUJzUVrQa9HjAMysM" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+  </parameters>
+  <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_1" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;https://api.github.com/repos/in-dataprojects/qliktalend_demos/commits?per_page=100&amp;page=1&quot;"/>
+    <elementParameter field="TEXT" name="PATH" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="METHOD" value="GET"/>
+    <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" value="application/xml" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACCEPT_TYPE" value="application/json"/>
+    <elementParameter field="TABLE" name="QUERY">
+      <elementValue elementRef="NAME" value="&quot;Authorization&quot;" id="0"/>
+      <elementValue elementRef="VALUE" value="&quot;token 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&quot;" id="1"/>
+      <elementValue elementRef="NAME" value="&quot;Accept&quot;" id="2"/>
+      <elementValue elementRef="VALUE" value="&quot;application/vnd.github.v3+json&quot;" id="3"/>
+      <elementValue elementRef="NAME" value="&quot;User-Agent&quot;" id="4"/>
+      <elementValue elementRef="VALUE" value="&quot;Talend-Job&quot;" id="5"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;http://www.talend.org/rest/&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC" show="false"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;username&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:aJOgtpOHYAowYi2jmUwRJAU7oT+rBlD/EbcOI3siDUE7BxE/G/Q=" show="false"/>
+    <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROLE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="TEXT" name="CORRELATION_VALUE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CHECK_SERVER_IDENTITY" value="true"/>
+    <elementParameter field="CHECK" name="REUSE_SSL_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="CHECK" name="FOLLOW_REDIRECTS" value="false"/>
+    <elementParameter field="CHECK" name="REDIRECT_NON_SAME_HOST" value="false" show="false"/>
+    <elementParameter field="CHECK" name="MAINTAIN_SESSION" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_WEBCLIENT_OPERATION_REPORTING" value="true"/>
+    <elementParameter field="CHECK" name="CONVERT_RESPONSE_TO_DOM" value="false"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_REQUEST" value="false" show="false"/>
+    <elementParameter field="CHECK" name="WRAP_JSON_RESPONSE" value="true"/>
+    <elementParameter field="CHECK" name="CONVERT_TYPES_TO_STRINGS" value="false"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_CHUNKED_ENCODING" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="30"/>
+    <elementParameter field="TEXT" name="RECEIVE_TIMEOUT" value="60"/>
+    <elementParameter field="LABEL" name="RECEIVE_TIMEOUT_DESC" value="(See tRESTClient doc. to configure timeouts for Talend Runtime)"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;127.0.0.1&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="8080" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:OctSPkuSriuOqd6bZioeXQy5ZEl285VUhxart/v8" show="false"/>
+    <elementParameter field="TEXT" name="ARRAY_KEYS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTClient_1">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="RESPONSE" name="RESPONSE">
+      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FAULT" name="FAULT">
+      <column defaultValue="" key="false" length="0" name="errorCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="400" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
+    <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="JSONFIELD" value="string"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/bills/bill/line&quot;" show="false"/>
+    <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;$.[*]&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="sha" id="0"/>
+      <elementValue elementRef="QUERY" value="" id="1"/>
+      <elementValue elementRef="NODECHECK" value="false" id="2"/>
+      <elementValue elementRef="ISARRAY" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="node_id" id="4"/>
+      <elementValue elementRef="QUERY" value="" id="5"/>
+      <elementValue elementRef="NODECHECK" value="false" id="6"/>
+      <elementValue elementRef="ISARRAY" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_author_name" id="8"/>
+      <elementValue elementRef="QUERY" value="" id="9"/>
+      <elementValue elementRef="NODECHECK" value="false" id="10"/>
+      <elementValue elementRef="ISARRAY" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_author_email" id="12"/>
+      <elementValue elementRef="QUERY" value="" id="13"/>
+      <elementValue elementRef="NODECHECK" value="false" id="14"/>
+      <elementValue elementRef="ISARRAY" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_author_date" id="16"/>
+      <elementValue elementRef="QUERY" value="" id="17"/>
+      <elementValue elementRef="NODECHECK" value="false" id="18"/>
+      <elementValue elementRef="ISARRAY" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_committer_name" id="20"/>
+      <elementValue elementRef="QUERY" value="" id="21"/>
+      <elementValue elementRef="NODECHECK" value="false" id="22"/>
+      <elementValue elementRef="ISARRAY" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_committer_email" id="24"/>
+      <elementValue elementRef="QUERY" value="" id="25"/>
+      <elementValue elementRef="NODECHECK" value="false" id="26"/>
+      <elementValue elementRef="ISARRAY" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_committer_date" id="28"/>
+      <elementValue elementRef="QUERY" value="" id="29"/>
+      <elementValue elementRef="NODECHECK" value="false" id="30"/>
+      <elementValue elementRef="ISARRAY" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_message" id="32"/>
+      <elementValue elementRef="QUERY" value="" id="33"/>
+      <elementValue elementRef="NODECHECK" value="false" id="34"/>
+      <elementValue elementRef="ISARRAY" value="false" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_tree_sha" id="36"/>
+      <elementValue elementRef="QUERY" value="" id="37"/>
+      <elementValue elementRef="NODECHECK" value="false" id="38"/>
+      <elementValue elementRef="ISARRAY" value="false" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_tree_url" id="40"/>
+      <elementValue elementRef="QUERY" value="" id="41"/>
+      <elementValue elementRef="NODECHECK" value="false" id="42"/>
+      <elementValue elementRef="ISARRAY" value="false" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_url" id="44"/>
+      <elementValue elementRef="QUERY" value="" id="45"/>
+      <elementValue elementRef="NODECHECK" value="false" id="46"/>
+      <elementValue elementRef="ISARRAY" value="false" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_comment_mount" id="48"/>
+      <elementValue elementRef="QUERY" value="" id="49"/>
+      <elementValue elementRef="NODECHECK" value="false" id="50"/>
+      <elementValue elementRef="ISARRAY" value="false" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_verification_verified" id="52"/>
+      <elementValue elementRef="QUERY" value="" id="53"/>
+      <elementValue elementRef="NODECHECK" value="false" id="54"/>
+      <elementValue elementRef="ISARRAY" value="false" id="55"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_verification_reason" id="56"/>
+      <elementValue elementRef="QUERY" value="" id="57"/>
+      <elementValue elementRef="NODECHECK" value="false" id="58"/>
+      <elementValue elementRef="ISARRAY" value="false" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_verification_signature" id="60"/>
+      <elementValue elementRef="QUERY" value="" id="61"/>
+      <elementValue elementRef="NODECHECK" value="false" id="62"/>
+      <elementValue elementRef="ISARRAY" value="false" id="63"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_verification_payload" id="64"/>
+      <elementValue elementRef="QUERY" value="" id="65"/>
+      <elementValue elementRef="NODECHECK" value="false" id="66"/>
+      <elementValue elementRef="ISARRAY" value="false" id="67"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_verification_verified_at" id="68"/>
+      <elementValue elementRef="QUERY" value="" id="69"/>
+      <elementValue elementRef="NODECHECK" value="false" id="70"/>
+      <elementValue elementRef="ISARRAY" value="false" id="71"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="url" id="72"/>
+      <elementValue elementRef="QUERY" value="" id="73"/>
+      <elementValue elementRef="NODECHECK" value="false" id="74"/>
+      <elementValue elementRef="ISARRAY" value="false" id="75"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="html_url" id="76"/>
+      <elementValue elementRef="QUERY" value="" id="77"/>
+      <elementValue elementRef="NODECHECK" value="false" id="78"/>
+      <elementValue elementRef="ISARRAY" value="false" id="79"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="comments_url" id="80"/>
+      <elementValue elementRef="QUERY" value="" id="81"/>
+      <elementValue elementRef="NODECHECK" value="false" id="82"/>
+      <elementValue elementRef="ISARRAY" value="false" id="83"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="author" id="84"/>
+      <elementValue elementRef="QUERY" value="" id="85"/>
+      <elementValue elementRef="NODECHECK" value="false" id="86"/>
+      <elementValue elementRef="ISARRAY" value="false" id="87"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="committer" id="88"/>
+      <elementValue elementRef="QUERY" value="" id="89"/>
+      <elementValue elementRef="NODECHECK" value="false" id="90"/>
+      <elementValue elementRef="ISARRAY" value="false" id="91"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="parents_sha" id="92"/>
+      <elementValue elementRef="QUERY" value="" id="93"/>
+      <elementValue elementRef="NODECHECK" value="false" id="94"/>
+      <elementValue elementRef="ISARRAY" value="false" id="95"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="parents_url" id="96"/>
+      <elementValue elementRef="QUERY" value="" id="97"/>
+      <elementValue elementRef="NODECHECK" value="false" id="98"/>
+      <elementValue elementRef="ISARRAY" value="false" id="99"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="parents_html_url" id="100"/>
+      <elementValue elementRef="QUERY" value="" id="101"/>
+      <elementValue elementRef="NODECHECK" value="false" id="102"/>
+      <elementValue elementRef="ISARRAY" value="false" id="103"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="MAPPING_4_JSONPATH">
+      <elementValue elementRef="SCHEMA_COLUMN" value="sha" id="0"/>
+      <elementValue elementRef="QUERY" value="&quot;$.sha&quot;" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="node_id" id="2"/>
+      <elementValue elementRef="QUERY" value="&quot;$.node_id&quot;" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_author_name" id="4"/>
+      <elementValue elementRef="QUERY" value="&quot;$.commit.author.name&quot;" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_author_email" id="6"/>
+      <elementValue elementRef="QUERY" value="&quot;$.commit.author.email&quot;" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_author_date" id="8"/>
+      <elementValue elementRef="QUERY" value="&quot;$.commit.author.date&quot;" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_committer_name" id="10"/>
+      <elementValue elementRef="QUERY" value="&quot;$.commit.commiter.name&quot;" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_committer_email" id="12"/>
+      <elementValue elementRef="QUERY" value="&quot;$.commit.commiter.email&quot;" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_committer_date" id="14"/>
+      <elementValue elementRef="QUERY" value="&quot;$.commit.commiter.date&quot;" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_message" id="16"/>
+      <elementValue elementRef="QUERY" value="&quot;$.commit.message&quot;" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_tree_sha" id="18"/>
+      <elementValue elementRef="QUERY" value="&quot;$.commit.tree.sha&quot;" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_tree_url" id="20"/>
+      <elementValue elementRef="QUERY" value="&quot;$.commit.tree.url&quot;" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_url" id="22"/>
+      <elementValue elementRef="QUERY" value="&quot;$.commit.url&quot;" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_comment_mount" id="24"/>
+      <elementValue elementRef="QUERY" value="&quot;$.commit.comment.mount&quot;" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_verification_verified" id="26"/>
+      <elementValue elementRef="QUERY" value="&quot;$.commit.verification.verified&quot;" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_verification_reason" id="28"/>
+      <elementValue elementRef="QUERY" value="&quot;$.commit.verification.reason&quot;" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_verification_signature" id="30"/>
+      <elementValue elementRef="QUERY" value="&quot;$.commit.verification.signature&quot;" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_verification_payload" id="32"/>
+      <elementValue elementRef="QUERY" value="&quot;$.commit.verification.payload&quot;" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_verification_verified_at" id="34"/>
+      <elementValue elementRef="QUERY" value="&quot;$.commit.verification.verified_at&quot;" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="url" id="36"/>
+      <elementValue elementRef="QUERY" value="&quot;$.url&quot;" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="html_url" id="38"/>
+      <elementValue elementRef="QUERY" value="&quot;$.html_url&quot;" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="comments_url" id="40"/>
+      <elementValue elementRef="QUERY" value="&quot;$.comments_url&quot;" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="author" id="42"/>
+      <elementValue elementRef="QUERY" value="&quot;$.author&quot;" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="committer" id="44"/>
+      <elementValue elementRef="QUERY" value="&quot;$.commiter&quot;" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="parents_sha" id="46"/>
+      <elementValue elementRef="QUERY" value="&quot;$.parents_sha&quot;" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="parents_url" id="48"/>
+      <elementValue elementRef="QUERY" value="&quot;$.parents_url&quot;" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="parents_html_url" id="50"/>
+      <elementValue elementRef="QUERY" value="&quot;$.parents_html_url&quot;" id="51"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8" show="false"/>
+    <elementParameter field="CHECK" name="USE_LOOP_AS_ROOT" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT_LIST" value="true" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tExtractJSONFields_1">
+      <column comment="" key="false" length="500" name="sha" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="node_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_author_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_author_email" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_author_date" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_committer_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_committer_email" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_committer_date" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="5000" name="commit_message" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_tree_sha" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_tree_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_comment_mount" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_verification_verified" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_verification_reason" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="5000" name="commit_verification_signature" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="5000" name="commit_verification_payload" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_verification_verified_at" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="html_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="comments_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="author" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="committer" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="parents_sha" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="parents_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="parents_html_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="500" name="sha" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="node_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_author_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_author_email" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_author_date" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_committer_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_committer_email" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_committer_date" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="5000" name="commit_message" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_tree_sha" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_tree_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_comment_mount" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_verification_verified" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_verification_reason" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="5000" name="commit_verification_signature" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="5000" name="commit_verification_payload" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_verification_verified_at" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="html_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="comments_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="author" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="committer" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="parents_sha" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="parents_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="parents_html_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorJSONField" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tReplicate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="600" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tReplicate_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tReplicate_1">
+      <column comment="" key="false" length="500" name="sha" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="node_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_author_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_author_email" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_author_date" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_committer_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_committer_email" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_committer_date" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="5000" name="commit_message" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_tree_sha" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_tree_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_comment_mount" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_verification_verified" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_verification_reason" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="5000" name="commit_verification_signature" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="5000" name="commit_verification_payload" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_verification_verified_at" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="html_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="comments_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="author" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="committer" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="parents_sha" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="parents_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="parents_html_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="760" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="sha" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="node_id" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_author_name" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_author_email" id="6"/>
+      <elementValue elementRef="LENGTH" value="10" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_author_date" id="8"/>
+      <elementValue elementRef="LENGTH" value="10" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_committer_name" id="10"/>
+      <elementValue elementRef="LENGTH" value="10" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_committer_email" id="12"/>
+      <elementValue elementRef="LENGTH" value="10" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_committer_date" id="14"/>
+      <elementValue elementRef="LENGTH" value="10" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_message" id="16"/>
+      <elementValue elementRef="LENGTH" value="10" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_tree_sha" id="18"/>
+      <elementValue elementRef="LENGTH" value="10" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_tree_url" id="20"/>
+      <elementValue elementRef="LENGTH" value="10" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_url" id="22"/>
+      <elementValue elementRef="LENGTH" value="10" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_comment_mount" id="24"/>
+      <elementValue elementRef="LENGTH" value="10" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_verification_verified" id="26"/>
+      <elementValue elementRef="LENGTH" value="10" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_verification_reason" id="28"/>
+      <elementValue elementRef="LENGTH" value="10" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_verification_signature" id="30"/>
+      <elementValue elementRef="LENGTH" value="10" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_verification_payload" id="32"/>
+      <elementValue elementRef="LENGTH" value="10" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_verification_verified_at" id="34"/>
+      <elementValue elementRef="LENGTH" value="10" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="url" id="36"/>
+      <elementValue elementRef="LENGTH" value="10" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="html_url" id="38"/>
+      <elementValue elementRef="LENGTH" value="10" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="comments_url" id="40"/>
+      <elementValue elementRef="LENGTH" value="10" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="author" id="42"/>
+      <elementValue elementRef="LENGTH" value="10" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="committer" id="44"/>
+      <elementValue elementRef="LENGTH" value="10" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="parents_sha" id="46"/>
+      <elementValue elementRef="LENGTH" value="10" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="parents_url" id="48"/>
+      <elementValue elementRef="LENGTH" value="10" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="parents_html_url" id="50"/>
+      <elementValue elementRef="LENGTH" value="10" id="51"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_2">
+      <column comment="" key="false" length="500" name="sha" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="node_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_author_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_author_email" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_author_date" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_committer_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_committer_email" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_committer_date" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="5000" name="commit_message" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_tree_sha" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_tree_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_comment_mount" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_verification_verified" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_verification_reason" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="5000" name="commit_verification_signature" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="5000" name="commit_verification_payload" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_verification_verified_at" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="html_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="comments_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="author" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="committer" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="parents_sha" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="parents_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="parents_html_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="760" posY="280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_-Y_r8EDBEfC1ss5zZC03rg" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;poc_bradesco&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:WiOTFMqsiiXrNc4f4IC2QDjdkKMhXYWHv8cmGkehCovnKQ=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;git_hub_commits&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="sha" id="0"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="1"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="2"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="3"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="4"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="node_id" id="5"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="6"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="7"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="8"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_author_name" id="10"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="11"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="12"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="13"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="14"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_author_email" id="15"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="16"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="17"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="18"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_author_date" id="20"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="21"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="22"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="23"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="24"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_committer_name" id="25"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="26"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="27"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="28"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_committer_email" id="30"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="31"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="32"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="33"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="34"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_committer_date" id="35"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="36"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="37"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="38"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_message" id="40"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="41"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="42"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="43"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="44"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_tree_sha" id="45"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="46"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="47"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="48"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_tree_url" id="50"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="51"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="52"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="53"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="54"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_url" id="55"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="56"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="57"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="58"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_comment_mount" id="60"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="61"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="62"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="63"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="64"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_verification_verified" id="65"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="66"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="67"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="68"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="69"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_verification_reason" id="70"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="71"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="72"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="73"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="74"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_verification_signature" id="75"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="76"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="77"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="78"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="79"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_verification_payload" id="80"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="81"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="82"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="83"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="84"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commit_verification_verified_at" id="85"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="86"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="87"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="88"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="89"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="url" id="90"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="91"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="92"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="93"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="94"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="html_url" id="95"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="96"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="97"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="98"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="99"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="comments_url" id="100"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="101"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="102"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="103"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="104"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="author" id="105"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="106"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="107"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="108"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="109"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="committer" id="110"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="111"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="112"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="113"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="114"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="parents_sha" id="115"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="116"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="117"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="118"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="119"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="parents_url" id="120"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="121"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="122"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="123"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="124"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="parents_html_url" id="125"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="126"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="127"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="128"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="129"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
+    <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="mysql_poc_bradesco"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_1">
+      <column comment="" key="false" length="500" name="sha" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="node_id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_author_name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_author_email" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_author_date" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_committer_name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_committer_email" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_committer_date" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="5000" name="commit_message" nullable="true" pattern="" precision="-1" sourceType="TEXT" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_tree_sha" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_tree_url" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_url" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_comment_mount" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_verification_verified" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_verification_reason" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="5000" name="commit_verification_signature" nullable="true" pattern="" precision="-1" sourceType="TEXT" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="5000" name="commit_verification_payload" nullable="true" pattern="" precision="-1" sourceType="TEXT" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_verification_verified_at" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="url" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="html_url" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="comments_url" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="5000" name="author" nullable="true" pattern="" precision="-1" sourceType="TEXT" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="committer" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="parents_sha" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="parents_url" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="parents_html_url" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="500" name="sha" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="node_id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_author_name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_author_email" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_author_date" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_committer_name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_committer_email" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_committer_date" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="5000" name="commit_message" nullable="true" pattern="" precision="-1" sourceType="TEXT" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_tree_sha" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_tree_url" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="commit_url" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_comment_mount" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_verification_verified" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_verification_reason" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="5000" name="commit_verification_signature" nullable="true" pattern="" precision="-1" sourceType="TEXT" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="5000" name="commit_verification_payload" nullable="true" pattern="" precision="-1" sourceType="TEXT" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commit_verification_verified_at" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="url" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="html_url" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="comments_url" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="5000" name="author" nullable="true" pattern="" precision="-1" sourceType="TEXT" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="committer" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="parents_sha" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="parents_url" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="parents_html_url" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="RESPONSE" label="row1" lineStyle="0" metaname="RESPONSE" offsetLabelX="0" offsetLabelY="0" source="tRESTClient_1" target="tExtractJSONFields_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tExtractJSONFields_1" offsetLabelX="0" offsetLabelY="0" source="tExtractJSONFields_1" target="tReplicate_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="commit_author_date" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="commit_author_email" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+      <elementValue elementRef="TRACE_COLUMN" value="commit_author_name" id="6"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+      <elementValue elementRef="TRACE_COLUMN" value="node_id" id="9"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+      <elementValue elementRef="TRACE_COLUMN" value="commit_comment_mount" id="12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
+      <elementValue elementRef="TRACE_COLUMN" value="commit_verification_verified" id="15"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="16"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="17"/>
+      <elementValue elementRef="TRACE_COLUMN" value="parents_sha" id="18"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="19"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="20"/>
+      <elementValue elementRef="TRACE_COLUMN" value="author" id="21"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="22"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="23"/>
+      <elementValue elementRef="TRACE_COLUMN" value="commit_verification_payload" id="24"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="25"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="26"/>
+      <elementValue elementRef="TRACE_COLUMN" value="parents_url" id="27"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="28"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="29"/>
+      <elementValue elementRef="TRACE_COLUMN" value="commit_message" id="30"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="31"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="32"/>
+      <elementValue elementRef="TRACE_COLUMN" value="commit_verification_signature" id="33"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="34"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="35"/>
+      <elementValue elementRef="TRACE_COLUMN" value="commit_committer_email" id="36"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="37"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="38"/>
+      <elementValue elementRef="TRACE_COLUMN" value="commit_verification_reason" id="39"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="40"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="41"/>
+      <elementValue elementRef="TRACE_COLUMN" value="commit_verification_verified_at" id="42"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="43"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="44"/>
+      <elementValue elementRef="TRACE_COLUMN" value="url" id="45"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="46"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="47"/>
+      <elementValue elementRef="TRACE_COLUMN" value="commit_url" id="48"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="49"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="50"/>
+      <elementValue elementRef="TRACE_COLUMN" value="commit_committer_name" id="51"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="52"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="53"/>
+      <elementValue elementRef="TRACE_COLUMN" value="committer" id="54"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="55"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="56"/>
+      <elementValue elementRef="TRACE_COLUMN" value="html_url" id="57"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="58"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="59"/>
+      <elementValue elementRef="TRACE_COLUMN" value="comments_url" id="60"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="61"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="62"/>
+      <elementValue elementRef="TRACE_COLUMN" value="commit_tree_url" id="63"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="64"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="65"/>
+      <elementValue elementRef="TRACE_COLUMN" value="commit_tree_sha" id="66"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="67"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="68"/>
+      <elementValue elementRef="TRACE_COLUMN" value="commit_committer_date" id="69"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="70"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="71"/>
+      <elementValue elementRef="TRACE_COLUMN" value="parents_html_url" id="72"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="73"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="74"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tReplicate_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tReplicate_1" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tReplicate_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tReplicate_1" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+</talendfile:ProcessType>

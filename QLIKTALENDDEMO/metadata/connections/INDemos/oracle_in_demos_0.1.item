@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
   <TalendMetadata:DatabaseConnection xmi:id="_6OrbEAivEfCGGLjz1oFSBg" name="oracle_in_demos" id="_0PJhkAivEfCGGLjz1oFSBg" label="oracle_in_demos" dataPackage="_6QwesAivEfCGGLjz1oFSBg" DatabaseType="Oracle with service name" DriverClass="oracle.jdbc.OracleDriver" URL="jdbc:oracle:thin:@(description=(address=(protocol=tcp)(host=localhost)(port=1521))(connect_data=(service_name=XE)))" dbVersionString="ORACLE_18" Port="1521" Username="SYSTEM" Password="enc:system.encryption.key.v1:BP9P5jv/7lbytn+Cs5zux4IWnJyYJdrBJ1JY0pfjpOrQMMQ=" ServerName="localhost" DatasourceName="" FileFieldName="" SID="XE" SqlSynthax="" StringQuote="" NullChar="" DbmsId="oracle_id" ProductId="ORACLE" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="IN_DEMOS" supportNLS="false">
     <taggedValue xmi:id="_6OrbEQivEfCGGLjz1oFSBg" tag="Is Conn Need Reload" value="false"/>
     <taggedValue xmi:id="_6PhvoAivEfCGGLjz1oFSBg" tag="package filter" value=""/>
@@ -14,5 +14,33 @@
     <taggedValue xmi:id="_6QMeAgivEfCGGLjz1oFSBg" tag="DB IdentifierQuoteString" value="&quot;"/>
     <parameters xmi:id="_6OrbEgivEfCGGLjz1oFSBg" key="CONN_PARA_KEY_USERNAME" value="SYSTEM"/>
   </TalendMetadata:DatabaseConnection>
-  <orgomg.cwm.resource.relational:Schema xmi:id="_6QwesAivEfCGGLjz1oFSBg" name="IN_DEMOS" dataManager="_6OrbEAivEfCGGLjz1oFSBg"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_6QwesAivEfCGGLjz1oFSBg" name="IN_DEMOS" dataManager="_6OrbEAivEfCGGLjz1oFSBg">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_VINBQAssEfC6OIFGFRyzVw" name="CLIENTES" id="_VIIIwAssEfC6OIFGFRyzVw" label="CLIENTES" tableType="TABLE">
+      <feature xsi:type="relational:TdColumn" xmi:id="_VINoUAssEfC6OIFGFRyzVw" name="NOME" label="NOME" length="100" sourceType="VARCHAR2" talendType="id_String">
+        <taggedValue xmi:id="_VINoUQssEfC6OIFGFRyzVw" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_VINoUgssEfC6OIFGFRyzVw" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_VINoUwssEfC6OIFGFRyzVw" name="VARCHAR2" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_VINoVAssEfC6OIFGFRyzVw" name="SOBRENOME" label="SOBRENOME" length="100" sourceType="VARCHAR2" talendType="id_String">
+        <taggedValue xmi:id="_VINoVQssEfC6OIFGFRyzVw" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_VINoVgssEfC6OIFGFRyzVw" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_VINoVwssEfC6OIFGFRyzVw" name="VARCHAR2" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_VINoWAssEfC6OIFGFRyzVw" name="ENDERECO" label="ENDERECO" length="100" sourceType="VARCHAR2" talendType="id_String">
+        <taggedValue xmi:id="_VINoWQssEfC6OIFGFRyzVw" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_VINoWgssEfC6OIFGFRyzVw" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_VINoWwssEfC6OIFGFRyzVw" name="VARCHAR2" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_VINoXAssEfC6OIFGFRyzVw" name="CPF" label="CPF" length="20" sourceType="VARCHAR2" talendType="id_String">
+        <taggedValue xmi:id="_VINoXQssEfC6OIFGFRyzVw" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_VINoXgssEfC6OIFGFRyzVw" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_VINoXwssEfC6OIFGFRyzVw" name="VARCHAR2" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_VINoYAssEfC6OIFGFRyzVw" name="EMAIL" label="EMAIL" length="100" sourceType="VARCHAR2" talendType="id_String">
+        <taggedValue xmi:id="_VINoYQssEfC6OIFGFRyzVw" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_VINoYgssEfC6OIFGFRyzVw" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_VINoYwssEfC6OIFGFRyzVw" name="VARCHAR2" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Schema>
 </xmi:XMI>

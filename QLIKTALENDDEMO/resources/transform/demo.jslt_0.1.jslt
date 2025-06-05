@@ -1,0 +1,9 @@
+{
+  "firstName": .givenName,
+  "lastName": .sureName,
+  "fullName": .givenName + " " + .sureName,
+  "fileName": split(.path, "/")[-1],
+  "unixTime": round(now() * 1000),
+  "status": $headers.responseCode,
+  * - givenName, sureName : .
+}

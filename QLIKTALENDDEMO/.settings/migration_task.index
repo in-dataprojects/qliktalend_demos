@@ -110,6 +110,11 @@
     "version" : "7.3.1",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.camel.designer.migration.GooglePubSubSubscriptionNameMigrationTask_20.05.2025",
+    "breaks" : "8.0.0",
+    "version" : "8.0.1",
+    "status" : "noimpact"
+  }, {
     "id" : "org.talend.camel.designer.migration.RemoveAWSConnectionDefaultRegionMigrationTask.7.4.1",
     "breaks" : "7.3.0",
     "version" : "7.4.1",
@@ -195,12 +200,32 @@
     "version" : "7.4.1",
     "status" : "ok"
   }, {
+    "id" : "org.talend.camel.designer.migration.UpdateBeansDefaultLibrariesMigrationTask.8.0.1-R2025-03",
+    "breaks" : "7.3.0",
+    "version" : "7.4.1",
+    "status" : "ok"
+  }, {
+    "id" : "org.talend.camel.designer.migration.UpdateBeansDefaultLibrariesMigrationTask.8.0.1-R2025-04",
+    "breaks" : "7.3.0",
+    "version" : "7.4.1",
+    "status" : "ok"
+  }, {
     "id" : "org.talend.camel.designer.migration.UpdateBeansLibrariesMigrationTask.7.3.1",
     "breaks" : "7.3.0",
     "version" : "7.3.1",
     "status" : "noimpact"
   }, {
     "id" : "org.talend.camel.designer.migration.UpdateBeansLibrariesMigrationTask.8.0.1-R2025-02-17",
+    "breaks" : "7.3.0",
+    "version" : "7.3.1",
+    "status" : "ok"
+  }, {
+    "id" : "org.talend.camel.designer.migration.UpdateBeansLibrariesMigrationTask.8.0.1-R2025-03",
+    "breaks" : "7.3.0",
+    "version" : "7.3.1",
+    "status" : "ok"
+  }, {
+    "id" : "org.talend.camel.designer.migration.UpdateBeansLibrariesMigrationTask.8.0.1-R2025-04",
     "breaks" : "7.3.0",
     "version" : "7.3.1",
     "status" : "ok"
@@ -246,6 +271,16 @@
     "status" : "noimpact"
   }, {
     "id" : "org.talend.camel.designer.migration.UpdateRoutinesLibrariesMigrationTask.8.0.1-R2025-02-17",
+    "breaks" : "7.3.0",
+    "version" : "7.4.1",
+    "status" : "ok"
+  }, {
+    "id" : "org.talend.camel.designer.migration.UpdateRoutinesLibrariesMigrationTask.8.0.1-R2025-03",
+    "breaks" : "7.3.0",
+    "version" : "7.4.1",
+    "status" : "ok"
+  }, {
+    "id" : "org.talend.camel.designer.migration.UpdateRoutinesLibrariesMigrationTask.8.0.1-R2025-04",
     "breaks" : "7.3.0",
     "version" : "7.4.1",
     "status" : "ok"
@@ -765,6 +800,11 @@
     "version" : "5.6.0",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.repository.generic.model.migration.ChangeContextModeForTcompv0MigrationTask",
+    "breaks" : "8.0.1",
+    "version" : "8.0.1",
+    "status" : "failed"
+  }, {
     "id" : "org.talend.repository.generic.model.migration.ChangeDbmsIdMigrationTask",
     "breaks" : "8.0.1",
     "version" : "8.0.1",
@@ -793,6 +833,11 @@
     "id" : "org.talend.repository.hadoopcluster.migration.AdaptDeprecatedHadoopVersionsMigrationTask",
     "breaks" : "6.0.0",
     "version" : "6.1.2",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.hadoopcluster.migration.AddSupportedSparkVersionForSpark3xPluginMetadata",
+    "breaks" : "8.0.1",
+    "version" : "8.0.1",
     "status" : "noimpact"
   }, {
     "id" : "org.talend.repository.hadoopcluster.migration.ChangeHadoopConfJarNameMigrationTask",
@@ -1942,7 +1987,7 @@
     "id" : "org.talend.repository.model.migration.FixProjectResourceLink",
     "breaks" : "5.1.1",
     "version" : "5.1.2",
-    "status" : "ok"
+    "status" : "noimpact"
   }, {
     "id" : "org.talend.repository.model.migration.FixUnevenItemContextParametersMigrationTask",
     "breaks" : "6.1.0",
