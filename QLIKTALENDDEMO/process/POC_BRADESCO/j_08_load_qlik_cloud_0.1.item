@@ -22,7 +22,7 @@
     <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
     <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
     <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
-    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="true"/>
     <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
     <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
     <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
@@ -99,19 +99,10 @@
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
   </parameters>
-  <node componentName="QlikOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="120" posY="160">
+  <node componentName="QlikOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="360" posY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tQlikOutput_1" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="Output" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="cWxpayNRbGlrI091dHB1dA" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_METADATA_TYPE_ID" value="cWxpayNRbGlrI2RhdGFzdG9yZSNRbGlrRGF0YXN0b3Jl" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="1" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="Qlik" show="false"/>
-    <elementParameter field="CHECK" name="START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="HELP" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_IOv5kAQ8EfCR9O6u2x3MTg"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
@@ -122,18 +113,125 @@
     <elementParameter field="PASSWORD" name="configuration.datastore.apiKey" value="enc:system.encryption.key.v1:W4YOsf4asFOoTGAbxyD8PFxv5JGUBQxQZEOsvhmZU1qSogGhj2KYl/0Q+fqGb+m/UDW5CykjegcCjSFOehvDWBtXHavQTeVuUbFM6o+Cg23FzQpzRn0nR2ewfFYD2q98AFdR2zhTrFYShGDTYTaBix+dIvOyfM6RZm6pK3hEhjJ8Vj2arobvaJCsq1GKq0gxXoDz+wVT3TLAy81rFk7iZrHbayDQGLZ9f2+y4iyQP6szNQK0Xe+g5P+hQUNXg7kC45GecUiShadLpwkH1Sr53SDAHv7imrLhyHI1LnhidD0SoMrQWDv6o/VEfcpkWXoNKwL93w/naxHmHL+BMIq57huV+lp6kz6Cq6BmGvjV2KBms5bcc/aB2VdnWFDD7z7EuxJt783W4dZkhuP3xBiw1q3n0V6Gtnr+NvY9E0ZXduXwWhgSzx6Y7yeV5xGVhkl7TX4KId9ytZLlGtmw4qnI797OlSiJGfjbG5pauqRvzS7o0iyXhAz7uAJIkNtGpQMtPC+TDSvlxZ1/lhEAjOmosd0zRBjGmeQA8nacR4dtLkCbOf657gCiajnHA6RQMUPMLb7F4/mU4uVX2S7zUC6y8T3Kw3ocfBjy8gOHuLc9CmIswo5+kkz/NVSb5Fc3PP/A591ljfPNDeTSZyksJtleOSvxMfrWgUDN+Y0sm0QAI1VGNQ=="/>
     <elementParameter field="CLOSED_LIST" name="configuration.outputAction" value="OVERWRITE"/>
     <elementParameter field="FILE" name="configuration.localFile" value="&quot;C:/Datasets/POC_BRADESCO/deployments.csv&quot;"/>
-    <elementParameter field="CHECK" name="configuration.specifyId" value="true"/>
-    <elementParameter field="TEXT" name="configuration.fileId" value="&quot;6841d7ade11839241327ba1c&quot;"/>
+    <elementParameter field="CHECK" name="configuration.specifyId" value="false"/>
+    <elementParameter field="TEXT" name="configuration.fileId" value="&quot;6841d7ade11839241327ba1c&quot;" show="false"/>
     <elementParameter field="TEXT" name="configuration.fileName" value="&quot;PoC Bradesco/github_data/deployments.csv&quot;"/>
     <elementParameter field="TECHNICAL" name="configuration.datastore.__version" value="-1" show="false"/>
-    <metadata connector="FLOW" name="tQlikOutput_1"/>
     <metadata connector="FLOW" name="tQlikOutput_1"/>
     <metadata connector="LOOKUP" name="LOOKUP"/>
     <metadata connector="MERGE" name="MERGE"/>
     <metadata connector="REJECT" name="REJECT"/>
   </node>
+  <node componentName="QlikOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="360" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tQlikOutput_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="cWxpayNRbGlrI091dHB1dA" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_METADATA_TYPE_ID" value="cWxpayNRbGlrI2RhdGFzdG9yZSNRbGlrRGF0YXN0b3Jl" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_IOv5kAQ8EfCR9O6u2x3MTg"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="Qlik_Pre_Vendas"/>
+    <elementParameter field="TEXT" name="configuration.datastore.host" value="&quot;https://prevendasin.us.qlikcloud.com&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.datastore.apiKey" value="enc:system.encryption.key.v1:2jj9ckYrgoIyRu+DrKkMuKhAllt2abm3nebevr5f8Kl0LkJ5KaIkzFtB57LyRHPtYCMc/FIEKap0NLaKmmD58n5gL0uTLFxJ74NENSJ5XeZgP1oIcJTWLkX3fl+BpMM3nroKLWaehCBIAf/l42W+SxW0LRy2r9TzD7TVgK8lh+N2wJA47PE5Xc90eyHonbcX61KrQnBrWIeB5ybUICilnMZh8xhsZHUkWDgAUEaLiFmssRwu2duU/nkzBjippo1UQ3bUlNHYhR752C+vEfQEgHWdxblKSK750mG4vlbK7DnLNXB055HK99xLVwpfQHxQnX+PaiohnDS9UElgW+5uw2X8PdLeeGz4fhwinS9fEtD3peuLeE4uNQYcqokzJ1QJTWCn12sh8tM0cc6IM/12AwIaaWVHzmE62QkI2XtXnnfWrSfC8czsFSw6OqjZk4HmpjuSNV2Rh7jtIr7IqwZSxktQqzLlq8fh7dsgEpzQd+zO/yH8c/N7BLJjgty5GC2DjaR5th068MpTGyVHEwklYCgzCHz/s3prz6hN1qb0EFKEuavbnnxg3OYAKFXbhGpar+w7Z+A0COhNLNac/K9wr+z9whzUI4CQsWVyMN75+R7b4+kddXZ0I6lp74LyYJnBcD7qN5VdL6QnwL+LpDoAzDAnqqPr2X62FzZHBcJKu/0gzA=="/>
+    <elementParameter field="CLOSED_LIST" name="configuration.outputAction" value="OVERWRITE"/>
+    <elementParameter field="FILE" name="configuration.localFile" value="&quot;C:/Datasets/POC_BRADESCO/issues.csv&quot;"/>
+    <elementParameter field="CHECK" name="configuration.specifyId" value="false"/>
+    <elementParameter field="TEXT" name="configuration.fileId" value="&quot;6841d7ade11839241327ba1c&quot;" show="false"/>
+    <elementParameter field="TEXT" name="configuration.fileName" value="&quot;PoC Bradesco/github_data/issues.csv&quot;"/>
+    <elementParameter field="TECHNICAL" name="configuration.datastore.__version" value="-1" show="false"/>
+    <metadata connector="FLOW" name="tQlikOutput_2"/>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT"/>
+  </node>
+  <node componentName="QlikOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="360" posY="280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tQlikOutput_3" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="cWxpayNRbGlrI091dHB1dA" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_METADATA_TYPE_ID" value="cWxpayNRbGlrI2RhdGFzdG9yZSNRbGlrRGF0YXN0b3Jl" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_IOv5kAQ8EfCR9O6u2x3MTg"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="Qlik_Pre_Vendas"/>
+    <elementParameter field="TEXT" name="configuration.datastore.host" value="&quot;https://prevendasin.us.qlikcloud.com&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.datastore.apiKey" value="enc:system.encryption.key.v1:vphNh/0ko1PNFHc7qXaSuV2foaLV3O5noz/eMnKdzp9TbaSSes0Nl1iXhDzlPKpFYtRin8cacgKOmFoUZTC+m+rMmv3EGGhJ9jCArzfJQ7VjT8SzcSAgnNaQ4ZVMrdOe8JVYmYrNGVFHBGCj98QJHU3fuTQ25dIqgh6+iy5lcak42Fz0ejgbDsQEwM79BSWSloYUD1+psA/pTXnaX5XGyvq3UjnHsru9zTexxKLKTCkyU7hnAX6BH4Gl2nD/ppY1tOUCBiNq+8rPohA8d8G8BGeI3qCBGIbwLT+Wqv5Q17NLCtS/PSXML02+Ieib5TozeFsaxfCpqzFmk3rj/UL+k98tgeH9lTeRtLx5hrcBpUb/YxfeuR7tLC/Vj3j1Gq3ESFJ/47HspW8htbU1mvM8IxUFmg7Y5IeSylmVsWB3/I6D/arukxOBbYfiGmocCd839RdKVZ+fQUfpigsZwjMDBcna81jQed/uwepI4ujry+a8PXaK+meOD265VcYeW041KJYQ9c1QuJSk9cY7Dtos29+fYNKGpPl/e/v87df5Px3vkZu3hauK38PQOHC5zhSR3xHKRvZKlIX4KlnU5L0MmS+EmYgFkbB0GVwZGmer45XGtFhaFTRKBqgfDieZibbqNXrW6DEDNbVvFNcvi6u06Cp8APvnfHIvjg3gRqjtdSFFzA=="/>
+    <elementParameter field="CLOSED_LIST" name="configuration.outputAction" value="OVERWRITE"/>
+    <elementParameter field="FILE" name="configuration.localFile" value="&quot;C:/Datasets/POC_BRADESCO/commits.csv&quot;"/>
+    <elementParameter field="CHECK" name="configuration.specifyId" value="false"/>
+    <elementParameter field="TEXT" name="configuration.fileId" value="&quot;6841d7ade11839241327ba1c&quot;" show="false"/>
+    <elementParameter field="TEXT" name="configuration.fileName" value="&quot;PoC Bradesco/github_data/commits.csv&quot;"/>
+    <elementParameter field="TECHNICAL" name="configuration.datastore.__version" value="-1" show="false"/>
+    <metadata connector="FLOW" name="tQlikOutput_3"/>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT"/>
+  </node>
+  <node componentName="tParallelize" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="120" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tParallelize_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="WAIT_FOR" value="All"/>
+    <elementParameter field="TEXT" name="SLEEPTIME" value="100"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="QlikOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="360" posY="400">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tQlikOutput_4" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="cWxpayNRbGlrI091dHB1dA" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_METADATA_TYPE_ID" value="cWxpayNRbGlrI2RhdGFzdG9yZSNRbGlrRGF0YXN0b3Jl" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_IOv5kAQ8EfCR9O6u2x3MTg"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="Qlik_Pre_Vendas"/>
+    <elementParameter field="TEXT" name="configuration.datastore.host" value="&quot;https://prevendasin.us.qlikcloud.com&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.datastore.apiKey" value="enc:system.encryption.key.v1:Zgt9Jq/PO8lo6ZHx/cqNIDYJoxaFYEo00H9oNhhHXvOZeg6qH76kbXVz4e1QxeBxJEAc7Y8zP3Wmljql58vTvM98XyJ6q1qzOk45KILscSrFh+K4D7fHkvksM53InlYDo8fwnMPPOOinPifpoCLDLB0mazCCHDDZC5LsW2Ih9FIP2MAB8nraNc0sYF3sv3QgvgUXbbHniqpmWDoik6Lk0X/jAg8HruvkRsCHg74L0u75bIXNFd5+e8xeIBuPl1n0akg+6umSZSVtFVGsH7Su7Fti7o9fLwZIULjaJGlHjHPpKi4z3ZzyLWAVgdPam/uVLQ/OvJ5JyDBeHi3vGmMzgWmViFsjvYNasMs9AlQznh3ItbBvvhXOTVdk+gahS/7z5X7f7Jpo6Nn36fwOXF45tYThkZkfOmqL87aa7PFLUJJR8deMt3V/zFxICbIWFE/MAUHG/utjhLSw3MIk2QnI/cB5Bn+520dK3qpshp+zqQfNz9YLdwkCW1NAvhzIm/BoeA9bR0iFwz2si4WtvPN8dxcC39U0FSH7a9RGrbT5ozm5kRtI5UMDrTl3zIO+k2zr7CSwsfqhvt+4hhXg27XDyTfOKErMGEGdTngnOWXRJ8fpvP132uzWgeCwVGKu/UyJL+VxLx2FN/26vulVsG9cb8a7Sm00q6uu0J6b0+2OgFTO9g=="/>
+    <elementParameter field="CLOSED_LIST" name="configuration.outputAction" value="OVERWRITE"/>
+    <elementParameter field="FILE" name="configuration.localFile" value="&quot;C:/Datasets/POC_BRADESCO/releases.csv&quot;"/>
+    <elementParameter field="CHECK" name="configuration.specifyId" value="false"/>
+    <elementParameter field="TEXT" name="configuration.fileId" value="&quot;6841d7ade11839241327ba1c&quot;" show="false"/>
+    <elementParameter field="TEXT" name="configuration.fileName" value="&quot;PoC Bradesco/github_data/releases.csv&quot;"/>
+    <elementParameter field="TECHNICAL" name="configuration.datastore.__version" value="-1" show="false"/>
+    <metadata connector="FLOW" name="tQlikOutput_4"/>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT"/>
+  </node>
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tParallelize_1" target="tQlikOutput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Parallelize" show="false"/>
+  </connection>
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tParallelize_1" target="tQlikOutput_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Parallelize" show="false"/>
+  </connection>
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tParallelize_1" target="tQlikOutput_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Parallelize" show="false"/>
+  </connection>
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="4" source="tParallelize_1" target="tQlikOutput_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Parallelize" show="false"/>
+  </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tQlikOutput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tQlikOutput_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tQlikOutput_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tParallelize_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tQlikOutput_4" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
