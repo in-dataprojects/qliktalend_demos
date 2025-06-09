@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_J9RKkEVbEfCBWM4nQuZdQg" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_J9RKkUVbEfCBWM4nQuZdQg" comment="" name="sqlserver_poc_bradesco_Database" prompt="sqlserver_poc_bradesco_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="poc_bradesco"/>
+  <contextParameter xmi:id="_J9RKkkVbEfCBWM4nQuZdQg" comment="" name="sqlserver_poc_bradesco_Port" prompt="sqlserver_poc_bradesco_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="1433"/>
+  <contextParameter xmi:id="_J9RKk0VbEfCBWM4nQuZdQg" comment="" name="sqlserver_poc_bradesco_Schema" prompt="sqlserver_poc_bradesco_Schema?" promptNeeded="false" repositoryContextId="" type="id_String" value="dbo"/>
+  <contextParameter xmi:id="_J9RKlEVbEfCBWM4nQuZdQg" comment="" name="sqlserver_poc_bradesco_Password" prompt="sqlserver_poc_bradesco_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:BZGJQSnBQYXb8lqElloaGl156879mWtVwo6Yguv2hbc="/>
+  <contextParameter xmi:id="_J9RKlUVbEfCBWM4nQuZdQg" comment="" name="sqlserver_poc_bradesco_AdditionalParams" prompt="sqlserver_poc_bradesco_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value=""/>
+  <contextParameter xmi:id="_J9RKlkVbEfCBWM4nQuZdQg" comment="" name="sqlserver_poc_bradesco_Login" prompt="sqlserver_poc_bradesco_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="wash"/>
+  <contextParameter xmi:id="_J9RKl0VbEfCBWM4nQuZdQg" comment="" name="sqlserver_poc_bradesco_Server" prompt="sqlserver_poc_bradesco_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="wash"/>
+</talendfile:ContextType>

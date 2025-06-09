@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" hide="false" name="Default"/>
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" name="mysql_poc_bradesco_Database" prompt="mysql_poc_bradesco_Database?" promptNeeded="false" repositoryContextId="_O49ogEVbEfCBWM4nQuZdQg" type="id_String" value="poc_bradesco" internalId="_P-nB8EVbEfCBWM4nQuZdQg"/>
+    <contextParameter comment="" name="mysql_poc_bradesco_Port" prompt="mysql_poc_bradesco_Port?" promptNeeded="false" repositoryContextId="_O49ogEVbEfCBWM4nQuZdQg" type="id_String" value="3306" internalId="_P-nB8UVbEfCBWM4nQuZdQg"/>
+    <contextParameter comment="" name="mysql_poc_bradesco_Password" prompt="mysql_poc_bradesco_Password?" promptNeeded="false" repositoryContextId="_O49ogEVbEfCBWM4nQuZdQg" type="id_Password" value="enc:system.encryption.key.v1:Nv4j20D9X8+3qJx2KgkQLGUuxs5jx8mt0BOsgrSudyk=" internalId="_P-nB8kVbEfCBWM4nQuZdQg"/>
+    <contextParameter comment="" name="mysql_poc_bradesco_AdditionalParams" prompt="mysql_poc_bradesco_AdditionalParams?" promptNeeded="false" repositoryContextId="_O49ogEVbEfCBWM4nQuZdQg" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" internalId="_P-nB80VbEfCBWM4nQuZdQg"/>
+    <contextParameter comment="" name="mysql_poc_bradesco_Login" prompt="mysql_poc_bradesco_Login?" promptNeeded="false" repositoryContextId="_O49ogEVbEfCBWM4nQuZdQg" type="id_String" value="root" internalId="_P-nB9EVbEfCBWM4nQuZdQg"/>
+    <contextParameter comment="" name="mysql_poc_bradesco_Server" prompt="mysql_poc_bradesco_Server?" promptNeeded="false" repositoryContextId="_O49ogEVbEfCBWM4nQuZdQg" type="id_String" value="localhost" internalId="_P-nB9UVbEfCBWM4nQuZdQg"/>
+  </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
@@ -142,27 +149,17 @@
   </node>
   <node componentName="tMysqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="200" posY="-120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_1" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tMysqlRow" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/MySQL" show="false"/>
-    <elementParameter field="CHECK" name="START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tMysqlRow" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\Talend-Studio-V8.0.1\configuration\lib\java" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_-Y_r8EDBEfC1ss5zZC03rg" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;poc_bradesco&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysql_poc_bradesco_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql_poc_bradesco_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysql_poc_bradesco_Database"/>
     <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:jRcJ/ELdSX7MjcqCfsreWfzHFaExPxy2VFX07M+FDjBrVg=="/>
+    <elementParameter field="TEXT" name="USER" value="context.mysql_poc_bradesco_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:L2Kl+oQR4iUriGTekQFI+4XMpHXVxUJl2pubvXfzP98CxB4N6h0JvUfiSSw7j2zs0irtCOagn2h9nqeGquS+"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;git_hub_commits_complete&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -172,7 +169,7 @@
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql_poc_bradesco_AdditionalParams"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -190,29 +187,19 @@
   </node>
   <node componentName="tCreateTable" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="40" posY="-120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tCreateTable_3" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tCreateTable" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="Databases" show="false"/>
-    <elementParameter field="CHECK" name="START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tCreateTable" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\Talend-Studio-V8.0.1\configuration\lib\java" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_-Y_r8EDBEfC1ss5zZC03rg" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DBTYPE" value="MYSQL"/>
     <elementParameter field="CLOSED_LIST" name="TABLEACTION" value="CREATE_IF_NOT_EXIST"/>
     <elementParameter field="CHECK" name="CASESENSITIVE" value="false" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;poc_bradesco&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysql_poc_bradesco_Server"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysql_poc_bradesco_Database"/>
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;poc_bradesco&quot;" show="false"/>
     <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@db10g_test&quot;" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:iJgy7Y0R1QCTdp41dgA/iwHCK9aiK3+81iyCefX1rZSksQ=="/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="context.mysql_poc_bradesco_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:VS9TnZoRYMIdwfNiyRPjqtIM17IyoK/aOv4GBHvbWTElUlghwjjCWQKGt7SR2/OzP918rv5Kz7cBQePnHVcJ"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql_poc_bradesco_Port"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION_ACCESS" value="" show="false"/>
     <elementParameter field="FILE" name="DBFILE_ACCESS" value="&quot;&quot;" show="false"/>
@@ -264,7 +251,7 @@
     <elementParameter field="TEXT" name="TABLE" value="&quot;git_hub_commits_complete&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
     <elementParameter field="CLOSED_LIST" name="CREATE_TABLE_TYPE" value="SET" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql_poc_bradesco_AdditionalParams"/>
     <elementParameter field="CHECK" name="USE_STRING_PROPERTIES" value="false" show="false"/>
     <elementParameter field="TABLE" name="ENTRY_PROPERTIES" show="false"/>
     <elementParameter field="CHECK" name="MSSQL_ACTIVE_DIR_AUTH" value="false" show="false"/>
@@ -747,11 +734,11 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;poc_bradesco&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wfk0I1uT4DGtQIjA4kMJKbkqLN1y4hUGR4/X1u+YtlosEg=="/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysql_poc_bradesco_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql_poc_bradesco_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysql_poc_bradesco_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.mysql_poc_bradesco_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:jx6B4oCCEl3tX2sSp3dOlyKHLRqDvX+P53ehU3T29A5IFmlAmegt/ZzceSOqPirpJOLwwX8r9Ez63BMFox/1"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;git_hub_commits_complete&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -760,7 +747,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql_poc_bradesco_AdditionalParams"/>
     <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
     <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
