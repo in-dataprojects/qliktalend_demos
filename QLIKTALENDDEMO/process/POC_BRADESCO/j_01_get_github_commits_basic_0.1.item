@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="Default">
-    <contextParameter comment="" name="owner" prompt="owner?" promptNeeded="false" repositoryContextId="_1mIXkEITEfC1ss5zZC03rg" type="id_String" value="in-dataprojects" internalId="_uy7DsEVbEfCBWM4nQuZdQg"/>
-    <contextParameter comment="" name="repo" prompt="repo?" promptNeeded="false" repositoryContextId="_1mIXkEITEfC1ss5zZC03rg" type="id_String" value="devops-dora-demo" internalId="_uy7DsUVbEfCBWM4nQuZdQg"/>
-    <contextParameter comment="" name="token" prompt="token?" promptNeeded="false" repositoryContextId="_1mIXkEITEfC1ss5zZC03rg" type="id_Password" value="enc:system.encryption.key.v1:Sf7CvY447eBt/fDzXWLKBFxWH2k1HOhRnCs7qi7PtcR3brwc5jgVyhqmQslwbxDGwZmBVDh4AI+eXOaZP7MxYQe9bkzHs3sobDY=" internalId="_uy7DskVbEfCBWM4nQuZdQg"/>
-    <contextParameter comment="" name="mysql_poc_bradesco_AdditionalParams" prompt="mysql_poc_bradesco_AdditionalParams?" promptNeeded="false" repositoryContextId="_O49ogEVbEfCBWM4nQuZdQg" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" internalId="_uy7Ds0VbEfCBWM4nQuZdQg"/>
-    <contextParameter comment="" name="mysql_poc_bradesco_Database" prompt="mysql_poc_bradesco_Database?" promptNeeded="false" repositoryContextId="_O49ogEVbEfCBWM4nQuZdQg" type="id_String" value="poc_bradesco" internalId="_uy7DtEVbEfCBWM4nQuZdQg"/>
-    <contextParameter comment="" name="mysql_poc_bradesco_Login" prompt="mysql_poc_bradesco_Login?" promptNeeded="false" repositoryContextId="_O49ogEVbEfCBWM4nQuZdQg" type="id_String" value="root" internalId="_uy7DtUVbEfCBWM4nQuZdQg"/>
-    <contextParameter comment="" name="mysql_poc_bradesco_Password" prompt="mysql_poc_bradesco_Password?" promptNeeded="false" repositoryContextId="_O49ogEVbEfCBWM4nQuZdQg" type="id_Password" value="enc:system.encryption.key.v1:IjuykN/j/cSfaioIk2qC3VGl08qsRH8RHcBBMJNHZr4=" internalId="_uy7DtkVbEfCBWM4nQuZdQg"/>
-    <contextParameter comment="" name="mysql_poc_bradesco_Port" prompt="mysql_poc_bradesco_Port?" promptNeeded="false" repositoryContextId="_O49ogEVbEfCBWM4nQuZdQg" type="id_String" value="3306" internalId="_uy7Dt0VbEfCBWM4nQuZdQg"/>
-    <contextParameter comment="" name="mysql_poc_bradesco_Server" prompt="mysql_poc_bradesco_Server?" promptNeeded="false" repositoryContextId="_O49ogEVbEfCBWM4nQuZdQg" type="id_String" value="localhost" internalId="_uy7DuEVbEfCBWM4nQuZdQg"/>
+    <contextParameter comment="" name="accept" prompt="accept?" promptNeeded="false" repositoryContextId="_1mIXkEITEfC1ss5zZC03rg" type="id_String" value="&quot;application/vnd.github.v3+json&quot;" internalId="_FzdxsEVdEfCBWM4nQuZdQg"/>
+    <contextParameter comment="" name="owner" prompt="owner?" promptNeeded="false" repositoryContextId="_1mIXkEITEfC1ss5zZC03rg" type="id_String" value="in-dataprojects" internalId="_FzdxsUVdEfCBWM4nQuZdQg"/>
+    <contextParameter comment="" name="repo" prompt="repo?" promptNeeded="false" repositoryContextId="_1mIXkEITEfC1ss5zZC03rg" type="id_String" value="devops-dora-demo" internalId="_FzdxskVdEfCBWM4nQuZdQg"/>
+    <contextParameter comment="" name="token" prompt="token?" promptNeeded="false" repositoryContextId="_1mIXkEITEfC1ss5zZC03rg" type="id_Password" value="enc:system.encryption.key.v1:EdvvwAKXP90x9HkkqolnZIlqVCXxnPZJ9RCAArR+X+KD/mBouFGi2x1IUvzEu40CbermrCDyKJ6/x6UKegbTjrYyM+6tz/P14dg=" internalId="_Fzdxs0VdEfCBWM4nQuZdQg"/>
+    <contextParameter comment="" name="mysql_poc_bradesco_AdditionalParams" prompt="mysql_poc_bradesco_AdditionalParams?" promptNeeded="false" repositoryContextId="_O49ogEVbEfCBWM4nQuZdQg" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" internalId="_FzdxtEVdEfCBWM4nQuZdQg"/>
+    <contextParameter comment="" name="mysql_poc_bradesco_Database" prompt="mysql_poc_bradesco_Database?" promptNeeded="false" repositoryContextId="_O49ogEVbEfCBWM4nQuZdQg" type="id_String" value="poc_bradesco" internalId="_FzdxtUVdEfCBWM4nQuZdQg"/>
+    <contextParameter comment="" name="mysql_poc_bradesco_Login" prompt="mysql_poc_bradesco_Login?" promptNeeded="false" repositoryContextId="_O49ogEVbEfCBWM4nQuZdQg" type="id_String" value="root" internalId="_FzdxtkVdEfCBWM4nQuZdQg"/>
+    <contextParameter comment="" name="mysql_poc_bradesco_Password" prompt="mysql_poc_bradesco_Password?" promptNeeded="false" repositoryContextId="_O49ogEVbEfCBWM4nQuZdQg" type="id_Password" value="enc:system.encryption.key.v1:J58oZM8M5wwBXXZoiwEtcoFvKJ6ZbIFK40jco+0UCcE=" internalId="_Fzdxt0VdEfCBWM4nQuZdQg"/>
+    <contextParameter comment="" name="mysql_poc_bradesco_Port" prompt="mysql_poc_bradesco_Port?" promptNeeded="false" repositoryContextId="_O49ogEVbEfCBWM4nQuZdQg" type="id_String" value="3306" internalId="_FzdxuEVdEfCBWM4nQuZdQg"/>
+    <contextParameter comment="" name="mysql_poc_bradesco_Server" prompt="mysql_poc_bradesco_Server?" promptNeeded="false" repositoryContextId="_O49ogEVbEfCBWM4nQuZdQg" type="id_String" value="localhost" internalId="_FzdxuUVdEfCBWM4nQuZdQg"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -120,9 +121,9 @@
       <elementValue elementRef="NAME" value="&quot;Authorization&quot;" id="0"/>
       <elementValue elementRef="VALUE" value="context.token" id="1"/>
       <elementValue elementRef="NAME" value="&quot;Accept&quot;" id="2"/>
-      <elementValue elementRef="VALUE" value="&quot;application/vnd.github.v3+json&quot;" id="3"/>
+      <elementValue elementRef="VALUE" value="context.accept" id="3"/>
       <elementValue elementRef="NAME" value="&quot;User-Agent&quot;" id="4"/>
-      <elementValue elementRef="VALUE" value="&quot;Talend-Job&quot;" id="5"/>
+      <elementValue elementRef="VALUE" value="context.user_agent" id="5"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
     <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;http://www.talend.org/rest/&quot;" show="false"/>
