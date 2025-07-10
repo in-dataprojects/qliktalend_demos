@@ -1,0 +1,45 @@
+{
+  "itemId" : "_FWgXoMdwEeu2meD0zc-xyw",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_RoI98LJfEeuoMJUAJ4c7JA",
+    "parameterList" : [ {
+      "id" : "_Rocf8bJfEeuoMJUAJ4c7JA",
+      "name" : "connection_AzureBlobStorage_Account"
+    }, {
+      "id" : "_pwPmYbJfEeuoMJUAJ4c7JA",
+      "name" : "connection_AzureBlobStorage_Container"
+    }, {
+      "id" : "_pwPmYLJfEeuoMJUAJ4c7JA",
+      "name" : "connection_AzureBlobStorage_Key"
+    }, {
+      "id" : "_9Xt0wMdyEeu2meD0zc-xyw",
+      "name" : "connection_AzureBlobStorage_TempFolder"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_HdyNULJgEeuoMJUAJ4c7JA",
+    "parameterList" : [ {
+      "id" : "_Hd-akrJgEeuoMJUAJ4c7JA",
+      "name" : "connection_Databricks_cluster_id"
+    }, {
+      "id" : "_Y519IMesEeu2meD0zc-xyw",
+      "name" : "connection_Databricks_database"
+    }, {
+      "id" : "_Hd-alLJgEeuoMJUAJ4c7JA",
+      "name" : "connection_Databricks_dbfs_dependencies_folder"
+    }, {
+      "id" : "_Hd-akbJgEeuoMJUAJ4c7JA",
+      "name" : "connection_Databricks_endpoint"
+    }, {
+      "id" : "_IfYQQcd0Eeu2meD0zc-xyw",
+      "name" : "connection_Databricks_poll_interval"
+    }, {
+      "id" : "_IfYQQMd0Eeu2meD0zc-xyw",
+      "name" : "connection_Databricks_spark_scratch_directory"
+    }, {
+      "id" : "_Hd-ak7JgEeuoMJUAJ4c7JA",
+      "name" : "connection_Databricks_token"
+    } ]
+  } ]
+}

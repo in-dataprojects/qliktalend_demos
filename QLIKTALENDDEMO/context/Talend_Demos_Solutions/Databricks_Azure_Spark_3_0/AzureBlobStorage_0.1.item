@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_Rocf8LJfEeuoMJUAJ4c7JA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_Rocf8bJfEeuoMJUAJ4c7JA" comment="Storage Account Name" name="connection_AzureBlobStorage_Account" prompt="connection_AzureBlobStorage_Account?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="akaul"/>
+  <contextParameter xmi:id="_pwPmYLJfEeuoMJUAJ4c7JA" comment="Storage Account Key" name="connection_AzureBlobStorage_Key" prompt="connection_AzureBlobStorage_Key?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+  <contextParameter xmi:id="_pwPmYbJfEeuoMJUAJ4c7JA" comment="Storage Account Container" name="connection_AzureBlobStorage_Container" prompt="connection_AzureBlobStorage_Container?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="azure-databricks-spark3-container"/>
+  <contextParameter xmi:id="_9Xt0wMdyEeu2meD0zc-xyw" comment="Temporary folder" name="connection_AzureBlobStorage_TempFolder" prompt="connection_AzureBlobStorage_TempFolder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="temp"/>
+</talendfile:ContextType>

@@ -1,0 +1,39 @@
+{
+  "itemId" : "_9or20PI6Eeyuf6S5s2lKMA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_lfNmEPLiEeyuf6S5s2lKMA",
+    "parameterList" : [ {
+      "id" : "_BBw8J_LjEeyuf6S5s2lKMA",
+      "name" : "databricks_database"
+    }, {
+      "id" : "_BBw8I_LjEeyuf6S5s2lKMA",
+      "name" : "databricks_dbfs_folder"
+    }, {
+      "id" : "_BBw8IvLjEeyuf6S5s2lKMA",
+      "name" : "databricks_token"
+    }, {
+      "id" : "_BBw8IfLjEeyuf6S5s2lKMA",
+      "name" : "databricks_clusterid"
+    }, {
+      "id" : "_BBw8IPLjEeyuf6S5s2lKMA",
+      "name" : "databricks_endpoint"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_oFpSQPLhEeyuf6S5s2lKMA",
+    "parameterList" : [ {
+      "id" : "_XY5LofLiEeyuf6S5s2lKMA",
+      "name" : "s3_secret_key"
+    }, {
+      "id" : "_XY5LoPLiEeyuf6S5s2lKMA",
+      "name" : "s3_access_key"
+    }, {
+      "id" : "_XY5Lo_LiEeyuf6S5s2lKMA",
+      "name" : "s3_temp_folder"
+    }, {
+      "id" : "_XY5LovLiEeyuf6S5s2lKMA",
+      "name" : "s3_bucket_name"
+    } ]
+  } ]
+}

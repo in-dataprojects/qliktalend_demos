@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_9zt7YOqVEeybPvXngpryXg" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_9zt7YeqVEeybPvXngpryXg" comment="" name="connection_s3_secret_key" prompt="connection_s3_secret_key?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+  <contextParameter xmi:id="_9zt7YuqVEeybPvXngpryXg" comment="" name="connection_s3_access_key" prompt="connection_s3_access_key?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+  <contextParameter xmi:id="_9zt7Y-qVEeybPvXngpryXg" comment="" name="connection_s3_bucket_name" prompt="connection_s3_bucket_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+</talendfile:ContextType>

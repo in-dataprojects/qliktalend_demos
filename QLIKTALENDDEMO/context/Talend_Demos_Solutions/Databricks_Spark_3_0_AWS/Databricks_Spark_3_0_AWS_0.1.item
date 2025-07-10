@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_CLraIOqWEeybPvXngpryXg" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_PxuZEOqWEeybPvXngpryXg" comment="" name="connection_databricks_endpoint" prompt="connection_databricks_endpoint?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_PxuZEeqWEeybPvXngpryXg" comment="" name="connection_databricks_cluster_id" prompt="connection_databricks_cluster_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_PxuZEuqWEeybPvXngpryXg" comment="" name="connection_databricks_token" prompt="connection_databricks_token?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+</talendfile:ContextType>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_Hd-akLJgEeuoMJUAJ4c7JA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_Hd-akbJgEeuoMJUAJ4c7JA" comment="URL Databricks workspace in MS Azure" name="connection_Databricks_endpoint" prompt="connection_Databricks_endpoint?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_Hd-akrJgEeuoMJUAJ4c7JA" comment="ID of cluster" name="connection_Databricks_cluster_id" prompt="connection_Databricks_cluster_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_Hd-ak7JgEeuoMJUAJ4c7JA" comment="Connection Token for Cluster" name="connection_Databricks_token" prompt="connection_Databricks_token?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+  <contextParameter xmi:id="_Hd-alLJgEeuoMJUAJ4c7JA" comment="Folder for Talend libraries" name="connection_Databricks_dbfs_dependencies_folder" prompt="connection_Databricks_dbfs_dependencies_folder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/talend_custom_libs/"/>
+  <contextParameter xmi:id="_IfYQQMd0Eeu2meD0zc-xyw" comment="Spark Scratch Directory" name="connection_Databricks_spark_scratch_directory" prompt="connection_Databricks_spark_scratch_directory?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/tmp"/>
+  <contextParameter xmi:id="_IfYQQcd0Eeu2meD0zc-xyw" comment="Spark job Polling Interval" name="connection_Databricks_poll_interval" prompt="connection_Databricks_poll_interval?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value=""/>
+  <contextParameter xmi:id="_Y519IMesEeu2meD0zc-xyw" comment="Metastore database " name="connection_Databricks_database" prompt="connection_Databricks_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="default"/>
+</talendfile:ContextType>

@@ -1,0 +1,73 @@
+{
+  "itemId" : "_ztXd8OixEeuPfMjj7Gxt5g",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_qm88ABGCEeyiDrbAlMLOsw",
+    "parameterList" : [ {
+      "id" : "_qnGF8RGCEeyiDrbAlMLOsw",
+      "name" : "DATABRICKS_TOKEN"
+    }, {
+      "id" : "_qnGF8hGCEeyiDrbAlMLOsw",
+      "name" : "JOB_ID"
+    }, {
+      "id" : "_qnGF8xGCEeyiDrbAlMLOsw",
+      "name" : "DATABRICKS_INSTANCE"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_1bwl8IX1Eem4I64wW9I-Og",
+    "parameterList" : [ {
+      "id" : "_r4crZbccEeqT1oQMOGtV9w",
+      "name" : "globalContext_DB_Host"
+    }, {
+      "id" : "_r4crZLccEeqT1oQMOGtV9w",
+      "name" : "globalContext_DB_Password"
+    }, {
+      "id" : "_r4crYbccEeqT1oQMOGtV9w",
+      "name" : "globalContext_DB_Port"
+    }, {
+      "id" : "_r4crY7ccEeqT1oQMOGtV9w",
+      "name" : "globalContext_DB_Username"
+    }, {
+      "id" : "_r4crZrccEeqT1oQMOGtV9w",
+      "name" : "globalContext_DB_Database_Schema"
+    }, {
+      "id" : "_r4crYrccEeqT1oQMOGtV9w",
+      "name" : "globalContext_DB__AdditionalParams"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_KWbrgIL1EemhiP054CDFZw",
+    "parameterList" : [ {
+      "id" : "_1CmpY7VREeqTKJkRPR5NrQ",
+      "name" : "environment"
+    }, {
+      "id" : "_1CmparVREeqTKJkRPR5NrQ",
+      "name" : "temp_dir_path"
+    }, {
+      "id" : "_1CmpabVREeqTKJkRPR5NrQ",
+      "name" : "loadContextInJob"
+    }, {
+      "id" : "_1CmpYbVREeqTKJkRPR5NrQ",
+      "name" : "resource_directory_contextFiles"
+    }, {
+      "id" : "_1CmpZLVREeqTKJkRPR5NrQ",
+      "name" : "enableProjectLevelContextFileLoad"
+    }, {
+      "id" : "_1CmpZ7VREeqTKJkRPR5NrQ",
+      "name" : "taskName"
+    }, {
+      "id" : "_1CmpZrVREeqTKJkRPR5NrQ",
+      "name" : "enableTaskLevelContextFileLoad"
+    }, {
+      "id" : "_1CmpYrVREeqTKJkRPR5NrQ",
+      "name" : "contextStorageType"
+    }, {
+      "id" : "_1CmpZbVREeqTKJkRPR5NrQ",
+      "name" : "enableJobLevelContextFileLoad"
+    }, {
+      "id" : "_1CmpaLVREeqTKJkRPR5NrQ",
+      "name" : "printContextVariableValues"
+    } ]
+  } ]
+}

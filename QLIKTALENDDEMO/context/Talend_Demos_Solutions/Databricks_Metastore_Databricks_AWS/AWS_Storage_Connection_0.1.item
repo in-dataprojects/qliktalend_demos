@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_oITksPLhEeyuf6S5s2lKMA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_XY5LoPLiEeyuf6S5s2lKMA" comment="Access Key ID that uniquely identifies an AWS Account" name="s3_access_key" prompt="s3_access_key?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_XY5LofLiEeyuf6S5s2lKMA" comment="Secret Access Key, constituting the security credentials in combination with the access Key" name="s3_secret_key" prompt="s3_secret_key?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+  <contextParameter xmi:id="_XY5LovLiEeyuf6S5s2lKMA" comment="Specify the name of the source bucket that contains the object to be copied" name="s3_bucket_name" prompt="s3_bucket_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_XY5Lo_LiEeyuf6S5s2lKMA" comment="Provide the temporary folder path" name="s3_temp_folder" prompt="s3_temp_folder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+</talendfile:ContextType>
