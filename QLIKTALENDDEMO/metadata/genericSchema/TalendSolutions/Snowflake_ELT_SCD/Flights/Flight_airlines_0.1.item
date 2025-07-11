@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_kKi8kZp1EeqFC4H86CdFwA" dataPackage="_kKi8kpp1EeqFC4H86CdFwA" mappingTypeUsed="true" mappingTypeId="snowflake_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_kKi8kpp1EeqFC4H86CdFwA" dataManager="_kKi8kZp1EeqFC4H86CdFwA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_kKi8k5p1EeqFC4H86CdFwA" id="_kKiVgJp1EeqFC4H86CdFwA" label="AIRLINES">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kKi8lJp1EeqFC4H86CdFwA" name="IATA_CODE" label="IATA_CODE" length="2" sourceType="VARCHAR" talendType="id_String" key="true" nullable="false" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_kKi8lZp1EeqFC4H86CdFwA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kKi8lpp1EeqFC4H86CdFwA" name="AIRLINE" label="AIRLINE" length="28" sourceType="VARCHAR" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_kKi8l5p1EeqFC4H86CdFwA"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

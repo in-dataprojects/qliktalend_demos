@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_ClisIKRKEeqMKOpbUrSisw" comment="connectionComment" label="connectionLabel" dataPackage="_ClisIaRKEeqMKOpbUrSisw" mappingTypeUsed="true" mappingTypeId="snowflake_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_ClisIaRKEeqMKOpbUrSisw" dataManager="_ClisIKRKEeqMKOpbUrSisw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_ClisIqRKEeqMKOpbUrSisw" id="_D0-TsKRKEeqMKOpbUrSisw" label="AIRLINES_HISTO_TYPE2">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClisI6RKEeqMKOpbUrSisw" name="ID_HISTO" id="57893" label="ID_HISTO" length="38" precision="-1" sourceType="INTEGER" talendType="id_Integer" key="true" nullable="false">
+        <initialValue xmi:id="_ClisJKRKEeqMKOpbUrSisw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClisJaRKEeqMKOpbUrSisw" name="IATA_CODE" id="57894" label="IATA_CODE" length="2" precision="-1" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClisJqRKEeqMKOpbUrSisw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClisJ6RKEeqMKOpbUrSisw" name="AIRLINE" id="57895" label="AIRLINE" length="28" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_ClisKKRKEeqMKOpbUrSisw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClisKaRKEeqMKOpbUrSisw" name="START_DATE" id="57896" label="START_DATE" length="-1" precision="-1" sourceType="DATE" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;">
+        <initialValue xmi:id="_ClisKqRKEeqMKOpbUrSisw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClisK6RKEeqMKOpbUrSisw" name="END_DATE" id="57897" label="END_DATE" length="-1" precision="-1" sourceType="DATE" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;">
+        <initialValue xmi:id="_ClisLKRKEeqMKOpbUrSisw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClisLaRKEeqMKOpbUrSisw" name="ACTIVE_STATUS" id="57898" label="ACTIVE_STATUS" length="38" precision="-1" sourceType="INTEGER" talendType="id_Integer">
+        <initialValue xmi:id="_ClisLqRKEeqMKOpbUrSisw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClisL6RKEeqMKOpbUrSisw" name="VERSION" id="57899" label="VERSION" length="38" precision="-1" sourceType="INTEGER" talendType="id_Integer">
+        <initialValue xmi:id="_ClisMKRKEeqMKOpbUrSisw"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

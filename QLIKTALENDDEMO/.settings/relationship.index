@@ -433,15 +433,7 @@
     "version" : "0.1",
     "type" : "job"
   },
-  "relatedItems" : [ {
-    "id" : "_sK3YAI1eEe-P95gFpWdVDQ",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
-    "id" : "_sK3YAI1eEe-P95gFpWdVDQ - clientes",
-    "version" : "Latest",
-    "type" : "schema"
-  } ]
+  "relatedItems" : [ ]
 }, {
   "baseItem" : {
     "id" : "_2XZNsOgjEduQrK0t1cU9cw",
@@ -648,6 +640,21 @@
     "id" : "GetRandomPhoneNum",
     "version" : "Latest",
     "type" : "routine"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_6LQxgF5gEfCcru1-Xs1scA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_aL-nAI1SEe-P95gFpWdVDQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_nOWhwVkIEe-MDvoCHInsCQ--Aggregate",
+    "version" : "Latest",
+    "type" : "sqlPattern"
   } ]
 }, {
   "baseItem" : {
@@ -1881,6 +1888,45 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_FfAU8Jp4EeqFC4H86CdFwA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_1bwl8IX1Eem4I64wW9I-Og",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_KWbrgIL1EemhiP054CDFZw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_tk6DkJqIEeqFC4H86CdFwA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_-7yUgILxEemhiP054CDFZw",
+    "version" : "Latest",
+    "type" : "joblet"
+  }, {
+    "id" : "TalendEncryption",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "_ClXtAKRKEeqMKOpbUrSisw - AIRLINES_HISTO_TYPE2",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_X12BAKRKEeqMKOpbUrSisw - AIRLINES_HISTO",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_kKi8kJp1EeqFC4H86CdFwA - AIRLINES",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_FiN8wNGrEey62_XzkItagw",
     "version" : "0.1",
     "type" : "job"
@@ -2359,6 +2405,33 @@
     "id" : "GetRandomPhoneNum",
     "version" : "Latest",
     "type" : "routine"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_Jjw-0F5cEfCcru1-Xs1scA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_aL-nAI1SEe-P95gFpWdVDQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_iZrQAHaPEe-cI9IAex1ZpA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_vztzQHaPEe-cI9IAex1ZpA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_iZrQAHaPEe-cI9IAex1ZpA - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_vztzQHaPEe-cI9IAex1ZpA - metadata",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
@@ -5082,6 +5155,45 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_jqSXkKWLEeqUn5gBpYmucA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_1bwl8IX1Eem4I64wW9I-Og",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_KWbrgIL1EemhiP054CDFZw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_tk6DkJqIEeqFC4H86CdFwA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_-7yUgILxEemhiP054CDFZw",
+    "version" : "Latest",
+    "type" : "joblet"
+  }, {
+    "id" : "_loauIJqIEeqFC4H86CdFwA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "TalendEncryption",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "_kKi8kJp1EeqFC4H86CdFwA - AIRLINES",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_lwJBYZp1EeqFC4H86CdFwA - FLIGHTS",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_jrPrIOd0Edukg8DWtMN78w",
     "version" : "0.1",
     "type" : "job"
@@ -6818,10 +6930,6 @@
     "type" : "joblet"
   },
   "relatedItems" : [ {
-    "id" : "_1bwl8IX1Eem4I64wW9I-Og",
-    "version" : "Latest",
-    "type" : "context"
-  }, {
     "id" : "_KWbrgIL1EemhiP054CDFZw",
     "version" : "Latest",
     "type" : "context"
