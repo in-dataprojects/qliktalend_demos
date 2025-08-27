@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_ow6VAX0hEfCWe4BdKB3GEA" name="INFerragens_NFItem" dataPackage="_ow6VAn0hEfCWe4BdKB3GEA" Server="Localhost 127.0.0.1" FilePath="C:/Users/wanas/OneDrive/Documentos/DATASETS/VENDAS.xls" Encoding="ISO-8859-15" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="Cliente" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" sheetList="NF Item:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+    <sheetColumns>E</sheetColumns>
+    <sheetColumns>F</sheetColumns>
+    <sheetColumns>G</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_ow6VAn0hEfCWe4BdKB3GEA" name="default" dataManager="_ow6VAX0hEfCWe4BdKB3GEA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_ow6VA30hEfCWe4BdKB3GEA" id="_k0LZsH0hEfCWe4BdKB3GEA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow6VBH0hEfCWe4BdKB3GEA" label="NF_Item_Codigo" length="5" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow6VBX0hEfCWe4BdKB3GEA" label="NF_Numero" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow6VBn0hEfCWe4BdKB3GEA" label="Produto_Codigo" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow6VB30hEfCWe4BdKB3GEA" label="NF_Item_Quant" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow6VCH0hEfCWe4BdKB3GEA" label="NF_Item_Preco" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

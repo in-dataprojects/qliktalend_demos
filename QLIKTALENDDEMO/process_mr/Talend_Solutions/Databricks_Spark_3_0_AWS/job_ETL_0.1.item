@@ -365,7 +365,7 @@
     <elementParameter xmi:id="_VvRBX12_EfCe29WH1w3K-Q" field="CHECK" name="USE_IN_TRANSIT_ENCRYPTION" value="true" show="false"/>
     <elementParameter xmi:id="_VvRBYF2_EfCe29WH1w3K-Q" field="LABEL" name="NOTE" value="Warning! Data is not protected 'in-transit. Disable it at your own discretion." show="false"/>
     <elementParameter xmi:id="_VvRBYV2_EfCe29WH1w3K-Q" field="CHECK" name="SET_REGION" value="false"/>
-    <elementParameter xmi:id="_VvRBYl2_EfCe29WH1w3K-Q" field="CLOSED_LIST" name="REGION" value="&quot;s3-external-1.amazonaws.com&quot;" show="false"/>
+    <elementParameter xmi:id="_VvRBYl2_EfCe29WH1w3K-Q" field="CLOSED_LIST" name="REGION" value="&quot;s3.external-1.amazonaws.com&quot;" show="false"/>
     <elementParameter xmi:id="_VvRBY12_EfCe29WH1w3K-Q" field="CHECK" name="SET_ENDPOINT" value="false"/>
     <elementParameter xmi:id="_VvRBZF2_EfCe29WH1w3K-Q" field="TEXT" name="ENDPOINT" value="&quot;s3.eu-central-1.amazonaws.com&quot;" show="false"/>
     <elementParameter xmi:id="_VvRBZV2_EfCe29WH1w3K-Q" field="CHECK" name="ASSUME_ROLE" value="false" show="false"/>

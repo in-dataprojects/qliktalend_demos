@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_GJvssX0hEfCWe4BdKB3GEA" name="INFerragens_Produto" dataPackage="_GJvssn0hEfCWe4BdKB3GEA _dx30kH0hEfCWe4BdKB3GEA" Server="Localhost 127.0.0.1" FilePath="C:/Users/wanas/OneDrive/Documentos/DATASETS/VENDAS.xls" Encoding="ISO-8859-15" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="Produto" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" sheetList="Produto:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+    <sheetColumns>E</sheetColumns>
+    <sheetColumns>F</sheetColumns>
+    <sheetColumns>G</sheetColumns>
+    <sheetColumns>H</sheetColumns>
+    <sheetColumns>I</sheetColumns>
+    <sheetColumns>J</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_GJvssn0hEfCWe4BdKB3GEA" name="default" dataManager="_GJvssX0hEfCWe4BdKB3GEA"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_dx30kH0hEfCWe4BdKB3GEA" name="default" dataManager="_GJvssX0hEfCWe4BdKB3GEA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_dx30kX0hEfCWe4BdKB3GEA" id="_Z12D4H0hEfCWe4BdKB3GEA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dx30kn0hEfCWe4BdKB3GEA" label="Produto_Codigo" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dx30k30hEfCWe4BdKB3GEA" label="Produto_Descricao" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dx30lH0hEfCWe4BdKB3GEA" label="Produto_Setor" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dx30lX0hEfCWe4BdKB3GEA" label="Produto_Marca" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dx30ln0hEfCWe4BdKB3GEA" label="Produto_Medida" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dx30l30hEfCWe4BdKB3GEA" label="Produto_Estoque" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dx30mH0hEfCWe4BdKB3GEA" label="Produto_Valor" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dx30mX0hEfCWe4BdKB3GEA" label="Produto_Estoque_Min" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dx30mn0hEfCWe4BdKB3GEA" label="Produto_Aliq__ICMS" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dx30m30hEfCWe4BdKB3GEA" label="Categoria_Codigo" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
