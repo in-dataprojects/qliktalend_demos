@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Default"/>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:OJge+70+wDlZeFfEV3pJLNIAS4nY1oJPia2uz5MC" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/Talend-Studio-20240527_1700-V8.0.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:gA12g7vyf957rrAiQqWuwmoXUJzUVrQa9HjAMysM" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+  </parameters>
+  <node componentName="JDBCInput" componentVersion="2" offsetLabelX="0" offsetLabelY="0" posX="200" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI0lucHV0" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:databricks://dbc-0144df97-bd3e.cloud.databricks.com:443/default;transportMode=http;ssl=1;AuthMech=3;httpPath=/sql/1.0/warehouses/59e096fd506608f2;PWD=dapid86a3aa583d5ac93de50020f8e8a5815&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="80" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.jdbcDriver">
+      <elementValue elementRef="configuration.dataSet.dataStore.jdbcDriver[].path" value="mvn:org.talend.libraries/DatabricksJDBC42/6.0.0-SNAPSHOT/jar" id="0"/>
+    </elementParameter>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.dataStore.jdbcClass" value="com.databricks.client.jdbc.Driver"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="token"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:TLdQR1SzpEgbEwbldbUabL4e1tZAm78hhp9q7891ncO5oF3ntWmvUOMnEn3EIi+zu1DAFojzeqkVcCdDwuiHwPrW"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="mysql_id" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.authenticationType" value="BASIC" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.grantType" value="CLIENT_CREDENTIALS" show="false"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.tableName" value="exemplo_tabela"/>
+    <elementParameter field="MEMO_SQL" name="configuration.dataSet.sqlQuery" value="&quot;select a,b,c,d,e from workspace.default.exemplo_tabela&quot;"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useAutoCommit" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.autoCommit" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.defineProtocol" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionTimeOut" value="30" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionValidationTimeOut" value="10" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.useCursor" value="false"/>
+    <elementParameter field="TEXT" name="configuration.config.cursorSize" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.trimAllStringOrCharColumns" value="false"/>
+    <elementParameter field="TABLE" name="configuration.config.columnTrims">
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="a" id="0"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="1"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="b" id="2"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="3"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="c" id="4"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="5"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="d" id="6"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="7"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="e" id="8"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="9"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.config.enableMapping" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.config.mapping" value="MYSQL" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.allowSpecialName" value="true"/>
+    <elementParameter field="CHECK" name="configuration.config.usePreparedStatement" value="false"/>
+    <elementParameter field="TABLE" name="configuration.config.preparedStatementParameters" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.useQueryTimeout" value="false"/>
+    <elementParameter field="TEXT" name="configuration.config.queryTimeout" value="30" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
+    <metadata connector="FLOW" name="tDBInput_1">
+      <column comment="" key="false" length="-1" name="a" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="b" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="d" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="e" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="255" name="errorCode" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="a" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="b" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="c" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="d" id="6"/>
+      <elementValue elementRef="LENGTH" value="10" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="e" id="8"/>
+      <elementValue elementRef="LENGTH" value="10" id="9"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" key="false" length="-1" name="a" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="b" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="d" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="e" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="200" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="false"/>
+    <elementParameter field="TABLE" name="VALUES" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="a" id="0"/>
+      <elementValue elementRef="VALUE" value="" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="b" id="2"/>
+      <elementValue elementRef="VALUE" value="" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="c" id="4"/>
+      <elementValue elementRef="VALUE" value="" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="d" id="6"/>
+      <elementValue elementRef="VALUE" value="" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="e" id="8"/>
+      <elementValue elementRef="VALUE" value="" id="9"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="true"/>
+    <elementParameter field="TABLE" name="INTABLE">
+      <elementValue elementRef="a" value="&quot;SEG1&quot;" id="0"/>
+      <elementValue elementRef="b" value="&quot;20200301&quot;" id="1"/>
+      <elementValue elementRef="c" value="&quot;232101&quot;" id="2"/>
+      <elementValue elementRef="d" value="&quot;52&quot;" id="3"/>
+      <elementValue elementRef="e" value="&quot;13&quot;" id="4"/>
+      <elementValue elementRef="a" value="&quot;SEG2&quot;" id="5"/>
+      <elementValue elementRef="b" value="&quot;20200301&quot;" id="6"/>
+      <elementValue elementRef="c" value="&quot;232101&quot;" id="7"/>
+      <elementValue elementRef="d" value="&quot;5&quot;" id="8"/>
+      <elementValue elementRef="e" value="&quot;1&quot;" id="9"/>
+      <elementValue elementRef="a" value="&quot;SEG3&quot;" id="10"/>
+      <elementValue elementRef="b" value="&quot;20200301&quot;" id="11"/>
+      <elementValue elementRef="c" value="&quot;232101&quot;" id="12"/>
+      <elementValue elementRef="d" value="&quot;0&quot;" id="13"/>
+      <elementValue elementRef="e" value="&quot;0&quot;" id="14"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="SEG1|20200301|232101|52|13|39&#xD;&#xA;SEG2|20200301|232101|5|1|4&#xD;&#xA;SEG3|20200301|232101|0|0&#xD;&#xA;SEG1|20200302|232101|52|13|39&#xD;&#xA;SEG2|20200302|232101|5|1|4&#xD;&#xA;SEG3|20200302|232101|0|0&#xD;&#xA;SEG1|20200303|232101|52|13|39&#xD;&#xA;SEG2|20200303|232101|5|1|4&#xD;&#xA;SEG3|20200303|232101|0|0&#xD;&#xA;SEG1|20200304|232101|52|13|39&#xD;&#xA;SEG2|20200304|232101|5|1|4&#xD;&#xA;SEG3|20200304|232101|0|0&#xD;&#xA;SEG1|20200305|232101|52|13|39&#xD;&#xA;SEG2|20200305|232101|5|1|4&#xD;&#xA;SEG3|20200305|232101|0|0&#xD;&#xA;SEG1|20200306|232101|52|13|39&#xD;&#xA;SEG2|20200306|232101|5|1|4&#xD;&#xA;SEG3|20200306|232101|0|0&#xD;&#xA;SEG1|20200307|232101|52|13|39&#xD;&#xA;SEG2|20200307|232101|5|1|4&#xD;&#xA;SEG3|20200307|232101|0|0&#xD;&#xA;SEG1|20200308|232101|52|13|39&#xD;&#xA;SEG2|20200308|232101|5|1|4&#xD;&#xA;SEG3|20200308|232101|0|0&#xD;&#xA;SEG1|20200309|232101|52|13|39&#xD;&#xA;SEG2|20200309|232101|5|1|4&#xD;&#xA;SEG3|20200309|232101|0|0&#xD;&#xA;SEG1|20200310|232101|52|13|39&#xD;&#xA;SEG2|20200310|232101|5|1|4&#xD;&#xA;SEG3|20200310|232101|0|0&#xD;&#xA;SEG1|20200310|000101|0|0|0&#xD;&#xA;SEG2|20200310|000101|0|0|0&#xD;&#xA;SEG3|20200310|000101|0|0&#xD;&#xA;SEG1|20200311|232101|52|13|39&#xD;&#xA;SEG2|20200311|232101|5|1|4&#xD;&#xA;SEG3|20200311|232101|0|0&#xD;&#xA;SEG1|20200312|232101|52|13|39&#xD;&#xA;SEG2|20200312|232101|5|1|4&#xD;&#xA;SEG3|20200312|232101|0|0&#xD;&#xA;SEG1|20200313|232101|52|13|39&#xD;&#xA;SEG2|20200313|232101|5|1|4&#xD;&#xA;SEG3|20200313|232101|0|0&#xD;&#xA;SEG1|20200314|232101|52|13|39&#xD;&#xA;SEG2|20200314|232101|5|1|4&#xD;&#xA;SEG3|20200314|232101|0|0&#xD;&#xA;SEG1|20200315|232101|52|13|39&#xD;&#xA;SEG2|20200315|232101|5|1|4&#xD;&#xA;SEG3|20200315|232101|0|0&#xD;&#xA;SEG1|20200316|232101|52|13|39&#xD;&#xA;SEG2|20200316|232101|5|1|4&#xD;&#xA;SEG3|20200316|232101|0|0&#xD;&#xA;SEG1|20200317|232101|52|13|39&#xD;&#xA;SEG2|20200317|232101|5|1|4&#xD;&#xA;SEG3|20200317|232101|0|0&#xD;&#xA;SEG1|20200318|232101|52|13|39&#xD;&#xA;SEG2|20200318|232101|5|1|4&#xD;&#xA;SEG3|20200318|232101|0|0&#xD;&#xA;SEG1|20200319|232101|52|13|39&#xD;&#xA;SEG2|20200319|232101|5|1|4&#xD;&#xA;SEG3|20200319|232101|0|0&#xD;&#xA;SEG1|20200320|232101|52|13|39&#xD;&#xA;SEG2|20200320|232101|5|1|4&#xD;&#xA;SEG3|20200320|232101|0|0&#xD;&#xA;SEG1|20200321|232101|52|13|39&#xD;&#xA;SEG2|20200321|232101|5|1|4&#xD;&#xA;SEG3|20200321|232101|0|0&#xD;&#xA;SEG1|20200322|232101|52|13|39&#xD;&#xA;SEG2|20200322|232101|5|1|4&#xD;&#xA;SEG3|20200322|232101|0|0&#xD;&#xA;SEG1|20200323|232101|52|13|39&#xD;&#xA;SEG2|20200323|232101|5|1|4&#xD;&#xA;SEG3|20200323|232101|0|0&#xD;&#xA;SEG1|20200324|232101|52|13|39&#xD;&#xA;SEG2|20200324|232101|5|1|4&#xD;&#xA;SEG3|20200324|232101|0|0&#xD;&#xA;SEG1|20200325|232101|52|13|39&#xD;&#xA;SEG2|20200325|232101|5|1|4&#xD;&#xA;SEG3|20200325|232101|0|0&#xD;&#xA;SEG1|20200326|232101|52|13|39&#xD;&#xA;SEG2|20200326|232101|5|1|4&#xD;&#xA;SEG3|20200326|232101|0|0&#xD;&#xA;SEG1|20200327|232101|52|13|39&#xD;&#xA;SEG2|20200327|232101|5|1|4&#xD;&#xA;SEG3|20200327|232101|0|0&#xD;&#xA;SEG1|20200328|232101|52|13|39&#xD;&#xA;SEG2|20200328|232101|5|1|4&#xD;&#xA;SEG3|20200328|232101|0|0&#xD;&#xA;SEG1|20200329|232101|52|13|39&#xD;&#xA;SEG2|20200329|232101|5|1|4&#xD;&#xA;SEG3|20200329|232101|0|0&#xD;&#xA;SEG1|20200330|232101|52|13|39&#xD;&#xA;SEG2|20200330|232101|5|1|4&#xD;&#xA;SEG3|20200330|232101|0|0&#xD;&#xA;SEG1|20200331|232101|52|13|39&#xD;&#xA;SEG2|20200331|232101|5|1|4&#xD;&#xA;SEG3|20200331|232101|0|0&#xD;&#xA;SEG1|20200401|232101|52|13|39&#xD;&#xA;SEG2|20200401|232101|5|1|4&#xD;&#xA;SEG3|20200401|232101|0|0&#xD;&#xA;SEG1|20200402|232101|52|13|39&#xD;&#xA;SEG2|20200402|232101|5|1|4&#xD;&#xA;SEG3|20200402|232101|0|0&#xD;&#xA;SEG1|20200403|232101|52|13|39&#xD;&#xA;SEG2|20200403|232101|5|1|4&#xD;&#xA;SEG3|20200403|232101|0|0&#xD;&#xA;SEG1|20200404|232101|52|13|39&#xD;&#xA;SEG2|20200404|232101|5|1|4&#xD;&#xA;SEG3|20200404|232101|0|0&#xD;&#xA;SEG1|20200405|232101|52|13|39&#xD;&#xA;SEG2|20200405|232101|5|1|4&#xD;&#xA;SEG3|20200405|232101|0|0&#xD;&#xA;SEG1|20200406|232101|52|13|39&#xD;&#xA;SEG2|20200406|232101|5|1|4&#xD;&#xA;SEG3|20200406|232101|0|0&#xD;&#xA;SEG1|20200407|232101|52|13|39&#xD;&#xA;SEG2|20200407|232101|5|1|4&#xD;&#xA;SEG3|20200407|232101|0|0&#xD;&#xA;SEG1|20200408|232101|52|13|39&#xD;&#xA;SEG2|20200408|232101|5|1|4&#xD;&#xA;SEG3|20200408|232101|0|0&#xD;&#xA;SEG1|20200409|232101|52|13|39&#xD;&#xA;SEG2|20200409|232101|5|1|4&#xD;&#xA;SEG3|20200409|232101|0|0&#xD;&#xA;SEG1|20200410|232101|52|13|39&#xD;&#xA;SEG2|20200410|232101|5|1|4&#xD;&#xA;SEG3|20200410|232101|0|0&#xD;&#xA;SEG1|20200411|232101|52|13|39&#xD;&#xA;SEG2|20200411|232101|5|1|4&#xD;&#xA;SEG3|20200411|232101|0|0&#xD;&#xA;SEG1|20200412|232101|52|13|39&#xD;&#xA;SEG2|20200412|232101|5|1|4&#xD;&#xA;SEG3|20200412|232101|0|0&#xD;&#xA;SEG1|20200413|232101|52|13|39&#xD;&#xA;SEG2|20200413|232101|5|1|4&#xD;&#xA;SEG3|20200413|232101|0|0&#xD;&#xA;SEG1|20200414|232101|52|13|39&#xD;&#xA;SEG2|20200414|232101|5|1|4&#xD;&#xA;SEG3|20200414|232101|0|0&#xD;&#xA;SEG1|20200415|232101|52|13|39&#xD;&#xA;SEG2|20200415|232101|5|1|4&#xD;&#xA;SEG3|20200415|232101|0|0&#xD;&#xA;SEG1|20200416|232101|52|14|38&#xD;&#xA;SEG2|20200416|232101|5|2|3&#xD;&#xA;SEG3|20200416|232101|0|0&#xD;&#xA;SEG1|20200417|232101|52|14|38&#xD;&#xA;SEG2|20200417|232101|5|2|3&#xD;&#xA;SEG3|20200417|232101|0|0&#xD;&#xA;SEG1|20200417|000101|0|0|0&#xD;&#xA;SEG2|20200417|000101|0|0|0&#xD;&#xA;SEG3|20200417|000101|0|0&#xD;&#xA;SEG1|20200418|232101|52|14|38&#xD;&#xA;SEG2|20200418|232101|5|2|3&#xD;&#xA;SEG3|20200418|232101|0|0&#xD;&#xA;SEG1|20200419|232101|52|14|38&#xD;&#xA;SEG2|20200419|232101|5|2|3&#xD;&#xA;SEG3|20200419|232101|0|0&#xD;&#xA;SEG1|20200420|232101|52|14|38&#xD;&#xA;SEG2|20200420|232101|5|2|3&#xD;&#xA;SEG3|20200420|232101|1|1&#xD;&#xA;SEG1|20200420|000101|0|0|0&#xD;&#xA;SEG2|20200420|000101|0|0|0&#xD;&#xA;SEG3|20200420|000101|0|0&#xD;&#xA;SEG1|20200421|232101|52|14|38&#xD;&#xA;SEG2|20200421|232101|5|2|3&#xD;&#xA;SEG3|20200421|232101|1|1&#xD;&#xA;SEG1|20200422|232101|52|14|38&#xD;&#xA;SEG2|20200422|232101|5|2|3&#xD;&#xA;SEG3|20200422|232101|1|1&#xD;&#xA;SEG1|20200423|232101|52|14|38&#xD;&#xA;SEG2|20200423|232101|5|2|3&#xD;&#xA;SEG3|20200423|232101|1|1&#xD;&#xA;SEG1|20200424|232101|52|13|39&#xD;&#xA;SEG2|20200424|232101|5|1|4&#xD;&#xA;SEG3|20200424|232101|0|0&#xD;&#xA;SEG1|20200425|232101|52|13|39&#xD;&#xA;SEG2|20200425|232101|5|1|4&#xD;&#xA;SEG3|20200425|232101|0|0&#xD;&#xA;SEG1|20200426|232101|52|13|39&#xD;&#xA;SEG2|20200426|232101|5|1|4&#xD;&#xA;SEG3|20200426|232101|0|0&#xD;&#xA;SEG1|20200427|232101|52|13|39&#xD;&#xA;SEG2|20200427|232101|5|1|4&#xD;&#xA;SEG3|20200427|232101|0|0&#xD;&#xA;SEG1|20200428|232101|52|13|39&#xD;&#xA;SEG2|20200428|232101|5|1|4&#xD;&#xA;SEG3|20200428|232101|0|0&#xD;&#xA;SEG1|20200429|232101|52|13|39&#xD;&#xA;SEG2|20200429|232101|5|1|4&#xD;&#xA;SEG3|20200429|232101|0|0&#xD;&#xA;SEG1|20200430|232101|52|13|39&#xD;&#xA;SEG2|20200430|232101|5|1|4&#xD;&#xA;SEG3|20200430|232101|0|0&#xD;&#xA;SEG1|20200501|232101|52|13|39&#xD;&#xA;SEG2|20200501|232101|5|1|4&#xD;&#xA;SEG3|20200501|232101|0|0&#xD;&#xA;SEG1|20200502|232101|52|13|39&#xD;&#xA;SEG2|20200502|232101|5|1|4&#xD;&#xA;SEG3|20200502|232101|0|0&#xD;&#xA;SEG1|20200503|232101|52|13|39&#xD;&#xA;SEG2|20200503|232101|5|1|4&#xD;&#xA;SEG3|20200503|232101|0|0&#xD;&#xA;SEG1|20200504|232101|52|13|39&#xD;&#xA;SEG2|20200504|232101|5|1|4&#xD;&#xA;SEG3|20200504|232101|0|0&#xD;&#xA;SEG1|20200505|232101|52|13|39&#xD;&#xA;SEG2|20200505|232101|5|1|4&#xD;&#xA;SEG3|20200505|232101|0|0&#xD;&#xA;SEG1|20200506|232101|52|13|39&#xD;&#xA;SEG2|20200506|232101|5|1|4&#xD;&#xA;SEG3|20200506|232101|0|0&#xD;&#xA;SEG1|20200507|232101|52|13|39&#xD;&#xA;SEG2|20200507|232101|5|1|4&#xD;&#xA;SEG3|20200507|232101|0|0&#xD;&#xA;SEG1|20200508|232101|52|13|39&#xD;&#xA;SEG2|20200508|232101|5|1|4&#xD;&#xA;SEG3|20200508|232101|0|0&#xD;&#xA;SEG1|20200509|232101|52|13|39&#xD;&#xA;SEG2|20200509|232101|5|1|4&#xD;&#xA;SEG3|20200509|232101|0|0&#xD;&#xA;SEG1|20200510|232101|52|13|39&#xD;&#xA;SEG2|20200510|232101|5|1|4&#xD;&#xA;SEG3|20200510|232101|0|0&#xD;&#xA;SEG1|20200511|232101|52|13|39&#xD;&#xA;SEG2|20200511|232101|5|1|4&#xD;&#xA;SEG3|20200511|232101|0|0&#xD;&#xA;SEG1|20200512|232101|52|13|39&#xD;&#xA;SEG2|20200512|232101|5|1|4&#xD;&#xA;SEG3|20200512|232101|0|0&#xD;&#xA;SEG1|20200513|232101|52|13|39&#xD;&#xA;SEG2|20200513|232101|5|1|4&#xD;&#xA;SEG3|20200513|232101|0|0&#xD;&#xA;SEG1|20200514|232101|52|14|38&#xD;&#xA;SEG2|20200514|232101|5|1|4&#xD;&#xA;SEG3|20200514|232101|0|0&#xD;&#xA;SEG1|20200515|232101|52|13|39&#xD;&#xA;SEG2|20200515|232101|5|1|4&#xD;&#xA;SEG3|20200515|232101|0|0&#xD;&#xA;SEG1|20200516|232101|52|13|39&#xD;&#xA;SEG2|20200516|232101|5|1|4&#xD;&#xA;SEG3|20200516|232101|0|0&#xD;&#xA;SEG1|20200517|232101|52|13|39&#xD;&#xA;SEG2|20200517|232101|5|1|4&#xD;&#xA;SEG3|20200517|232101|0|0&#xD;&#xA;SEG1|20200518|232101|52|13|39&#xD;&#xA;SEG2|20200518|232101|5|1|4&#xD;&#xA;SEG3|20200518|232101|0|0&#xD;&#xA;SEG1|20200519|232101|52|13|39&#xD;&#xA;SEG2|20200519|232101|5|1|4&#xD;&#xA;SEG3|20200519|232101|0|0&#xD;&#xA;SEG1|20200520|232101|52|13|39&#xD;&#xA;SEG2|20200520|232101|5|1|4&#xD;&#xA;SEG3|20200520|232101|0|0" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" key="false" length="-1" name="a" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="b" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="d" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="e" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_GDXdUI2HEfCXw7jk2zYZOQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out1">
+      <column comment="" key="false" length="-1" name="a" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="b" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="d" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="e" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out1">
+        <mapperTableEntries name="a" expression="row2.a " type="id_String" nullable="true"/>
+        <mapperTableEntries name="b" expression="row2.b " type="id_String" nullable="true"/>
+        <mapperTableEntries name="c" expression="row2.c " type="id_String" nullable="true"/>
+        <mapperTableEntries name="d" expression="row2.d " type="id_String" nullable="true"/>
+        <mapperTableEntries name="e" expression="row2.e " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="a" type="id_String" nullable="true"/>
+        <mapperTableEntries name="b" type="id_String" nullable="true"/>
+        <mapperTableEntries name="c" type="id_String" nullable="true"/>
+        <mapperTableEntries name="d" type="id_String" nullable="true"/>
+        <mapperTableEntries name="e" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="JDBCOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="520" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI091dHB1dA" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:databricks://dbc-cf989d57-cfa9.cloud.databricks.com:443/default;transportMode=http;ssl=1;httpPath=sql/protocolv1/o/545440685740322/0910-124112-oygp0apm;AuthMech=3;UID=token;PWD=dapi424277a9156e4bc15ba2cb1c4cb12358&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="80" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.jdbcDriver">
+      <elementValue elementRef="configuration.dataSet.dataStore.jdbcDriver[].path" value="mvn:org.talend.libraries/DatabricksJDBC42/6.0.0-SNAPSHOT/jar" id="0"/>
+    </elementParameter>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.dataStore.jdbcClass" value="com.databricks.client.jdbc.Driver"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="token"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:oMj3GGPrVme6jmRq2nzadVNZKLCocwk4o5H4qd6XtuyZu4Buis9PCXeDzRwksEax0/dS0S/+wd54T9SNUWhhrXkn"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="mysql_id" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.authenticationType" value="BASIC" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.grantType" value="CLIENT_CREDENTIALS" show="false"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.tableName" value="exemplo_tabela"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataAction" value="INSERT"/>
+    <elementParameter field="CHECK" name="configuration.clearData" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+    <elementParameter field="CHECK" name="configuration.createTableIfNotExists" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.varcharLength" value="-1" show="false"/>
+    <elementParameter field="TABLE" name="configuration.keysForCreateTableAndDML.keys" show="false"/>
+    <elementParameter field="TABLE" name="configuration.keysForDML.keys" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.sortStrategy" value="COMPOUND" show="false"/>
+    <elementParameter field="TABLE" name="configuration.sortKeys" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.distributionStrategy" value="AUTO" show="false"/>
+    <elementParameter field="TABLE" name="configuration.distributionKeys" show="false"/>
+    <elementParameter field="TABLE" name="configuration.ignoreUpdate" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useAutoCommit" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.autoCommit" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.defineProtocol" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionTimeOut" value="30" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionValidationTimeOut" value="10" show="false"/>
+    <elementParameter field="TEXT" name="configuration.commitEvery" value="0"/>
+    <elementParameter field="TABLE" name="configuration.additionalColumns"/>
+    <elementParameter field="CHECK" name="configuration.useFieldOptions" value="false"/>
+    <elementParameter field="TABLE" name="configuration.fieldOptions" show="false">
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="a" id="0"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="1"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="2"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="3"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="4"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="b" id="5"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="6"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="7"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="8"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="9"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="c" id="10"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="11"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="12"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="13"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="14"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="d" id="15"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="16"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="17"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="18"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="19"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="e" id="20"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="21"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="22"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="23"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="24"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.debugQuery" value="false"/>
+    <elementParameter field="CHECK" name="configuration.useBatch" value="true"/>
+    <elementParameter field="TEXT" name="configuration.batchSize" value="10000"/>
+    <elementParameter field="CHECK" name="configuration.useQueryTimeout" value="false"/>
+    <elementParameter field="TEXT" name="configuration.queryTimeout" value="30" show="false"/>
+    <elementParameter field="CHECK" name="configuration.rewriteBatchedStatements" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useOriginColumnName" value="true" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
+    <metadata connector="FLOW" name="tDBOutput_1">
+      <column comment="" key="false" length="-1" name="a" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="b" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="d" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="e" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="reject" name="reject">
+      <column comment="" key="false" length="-1" name="a" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="b" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="d" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="e" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="errorCode" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+  </subjob>
+</talendfile:ProcessType>
