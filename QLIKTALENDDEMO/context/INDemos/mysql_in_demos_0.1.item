@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_6PTCgIqKEfC2SvupWX5JTA" confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter xmi:id="_6PTCgYqKEfC2SvupWX5JTA" comment="" name="mysql_in_demos_Port" prompt="mysql_in_demos_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_6PTCgoqKEfC2SvupWX5JTA" comment="" name="mysql_in_demos_Login" prompt="mysql_in_demos_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="root"/>
+    <contextParameter xmi:id="_6PTCg4qKEfC2SvupWX5JTA" comment="" name="mysql_in_demos_Server" prompt="mysql_in_demos_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost"/>
+    <contextParameter xmi:id="_6PTChIqKEfC2SvupWX5JTA" comment="" name="mysql_in_demos_Database" prompt="mysql_in_demos_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="in_demos"/>
+    <contextParameter xmi:id="_6PTChYqKEfC2SvupWX5JTA" comment="" name="mysql_in_demos_Password" prompt="mysql_in_demos_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:vf979UyXzhwPChAkcMBCuszPVAOaP4t5WkNOY1MnbbA="/>
+    <contextParameter xmi:id="_6PTChoqKEfC2SvupWX5JTA" comment="" name="mysql_in_demos_AdditionalParams" prompt="mysql_in_demos_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_6PTCh4qKEfC2SvupWX5JTA" confirmationNeeded="false" hide="false" name="local">
+    <contextParameter xmi:id="_6PTCiIqKEfC2SvupWX5JTA" comment="" name="mysql_in_demos_Port" prompt="mysql_in_demos_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_6PTCiYqKEfC2SvupWX5JTA" comment="" name="mysql_in_demos_Login" prompt="mysql_in_demos_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="root"/>
+    <contextParameter xmi:id="_6PTCioqKEfC2SvupWX5JTA" comment="" name="mysql_in_demos_Server" prompt="mysql_in_demos_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost"/>
+    <contextParameter xmi:id="_6PTCi4qKEfC2SvupWX5JTA" comment="" name="mysql_in_demos_Database" prompt="mysql_in_demos_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="in_demos"/>
+    <contextParameter xmi:id="_6PTCjIqKEfC2SvupWX5JTA" comment="" name="mysql_in_demos_Password" prompt="mysql_in_demos_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:7JU9VdWwXKRayjCimmnZhO7yuikktT7lGaDOifSgnvQ="/>
+    <contextParameter xmi:id="_6PTCjYqKEfC2SvupWX5JTA" comment="" name="mysql_in_demos_AdditionalParams" prompt="mysql_in_demos_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_6PTCjoqKEfC2SvupWX5JTA" confirmationNeeded="false" hide="false" name="qdi_server">
+    <contextParameter xmi:id="_6PTCj4qKEfC2SvupWX5JTA" comment="" name="mysql_in_demos_Port" prompt="mysql_in_demos_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_6PTCkIqKEfC2SvupWX5JTA" comment="" name="mysql_in_demos_Login" prompt="mysql_in_demos_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="root"/>
+    <contextParameter xmi:id="_6PTCkYqKEfC2SvupWX5JTA" comment="" name="mysql_in_demos_Server" prompt="mysql_in_demos_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="119.8.85.214"/>
+    <contextParameter xmi:id="_6PTCkoqKEfC2SvupWX5JTA" comment="" name="mysql_in_demos_Database" prompt="mysql_in_demos_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="in_demos"/>
+    <contextParameter xmi:id="_6PTCk4qKEfC2SvupWX5JTA" comment="" name="mysql_in_demos_Password" prompt="mysql_in_demos_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:/98zRHshbwcSHxwzKGcDiF9gGzaPBmxUVvuCMn32N0wKOw9UMcxSoA=="/>
+    <contextParameter xmi:id="_6PTClIqKEfC2SvupWX5JTA" comment="" name="mysql_in_demos_AdditionalParams" prompt="mysql_in_demos_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1"/>
+  </talendfile:ContextType>
+</xmi:XMI>

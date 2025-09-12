@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_1b7ksIqLEfC2SvupWX5JTA" confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter xmi:id="_1b7ksYqLEfC2SvupWX5JTA" comment="" name="sqlserver_in_demos_Port" prompt="sqlserver_in_demos_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter xmi:id="_1b7ksoqLEfC2SvupWX5JTA" comment="" name="sqlserver_in_demos_Login" prompt="sqlserver_in_demos_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="qlik_rpl"/>
+    <contextParameter xmi:id="_1b7ks4qLEfC2SvupWX5JTA" comment="" name="sqlserver_in_demos_Server" prompt="sqlserver_in_demos_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="119.8.85.214"/>
+    <contextParameter xmi:id="_1b7ktIqLEfC2SvupWX5JTA" comment="" name="sqlserver_in_demos_Database" prompt="sqlserver_in_demos_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="in_demos"/>
+    <contextParameter xmi:id="_1b7ktYqLEfC2SvupWX5JTA" comment="" name="sqlserver_in_demos_Schema" prompt="sqlserver_in_demos_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dbo"/>
+    <contextParameter xmi:id="_1b7ktoqLEfC2SvupWX5JTA" comment="" name="sqlserver_in_demos_Password" prompt="sqlserver_in_demos_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:ihhPaVv5PTEFBcazpl21PyhGvO9OOvOsezPTubzpiI+elWuQpjfpDGY="/>
+    <contextParameter xmi:id="_1b7kt4qLEfC2SvupWX5JTA" comment="" name="sqlserver_in_demos_AdditionalParams" prompt="sqlserver_in_demos_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_1b7kuIqLEfC2SvupWX5JTA" confirmationNeeded="false" hide="false" name="local">
+    <contextParameter xmi:id="_1b7kuYqLEfC2SvupWX5JTA" comment="" name="sqlserver_in_demos_Port" prompt="sqlserver_in_demos_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter xmi:id="_1b7kuoqLEfC2SvupWX5JTA" comment="" name="sqlserver_in_demos_Login" prompt="sqlserver_in_demos_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="qlik_rpl"/>
+    <contextParameter xmi:id="_1b7ku4qLEfC2SvupWX5JTA" comment="" name="sqlserver_in_demos_Server" prompt="sqlserver_in_demos_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="119.8.85.214"/>
+    <contextParameter xmi:id="_1b7kvIqLEfC2SvupWX5JTA" comment="" name="sqlserver_in_demos_Database" prompt="sqlserver_in_demos_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="in_demos"/>
+    <contextParameter xmi:id="_1b7kvYqLEfC2SvupWX5JTA" comment="" name="sqlserver_in_demos_Schema" prompt="sqlserver_in_demos_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dbo"/>
+    <contextParameter xmi:id="_1b7kvoqLEfC2SvupWX5JTA" comment="" name="sqlserver_in_demos_Password" prompt="sqlserver_in_demos_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:731sjbiLuJwUjdSzL+fc9QKgE5NFzcIh7VNgl8YsgC99yatPKO4Ce6A="/>
+    <contextParameter xmi:id="_1b7kv4qLEfC2SvupWX5JTA" comment="" name="sqlserver_in_demos_AdditionalParams" prompt="sqlserver_in_demos_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_1b7kwIqLEfC2SvupWX5JTA" confirmationNeeded="false" hide="false" name="qdi_server">
+    <contextParameter xmi:id="_1b7kwYqLEfC2SvupWX5JTA" comment="" name="sqlserver_in_demos_Port" prompt="sqlserver_in_demos_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter xmi:id="_1b7kwoqLEfC2SvupWX5JTA" comment="" name="sqlserver_in_demos_Login" prompt="sqlserver_in_demos_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="qlik_rpl"/>
+    <contextParameter xmi:id="_1b7kw4qLEfC2SvupWX5JTA" comment="" name="sqlserver_in_demos_Server" prompt="sqlserver_in_demos_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="119.8.85.214"/>
+    <contextParameter xmi:id="_1b7kxIqLEfC2SvupWX5JTA" comment="" name="sqlserver_in_demos_Database" prompt="sqlserver_in_demos_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="in_demos"/>
+    <contextParameter xmi:id="_1b7kxYqLEfC2SvupWX5JTA" comment="" name="sqlserver_in_demos_Schema" prompt="sqlserver_in_demos_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dbo"/>
+    <contextParameter xmi:id="_1b7kxoqLEfC2SvupWX5JTA" comment="" name="sqlserver_in_demos_Password" prompt="sqlserver_in_demos_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:U3yruHBx/Y/8DbbGBy9XfGAtiznxDM5ki6QB976Tt206Ug2Tmi5Nrjw="/>
+    <contextParameter xmi:id="_1b7kx4qLEfC2SvupWX5JTA" comment="" name="sqlserver_in_demos_AdditionalParams" prompt="sqlserver_in_demos_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

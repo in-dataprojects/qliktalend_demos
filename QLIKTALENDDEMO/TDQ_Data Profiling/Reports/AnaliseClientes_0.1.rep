@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_QzuzQY5xEfC2SvupWX5JTA" name="AnaliseClientes" creationDate="2025-09-10T15:09:15.726-0300" defaultContext="Default">
+  <clientDependency href="../Analyses/AnaliseClientes_0.1.ana#_QzwBYI5xEfC2SvupWX5JTA"/>
+  <taggedValue xmi:id="_QzuzQo5xEfC2SvupWX5JTA" tag="OutputFolder" value=""/>
+  <taggedValue xmi:id="_QzuzQ45xEfC2SvupWX5JTA" tag="REP_DBINFO_DBTYPE" value="MySQL"/>
+  <taggedValue xmi:id="_QzuzRI5xEfC2SvupWX5JTA" tag="REP_DBINFO_DBVERSION" value="MYSQL_8"/>
+  <taggedValue xmi:id="_QzuzRY5xEfC2SvupWX5JTA" tag="REP_DBINFO_HOST" value="119.8.85.214"/>
+  <taggedValue xmi:id="_QzuzRo5xEfC2SvupWX5JTA" tag="REP_DBINFO_PORT" value="3306"/>
+  <taggedValue xmi:id="_QzuzR45xEfC2SvupWX5JTA" tag="REP_DBINFO_WAREHOUSE" value=""/>
+  <taggedValue xmi:id="_QzuzSI5xEfC2SvupWX5JTA" tag="REP_DBINFO_DBNAME" value="talend_dq"/>
+  <taggedValue xmi:id="_QzuzSY5xEfC2SvupWX5JTA" tag="REP_DBINFO_SCHEMA" value=""/>
+  <taggedValue xmi:id="_QzuzSo5xEfC2SvupWX5JTA" tag="REP_DBINFO_USER" value="root"/>
+  <taggedValue xmi:id="_QzuzS45xEfC2SvupWX5JTA" tag="REP_DBINFO_PASSWORD" value="enc:system.encryption.key.v1:0+apgaKFVcBUo8p6vkaIy/XA8wpwZe3FOSOw4Aat+PJ3+CwkzmbmtA=="/>
+  <taggedValue xmi:id="_QzuzTI5xEfC2SvupWX5JTA" tag="REP_DBINFO_PARAMETER" value="characterEncoding=UTF8"/>
+  <taggedValue xmi:id="_QzuzTY5xEfC2SvupWX5JTA" tag="REP_DBINFO_URL" value="jdbc:mysql://119.8.85.214:3306/talend_dq?characterEncoding=UTF8"/>
+  <taggedValue xmi:id="_QzuzTo5xEfC2SvupWX5JTA" tag="REP_DBINFO_DRIVER" value="com.mysql.cj.jdbc.Driver"/>
+  <taggedValue xmi:id="_QzuzT45xEfC2SvupWX5JTA" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.MySQLDialect"/>
+  <taggedValue xmi:id="_QzuzUI5xEfC2SvupWX5JTA" tag="REP_PASSWORD_CONTEXT" value="false"/>
+  <taggedValue xmi:id="_QzuzUY5xEfC2SvupWX5JTA" tag="Author" value="washington.nascimento@inteligenciadenegocios_nfr"/>
+  <taggedValue xmi:id="_e3khcI5xEfC2SvupWX5JTA" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_e3khcY5xEfC2SvupWX5JTA" tag="Description" value=""/>
+  <taggedValue xmi:id="_e3khco5xEfC2SvupWX5JTA" tag="Status" value="development"/>
+  <taggedValue xmi:id="_e3khc45xEfC2SvupWX5JTA" tag="OutputFileName" value=""/>
+  <taggedValue xmi:id="_e3khdI5xEfC2SvupWX5JTA" tag="Single output" value="false"/>
+  <taggedValue xmi:id="_e3lIgI5xEfC2SvupWX5JTA" tag="OutputType" value="pdf"/>
+  <taggedValue xmi:id="_e3lIgY5xEfC2SvupWX5JTA" tag="REP_GENERATE_FILE" value="false"/>
+  <taggedValue xmi:id="_e3lIg45xEfC2SvupWX5JTA" tag="REP_LAST_RUN_CONTEXT" value="Default"/>
+  <analysisMap xmi:id="_QzuzUo5xEfC2SvupWX5JTA" mustRefresh="true" reportType="Evolution">
+    <analysis href="../Analyses/AnaliseClientes_0.1.ana#_9BD6AY5wEfC2SvupWX5JTA"/>
+  </analysisMap>
+  <ExecInformations xmi:id="_mjBKMI5xEfC2SvupWX5JTA" executionDate="2025-09-10T15:11:38.350-0300" executionDuration="3429" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
+  <context xmi:id="_e3lIgo5xEfC2SvupWX5JTA" confirmationNeeded="false" hide="false" name="Default"/>
+</dataquality.reports:TdReport>

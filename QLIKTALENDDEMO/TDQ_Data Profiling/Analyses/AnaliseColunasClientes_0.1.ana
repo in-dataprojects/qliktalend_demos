@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_OUaywIyxEfC2SvupWX5JTA" name="AnaliseColunasClientes" creationDate="2025-09-08T09:42:04.582-0300" defaultContext="Default">
+    <taggedValue xmi:id="_OUaywYyxEfC2SvupWX5JTA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_OUaywoyxEfC2SvupWX5JTA" tag="Author" value="washington.nascimento@inteligenciadenegocios_nfr"/>
+    <taggedValue xmi:id="_OUayw4yxEfC2SvupWX5JTA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_OUayxIyxEfC2SvupWX5JTA" tag="Description" value=""/>
+    <taggedValue xmi:id="_OUayxYyxEfC2SvupWX5JTA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_PEngoYyxEfC2SvupWX5JTA" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_PEngooyxEfC2SvupWX5JTA" tag="PREVIEW_ROW_NUMBER" value="50"/>
+    <taggedValue xmi:id="_PEngo4yxEfC2SvupWX5JTA" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <taggedValue xmi:id="_PE6bkIyxEfC2SvupWX5JTA" tag="Is Use Sample Data" value="false"/>
+    <context xmi:id="_OUayxoyxEfC2SvupWX5JTA"/>
+    <results xmi:id="_OUayx4yxEfC2SvupWX5JTA">
+      <resultMetadata xmi:id="_OUayyIyxEfC2SvupWX5JTA"/>
+    </results>
+    <parameters xmi:id="_OUayyYyxEfC2SvupWX5JTA" dataFilter="_PE7CoIyxEfC2SvupWX5JTA" analysisType="Multiple Column Analysis"/>
+    <contextType xmi:id="_PEngoIyxEfC2SvupWX5JTA" confirmationNeeded="false" hide="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_PE7CoIyxEfC2SvupWX5JTA" name="AnaliseColunasClientes">
+    <ranges xmi:id="_PE7CoYyxEfC2SvupWX5JTA">
+      <expressions xmi:id="_PE7CooyxEfC2SvupWX5JTA">
+        <expression xsi:type="relational:TdExpression" xmi:id="_PE7Co4yxEfC2SvupWX5JTA" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>

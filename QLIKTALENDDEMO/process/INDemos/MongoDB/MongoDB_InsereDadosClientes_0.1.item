@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" hide="false" name="Default"/>
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" name="mysql_in_demos_Port" prompt="mysql_in_demos_Port?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="3306" internalId="_7ufkYIqKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Login" prompt="mysql_in_demos_Login?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="root" internalId="_7ufkYYqKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Server" prompt="mysql_in_demos_Server?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="localhost" internalId="_7ufkYoqKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Database" prompt="mysql_in_demos_Database?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="in_demos" internalId="_7ufkY4qKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Password" prompt="mysql_in_demos_Password?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_Password" value="enc:system.encryption.key.v1:HwvJOy+N50/w4u6//NRTh3Mdjy2x4CyqVGg0wWlNE1w=" internalId="_7ugLcIqKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_AdditionalParams" prompt="mysql_in_demos_AdditionalParams?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" internalId="_7ugLcYqKEfC2SvupWX5JTA"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="local">
+    <contextParameter comment="" name="mysql_in_demos_Port" prompt="mysql_in_demos_Port?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="3306" internalId="_7ugLcoqKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Login" prompt="mysql_in_demos_Login?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="root" internalId="_7ugLc4qKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Server" prompt="mysql_in_demos_Server?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="localhost" internalId="_7ugLdIqKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Database" prompt="mysql_in_demos_Database?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="in_demos" internalId="_7ugLdYqKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Password" prompt="mysql_in_demos_Password?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_Password" value="enc:system.encryption.key.v1:mECiJ1N66AQtiETFqEgJJotzxab+MDicl8mOSF9k7g4=" internalId="_7ugLdoqKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_AdditionalParams" prompt="mysql_in_demos_AdditionalParams?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" internalId="_7ugLd4qKEfC2SvupWX5JTA"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="qdi_server">
+    <contextParameter comment="" name="mysql_in_demos_Port" prompt="mysql_in_demos_Port?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="3306" internalId="_7ugLeIqKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Login" prompt="mysql_in_demos_Login?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="root" internalId="_7ugLeYqKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Server" prompt="mysql_in_demos_Server?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="localhost" internalId="_7ugLeoqKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Database" prompt="mysql_in_demos_Database?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="in_demos" internalId="_7ugLe4qKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Password" prompt="mysql_in_demos_Password?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_Password" value="enc:system.encryption.key.v1:faml5dId/Id5+jr+XAxZ9J6udY7azeu3piCsPHoX7mQ=" internalId="_7ugLfIqKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_AdditionalParams" prompt="mysql_in_demos_AdditionalParams?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" internalId="_7ugLfYqKEfC2SvupWX5JTA"/>
+  </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
@@ -99,6 +122,7 @@
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
     <routinesParameter id="_tUY_UI1zEe-P95gFpWdVDQ" name="INDataGenerator"/>
+    <routinesParameter id="_uDi24CvPEemn7J3ssWShHg" name="r"/>
   </parameters>
   <node componentName="tMongoDBConnection" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="120" posY="-80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMongoDBConnection_1" show="false"/>
@@ -165,20 +189,20 @@
     <elementParameter field="CHECK" name="SPECIFY_FIELDS" value="false" show="false"/>
     <elementParameter field="TABLE" name="FIELDS_TO_RETURN" show="false"/>
     <elementParameter field="TABLE" name="MAPPING">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nome"/>
-      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Sobrenome"/>
-      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Endereco"/>
-      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CPF"/>
-      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Email"/>
-      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nome" id="0"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sobrenome" id="2"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Endereco" id="4"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CPF" id="6"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Email" id="8"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="" id="9"/>
     </elementParameter>
     <elementParameter field="TABLE" name="SORT">
-      <elementValue elementRef="COLNAME" value="&quot;Nome&quot;"/>
-      <elementValue elementRef="ORDER" value="asc"/>
+      <elementValue elementRef="COLNAME" value="&quot;Nome&quot;" id="0"/>
+      <elementValue elementRef="ORDER" value="asc" id="1"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LIMIT" value=""/>
     <elementParameter field="TEXT" name="SKIP" value=""/>
@@ -214,16 +238,16 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nome"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Sobrenome"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Endereco"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CPF"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Email"/>
-      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nome" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sobrenome" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Endereco" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CPF" id="6"/>
+      <elementValue elementRef="LENGTH" value="10" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Email" id="8"/>
+      <elementValue elementRef="LENGTH" value="10" id="9"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
@@ -251,14 +275,14 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRowGenerator_1" show="false"/>
     <elementParameter field="TEXT" name="NB_ROWS" value="100" show="false"/>
     <elementParameter field="TABLE" name="VALUES" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nome"/>
-      <elementValue elementRef="ARRAY" value="INDataGenerator.getNome()"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Sobrenome"/>
-      <elementValue elementRef="ARRAY" value="INDataGenerator.getSobrenome()"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Endereco"/>
-      <elementValue elementRef="ARRAY" value="INDataGenerator.getEndereco()"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CPF"/>
-      <elementValue elementRef="ARRAY" value="INDataGenerator.gerarCpf()"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nome" id="0"/>
+      <elementValue elementRef="ARRAY" value="INDataGenerator.getNome()" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sobrenome" id="2"/>
+      <elementValue elementRef="ARRAY" value="INDataGenerator.getSobrenome()" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Endereco" id="4"/>
+      <elementValue elementRef="ARRAY" value="INDataGenerator.getEndereco()" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CPF" id="6"/>
+      <elementValue elementRef="ARRAY" value="INDataGenerator.gerarCpf()" id="7"/>
     </elementParameter>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="TEXT" name="LABEL" value="Gerar Dados"/>
@@ -280,8 +304,8 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="560" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="// code sample:&#xA;//&#xA;// multiply by 2 the row identifier&#xA;// output_row.id = input_row.id * 2;&#xA;//&#xA;// lowercase the name&#xA;// output_row.name = input_row.name.toLowerCase();&#xA;&#xA;&#xA;output_row.Nome = input_row.Nome;&#xA;output_row.Sobrenome = input_row.Sobrenome;&#xA;output_row.CPF = input_row.CPF;&#xA;output_row.Endereco = input_row.Endereco;&#xA;output_row.Email = StringHandling.DOWNCASE(input_row.Nome + &quot;.&quot; + input_row.Sobrenome + INDataGenerator.getEmailDomain());"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="// code sample:&#xA;//&#xA;// multiply by 2 the row identifier&#xA;// output_row.id = input_row.id * 2;&#xA;//&#xA;// lowercase the name&#xA;// output_row.name = input_row.name.toLowerCase();&#xA;&#xA;&#xA;output_row.Nome = input_row.Nome;&#xA;output_row.Sobrenome = input_row.Sobrenome;&#xA;output_row.CPF = input_row.CPF;&#xA;output_row.Endereco = input_row.Endereco;&#xA;output_row.Email = StringHandling.DOWNCASE(input_row.Nome + &quot;.&quot; + input_row.Sobrenome + INDataGenerator.getEmailDomain());"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_1">
       <column comment="" key="false" length="100" name="Nome" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true">
@@ -307,11 +331,11 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;in_demos&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Tr23WZlJszCEdbWAcFdUV4NSMmZ/+nCVWOPjHKH0anfEdA=="/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysql_in_demos_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql_in_demos_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysql_in_demos_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.mysql_in_demos_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:SJ5W6MpS7eq8TTKnWhKyCbjgpqOQbqm/PcfJ70+jKX+MJKN08WaSxKYQBC+x94SisOCZpsd6GORIZ5Q="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;clientes&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -322,7 +346,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql_in_demos_AdditionalParams"/>
     <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
     <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
@@ -331,31 +355,31 @@
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nome"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Sobrenome"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Endereco"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CPF"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Email"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nome" id="0"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="1"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="2"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="3"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="4"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sobrenome" id="5"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="6"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="7"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="8"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Endereco" id="10"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="11"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="12"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="13"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="14"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CPF" id="15"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="16"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="17"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="18"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Email" id="20"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="21"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="22"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="23"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="24"/>
     </elementParameter>
     <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
@@ -429,16 +453,16 @@
     <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nome"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Sobrenome"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Endereco"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CPF"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Email"/>
-      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nome" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sobrenome" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Endereco" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CPF" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Email" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -495,31 +519,31 @@
     <elementParameter field="CHECK" name="UPDATE_ALL" value="false" show="false"/>
     <elementParameter field="CHECK" name="DELETE_ALL" value="false" show="false"/>
     <elementParameter field="TABLE" name="MAPPING">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nome"/>
-      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
-      <elementValue elementRef="REMOVE_NULL_FIELD" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Sobrenome"/>
-      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
-      <elementValue elementRef="REMOVE_NULL_FIELD" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Endereco"/>
-      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
-      <elementValue elementRef="REMOVE_NULL_FIELD" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CPF"/>
-      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
-      <elementValue elementRef="REMOVE_NULL_FIELD" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Email"/>
-      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
-      <elementValue elementRef="REMOVE_NULL_FIELD" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nome" id="0"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="" id="1"/>
+      <elementValue elementRef="REMOVE_NULL_FIELD" value="false" id="2"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="3"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="4"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sobrenome" id="5"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="" id="6"/>
+      <elementValue elementRef="REMOVE_NULL_FIELD" value="false" id="7"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="8"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Endereco" id="10"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="" id="11"/>
+      <elementValue elementRef="REMOVE_NULL_FIELD" value="false" id="12"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="13"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="14"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CPF" id="15"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="" id="16"/>
+      <elementValue elementRef="REMOVE_NULL_FIELD" value="false" id="17"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="18"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Email" id="20"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="" id="21"/>
+      <elementValue elementRef="REMOVE_NULL_FIELD" value="false" id="22"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="23"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="24"/>
     </elementParameter>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="CHECK" name="QUERYOPTION_NOTIMEOUT" value="false" show="false"/>
@@ -561,13 +585,13 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_sK3YAI1eEe-P95gFpWdVDQ" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysql_in_demos_Server"/>
     <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;in_demos&quot;"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:RJWXXEPmZ4n9XoNzXWFEsr9pZTZ3fDLnFBpFR1aT0gEDNw=="/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql_in_demos_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysql_in_demos_Database"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql_in_demos_AdditionalParams"/>
+    <elementParameter field="TEXT" name="USER" value="context.mysql_in_demos_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Fy3EzKLRPYpRheMKlXoChP9Sj0kU3QQycb3FApjW3JpbxTzho1a6ihor5DMiKQ0/FwG7NrSkxEFUi1g="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
@@ -585,36 +609,36 @@
   </connection>
   <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tMongoDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tMongoDBInput_2" target="tLogRow_2">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="content"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="title"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="keyword"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="CPF"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="max"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="avg"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Nome"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Sobrenome"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Email"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Endereco"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="content" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="title" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+      <elementValue elementRef="TRACE_COLUMN" value="keyword" id="6"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+      <elementValue elementRef="TRACE_COLUMN" value="CPF" id="9"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+      <elementValue elementRef="TRACE_COLUMN" value="max" id="12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
+      <elementValue elementRef="TRACE_COLUMN" value="avg" id="15"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="16"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="17"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Nome" id="18"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="19"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="20"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Sobrenome" id="21"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="22"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="23"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Email" id="24"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="25"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="26"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Endereco" id="27"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="28"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="29"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
@@ -626,21 +650,21 @@
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tRowGenerator_1" offsetLabelX="0" offsetLabelY="0" source="tRowGenerator_1" target="tJavaRow_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="StateCode"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="count"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="min"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="max"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="avg"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="StateCode" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="count" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+      <elementValue elementRef="TRACE_COLUMN" value="min" id="6"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+      <elementValue elementRef="TRACE_COLUMN" value="max" id="9"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+      <elementValue elementRef="TRACE_COLUMN" value="avg" id="12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
@@ -651,9 +675,9 @@
   </connection>
   <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tDBOutput_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="Email"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Email" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>

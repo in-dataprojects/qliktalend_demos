@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_eJcyIIqKEfC2SvupWX5JTA" confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter xmi:id="_eJcyIYqKEfC2SvupWX5JTA" comment="" name="postgres_in_demos_public_Port" prompt="postgres_in_demos_public_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_eJcyIoqKEfC2SvupWX5JTA" comment="" name="postgres_in_demos_public_Login" prompt="postgres_in_demos_public_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_eJcyI4qKEfC2SvupWX5JTA" comment="" name="postgres_in_demos_public_Server" prompt="postgres_in_demos_public_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost"/>
+    <contextParameter xmi:id="_eJcyJIqKEfC2SvupWX5JTA" comment="" name="postgres_in_demos_public_Database" prompt="postgres_in_demos_public_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_eJcyJYqKEfC2SvupWX5JTA" comment="" name="postgres_in_demos_public_Schema" prompt="postgres_in_demos_public_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="public"/>
+    <contextParameter xmi:id="_eJcyJoqKEfC2SvupWX5JTA" comment="" name="postgres_in_demos_public_Password" prompt="postgres_in_demos_public_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:SIqqKcCN3Ml7211LyMSvmhHb1ijDZhXH3yOTJsdR5y7i3Sak"/>
+    <contextParameter xmi:id="_eJcyJ4qKEfC2SvupWX5JTA" comment="" name="postgres_in_demos_public_AdditionalParams" prompt="postgres_in_demos_public_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_eJcyKIqKEfC2SvupWX5JTA" confirmationNeeded="false" hide="false" name="local">
+    <contextParameter xmi:id="_eJcyKYqKEfC2SvupWX5JTA" comment="" name="postgres_in_demos_public_Port" prompt="postgres_in_demos_public_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_eJcyKoqKEfC2SvupWX5JTA" comment="" name="postgres_in_demos_public_Login" prompt="postgres_in_demos_public_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_eJcyK4qKEfC2SvupWX5JTA" comment="" name="postgres_in_demos_public_Server" prompt="postgres_in_demos_public_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost"/>
+    <contextParameter xmi:id="_eJcyLIqKEfC2SvupWX5JTA" comment="" name="postgres_in_demos_public_Database" prompt="postgres_in_demos_public_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_eJcyLYqKEfC2SvupWX5JTA" comment="" name="postgres_in_demos_public_Schema" prompt="postgres_in_demos_public_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="public"/>
+    <contextParameter xmi:id="_eJcyLoqKEfC2SvupWX5JTA" comment="" name="postgres_in_demos_public_Password" prompt="postgres_in_demos_public_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:Ezz2yNFgXkzl0gQWf3UxJxFrntxa4xkSK9FgJLlPEhuorHQh"/>
+    <contextParameter xmi:id="_eJcyL4qKEfC2SvupWX5JTA" comment="" name="postgres_in_demos_public_AdditionalParams" prompt="postgres_in_demos_public_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_eJcyMIqKEfC2SvupWX5JTA" confirmationNeeded="false" hide="false" name="qdi_server">
+    <contextParameter xmi:id="_eJcyMYqKEfC2SvupWX5JTA" comment="" name="postgres_in_demos_public_Port" prompt="postgres_in_demos_public_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5433"/>
+    <contextParameter xmi:id="_eJcyMoqKEfC2SvupWX5JTA" comment="" name="postgres_in_demos_public_Login" prompt="postgres_in_demos_public_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_eJcyM4qKEfC2SvupWX5JTA" comment="" name="postgres_in_demos_public_Server" prompt="postgres_in_demos_public_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="119.8.85.214"/>
+    <contextParameter xmi:id="_eJcyNIqKEfC2SvupWX5JTA" comment="" name="postgres_in_demos_public_Database" prompt="postgres_in_demos_public_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_eJcyNYqKEfC2SvupWX5JTA" comment="" name="postgres_in_demos_public_Schema" prompt="postgres_in_demos_public_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="public"/>
+    <contextParameter xmi:id="_eJcyNoqKEfC2SvupWX5JTA" comment="" name="postgres_in_demos_public_Password" prompt="postgres_in_demos_public_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:agzJhS/ZbW5+coNXyG8iPxXISRsXdmWHlLcwIg7rPb2j1ipdsxb30g=="/>
+    <contextParameter xmi:id="_eJcyN4qKEfC2SvupWX5JTA" comment="" name="postgres_in_demos_public_AdditionalParams" prompt="postgres_in_demos_public_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

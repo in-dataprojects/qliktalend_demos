@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_BESkYIqLEfC2SvupWX5JTA" confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter xmi:id="_BESkYYqLEfC2SvupWX5JTA" comment="" name="mysql_in_ferragens_Port" prompt="mysql_in_ferragens_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_BESkYoqLEfC2SvupWX5JTA" comment="" name="mysql_in_ferragens_Login" prompt="mysql_in_ferragens_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="root"/>
+    <contextParameter xmi:id="_BESkY4qLEfC2SvupWX5JTA" comment="" name="mysql_in_ferragens_Server" prompt="mysql_in_ferragens_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="119.8.85.214"/>
+    <contextParameter xmi:id="_BESkZIqLEfC2SvupWX5JTA" comment="" name="mysql_in_ferragens_Database" prompt="mysql_in_ferragens_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="vendas_in_pecas"/>
+    <contextParameter xmi:id="_BESkZYqLEfC2SvupWX5JTA" comment="" name="mysql_in_ferragens_Password" prompt="mysql_in_ferragens_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:rsBMZ1gwAdRZBGAOIjmIVb6MSZSISYW0oBuZauVrVwfqnMLrEap38w=="/>
+    <contextParameter xmi:id="_BESkZoqLEfC2SvupWX5JTA" comment="" name="mysql_in_ferragens_AdditionalParams" prompt="mysql_in_ferragens_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_BESkZ4qLEfC2SvupWX5JTA" confirmationNeeded="false" hide="false" name="local">
+    <contextParameter xmi:id="_BESkaIqLEfC2SvupWX5JTA" comment="" name="mysql_in_ferragens_Port" prompt="mysql_in_ferragens_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_BESkaYqLEfC2SvupWX5JTA" comment="" name="mysql_in_ferragens_Login" prompt="mysql_in_ferragens_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="root"/>
+    <contextParameter xmi:id="_BESkaoqLEfC2SvupWX5JTA" comment="" name="mysql_in_ferragens_Server" prompt="mysql_in_ferragens_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="119.8.85.214"/>
+    <contextParameter xmi:id="_BESka4qLEfC2SvupWX5JTA" comment="" name="mysql_in_ferragens_Database" prompt="mysql_in_ferragens_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="vendas_in_pecas"/>
+    <contextParameter xmi:id="_BESkbIqLEfC2SvupWX5JTA" comment="" name="mysql_in_ferragens_Password" prompt="mysql_in_ferragens_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:V+RWnSboC4CMfa5HQ8UGJZVSFe9DCc5VuGplbr+msyjk8HHXpVjQIw=="/>
+    <contextParameter xmi:id="_BESkbYqLEfC2SvupWX5JTA" comment="" name="mysql_in_ferragens_AdditionalParams" prompt="mysql_in_ferragens_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_BESkboqLEfC2SvupWX5JTA" confirmationNeeded="false" hide="false" name="qdi_server">
+    <contextParameter xmi:id="_BESkb4qLEfC2SvupWX5JTA" comment="" name="mysql_in_ferragens_Port" prompt="mysql_in_ferragens_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_BESkcIqLEfC2SvupWX5JTA" comment="" name="mysql_in_ferragens_Login" prompt="mysql_in_ferragens_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="root"/>
+    <contextParameter xmi:id="_BESkcYqLEfC2SvupWX5JTA" comment="" name="mysql_in_ferragens_Server" prompt="mysql_in_ferragens_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="119.8.85.214"/>
+    <contextParameter xmi:id="_BESkcoqLEfC2SvupWX5JTA" comment="" name="mysql_in_ferragens_Database" prompt="mysql_in_ferragens_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="vendas_in_pecas"/>
+    <contextParameter xmi:id="_BESkc4qLEfC2SvupWX5JTA" comment="" name="mysql_in_ferragens_Password" prompt="mysql_in_ferragens_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:5nvr21GO/Hf4C9Nuv9FTggGaNhKhU93+e7HA0+MlTaMEfVIJuXJQKQ=="/>
+    <contextParameter xmi:id="_BESkdIqLEfC2SvupWX5JTA" comment="" name="mysql_in_ferragens_AdditionalParams" prompt="mysql_in_ferragens_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1"/>
+  </talendfile:ContextType>
+</xmi:XMI>

@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" hide="false" name="Default"/>
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" name="mysql_in_ferragens_Port" prompt="mysql_in_ferragens_Port?" promptNeeded="false" repositoryContextId="_BEFJAIqLEfC2SvupWX5JTA" type="id_String" value="3306" internalId="_CB0joIqLEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_ferragens_Login" prompt="mysql_in_ferragens_Login?" promptNeeded="false" repositoryContextId="_BEFJAIqLEfC2SvupWX5JTA" type="id_String" value="root" internalId="_CB0joYqLEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_ferragens_Server" prompt="mysql_in_ferragens_Server?" promptNeeded="false" repositoryContextId="_BEFJAIqLEfC2SvupWX5JTA" type="id_String" value="119.8.85.214" internalId="_CB0jooqLEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_ferragens_Database" prompt="mysql_in_ferragens_Database?" promptNeeded="false" repositoryContextId="_BEFJAIqLEfC2SvupWX5JTA" type="id_String" value="vendas_in_pecas" internalId="_CB0jo4qLEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_ferragens_Password" prompt="mysql_in_ferragens_Password?" promptNeeded="false" repositoryContextId="_BEFJAIqLEfC2SvupWX5JTA" type="id_Password" value="enc:system.encryption.key.v1:b0dhxNwGxmnDKBb6w0bBKcnPhrnHA1gr1vEsFmkBu/j54I34qe3+lA==" internalId="_CB0jpIqLEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_ferragens_AdditionalParams" prompt="mysql_in_ferragens_AdditionalParams?" promptNeeded="false" repositoryContextId="_BEFJAIqLEfC2SvupWX5JTA" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" internalId="_CB0jpYqLEfC2SvupWX5JTA"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="local">
+    <contextParameter comment="" name="mysql_in_ferragens_Port" prompt="mysql_in_ferragens_Port?" promptNeeded="false" repositoryContextId="_BEFJAIqLEfC2SvupWX5JTA" type="id_String" value="3306" internalId="_CB0jpoqLEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_ferragens_Login" prompt="mysql_in_ferragens_Login?" promptNeeded="false" repositoryContextId="_BEFJAIqLEfC2SvupWX5JTA" type="id_String" value="root" internalId="_CB0jp4qLEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_ferragens_Server" prompt="mysql_in_ferragens_Server?" promptNeeded="false" repositoryContextId="_BEFJAIqLEfC2SvupWX5JTA" type="id_String" value="119.8.85.214" internalId="_CB0jqIqLEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_ferragens_Database" prompt="mysql_in_ferragens_Database?" promptNeeded="false" repositoryContextId="_BEFJAIqLEfC2SvupWX5JTA" type="id_String" value="vendas_in_pecas" internalId="_CB0jqYqLEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_ferragens_Password" prompt="mysql_in_ferragens_Password?" promptNeeded="false" repositoryContextId="_BEFJAIqLEfC2SvupWX5JTA" type="id_Password" value="enc:system.encryption.key.v1:OD7DzCIA7BHAyPIN9H4l4mFBvoPH3/i8U8j579hApzoLPgJVYnSg/g==" internalId="_CB0jqoqLEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_ferragens_AdditionalParams" prompt="mysql_in_ferragens_AdditionalParams?" promptNeeded="false" repositoryContextId="_BEFJAIqLEfC2SvupWX5JTA" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" internalId="_CB0jq4qLEfC2SvupWX5JTA"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="qdi_server">
+    <contextParameter comment="" name="mysql_in_ferragens_Port" prompt="mysql_in_ferragens_Port?" promptNeeded="false" repositoryContextId="_BEFJAIqLEfC2SvupWX5JTA" type="id_String" value="3306" internalId="_CB0jrIqLEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_ferragens_Login" prompt="mysql_in_ferragens_Login?" promptNeeded="false" repositoryContextId="_BEFJAIqLEfC2SvupWX5JTA" type="id_String" value="root" internalId="_CB0jrYqLEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_ferragens_Server" prompt="mysql_in_ferragens_Server?" promptNeeded="false" repositoryContextId="_BEFJAIqLEfC2SvupWX5JTA" type="id_String" value="119.8.85.214" internalId="_CB0jroqLEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_ferragens_Database" prompt="mysql_in_ferragens_Database?" promptNeeded="false" repositoryContextId="_BEFJAIqLEfC2SvupWX5JTA" type="id_String" value="vendas_in_pecas" internalId="_CB0jr4qLEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_ferragens_Password" prompt="mysql_in_ferragens_Password?" promptNeeded="false" repositoryContextId="_BEFJAIqLEfC2SvupWX5JTA" type="id_Password" value="enc:system.encryption.key.v1:oTMM58ctx81/4QMwUzXUULSSts5xFvuvRPv6rwYHLTsFgbaeZf8/NQ==" internalId="_CB0jsIqLEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_ferragens_AdditionalParams" prompt="mysql_in_ferragens_AdditionalParams?" promptNeeded="false" repositoryContextId="_BEFJAIqLEfC2SvupWX5JTA" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" internalId="_CB0jsYqLEfC2SvupWX5JTA"/>
+  </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
@@ -173,11 +196,11 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;119.8.85.214&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;vendas_in_pecas&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:xDyGgncnOUmgYHBUCd9fWhP+yPHZ3xR+gk+pwKiFtxhZshUJsWvqa+tz"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysql_in_ferragens_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql_in_ferragens_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysql_in_ferragens_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.mysql_in_ferragens_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:XZSfh2r/oRAzwXPKxXN2yA5avMy+UP+m4RNto/wVNPGFeCSI/Zt8Ii5D253PrQOfmF3IHifHBcOdxje+h6uD"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;categoria&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -186,7 +209,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql_in_ferragens_AdditionalParams"/>
     <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
     <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
@@ -334,11 +357,11 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;119.8.85.214&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;vendas_in_pecas&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:2cBFPuI2/HYvwv8W50MSFBWL7vrP3w426L3UwPbzCugPWklyqUSaJ2W2"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysql_in_ferragens_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql_in_ferragens_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysql_in_ferragens_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.mysql_in_ferragens_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:N/A4M5lZBELv1Pky6/rAKJR/W/SDwubz8PUT+zp5ueXt7FDcmVfKH9eXNsnraca1PoL6vWmeXMk8Yc7N8liU"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;clientes&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -347,7 +370,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql_in_ferragens_AdditionalParams"/>
     <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
     <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
@@ -586,11 +609,11 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;119.8.85.214&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;vendas_in_pecas&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:zYk8xFvTWUdeVHQC6TBmDLhPXUI45FvRbOxPh4WKTbJNjoQudfk2jVMc"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysql_in_ferragens_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql_in_ferragens_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysql_in_ferragens_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.mysql_in_ferragens_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:VTrKget9+5Btei8yRihst8GPj7uS2iAFQYkq9BMwhX43ajODBehi1aClVngkv7PzihuB57SOqcO1APWm76oy"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;nf_item&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -599,7 +622,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql_in_ferragens_AdditionalParams"/>
     <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
     <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
@@ -789,11 +812,11 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;119.8.85.214&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;vendas_in_pecas&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:vQi3S4UWmewGwa3bJAMiRXu3gkO5bxVbFtF5oyQUX/jeB3DAoZjYwwum"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysql_in_ferragens_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql_in_ferragens_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysql_in_ferragens_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.mysql_in_ferragens_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8WP17P85jpjpw2yrcae32K2ma4p0iqRN/WpfUXNKDVXjBRCyq7QDVpCbo0hTd/Cj0keDxsS5DMytetDdfb4w"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;produtos&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -802,7 +825,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql_in_ferragens_AdditionalParams"/>
     <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
     <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
@@ -992,11 +1015,11 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;119.8.85.214&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;vendas_in_pecas&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:jzBZrAWYGtRwUIza+lNh6YIoMvOX8GdoN8JLPiaLqaV6rRNMuaWvywAa"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysql_in_ferragens_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql_in_ferragens_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysql_in_ferragens_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.mysql_in_ferragens_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:usNG0cCcrTU7dAZVE8Vgjm1B4Cm8ysqfDv4yeveU/n6gTh83cP5MAuVOQR7xxyCRChuwDLHplq57MkePil29"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;vendedor&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -1005,7 +1028,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql_in_ferragens_AdditionalParams"/>
     <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
     <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
@@ -1190,11 +1213,11 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;119.8.85.214&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;vendas_in_pecas&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:/EtQeiOaa/13+WT4pvkN0hbZIzBWAz/GiR8tyYR1So+DCrXPClki31/2"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysql_in_ferragens_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql_in_ferragens_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysql_in_ferragens_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.mysql_in_ferragens_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:SZ9CJRBp8m/fTv6/Dju9dkFnDW9dAXqGfsxqn28ty1DLq9RCo9ytuIUYDDQBTzSQ/iDp4N9pBW8cpVKmbnJG"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;nota_fiscal&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -1203,7 +1226,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql_in_ferragens_AdditionalParams"/>
     <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
     <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
