@@ -1,6 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" hide="false" name="Default"/>
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" name="mysql_in_demos_Port" prompt="mysql_in_demos_Port?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="3306" internalId="_QH6eIIqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Login" prompt="mysql_in_demos_Login?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="root" internalId="_QH6eIYqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Server" prompt="mysql_in_demos_Server?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="localhost" internalId="_QH6eIoqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Database" prompt="mysql_in_demos_Database?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="in_demos" internalId="_QH6eI4qXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Password" prompt="mysql_in_demos_Password?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_Password" value="enc:system.encryption.key.v1:vXYSrNRjRxRBDXpOYwrwiNYPJVuJ6PaU+RiMngWOf2Y=" internalId="_QH6eJIqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_AdditionalParams" prompt="mysql_in_demos_AdditionalParams?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" internalId="_QH6eJYqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="oracle_in_demos_Schema" prompt="oracle_in_demos_Schema?" promptNeeded="false" repositoryContextId="_jy870IqLEfC2SvupWX5JTA" type="id_String" value="QLIK_RPT" internalId="_QH6eJoqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="oracle_in_demos_Server" prompt="oracle_in_demos_Server?" promptNeeded="false" repositoryContextId="_jy870IqLEfC2SvupWX5JTA" type="id_String" value="119.8.85.214" internalId="_QH6eJ4qXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="oracle_in_demos_Login" prompt="oracle_in_demos_Login?" promptNeeded="false" repositoryContextId="_jy870IqLEfC2SvupWX5JTA" type="id_String" value="qlik_rpt" internalId="_QH6eKIqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="oracle_in_demos_ServiceName" prompt="oracle_in_demos_ServiceName?" promptNeeded="false" repositoryContextId="_jy870IqLEfC2SvupWX5JTA" type="id_String" value="XEPDB1" internalId="_QH6eKYqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="oracle_in_demos_Password" prompt="oracle_in_demos_Password?" promptNeeded="false" repositoryContextId="_jy870IqLEfC2SvupWX5JTA" type="id_Password" value="enc:system.encryption.key.v1:duVWnU6Jcs5pGyfuZ4QOlCqBIphTYHH4DeBrl2gy/rfcm/jRtEc/Hsg=" internalId="_QH6eKoqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="oracle_in_demos_Port" prompt="oracle_in_demos_Port?" promptNeeded="false" repositoryContextId="_jy870IqLEfC2SvupWX5JTA" type="id_String" value="1521" internalId="_QH6eK4qXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="oracle_in_demos_AdditionalParams" prompt="oracle_in_demos_AdditionalParams?" promptNeeded="false" repositoryContextId="_jy870IqLEfC2SvupWX5JTA" type="id_String" value="" internalId="_QH6eLIqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="sqlserver_in_demos_Database" prompt="sqlserver_in_demos_Database?" promptNeeded="false" repositoryContextId="_1bxzsIqLEfC2SvupWX5JTA" type="id_String" value="in_demos" internalId="_p8gUoI8YEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="sqlserver_in_demos_Password" prompt="sqlserver_in_demos_Password?" promptNeeded="false" repositoryContextId="_1bxzsIqLEfC2SvupWX5JTA" type="id_Password" value="enc:system.encryption.key.v1:5+SHVy0Q2lU1fqlR8L7+DferizK8iXs6iH8gHxhX4WkK/eAd4jmoTjs=" internalId="_p8gUoY8YEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="sqlserver_in_demos_AdditionalParams" prompt="sqlserver_in_demos_AdditionalParams?" promptNeeded="false" repositoryContextId="_1bxzsIqLEfC2SvupWX5JTA" type="id_String" value="" internalId="_p8gUoo8YEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="sqlserver_in_demos_Port" prompt="sqlserver_in_demos_Port?" promptNeeded="false" repositoryContextId="_1bxzsIqLEfC2SvupWX5JTA" type="id_String" value="1433" internalId="_p8gUo48YEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="sqlserver_in_demos_Login" prompt="sqlserver_in_demos_Login?" promptNeeded="false" repositoryContextId="_1bxzsIqLEfC2SvupWX5JTA" type="id_String" value="qlik_rpl" internalId="_p8gUpI8YEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="sqlserver_in_demos_Server" prompt="sqlserver_in_demos_Server?" promptNeeded="false" repositoryContextId="_1bxzsIqLEfC2SvupWX5JTA" type="id_String" value="119.8.85.214" internalId="_p8gUpY8YEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="sqlserver_in_demos_Schema" prompt="sqlserver_in_demos_Schema?" promptNeeded="false" repositoryContextId="_1bxzsIqLEfC2SvupWX5JTA" type="id_String" value="dbo" internalId="_p8gUpo8YEfC2SvupWX5JTA"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="local">
+    <contextParameter comment="" name="mysql_in_demos_Port" prompt="mysql_in_demos_Port?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="3306" internalId="_QH6eLYqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Login" prompt="mysql_in_demos_Login?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="root" internalId="_QH6eLoqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Server" prompt="mysql_in_demos_Server?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="localhost" internalId="_QH6eL4qXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Database" prompt="mysql_in_demos_Database?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="in_demos" internalId="_QH6eMIqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Password" prompt="mysql_in_demos_Password?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_Password" value="enc:system.encryption.key.v1:JfxvmqlokjkgIKLXI+UfLb04CQX2HPR4vmBjarIIog4=" internalId="_QH6eMYqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_AdditionalParams" prompt="mysql_in_demos_AdditionalParams?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" internalId="_QH6eMoqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="oracle_in_demos_Schema" prompt="oracle_in_demos_Schema?" promptNeeded="false" repositoryContextId="_jy870IqLEfC2SvupWX5JTA" type="id_String" value="QLIK_RPT" internalId="_QH6eM4qXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="oracle_in_demos_Server" prompt="oracle_in_demos_Server?" promptNeeded="false" repositoryContextId="_jy870IqLEfC2SvupWX5JTA" type="id_String" value="119.8.85.214" internalId="_QH6eNIqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="oracle_in_demos_Login" prompt="oracle_in_demos_Login?" promptNeeded="false" repositoryContextId="_jy870IqLEfC2SvupWX5JTA" type="id_String" value="qlik_rpt" internalId="_QH6eNYqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="oracle_in_demos_ServiceName" prompt="oracle_in_demos_ServiceName?" promptNeeded="false" repositoryContextId="_jy870IqLEfC2SvupWX5JTA" type="id_String" value="XEPDB1" internalId="_QH6eNoqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="oracle_in_demos_Password" prompt="oracle_in_demos_Password?" promptNeeded="false" repositoryContextId="_jy870IqLEfC2SvupWX5JTA" type="id_Password" value="enc:system.encryption.key.v1:EZ2yQzIwUcYgolPXpepNhmXLrvXT/UbQei2zutslYwsEzT3nJI+Ao+U=" internalId="_QH6eN4qXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="oracle_in_demos_Port" prompt="oracle_in_demos_Port?" promptNeeded="false" repositoryContextId="_jy870IqLEfC2SvupWX5JTA" type="id_String" value="1521" internalId="_QH6eOIqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="oracle_in_demos_AdditionalParams" prompt="oracle_in_demos_AdditionalParams?" promptNeeded="false" repositoryContextId="_jy870IqLEfC2SvupWX5JTA" type="id_String" value="" internalId="_QH6eOYqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="sqlserver_in_demos_Database" prompt="sqlserver_in_demos_Database?" promptNeeded="false" repositoryContextId="_1bxzsIqLEfC2SvupWX5JTA" type="id_String" value="in_demos" internalId="_p8g7sI8YEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="sqlserver_in_demos_Password" prompt="sqlserver_in_demos_Password?" promptNeeded="false" repositoryContextId="_1bxzsIqLEfC2SvupWX5JTA" type="id_Password" value="enc:system.encryption.key.v1:GK0OUx5xP/meM9CviPxmc1xOCc/BpxC3t6PJa/rebfxpQSIsuGjWZXk=" internalId="_p8g7sY8YEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="sqlserver_in_demos_AdditionalParams" prompt="sqlserver_in_demos_AdditionalParams?" promptNeeded="false" repositoryContextId="_1bxzsIqLEfC2SvupWX5JTA" type="id_String" value="" internalId="_p8g7so8YEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="sqlserver_in_demos_Port" prompt="sqlserver_in_demos_Port?" promptNeeded="false" repositoryContextId="_1bxzsIqLEfC2SvupWX5JTA" type="id_String" value="1433" internalId="_p8g7s48YEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="sqlserver_in_demos_Login" prompt="sqlserver_in_demos_Login?" promptNeeded="false" repositoryContextId="_1bxzsIqLEfC2SvupWX5JTA" type="id_String" value="qlik_rpl" internalId="_p8g7tI8YEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="sqlserver_in_demos_Server" prompt="sqlserver_in_demos_Server?" promptNeeded="false" repositoryContextId="_1bxzsIqLEfC2SvupWX5JTA" type="id_String" value="119.8.85.214" internalId="_p8g7tY8YEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="sqlserver_in_demos_Schema" prompt="sqlserver_in_demos_Schema?" promptNeeded="false" repositoryContextId="_1bxzsIqLEfC2SvupWX5JTA" type="id_String" value="dbo" internalId="_p8g7to8YEfC2SvupWX5JTA"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="qdi_server">
+    <contextParameter comment="" name="mysql_in_demos_Port" prompt="mysql_in_demos_Port?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="3306" internalId="_QH6eOoqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Login" prompt="mysql_in_demos_Login?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="root" internalId="_QH6eO4qXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Server" prompt="mysql_in_demos_Server?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="119.8.85.214" internalId="_QH6ePIqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Database" prompt="mysql_in_demos_Database?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="in_demos" internalId="_QH6ePYqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Password" prompt="mysql_in_demos_Password?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_Password" value="enc:system.encryption.key.v1:6TAIp+dxSYMG0GVukWLGs47rZi5TKi1B53FzEeZ1Wv+LXO1Ckvjz8A==" internalId="_QH7FMIqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_AdditionalParams" prompt="mysql_in_demos_AdditionalParams?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" internalId="_QH7FMYqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="oracle_in_demos_Schema" prompt="oracle_in_demos_Schema?" promptNeeded="false" repositoryContextId="_jy870IqLEfC2SvupWX5JTA" type="id_String" value="QLIK_RPT" internalId="_QH7FMoqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="oracle_in_demos_Server" prompt="oracle_in_demos_Server?" promptNeeded="false" repositoryContextId="_jy870IqLEfC2SvupWX5JTA" type="id_String" value="119.8.85.214" internalId="_QH7FM4qXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="oracle_in_demos_Login" prompt="oracle_in_demos_Login?" promptNeeded="false" repositoryContextId="_jy870IqLEfC2SvupWX5JTA" type="id_String" value="qlik_rpt" internalId="_QH7FNIqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="oracle_in_demos_ServiceName" prompt="oracle_in_demos_ServiceName?" promptNeeded="false" repositoryContextId="_jy870IqLEfC2SvupWX5JTA" type="id_String" value="XEPDB1" internalId="_QH7FNYqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="oracle_in_demos_Password" prompt="oracle_in_demos_Password?" promptNeeded="false" repositoryContextId="_jy870IqLEfC2SvupWX5JTA" type="id_Password" value="enc:system.encryption.key.v1:+7i7YelUBqDYwumm7vqxbk2yOl0Z1YIwoPoNVIOoAqrjx24OCzGhB8o=" internalId="_QH7FNoqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="oracle_in_demos_Port" prompt="oracle_in_demos_Port?" promptNeeded="false" repositoryContextId="_jy870IqLEfC2SvupWX5JTA" type="id_String" value="1521" internalId="_QH7FN4qXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="oracle_in_demos_AdditionalParams" prompt="oracle_in_demos_AdditionalParams?" promptNeeded="false" repositoryContextId="_jy870IqLEfC2SvupWX5JTA" type="id_String" value="" internalId="_QH7FOIqXEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="sqlserver_in_demos_Database" prompt="sqlserver_in_demos_Database?" promptNeeded="false" repositoryContextId="_1bxzsIqLEfC2SvupWX5JTA" type="id_String" value="in_demos" internalId="_p8g7t48YEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="sqlserver_in_demos_Password" prompt="sqlserver_in_demos_Password?" promptNeeded="false" repositoryContextId="_1bxzsIqLEfC2SvupWX5JTA" type="id_Password" value="enc:system.encryption.key.v1:hC6kQ8OoeEbtYtfX2MCgrmmE8/AQWQSmLneeFI3Mi3kawe5+F4aZwMM=" internalId="_p8g7uI8YEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="sqlserver_in_demos_AdditionalParams" prompt="sqlserver_in_demos_AdditionalParams?" promptNeeded="false" repositoryContextId="_1bxzsIqLEfC2SvupWX5JTA" type="id_String" value="" internalId="_p8g7uY8YEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="sqlserver_in_demos_Port" prompt="sqlserver_in_demos_Port?" promptNeeded="false" repositoryContextId="_1bxzsIqLEfC2SvupWX5JTA" type="id_String" value="1433" internalId="_p8g7uo8YEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="sqlserver_in_demos_Login" prompt="sqlserver_in_demos_Login?" promptNeeded="false" repositoryContextId="_1bxzsIqLEfC2SvupWX5JTA" type="id_String" value="qlik_rpl" internalId="_p8g7u48YEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="sqlserver_in_demos_Server" prompt="sqlserver_in_demos_Server?" promptNeeded="false" repositoryContextId="_1bxzsIqLEfC2SvupWX5JTA" type="id_String" value="119.8.85.214" internalId="_p8g7vI8YEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="sqlserver_in_demos_Schema" prompt="sqlserver_in_demos_Schema?" promptNeeded="false" repositoryContextId="_1bxzsIqLEfC2SvupWX5JTA" type="id_String" value="dbo" internalId="_p8g7vY8YEfC2SvupWX5JTA"/>
+  </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
@@ -100,189 +165,4 @@
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
     <routinesParameter id="_dnpOQD3HEeO7UMG_YqAtyA" name="DQ_METHODS"/>
   </parameters>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="200" posY="120">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tMSSqlInput" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/MS_SQL_Server" show="false"/>
-    <elementParameter field="CHECK" name="START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tMSSqlInput" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\Talend-Studio\studio\configuration\lib\java" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_imcR0KtiEe-O1-TrSI6DtQ" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;119.8.85.214&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
-    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;in_demos&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;qlik_rpl&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:C/KAWUMTxIeG0Yl4juXGy/5L21KdYCRshKfCuM296lZf80kt03NFrD/u3w=="/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_imcR0KtiEe-O1-TrSI6DtQ - Fluxo_Caixa_Lancamentos" show="false"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Fluxo_Caixa_Lancamentos&quot;"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.Fluxo_Caixa_Lancamentos.Data,&#xA;&#x9;&#x9;dbo.Fluxo_Caixa_Lancamentos.Categoria,&#xA;&#x9;&#x9;dbo.Fluxo_Caixa_Lancamentos.Cod_Mov,&#xA;&#x9;&#x9;dbo.Fluxo_Caixa_Lancamentos.Valor&#xA;FROM&#x9;dbo.Fluxo_Caixa_Lancamentos&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false"/>
-    <elementParameter field="TEXT" name="KEYSTORE_PRINCIPAL_ID" value="" show="false"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
-    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
-    <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Data" id="0"/>
-      <elementValue elementRef="TRIM" value="false" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Categoria" id="2"/>
-      <elementValue elementRef="TRIM" value="false" id="3"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Cod_Mov" id="4"/>
-      <elementValue elementRef="TRIM" value="false" id="5"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Valor" id="6"/>
-      <elementValue elementRef="TRIM" value="false" id="7"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
-    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="Fluxo_Caixa_Lancamentos" name="tDBInput_1">
-      <column comment="" key="false" length="50" name="Data" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="Categoria" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="Cod_Mov" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="Valor" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-    </metadata>
-  </node>
-  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="120">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tPostgresqlOutput" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/PostgreSQL" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tPostgresqlOutput" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\Talend-Studio\studio\configuration\lib\java" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_kFgdsHalEe-cI9IAex1ZpA" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;119.8.85.214&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;5433&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;postgres&quot;"/>
-    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:zTXlVcApyFOXpqI6JuFBTwoOiWPIs7gN4R6dVIpHsv7QkPqj2SS5Er08"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;FLuxo_Caixa_Lancamentos&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
-    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
-    <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false"/>
-    <elementParameter field="CHECK" name="SPATIAL_INDEX" value="false" show="false"/>
-    <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" value="false" show="false"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
-    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false" show="false"/>
-    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="SAVE_POINT" value="false" show="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
-    <elementParameter field="TABLE" name="ADD_COLS"/>
-    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
-    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Data" id="0"/>
-      <elementValue elementRef="UPDATE_KEY" value="false" id="1"/>
-      <elementValue elementRef="DELETE_KEY" value="false" id="2"/>
-      <elementValue elementRef="UPDATABLE" value="true" id="3"/>
-      <elementValue elementRef="INSERTABLE" value="true" id="4"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Categoria" id="5"/>
-      <elementValue elementRef="UPDATE_KEY" value="false" id="6"/>
-      <elementValue elementRef="DELETE_KEY" value="false" id="7"/>
-      <elementValue elementRef="UPDATABLE" value="true" id="8"/>
-      <elementValue elementRef="INSERTABLE" value="true" id="9"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Cod_Mov" id="10"/>
-      <elementValue elementRef="UPDATE_KEY" value="false" id="11"/>
-      <elementValue elementRef="DELETE_KEY" value="false" id="12"/>
-      <elementValue elementRef="UPDATABLE" value="true" id="13"/>
-      <elementValue elementRef="INSERTABLE" value="true" id="14"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Valor" id="15"/>
-      <elementValue elementRef="UPDATE_KEY" value="false" id="16"/>
-      <elementValue elementRef="DELETE_KEY" value="false" id="17"/>
-      <elementValue elementRef="UPDATABLE" value="true" id="18"/>
-      <elementValue elementRef="INSERTABLE" value="true" id="19"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
-    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
-    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_LOWERCASE" value="false"/>
-    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
-    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
-    <elementParameter field="TEXT" name="LABEL" value="postgressql_qdi_server"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="Fluxo_Caixa_Lancamentos" name="tDBOutput_1">
-      <column comment="" key="false" length="50" name="Data" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="Categoria" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="Cod_Mov" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="Valor" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-    </metadata>
-    <metadata connector="REJECT" label="Fluxo_Caixa_Lancamentos" name="REJECT">
-      <column comment="" key="false" length="50" name="Data" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="Categoria" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="Cod_Mov" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="Valor" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tDBOutput_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
-  </connection>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
-  </subjob>
 </talendfile:ProcessType>

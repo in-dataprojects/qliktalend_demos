@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_jzMMYIqLEfC2SvupWX5JTA" confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter xmi:id="_jzMMYYqLEfC2SvupWX5JTA" comment="" name="oracle_in_demos_Port" prompt="oracle_in_demos_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="1521"/>
+    <contextParameter xmi:id="_jzMMYoqLEfC2SvupWX5JTA" comment="" name="oracle_in_demos_Login" prompt="oracle_in_demos_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="qlik_rpt"/>
+    <contextParameter xmi:id="_jzMMY4qLEfC2SvupWX5JTA" comment="" name="oracle_in_demos_Server" prompt="oracle_in_demos_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="119.8.85.214"/>
+    <contextParameter xmi:id="_jzMMZIqLEfC2SvupWX5JTA" comment="" name="oracle_in_demos_ServiceName" prompt="oracle_in_demos_ServiceName?" promptNeeded="false" repositoryContextId="" type="id_String" value="XEPDB1"/>
+    <contextParameter xmi:id="_jzMMZYqLEfC2SvupWX5JTA" comment="" name="oracle_in_demos_Schema" prompt="oracle_in_demos_Schema?" promptNeeded="false" repositoryContextId="" type="id_String" value="QLIK_RPT"/>
+    <contextParameter xmi:id="_jzMMZoqLEfC2SvupWX5JTA" comment="" name="oracle_in_demos_Password" prompt="oracle_in_demos_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:eVJ8UiGgcdHsWhv10TYUQNT05qVpJ7VMRAfgm7eANErtOZtMIEqZpcQ="/>
+    <contextParameter xmi:id="_jzMMZ4qLEfC2SvupWX5JTA" comment="" name="oracle_in_demos_AdditionalParams" prompt="oracle_in_demos_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_jzMMaIqLEfC2SvupWX5JTA" confirmationNeeded="false" hide="false" name="local">
+    <contextParameter xmi:id="_jzMMaYqLEfC2SvupWX5JTA" comment="" name="oracle_in_demos_Port" prompt="oracle_in_demos_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="1521"/>
+    <contextParameter xmi:id="_jzMMaoqLEfC2SvupWX5JTA" comment="" name="oracle_in_demos_Login" prompt="oracle_in_demos_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="qlik_rpt"/>
+    <contextParameter xmi:id="_jzMMa4qLEfC2SvupWX5JTA" comment="" name="oracle_in_demos_Server" prompt="oracle_in_demos_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="119.8.85.214"/>
+    <contextParameter xmi:id="_jzMMbIqLEfC2SvupWX5JTA" comment="" name="oracle_in_demos_ServiceName" prompt="oracle_in_demos_ServiceName?" promptNeeded="false" repositoryContextId="" type="id_String" value="XEPDB1"/>
+    <contextParameter xmi:id="_jzMMbYqLEfC2SvupWX5JTA" comment="" name="oracle_in_demos_Schema" prompt="oracle_in_demos_Schema?" promptNeeded="false" repositoryContextId="" type="id_String" value="QLIK_RPT"/>
+    <contextParameter xmi:id="_jzMMboqLEfC2SvupWX5JTA" comment="" name="oracle_in_demos_Password" prompt="oracle_in_demos_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:rtAneWt2tAHrdyMagHv9VaaKoH+MoDbLR8S3dlgmzWCBG2p4R2V+9Jw="/>
+    <contextParameter xmi:id="_jzMMb4qLEfC2SvupWX5JTA" comment="" name="oracle_in_demos_AdditionalParams" prompt="oracle_in_demos_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_jzMMcIqLEfC2SvupWX5JTA" confirmationNeeded="false" hide="false" name="qdi_server">
+    <contextParameter xmi:id="_jzMMcYqLEfC2SvupWX5JTA" comment="" name="oracle_in_demos_Port" prompt="oracle_in_demos_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="1521"/>
+    <contextParameter xmi:id="_jzMMcoqLEfC2SvupWX5JTA" comment="" name="oracle_in_demos_Login" prompt="oracle_in_demos_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="qlik_rpt"/>
+    <contextParameter xmi:id="_jzMMc4qLEfC2SvupWX5JTA" comment="" name="oracle_in_demos_Server" prompt="oracle_in_demos_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="119.8.85.214"/>
+    <contextParameter xmi:id="_jzMMdIqLEfC2SvupWX5JTA" comment="" name="oracle_in_demos_ServiceName" prompt="oracle_in_demos_ServiceName?" promptNeeded="false" repositoryContextId="" type="id_String" value="XEPDB1"/>
+    <contextParameter xmi:id="_jzMMdYqLEfC2SvupWX5JTA" comment="" name="oracle_in_demos_Schema" prompt="oracle_in_demos_Schema?" promptNeeded="false" repositoryContextId="" type="id_String" value="QLIK_RPT"/>
+    <contextParameter xmi:id="_jzMMdoqLEfC2SvupWX5JTA" comment="" name="oracle_in_demos_Password" prompt="oracle_in_demos_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:OsAHAjwvbmfT6/IjPl6c76U7SIufXAjFuo5RCkAMzOEuWstbh7mRIOs="/>
+    <contextParameter xmi:id="_jzMMd4qLEfC2SvupWX5JTA" comment="" name="oracle_in_demos_AdditionalParams" prompt="oracle_in_demos_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

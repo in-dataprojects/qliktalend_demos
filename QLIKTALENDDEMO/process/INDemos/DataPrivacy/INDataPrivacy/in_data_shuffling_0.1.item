@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" hide="false" name="Default"/>
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" name="mysql_in_demos_Port" prompt="mysql_in_demos_Port?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="3306" internalId="_8s9-0IqKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Login" prompt="mysql_in_demos_Login?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="root" internalId="_8s9-0YqKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Server" prompt="mysql_in_demos_Server?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="localhost" internalId="_8s9-0oqKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Database" prompt="mysql_in_demos_Database?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="in_demos" internalId="_8s9-04qKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Password" prompt="mysql_in_demos_Password?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_Password" value="enc:system.encryption.key.v1:MXD/+kzyUMxa1OkUS+AdRYrwtGXSSxOqF0khYGjOp6M=" internalId="_8s9-1IqKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_AdditionalParams" prompt="mysql_in_demos_AdditionalParams?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" internalId="_8s9-1YqKEfC2SvupWX5JTA"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="local">
+    <contextParameter comment="" name="mysql_in_demos_Port" prompt="mysql_in_demos_Port?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="3306" internalId="_8s9-1oqKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Login" prompt="mysql_in_demos_Login?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="root" internalId="_8s9-14qKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Server" prompt="mysql_in_demos_Server?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="localhost" internalId="_8s9-2IqKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Database" prompt="mysql_in_demos_Database?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="in_demos" internalId="_8s9-2YqKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Password" prompt="mysql_in_demos_Password?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_Password" value="enc:system.encryption.key.v1:XqXG8V+4kPm0QIw7e6i6OcOhcSnw/nBG79sp2XvtFdE=" internalId="_8s9-2oqKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_AdditionalParams" prompt="mysql_in_demos_AdditionalParams?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" internalId="_8s9-24qKEfC2SvupWX5JTA"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="qdi_server">
+    <contextParameter comment="" name="mysql_in_demos_Port" prompt="mysql_in_demos_Port?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="3306" internalId="_8s-l4IqKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Login" prompt="mysql_in_demos_Login?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="root" internalId="_8s-l4YqKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Server" prompt="mysql_in_demos_Server?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="localhost" internalId="_8s-l4oqKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Database" prompt="mysql_in_demos_Database?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="in_demos" internalId="_8s-l44qKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_Password" prompt="mysql_in_demos_Password?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_Password" value="enc:system.encryption.key.v1:rlfkAy1s4r9+a8ndUFYMg3in+06EKUrlRqJ2BlK/4zI=" internalId="_8s-l5IqKEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="mysql_in_demos_AdditionalParams" prompt="mysql_in_demos_AdditionalParams?" promptNeeded="false" repositoryContextId="_6PGOMIqKEfC2SvupWX5JTA" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" internalId="_8s-l5YqKEfC2SvupWX5JTA"/>
+  </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
@@ -104,126 +127,126 @@
     <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="false"/>
     <elementParameter field="TABLE" name="VALUES" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Id"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nome"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Sobrenome"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EstadoCivil"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Sexo"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DataNascimento"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Email"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CPF"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Endereco"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Bairro"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Cidade"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UF"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CEP"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id" id="0"/>
+      <elementValue elementRef="VALUE" value="" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nome" id="2"/>
+      <elementValue elementRef="VALUE" value="" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sobrenome" id="4"/>
+      <elementValue elementRef="VALUE" value="" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EstadoCivil" id="6"/>
+      <elementValue elementRef="VALUE" value="" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sexo" id="8"/>
+      <elementValue elementRef="VALUE" value="" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DataNascimento" id="10"/>
+      <elementValue elementRef="VALUE" value="" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Email" id="12"/>
+      <elementValue elementRef="VALUE" value="" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CPF" id="14"/>
+      <elementValue elementRef="VALUE" value="" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Endereco" id="16"/>
+      <elementValue elementRef="VALUE" value="" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Bairro" id="18"/>
+      <elementValue elementRef="VALUE" value="" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Cidade" id="20"/>
+      <elementValue elementRef="VALUE" value="" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UF" id="22"/>
+      <elementValue elementRef="VALUE" value="" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CEP" id="24"/>
+      <elementValue elementRef="VALUE" value="" id="25"/>
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
     <elementParameter field="TABLE" name="INTABLE" show="false">
-      <elementValue elementRef="Id" value="1"/>
-      <elementValue elementRef="Nome" value=""/>
-      <elementValue elementRef="Sobrenome" value=""/>
-      <elementValue elementRef="EstadoCivil" value=""/>
-      <elementValue elementRef="Sexo" value=""/>
-      <elementValue elementRef="DataNascimento" value=""/>
-      <elementValue elementRef="Email" value=""/>
-      <elementValue elementRef="CPF" value=""/>
-      <elementValue elementRef="Endereco" value=""/>
-      <elementValue elementRef="Bairro" value=""/>
-      <elementValue elementRef="Cidade" value=""/>
-      <elementValue elementRef="UF" value=""/>
-      <elementValue elementRef="CEP" value=""/>
-      <elementValue elementRef="Id" value="2"/>
-      <elementValue elementRef="Nome" value=""/>
-      <elementValue elementRef="Sobrenome" value=""/>
-      <elementValue elementRef="EstadoCivil" value=""/>
-      <elementValue elementRef="Sexo" value=""/>
-      <elementValue elementRef="DataNascimento" value=""/>
-      <elementValue elementRef="Email" value=""/>
-      <elementValue elementRef="CPF" value=""/>
-      <elementValue elementRef="Endereco" value=""/>
-      <elementValue elementRef="Bairro" value=""/>
-      <elementValue elementRef="Cidade" value=""/>
-      <elementValue elementRef="UF" value=""/>
-      <elementValue elementRef="CEP" value=""/>
-      <elementValue elementRef="Id" value="3"/>
-      <elementValue elementRef="Nome" value=""/>
-      <elementValue elementRef="Sobrenome" value=""/>
-      <elementValue elementRef="EstadoCivil" value=""/>
-      <elementValue elementRef="Sexo" value=""/>
-      <elementValue elementRef="DataNascimento" value=""/>
-      <elementValue elementRef="Email" value=""/>
-      <elementValue elementRef="CPF" value=""/>
-      <elementValue elementRef="Endereco" value=""/>
-      <elementValue elementRef="Bairro" value=""/>
-      <elementValue elementRef="Cidade" value=""/>
-      <elementValue elementRef="UF" value=""/>
-      <elementValue elementRef="CEP" value=""/>
-      <elementValue elementRef="Id" value="4"/>
-      <elementValue elementRef="Nome" value=""/>
-      <elementValue elementRef="Sobrenome" value=""/>
-      <elementValue elementRef="EstadoCivil" value=""/>
-      <elementValue elementRef="Sexo" value=""/>
-      <elementValue elementRef="DataNascimento" value=""/>
-      <elementValue elementRef="Email" value=""/>
-      <elementValue elementRef="CPF" value=""/>
-      <elementValue elementRef="Endereco" value=""/>
-      <elementValue elementRef="Bairro" value=""/>
-      <elementValue elementRef="Cidade" value=""/>
-      <elementValue elementRef="UF" value=""/>
-      <elementValue elementRef="CEP" value=""/>
-      <elementValue elementRef="Id" value="5"/>
-      <elementValue elementRef="Nome" value=""/>
-      <elementValue elementRef="Sobrenome" value=""/>
-      <elementValue elementRef="EstadoCivil" value=""/>
-      <elementValue elementRef="Sexo" value=""/>
-      <elementValue elementRef="DataNascimento" value=""/>
-      <elementValue elementRef="Email" value=""/>
-      <elementValue elementRef="CPF" value=""/>
-      <elementValue elementRef="Endereco" value=""/>
-      <elementValue elementRef="Bairro" value=""/>
-      <elementValue elementRef="Cidade" value=""/>
-      <elementValue elementRef="UF" value=""/>
-      <elementValue elementRef="CEP" value=""/>
-      <elementValue elementRef="Id" value="6"/>
-      <elementValue elementRef="Nome" value=""/>
-      <elementValue elementRef="Sobrenome" value=""/>
-      <elementValue elementRef="EstadoCivil" value=""/>
-      <elementValue elementRef="Sexo" value=""/>
-      <elementValue elementRef="DataNascimento" value=""/>
-      <elementValue elementRef="Email" value=""/>
-      <elementValue elementRef="CPF" value=""/>
-      <elementValue elementRef="Endereco" value=""/>
-      <elementValue elementRef="Bairro" value=""/>
-      <elementValue elementRef="Cidade" value=""/>
-      <elementValue elementRef="UF" value=""/>
-      <elementValue elementRef="CEP" value=""/>
-      <elementValue elementRef="Id" value="7"/>
-      <elementValue elementRef="Nome" value=""/>
-      <elementValue elementRef="Sobrenome" value=""/>
-      <elementValue elementRef="EstadoCivil" value=""/>
-      <elementValue elementRef="Sexo" value=""/>
-      <elementValue elementRef="DataNascimento" value=""/>
-      <elementValue elementRef="Email" value=""/>
-      <elementValue elementRef="CPF" value=""/>
-      <elementValue elementRef="Endereco" value=""/>
-      <elementValue elementRef="Bairro" value=""/>
-      <elementValue elementRef="Cidade" value=""/>
-      <elementValue elementRef="UF" value=""/>
-      <elementValue elementRef="CEP" value=""/>
+      <elementValue elementRef="Id" value="1" id="0"/>
+      <elementValue elementRef="Nome" value="" id="1"/>
+      <elementValue elementRef="Sobrenome" value="" id="2"/>
+      <elementValue elementRef="EstadoCivil" value="" id="3"/>
+      <elementValue elementRef="Sexo" value="" id="4"/>
+      <elementValue elementRef="DataNascimento" value="" id="5"/>
+      <elementValue elementRef="Email" value="" id="6"/>
+      <elementValue elementRef="CPF" value="" id="7"/>
+      <elementValue elementRef="Endereco" value="" id="8"/>
+      <elementValue elementRef="Bairro" value="" id="9"/>
+      <elementValue elementRef="Cidade" value="" id="10"/>
+      <elementValue elementRef="UF" value="" id="11"/>
+      <elementValue elementRef="CEP" value="" id="12"/>
+      <elementValue elementRef="Id" value="2" id="13"/>
+      <elementValue elementRef="Nome" value="" id="14"/>
+      <elementValue elementRef="Sobrenome" value="" id="15"/>
+      <elementValue elementRef="EstadoCivil" value="" id="16"/>
+      <elementValue elementRef="Sexo" value="" id="17"/>
+      <elementValue elementRef="DataNascimento" value="" id="18"/>
+      <elementValue elementRef="Email" value="" id="19"/>
+      <elementValue elementRef="CPF" value="" id="20"/>
+      <elementValue elementRef="Endereco" value="" id="21"/>
+      <elementValue elementRef="Bairro" value="" id="22"/>
+      <elementValue elementRef="Cidade" value="" id="23"/>
+      <elementValue elementRef="UF" value="" id="24"/>
+      <elementValue elementRef="CEP" value="" id="25"/>
+      <elementValue elementRef="Id" value="3" id="26"/>
+      <elementValue elementRef="Nome" value="" id="27"/>
+      <elementValue elementRef="Sobrenome" value="" id="28"/>
+      <elementValue elementRef="EstadoCivil" value="" id="29"/>
+      <elementValue elementRef="Sexo" value="" id="30"/>
+      <elementValue elementRef="DataNascimento" value="" id="31"/>
+      <elementValue elementRef="Email" value="" id="32"/>
+      <elementValue elementRef="CPF" value="" id="33"/>
+      <elementValue elementRef="Endereco" value="" id="34"/>
+      <elementValue elementRef="Bairro" value="" id="35"/>
+      <elementValue elementRef="Cidade" value="" id="36"/>
+      <elementValue elementRef="UF" value="" id="37"/>
+      <elementValue elementRef="CEP" value="" id="38"/>
+      <elementValue elementRef="Id" value="4" id="39"/>
+      <elementValue elementRef="Nome" value="" id="40"/>
+      <elementValue elementRef="Sobrenome" value="" id="41"/>
+      <elementValue elementRef="EstadoCivil" value="" id="42"/>
+      <elementValue elementRef="Sexo" value="" id="43"/>
+      <elementValue elementRef="DataNascimento" value="" id="44"/>
+      <elementValue elementRef="Email" value="" id="45"/>
+      <elementValue elementRef="CPF" value="" id="46"/>
+      <elementValue elementRef="Endereco" value="" id="47"/>
+      <elementValue elementRef="Bairro" value="" id="48"/>
+      <elementValue elementRef="Cidade" value="" id="49"/>
+      <elementValue elementRef="UF" value="" id="50"/>
+      <elementValue elementRef="CEP" value="" id="51"/>
+      <elementValue elementRef="Id" value="5" id="52"/>
+      <elementValue elementRef="Nome" value="" id="53"/>
+      <elementValue elementRef="Sobrenome" value="" id="54"/>
+      <elementValue elementRef="EstadoCivil" value="" id="55"/>
+      <elementValue elementRef="Sexo" value="" id="56"/>
+      <elementValue elementRef="DataNascimento" value="" id="57"/>
+      <elementValue elementRef="Email" value="" id="58"/>
+      <elementValue elementRef="CPF" value="" id="59"/>
+      <elementValue elementRef="Endereco" value="" id="60"/>
+      <elementValue elementRef="Bairro" value="" id="61"/>
+      <elementValue elementRef="Cidade" value="" id="62"/>
+      <elementValue elementRef="UF" value="" id="63"/>
+      <elementValue elementRef="CEP" value="" id="64"/>
+      <elementValue elementRef="Id" value="6" id="65"/>
+      <elementValue elementRef="Nome" value="" id="66"/>
+      <elementValue elementRef="Sobrenome" value="" id="67"/>
+      <elementValue elementRef="EstadoCivil" value="" id="68"/>
+      <elementValue elementRef="Sexo" value="" id="69"/>
+      <elementValue elementRef="DataNascimento" value="" id="70"/>
+      <elementValue elementRef="Email" value="" id="71"/>
+      <elementValue elementRef="CPF" value="" id="72"/>
+      <elementValue elementRef="Endereco" value="" id="73"/>
+      <elementValue elementRef="Bairro" value="" id="74"/>
+      <elementValue elementRef="Cidade" value="" id="75"/>
+      <elementValue elementRef="UF" value="" id="76"/>
+      <elementValue elementRef="CEP" value="" id="77"/>
+      <elementValue elementRef="Id" value="7" id="78"/>
+      <elementValue elementRef="Nome" value="" id="79"/>
+      <elementValue elementRef="Sobrenome" value="" id="80"/>
+      <elementValue elementRef="EstadoCivil" value="" id="81"/>
+      <elementValue elementRef="Sexo" value="" id="82"/>
+      <elementValue elementRef="DataNascimento" value="" id="83"/>
+      <elementValue elementRef="Email" value="" id="84"/>
+      <elementValue elementRef="CPF" value="" id="85"/>
+      <elementValue elementRef="Endereco" value="" id="86"/>
+      <elementValue elementRef="Bairro" value="" id="87"/>
+      <elementValue elementRef="Cidade" value="" id="88"/>
+      <elementValue elementRef="UF" value="" id="89"/>
+      <elementValue elementRef="CEP" value="" id="90"/>
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INLINECONTENT" value="true"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
@@ -261,32 +284,32 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Id"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nome"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Sobrenome"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EstadoCivil"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Sexo"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DataNascimento"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Email"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CPF"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Endereco"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Bairro"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Cidade"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UF"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CEP"/>
-      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nome" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sobrenome" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EstadoCivil" id="6"/>
+      <elementValue elementRef="LENGTH" value="10" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sexo" id="8"/>
+      <elementValue elementRef="LENGTH" value="10" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DataNascimento" id="10"/>
+      <elementValue elementRef="LENGTH" value="10" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Email" id="12"/>
+      <elementValue elementRef="LENGTH" value="10" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CPF" id="14"/>
+      <elementValue elementRef="LENGTH" value="10" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Endereco" id="16"/>
+      <elementValue elementRef="LENGTH" value="10" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Bairro" id="18"/>
+      <elementValue elementRef="LENGTH" value="10" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Cidade" id="20"/>
+      <elementValue elementRef="LENGTH" value="10" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UF" id="22"/>
+      <elementValue elementRef="LENGTH" value="10" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CEP" id="24"/>
+      <elementValue elementRef="LENGTH" value="10" id="25"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
@@ -311,22 +334,22 @@
   <node componentName="tDataShuffling" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="560" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDataShuffling_1" show="false"/>
     <elementParameter field="TABLE" name="SHUFFLING_COLUMNS">
-      <elementValue elementRef="COLUMN" value="Id"/>
-      <elementValue elementRef="GROUP_ID" value="0"/>
-      <elementValue elementRef="COLUMN" value="Nome"/>
-      <elementValue elementRef="GROUP_ID" value="2"/>
-      <elementValue elementRef="COLUMN" value="Sobrenome"/>
-      <elementValue elementRef="GROUP_ID" value="3"/>
-      <elementValue elementRef="COLUMN" value="Endereco"/>
-      <elementValue elementRef="GROUP_ID" value="1"/>
-      <elementValue elementRef="COLUMN" value="Bairro"/>
-      <elementValue elementRef="GROUP_ID" value="1"/>
-      <elementValue elementRef="COLUMN" value="Cidade"/>
-      <elementValue elementRef="GROUP_ID" value="1"/>
-      <elementValue elementRef="COLUMN" value="UF"/>
-      <elementValue elementRef="GROUP_ID" value="1"/>
-      <elementValue elementRef="COLUMN" value="CEP"/>
-      <elementValue elementRef="GROUP_ID" value="1"/>
+      <elementValue elementRef="COLUMN" value="Id" id="0"/>
+      <elementValue elementRef="GROUP_ID" value="0" id="1"/>
+      <elementValue elementRef="COLUMN" value="Nome" id="2"/>
+      <elementValue elementRef="GROUP_ID" value="2" id="3"/>
+      <elementValue elementRef="COLUMN" value="Sobrenome" id="4"/>
+      <elementValue elementRef="GROUP_ID" value="3" id="5"/>
+      <elementValue elementRef="COLUMN" value="Endereco" id="6"/>
+      <elementValue elementRef="GROUP_ID" value="1" id="7"/>
+      <elementValue elementRef="COLUMN" value="Bairro" id="8"/>
+      <elementValue elementRef="GROUP_ID" value="1" id="9"/>
+      <elementValue elementRef="COLUMN" value="Cidade" id="10"/>
+      <elementValue elementRef="GROUP_ID" value="1" id="11"/>
+      <elementValue elementRef="COLUMN" value="UF" id="12"/>
+      <elementValue elementRef="GROUP_ID" value="1" id="13"/>
+      <elementValue elementRef="COLUMN" value="CEP" id="14"/>
+      <elementValue elementRef="GROUP_ID" value="1" id="15"/>
     </elementParameter>
     <elementParameter field="TEXT" name="RANDOM_SEED" value=""/>
     <elementParameter field="TEXT" name="SEPERATION_SIZE" value="100000"/>
@@ -383,32 +406,32 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Id"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nome"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Sobrenome"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EstadoCivil"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Sexo"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DataNascimento"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Email"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CPF"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Endereco"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Bairro"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Cidade"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UF"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CEP"/>
-      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nome" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sobrenome" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EstadoCivil" id="6"/>
+      <elementValue elementRef="LENGTH" value="10" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sexo" id="8"/>
+      <elementValue elementRef="LENGTH" value="10" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DataNascimento" id="10"/>
+      <elementValue elementRef="LENGTH" value="10" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Email" id="12"/>
+      <elementValue elementRef="LENGTH" value="10" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CPF" id="14"/>
+      <elementValue elementRef="LENGTH" value="10" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Endereco" id="16"/>
+      <elementValue elementRef="LENGTH" value="10" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Bairro" id="18"/>
+      <elementValue elementRef="LENGTH" value="10" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Cidade" id="20"/>
+      <elementValue elementRef="LENGTH" value="10" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UF" id="22"/>
+      <elementValue elementRef="LENGTH" value="10" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CEP" id="24"/>
+      <elementValue elementRef="LENGTH" value="10" id="25"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
@@ -432,26 +455,17 @@
   </node>
   <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="920" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tMysqlOutput" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/MySQL" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tMysqlOutput" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\Talend-Studio-V8.0.1\configuration\lib\java" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_sK3YAI1eEe-P95gFpWdVDQ" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;in_demos&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:YQvZhDHQfLGLA3DgUJaXRuglstKGkgyT8XC9P7CvS9jbRQ=="/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysql_in_demos_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql_in_demos_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysql_in_demos_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.mysql_in_demos_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:YPMdbo59TpY/OeQ2qwVwzV4twGpdbHk7dQQRfIRZd1pwSjB9FSxPCfWh6sWK6dBuSuRN1MD8rEj8xKU="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;clientes_shuffling&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -460,7 +474,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql_in_demos_AdditionalParams"/>
     <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
     <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
@@ -469,71 +483,71 @@
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Id"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nome"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Sobrenome"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EstadoCivil"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Sexo"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DataNascimento"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Email"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CPF"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Endereco"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Bairro"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Cidade"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UF"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CEP"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id" id="0"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="1"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="2"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="3"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="4"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nome" id="5"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="6"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="7"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="8"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sobrenome" id="10"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="11"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="12"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="13"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="14"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EstadoCivil" id="15"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="16"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="17"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="18"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sexo" id="20"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="21"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="22"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="23"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="24"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DataNascimento" id="25"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="26"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="27"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="28"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Email" id="30"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="31"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="32"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="33"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="34"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CPF" id="35"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="36"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="37"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="38"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Endereco" id="40"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="41"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="42"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="43"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="44"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Bairro" id="45"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="46"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="47"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="48"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Cidade" id="50"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="51"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="52"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="53"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="54"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UF" id="55"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="56"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="57"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="58"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CEP" id="60"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="61"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="62"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="63"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="64"/>
     </elementParameter>
     <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <TalendMetadata:DatabaseConnection xmi:id="_tY2JcH0hEfCWe4BdKB3GEA" name="mysql_in_ferragens" id="_tYbSsH0hEfCWe4BdKB3GEA" label="mysql_in_ferragens" dataPackage="_zcmbrn0hEfCWe4BdKB3GEA" contextName="dev" DatabaseType="MySQL" DriverJarPath="" DriverClass="com.mysql.cj.jdbc.Driver" URL="jdbc:mysql://119.8.85.214:3306/vendas_in_pecas?noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" dbVersionString="MYSQL_8" Port="3306" Username="root" Password="enc:system.encryption.key.v1:9b4BJHL2dwVpTXQZets2O8j/aIZpiEeTAyj8j/yjjc3fFe+D4RPSuw==" ServerName="119.8.85.214" DatasourceName="" FileFieldName="" SID="vendas_in_pecas" SqlSynthax="" StringQuote="" NullChar="" DbmsId="mysql_id" ProductId="MYSQL" DBRootPath="" AdditionalParams="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
+  <TalendMetadata:DatabaseConnection xmi:id="_tY2JcH0hEfCWe4BdKB3GEA" name="mysql_in_ferragens" id="_tYbSsH0hEfCWe4BdKB3GEA" label="mysql_in_ferragens" dataPackage="_zcmbrn0hEfCWe4BdKB3GEA" ContextMode="true" ContextId="_BEFJAIqLEfC2SvupWX5JTA" contextName="qdi_server" DatabaseType="MySQL" DriverJarPath="" DriverClass="com.mysql.cj.jdbc.Driver" URL="jdbc:mysql://119.8.85.214:3306/vendas_in_pecas?noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" dbVersionString="MYSQL_8" Port="context.mysql_in_ferragens_Port" Username="context.mysql_in_ferragens_Login" Password="context.mysql_in_ferragens_Password" ServerName="context.mysql_in_ferragens_Server" DatasourceName="" FileFieldName="" SID="context.mysql_in_ferragens_Database" SqlSynthax="" StringQuote="" NullChar="" DbmsId="mysql_id" ProductId="MYSQL" DBRootPath="" AdditionalParams="context.mysql_in_ferragens_AdditionalParams" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
     <taggedValue xmi:id="_TZRWcXaQEe-cI9IAex1ZpA" tag="Is Conn Need Reload" value="false"/>
     <taggedValue xmi:id="_TZlfgHaQEe-cI9IAex1ZpA" tag="package filter" value=""/>
     <taggedValue xmi:id="_TZoi0HaQEe-cI9IAex1ZpA" tag="Status" value=""/>
@@ -12,7 +12,7 @@
     <taggedValue xmi:id="_TZy64HaQEe-cI9IAex1ZpA" tag="DB ProductName" value="MySQL"/>
     <taggedValue xmi:id="_TZy64XaQEe-cI9IAex1ZpA" tag="DB ProductVersion" value="8.0.39"/>
     <taggedValue xmi:id="_TZy64naQEe-cI9IAex1ZpA" tag="DB IdentifierQuoteString" value="`"/>
-    <parameters xmi:id="_TZRWcnaQEe-cI9IAex1ZpA" key="CONN_PARA_KEY_USERNAME" value="root"/>
+    <parameters xmi:id="_TZRWcnaQEe-cI9IAex1ZpA" key="CONN_PARA_KEY_USERNAME" value="context.mysql_in_ferragens_Login"/>
     <parameters xmi:id="_ziCegNOqEe-eyL0mpD83FQ" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_zcmbrn0hEfCWe4BdKB3GEA" name="vendas_in_pecas" dataManager="_tY2JcH0hEfCWe4BdKB3GEA">

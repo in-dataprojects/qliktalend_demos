@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <TalendMetadata:DatabaseConnection xmi:id="_MKWCwKtjEe-O1-TrSI6DtQ" name="sqlserver_demos_qdi_server" id="_imcR0KtiEe-O1-TrSI6DtQ" label="sqlserver_demos_qdi_server" dataPackage="_gYDD4IQ4EfCcm56-aYgjWg" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://119.8.85.214:1433;DatabaseName=in_demos;" dbVersionString="MSSQL_PROP" Port="1433" Username="qlik_rpl" Password="enc:system.encryption.key.v1:NvXZMYFe5hBbIXaHHFcGRlbjUtSYI/6qsixHLw1Aca37NtUFzQueXZQ=" ServerName="119.8.85.214" DatasourceName="" FileFieldName="" SID="in_demos" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="dbo" supportNLS="false">
+  <TalendMetadata:DatabaseConnection xmi:id="_MKWCwKtjEe-O1-TrSI6DtQ" name="sqlserver_in_demos" id="_imcR0KtiEe-O1-TrSI6DtQ" label="sqlserver_in_demos" dataPackage="_gYDD4IQ4EfCcm56-aYgjWg" ContextMode="true" ContextId="_1bxzsIqLEfC2SvupWX5JTA" contextName="qdi_server" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://119.8.85.214:1433;DatabaseName=in_demos;" dbVersionString="MSSQL_PROP" Port="context.sqlserver_in_demos_Port" Username="context.sqlserver_in_demos_Login" Password="context.sqlserver_in_demos_Password" ServerName="context.sqlserver_in_demos_Server" DatasourceName="" FileFieldName="" SID="context.sqlserver_in_demos_Database" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="context.sqlserver_in_demos_AdditionalParams" StandardSQL="true" SQLMode="false" UiSchema="context.sqlserver_in_demos_Schema" supportNLS="false">
     <taggedValue xmi:id="_MKWCwatjEe-O1-TrSI6DtQ" tag="Is Conn Need Reload" value="false"/>
     <taggedValue xmi:id="_MKmhcKtjEe-O1-TrSI6DtQ" tag="package filter" value=""/>
     <taggedValue xmi:id="_MKo9sKtjEe-O1-TrSI6DtQ" tag="Status" value=""/>
@@ -12,7 +12,7 @@
     <taggedValue xmi:id="_MMDS8KtjEe-O1-TrSI6DtQ" tag="DB ProductName" value="Microsoft SQL Server"/>
     <taggedValue xmi:id="_MMD6AKtjEe-O1-TrSI6DtQ" tag="DB ProductVersion" value="16.00.1000"/>
     <taggedValue xmi:id="_MMD6AatjEe-O1-TrSI6DtQ" tag="DB IdentifierQuoteString" value="&quot;"/>
-    <parameters xmi:id="_MKWCwqtjEe-O1-TrSI6DtQ" key="CONN_PARA_KEY_USERNAME" value="qlik_rpl"/>
+    <parameters xmi:id="_MKWCwqtjEe-O1-TrSI6DtQ" key="CONN_PARA_KEY_USERNAME" value="context.sqlserver_in_demos_Login"/>
     <parameters xmi:id="_vtxRsIQtEfCcm56-aYgjWg" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_gYDD4IQ4EfCcm56-aYgjWg" name="in_demos" dataManager="_MKWCwKtjEe-O1-TrSI6DtQ">

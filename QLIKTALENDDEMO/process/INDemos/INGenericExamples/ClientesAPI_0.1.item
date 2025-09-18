@@ -2,8 +2,13 @@
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="Default">
     <contextParameter comment="" name="token" prompt="token?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_V4GpQEMIEfCBWM4nQuZdQg"/>
-    <contextParameter comment="" name="new2" prompt="new2?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_V4GpQUMIEfCBWM4nQuZdQg"/>
-    <contextParameter comment="" name="new3" prompt="new3?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_V4GpQkMIEfCBWM4nQuZdQg"/>
+    <contextParameter comment="" name="sqlserver_in_demos_Database" prompt="sqlserver_in_demos_Database?" promptNeeded="false" repositoryContextId="_1bxzsIqLEfC2SvupWX5JTA" type="id_String" value="in_demos" internalId="_vOoDAIqNEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="sqlserver_in_demos_Password" prompt="sqlserver_in_demos_Password?" promptNeeded="false" repositoryContextId="_1bxzsIqLEfC2SvupWX5JTA" type="id_Password" value="enc:system.encryption.key.v1:/oQAHEWuJournw2Sfd4TTUbs2DpI6odqChtOnbELW79wn07Io1HepX8=" internalId="_vOoDAYqNEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="sqlserver_in_demos_AdditionalParams" prompt="sqlserver_in_demos_AdditionalParams?" promptNeeded="false" repositoryContextId="_1bxzsIqLEfC2SvupWX5JTA" type="id_String" value="" internalId="_vOoDAoqNEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="sqlserver_in_demos_Port" prompt="sqlserver_in_demos_Port?" promptNeeded="false" repositoryContextId="_1bxzsIqLEfC2SvupWX5JTA" type="id_String" value="1433" internalId="_vOoDA4qNEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="sqlserver_in_demos_Login" prompt="sqlserver_in_demos_Login?" promptNeeded="false" repositoryContextId="_1bxzsIqLEfC2SvupWX5JTA" type="id_String" value="qlik_rpl" internalId="_vOoDBIqNEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="sqlserver_in_demos_Server" prompt="sqlserver_in_demos_Server?" promptNeeded="false" repositoryContextId="_1bxzsIqLEfC2SvupWX5JTA" type="id_String" value="119.8.85.214" internalId="_vOoDBYqNEfC2SvupWX5JTA"/>
+    <contextParameter comment="" name="sqlserver_in_demos_Schema" prompt="sqlserver_in_demos_Schema?" promptNeeded="false" repositoryContextId="_1bxzsIqLEfC2SvupWX5JTA" type="id_String" value="dbo" internalId="_vOoDBoqNEfC2SvupWX5JTA"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -103,17 +108,23 @@
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
   </parameters>
-  <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="120" posY="120">
+  <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="80" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
     <elementParameter field="TEXT" name="API_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;http://localhost:8088/Clientes&quot;"/>
     <elementParameter field="TABLE" name="SCHEMAS">
-      <elementValue elementRef="SCHEMA" value="getClientes" id="0"/>
+      <elementValue elementRef="SCHEMA" value="getCliente" id="0"/>
       <elementValue elementRef="HTTP_VERB" value="GET" id="1"/>
       <elementValue elementRef="URI_PATTERN" value="&quot;/cpf/{cpf}&quot;" id="2"/>
       <elementValue elementRef="CONSUMES" value="NONE" id="3"/>
       <elementValue elementRef="PRODUCES" value="XML-JSON" id="4"/>
       <elementValue elementRef="STREAMING" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA" value="listarClientes" id="6"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" id="7"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/listarClientes&quot;" id="8"/>
+      <elementValue elementRef="CONSUMES" value="NONE" id="9"/>
+      <elementValue elementRef="PRODUCES" value="XML-JSON" id="10"/>
+      <elementValue elementRef="STREAMING" value="false" id="11"/>
     </elementParameter>
     <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="OIDC_PASSWORD_GRANT" show="false"/>
@@ -144,32 +155,45 @@
       <column defaultValue="" key="false" length="0" name="status" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="1024" name="error" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-    <metadata connector="FLOW" label="getClientes" name="getClientes">
+    <metadata connector="FLOW" label="getClientes" name="getCliente">
       <column comment="" key="true" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="listarClientes" name="listarClientes">
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_1" show="false"/>
     <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
     <elementParameter field="TABLE" name="MAP" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="tRestRequest&lt;br>&lt;b>Iteração a cada requisição&lt;/b>"/>
+    <elementParameter field="TEXT" name="LABEL" value="tFlowToIterate&lt;br>&lt;b>Iteração a cada requisição&lt;/b>"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFlowToIterate_1"/>
   </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="520" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tMSSqlInput" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/MS_SQL_Server" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tMSSqlInput" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\Talend-Studio\studio\configuration\lib\java" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_CF9-MJIREe-Yt50ZGBfTMw" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;wash&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_imcR0KtiEe-O1-TrSI6DtQ" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.sqlserver_in_demos_Server"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;in&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;wash&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:aILKHKim+G1LRBJz9ouWaYsJwzC/axX6rzGrdiAQJaHNzw=="/>
+    <elementParameter field="TEXT" name="PORT" value="context.sqlserver_in_demos_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.sqlserver_in_demos_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.sqlserver_in_demos_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.sqlserver_in_demos_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:IYSo7hFU7ZEihsjqaojTR4pJ5tKgZbyrw0x3b0bOCOKWoSM1eOQlFHar03XWlMfNv3wmYQ1HUYwG/ZUQSWUp"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_CF9-MJIREe-Yt50ZGBfTMw - clientes_gold" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;clientes_gold&quot;"/>
@@ -182,7 +206,7 @@
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.sqlserver_in_demos_AdditionalParams"/>
     <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
@@ -259,14 +283,6 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="280">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;CPF requisitado: &quot; + ((String)globalMap.get(&quot;tRESTRequest_1_URI&quot;)).replaceAll(&quot;cpf/&quot;, &quot;&quot;)  + &quot;\nData: &quot;+ TalendDate.formatDate(&quot;dd/MM/yyyy HH:mm:ss&quot;,    TalendDate.getCurrentDate()));"/>
-    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br>&lt;b>Log de Requisição&lt;/b>"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJava_1"/>
-  </node>
   <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="720" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
@@ -281,48 +297,48 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="Nome" type="id_String" outgoingConnections="//@node.4/@nodeData/@connections.1" xpath="row1/Nome"/>
-        <nodes name="Sobrenome" type="id_String" outgoingConnections="//@node.4/@nodeData/@connections.0" xpath="row1/Sobrenome"/>
+        <nodes name="Nome" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.1" xpath="row1/Nome"/>
+        <nodes name="Sobrenome" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.0" xpath="row1/Sobrenome"/>
         <nodes name="CPF" type="id_String" xpath="row1/CPF"/>
-        <nodes name="Email" type="id_String" outgoingConnections="//@node.4/@nodeData/@connections.2" xpath="row1/Email"/>
+        <nodes name="Email" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.2" xpath="row1/Email"/>
         <nodes name="Endereco_Completo" type="id_String" xpath="row1/Endereco_Completo"/>
-        <nodes name="Endereco" type="id_String" outgoingConnections="//@node.4/@nodeData/@connections.3" xpath="row1/Endereco"/>
-        <nodes name="Bairro" type="id_String" outgoingConnections="//@node.4/@nodeData/@connections.4" xpath="row1/Bairro"/>
-        <nodes name="Cidade" type="id_String" outgoingConnections="//@node.4/@nodeData/@connections.5" xpath="row1/Cidade"/>
-        <nodes name="UF" type="id_String" outgoingConnections="//@node.4/@nodeData/@connections.6" xpath="row1/UF"/>
-        <nodes name="UF_Nome" type="id_String" outgoingConnections="//@node.4/@nodeData/@connections.7" xpath="row1/UF_Nome"/>
-        <nodes name="Regiao" type="id_String" outgoingConnections="//@node.4/@nodeData/@connections.8" xpath="row1/Regiao"/>
-        <nodes name="CEP" type="id_String" outgoingConnections="//@node.4/@nodeData/@connections.9" xpath="row1/CEP"/>
+        <nodes name="Endereco" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.3" xpath="row1/Endereco"/>
+        <nodes name="Bairro" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.4" xpath="row1/Bairro"/>
+        <nodes name="Cidade" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.5" xpath="row1/Cidade"/>
+        <nodes name="UF" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.6" xpath="row1/UF"/>
+        <nodes name="UF_Nome" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.7" xpath="row1/UF_Nome"/>
+        <nodes name="Regiao" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.8" xpath="row1/Regiao"/>
+        <nodes name="CEP" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.9" xpath="row1/CEP"/>
       </inputTrees>
       <outputTrees expressionFilter="" name="cliente">
         <nodes name="body" expression="" type="id_Document" xpath="cliente/body" pattern="">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="clientes" expression="" type="id_String" xpath="cliente.body:/clientes" main="true">
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="CPF" expression="" type="id_String" xpath="cliente.body:/clientes/CPF" loop="true" main="true">
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Nome" expression=" row1.Nome" type="id_String" incomingConnections="//@node.4/@nodeData/@connections.1" xpath="cliente.body:/clientes/CPF/Nome"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Sobrenome" expression=" row1.Sobrenome" type="id_String" incomingConnections="//@node.4/@nodeData/@connections.0" xpath="cliente.body:/clientes/CPF/Sobrenome"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Email" expression=" row1.Email" type="id_String" incomingConnections="//@node.4/@nodeData/@connections.2" xpath="cliente.body:/clientes/CPF/Email"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Endereco" expression=" row1.Endereco" type="id_String" incomingConnections="//@node.4/@nodeData/@connections.3" xpath="cliente.body:/clientes/CPF/Endereco"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Bairro" expression=" row1.Bairro" type="id_String" incomingConnections="//@node.4/@nodeData/@connections.4" xpath="cliente.body:/clientes/CPF/Bairro"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Cidade" expression=" row1.Cidade" type="id_String" incomingConnections="//@node.4/@nodeData/@connections.5" xpath="cliente.body:/clientes/CPF/Cidade"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="UF" expression=" row1.UF" type="id_String" incomingConnections="//@node.4/@nodeData/@connections.6" xpath="cliente.body:/clientes/CPF/UF"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="UF_Nome" expression=" row1.UF_Nome" type="id_String" incomingConnections="//@node.4/@nodeData/@connections.7" xpath="cliente.body:/clientes/CPF/UF_Nome"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Regiao" expression=" row1.Regiao" type="id_String" incomingConnections="//@node.4/@nodeData/@connections.8" xpath="cliente.body:/clientes/CPF/Regiao"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="CEP" expression="row1.CEP" type="id_String" incomingConnections="//@node.4/@nodeData/@connections.9" xpath="cliente.body:/clientes/CPF/CEP"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Nome" expression=" row1.Nome" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.1" xpath="cliente.body:/clientes/CPF/Nome"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Sobrenome" expression=" row1.Sobrenome" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.0" xpath="cliente.body:/clientes/CPF/Sobrenome"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Email" expression=" row1.Email" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.2" xpath="cliente.body:/clientes/CPF/Email"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Endereco" expression=" row1.Endereco" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.3" xpath="cliente.body:/clientes/CPF/Endereco"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Bairro" expression=" row1.Bairro" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.4" xpath="cliente.body:/clientes/CPF/Bairro"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Cidade" expression=" row1.Cidade" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.5" xpath="cliente.body:/clientes/CPF/Cidade"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="UF" expression=" row1.UF" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.6" xpath="cliente.body:/clientes/CPF/UF"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="UF_Nome" expression=" row1.UF_Nome" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.7" xpath="cliente.body:/clientes/CPF/UF_Nome"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Regiao" expression=" row1.Regiao" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.8" xpath="cliente.body:/clientes/CPF/Regiao"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="CEP" expression="row1.CEP" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.9" xpath="cliente.body:/clientes/CPF/CEP"/>
             </children>
           </children>
         </nodes>
       </outputTrees>
       <varTables name="Var"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.4/@nodeData/@inputTrees.0/@nodes.1" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.1"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.4/@nodeData/@inputTrees.0/@nodes.0" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.4/@nodeData/@inputTrees.0/@nodes.3" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.2"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.4/@nodeData/@inputTrees.0/@nodes.5" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.3"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.4/@nodeData/@inputTrees.0/@nodes.6" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.4"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.4/@nodeData/@inputTrees.0/@nodes.7" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.5"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.4/@nodeData/@inputTrees.0/@nodes.8" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.6"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.4/@nodeData/@inputTrees.0/@nodes.9" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.7"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.4/@nodeData/@inputTrees.0/@nodes.10" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.8"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.4/@nodeData/@inputTrees.0/@nodes.11" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.9"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.1" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.3" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.5" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.6" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.7" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.5"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.8" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.6"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.9" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.7"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.10" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.8"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.11" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.9"/>
     </nodeData>
   </node>
   <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="920" posY="120">
@@ -339,19 +355,203 @@
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="getClientes" lineStyle="0" metaname="getClientes" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_1" target="tFlowToIterate_1">
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_2" show="false"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_2"/>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="520" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tMSSqlInput" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/MS_SQL_Server" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tMSSqlInput" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\Talend-Studio\studio\configuration\lib\java" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_imcR0KtiEe-O1-TrSI6DtQ" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.sqlserver_in_demos_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.sqlserver_in_demos_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.sqlserver_in_demos_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.sqlserver_in_demos_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.sqlserver_in_demos_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:IK61/uFYKX+eYkoFcrkD9ri3Qvhvxt+6U0CzvZ3oxtUhSA7iYO9XLLleX5YNhFQ+iOaLmeUJfNTWr/d6XLAt"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_CF9-MJIREe-Yt50ZGBfTMw - clientes_gold" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;clientes_gold&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT clientes_gold.Nome,&#xA;&#x9;&#x9;clientes_gold.Sobrenome,&#xA;&#x9;&#x9;clientes_gold.CPF,&#xA;&#x9;&#x9;clientes_gold.Email,&#xA;&#x9;&#x9;clientes_gold.Endereco_Completo,&#xA;&#x9;&#x9;clientes_gold.Endereco,&#xA;&#x9;&#x9;clientes_gold.Bairro,&#xA;&#x9;&#x9;clientes_gold.Cidade,&#xA;&#x9;&#x9;clientes_gold.UF,&#xA;&#x9;&#x9;clientes_gold.UF_Nome,&#xA;&#x9;&#x9;clientes_gold.Regiao,&#xA;&#x9;&#x9;clientes_gold.CEP&#xA;FROM&#x9;clientes_gold&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.sqlserver_in_demos_AdditionalParams"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false"/>
+    <elementParameter field="TEXT" name="KEYSTORE_PRINCIPAL_ID" value="" show="false"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="true"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nome" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sobrenome" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CPF" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Email" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Endereco_Completo" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Endereco" id="10"/>
+      <elementValue elementRef="TRIM" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Bairro" id="12"/>
+      <elementValue elementRef="TRIM" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Cidade" id="14"/>
+      <elementValue elementRef="TRIM" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UF" id="16"/>
+      <elementValue elementRef="TRIM" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UF_Nome" id="18"/>
+      <elementValue elementRef="TRIM" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Regiao" id="20"/>
+      <elementValue elementRef="TRIM" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CEP" id="22"/>
+      <elementValue elementRef="TRIM" value="false" id="23"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="tRestRequest&lt;br>&lt;b>__TABLE__&lt;/b>"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="clientes_gold" name="tDBInput_2">
+      <column comment="" key="false" length="100" name="Nome" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Sobrenome" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="CPF" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Email" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Endereco_Completo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Endereco" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Bairro" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Cidade" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="UF" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="UF_Nome" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="Regiao" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="CEP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="720" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="ORIGIN" value="" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="tRestRequest&lt;br>&lt;b>Mapeamento da Resposta&lt;/b>"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="listaClientes">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row2" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="Nome" type="id_String" xpath="row2/Nome"/>
+        <nodes name="Sobrenome" type="id_String" xpath="row2/Sobrenome"/>
+        <nodes name="CPF" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.1" xpath="row2/CPF"/>
+        <nodes name="Email" type="id_String" xpath="row2/Email"/>
+        <nodes name="Endereco_Completo" type="id_String" xpath="row2/Endereco_Completo"/>
+        <nodes name="Endereco" type="id_String" xpath="row2/Endereco"/>
+        <nodes name="Bairro" type="id_String" xpath="row2/Bairro"/>
+        <nodes name="Cidade" type="id_String" xpath="row2/Cidade"/>
+        <nodes name="UF" type="id_String" xpath="row2/UF"/>
+        <nodes name="UF_Nome" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.0" xpath="row2/UF_Nome"/>
+        <nodes name="Regiao" type="id_String" xpath="row2/Regiao"/>
+        <nodes name="CEP" type="id_String" xpath="row2/CEP"/>
+      </inputTrees>
+      <outputTrees expressionFilter="" activateCondensedTool="true" name="listaClientes" allInOne="true">
+        <nodes name="body" expression="" type="id_Document" xpath="listaClientes/body" pattern="">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="clientes" expression="" type="id_String" xpath="listaClientes.body:/clientes" main="true">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="cliente" expression="" type="id_String" xpath="listaClientes.body:/clientes/cliente" loop="true" main="true">
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Nome" expression=" row2.Nome" type="id_String" xpath="listaClientes.body:/clientes/cliente/Nome"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Sobrenome" expression=" row2.Sobrenome" type="id_String" xpath="listaClientes.body:/clientes/cliente/Sobrenome"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Email" expression=" row2.Email" type="id_String" xpath="listaClientes.body:/clientes/cliente/Email"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Endereco" expression=" row2.Endereco" type="id_String" xpath="listaClientes.body:/clientes/cliente/Endereco"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Bairro" expression=" row2.Bairro" type="id_String" xpath="listaClientes.body:/clientes/cliente/Bairro"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Cidade" expression=" row2.Cidade" type="id_String" xpath="listaClientes.body:/clientes/cliente/Cidade"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="UF" expression=" row2.UF" type="id_String" xpath="listaClientes.body:/clientes/cliente/UF"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="UF_Nome" expression=" row2.UF_Nome" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.0" xpath="listaClientes.body:/clientes/cliente/UF_Nome"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Regiao" expression=" row2.Regiao" type="id_String" xpath="listaClientes.body:/clientes/cliente/Regiao"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="CEP" expression="row2.CEP" type="id_String" xpath="listaClientes.body:/clientes/cliente/CEP"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="CPF" expression="row2.CPF" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.1" xpath="listaClientes.body:/clientes/cliente/CPF"/>
+            </children>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables name="Var"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.9" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.7"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.2" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.10"/>
+    </nodeData>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="920" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_2" show="false"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" value="200" show="false"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
+    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="tRESTResponse&lt;br>&lt;b>Retorna Resposta ao Cliente&lt;/b>"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTResponse_2">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="getCliente" lineStyle="0" metaname="getCliente" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tRESTRequest_1" target="tFlowToIterate_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="getClientes" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="getCliente" show="false"/>
   </connection>
-  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFlowToIterate_1" target="tDBInput_1">
+  <connection connectorName="FLOW" label="listarClientes" lineStyle="0" metaname="listarClientes" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tRESTRequest_1" target="tFlowToIterate_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="listarClientes" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_1" target="tDBInput_1">
     <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
-  </connection>
-  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tFlowToIterate_1" target="tJava_1">
-    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
-    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate2" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tXMLMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -360,6 +560,19 @@
   <connection connectorName="FLOW" label="cliente" lineStyle="0" metaname="cliente" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tRESTResponse_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="cliente" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_2" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_2" target="tDBInput_2">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tXMLMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="listaClientes" lineStyle="0" metaname="listaClientes" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_2" target="tRESTResponse_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="listaClientes" show="false"/>
   </connection>
   <note opaque="false" posX="80" posY="-40" sizeHeight="80" sizeWidth="321" text="Exemplo de requisição:&#xD;&#xA;http://localhost:8088/Clientes/cpf/867.033.628-66">
     <elementParameter field="COLOR" name="NOTE_COLOR" value="192;192;192"/>
